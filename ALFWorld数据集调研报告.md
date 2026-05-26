@@ -234,20 +234,111 @@ alfworld-task-verifier         ← 验证
 
 ---
 
-## 四、推荐研究的任务
+## 四、六种类型之间的具体差异
 
-以下 4 个任务覆盖了数据集中 4 种不同的 skill 编排模式，且复杂度从高到低有区分度：
+### 4.1 "局"是什么意思？为什么有三千多局？
 
-| # | 任务 | 类型 | 核心竞争力 | 需要 skill 数 |
-|---|------|------|-----------|--------------|
-| 1 | `find two pen and put them in garbagecan` | Pick Two | 循环搜索 + 数量追踪 + 失败回溯 | ~10 个 |
-| 2 | `heat some egg and put it in diningtable` | Heat & Place | 封闭容器拆包 + 设备交互 + 三段式流水线 | ~8 个 |
-| 3 | `look at pillow under the desklamp` | Examine in Light | 空间关系推理 + 遮挡消除 + 设备 toggle | ~7 个 |
-| 4 | `clean some apple and put it in microwave` | Clean & Place | 状态改变 + 设备交互 | ~8 个 |
+**"局"（episode）= 一次完整的任务执行。** 每一局是一个独立的 TextWorld 游戏实例，有自己随机生成的房间布局、物品位置、容器状态。
+
+一局包含：初始环境描述 + 自然语言任务指令 + 专家动作轨迹（约 7-20 步）。
+
+三千多局不是三千多种**不同的任务逻辑**——核心逻辑只有 6 种。多局的原因是**排列组合**：
+
+```
+一局的目录名 = {任务类型} + {物品} + {设备} + {目标容器} + {场景编号}
+
+例如: pick_heat_then_place_in_recep-Potato-Microwave-SinkBasin-14
+       ↑ 类型:加热       ↑ 物品:土豆  ↑ 设备:微波炉  ↑ 终点:水槽  ↑ 14号场景
+```
+
+变化维度：
+- **物品**（~30+ 种）：pen, pencil, book, apple, potato, egg, mug, cup, bowl, plate, pan, lettuce, tomato, soapbar, soapbottle, spraybottle, ladle, fork, cellphone, laptop, cd, remotecontrol, alarmclock, keychain, newspaper, pillow, box, handtowel, toiletpaper...
+- **目标容器**（~15+ 种）：diningtable, sidetable, coffeetable, desk, shelf, drawer, cabinet, fridge, garbagecan, bed, sofa, dresser, countertop, sinkbasin, toilet, stoveburner, microwave...
+- **场景编号**（1-30 号 FloorPlan，来自 ALFRED）：每个编号代表不同的房间布局
+- **专家轨迹随机种子**：同一个任务配置下，专家示范的路径也有随机扰动
+
+所以 **3,553 局 ≈ 6 种逻辑 × 几十种物品 × 十几种容器 × 30 个场景 × 多次随机采样**。同类型下的不同局，对 skill 编排来说是完全等价的——skill 链不变，只是 `object = "pen"` 换成 `object = "book"`。
+
+**训练/验证的分布逻辑：**
+- `valid_seen`（140局）：场景编号在训练中出现过，但物品-容器组合是新的 → 测**泛化到新任务**
+- `valid_unseen`（134局）：场景编号在训练中从未出现 → 测**泛化到新环境**
+
+### 4.2 六种类型的核心差异
+
+每种类型在操作链的**环节数量**和**环节性质**上有本质区别：
+
+```
+                   定位    拾取   设备交互   状态改变   二次搜索   放置    验证
+Pick & Place        ✅     ✅       —         —         —       ✅     ✅
+Examine in Light   ✅✅     ✅      ✅         —         —       —      ✅
+                        (找台灯+找目标)   (toggle)
+Clean & Place       ✅     ✅      ✅         ✅         —       ✅     ✅
+                                  (水槽)    (clean)
+Heat & Place        ✅     ✅      ✅         ✅         —       ✅     ✅
+                                 (微波炉)    (heat)
+Cool & Place        ✅     ✅      ✅         ✅         —       ✅     ✅
+                                  (冰箱)    (cool)
+Pick Two & Place   ✅✅    ✅✅     —         —         ✅       ✅     ✅
+                   (找物1+找物2) (取1+取2)           (回溯搜物2)
+```
+
+具体差异拆解：
+
+**① Pick & Place vs 其他：多了一个"加工环节"**
+
+Heat/Cool/Clean 三种比 Pick 多了整整一个阶段——设备交互 + 状态改变。这个阶段的 skill 链是：`appliance-navigator`（去设备）→ `appliance-preparer`（开门）→ `object-heater/cooler/clean-object`（执行）→ `object-retriever`（取出）。多出 4 个 skill，多出 3-5 步。
+
+**② Heat/Cool/Clean 三者之间：设备不同，前置条件不同**
+
+三者操作结构完全一样，但实际执行有细微差别：
+
+| | Heat | Cool | Clean |
+|------|------|------|------|
+| 设备 | microwave / stoveburner | fridge | sinkbasin |
+| 设备需要开门？ | microwave 要开，stoveburner 不需要 | 需要开冰箱门 | 不需要开水槽 |
+| 加工后物品在哪？ | 在设备里，需取出 | 物品留在冰箱内或手中 | 物品在手中 |
+| 典型终点 | diningtable, sidetable | cabinet, shelf, microwave | cabinet, shelf, diningtable |
+| 特殊场景 | 物品原本在冰箱 → 加热 → 可能放回冰箱 | 物品可能在冰箱里已冷却 → 跳过热操作 | 物品可能已经干净 → 跳过热操作 |
+
+**③ Examine vs Heat/Cool/Clean：设备交互方式不同**
+
+Examine 不需要改变物品状态，但需要：
+- 找两个东西（台灯 + 目标），而不是找一个 → 多一次定位
+- `toggle`（开关灯）vs `heat/cool/clean`（加工物品）→ 操作目标不同
+- 经常涉及**遮挡**：物品在台灯"下面"（under），不拿走台灯就看不到
+
+**④ Pick Two vs 其他所有：唯一需要循环的类型**
+
+其他 5 种都是**单次线性流程**：找→（加工）→放→结束。Pick Two 是**循环流程**：找→放→找→放→验证。这带来了两个独有需求：
+- `inventory-management`（追踪已收集数量、控制循环终止）
+- `search-verifier`（第一轮没凑够时回溯已搜容器）
+
+### 4.3 Examine in Light 为什么局数最少（308局）？
+
+因为能作为光源的设备只有 **desklamp** 一种，覆盖场景有限。不像 Heat（微波炉、灶台都在大多数厨房场景中）或 Pick（任何物品+任何容器都能配对）。物品×容器的组合空间小，自然局数少。
+
+### 4.4 Pick Two 为什么局数最多（813局）？
+
+因为需要 2 个同类物品同时存在于环境中。生成约束更松——只要有 2 个 pen（可能在 2 个不同容器里）就能构成一局，物品×容器×场景的组合空间比单物品任务更大。
 
 ---
 
-## 五、数据集局限
+## 五、推荐研究的任务（补齐 6 种全覆盖）
+
+| # | 任务 | 类型 | 核心竞争力 | 需要 skill 数 |
+|---|------|------|-----------|--------------|
+| 1 | `find two pen and put them in garbagecan` | Pick Two | 循环搜搜 + 数量追踪 + 失败回溯 | ~10 个 |
+| 2 | `heat some egg and put it in diningtable` | Heat & Place | 封闭容器拆包 + 设备开门 + 三段式流水线 | ~8 个 |
+| 3 | `cool some lettuce and put it in garbagecan` | Cool & Place | 冰箱交互 + 冷却状态改变 | ~8 个 |
+| 4 | `clean some apple and put it in microwave` | Clean & Place | 水槽清洗 + 状态改变 + 设备交互 | ~8 个 |
+| 5 | `look at pillow under the desklamp` | Examine in Light | 空间关系推理 + 遮挡消除 + 设备 toggle | ~7 个 |
+| 6 | `put a pencil in desk` | Pick & Place | 纯搬运（基线对比） | ~5 个 |
+
+其中 Heat/Cool/Clean 三种虽然 skill 链相同，但选三者的原因是**设备交互的细节不同**（微波炉要开门取物、冰箱要开关门、水槽不需要开门），对 skill 编排中的 `appliance-preparer` 和 `object-retriever` 的使用有不同要求。
+
+---
+
+## 六、数据集局限
 
 1. **无组合操作**：标准 ALFWorld 每个任务只含至多一次状态改变（clean / heat / cool 任选一）。不存在 "先洗再加热" 或 "先加热再冷却" 的组合任务。ALFRED 原始数据集中存在切片+加热等组合（如 `SliceObject` + `HeatObject`），但 ALFWorld 为了简化将其排除。
 
@@ -259,7 +350,7 @@ alfworld-task-verifier         ← 验证
 
 ---
 
-## 六、数据来源
+## 七、数据来源
 
 - ALFWorld 论文: arXiv:2010.03768 (ICLR 2021)
 - GitHub 仓库: https://github.com/alfworld/alfworld
