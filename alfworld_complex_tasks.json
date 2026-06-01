@@ -1,0 +1,257 @@
+{
+  "dataset": "ALFWorld json_2.1.1",
+  "tasks": [
+    {
+      "task_id": "pick_two_obj_and_place-Pen-GarbageCan",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "find two pen and put them in garbagecan",
+      "pddl_params": {
+        "object_target": ["Pen"],
+        "quantity": 2,
+        "parent_target": ["GarbageCan"]
+      },
+      "expert_plan": [
+        { "step": 1, "action": "GotoLocation", "target": "Desk" },
+        { "step": 2, "action": "PickupObject", "target": "Pen_1" },
+        { "step": 3, "action": "GotoLocation", "target": "GarbageCan" },
+        { "step": 4, "action": "PutObject", "target": "Pen_1", "receptacle": "GarbageCan" },
+        { "step": 5, "action": "GotoLocation", "target": "Drawer" },
+        { "step": 6, "action": "OpenObject", "target": "Drawer" },
+        { "step": 7, "action": "PickupObject", "target": "Pen_2" },
+        { "step": 8, "action": "GotoLocation", "target": "GarbageCan" },
+        { "step": 9, "action": "PutObject", "target": "Pen_2", "receptacle": "GarbageCan" }
+      ],
+      "required_skills": [
+        "alfworld-goal-interpreter",
+        "alfworld-environment-scanner",
+        "alfworld-inventory-management",
+        "alfworld-object-locator",
+        "alfworld-search-pattern-executor",
+        "alfworld-receptacle-opener",
+        "alfworld-object-retriever",
+        "alfworld-location-navigator",
+        "alfworld-object-placer",
+        "alfworld-task-verifier"
+      ]
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Egg-Microwave-DiningTable",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "heat some egg and put it in diningtable",
+      "pddl_params": {
+        "object_target": ["Egg"],
+        "parent_target": ["DiningTable"],
+        "mrecep": ["Microwave"]
+      },
+      "expert_plan": [
+        { "step": 1, "action": "GotoLocation", "target": "Fridge" },
+        { "step": 2, "action": "OpenObject", "target": "Fridge" },
+        { "step": 3, "action": "PickupObject", "target": "Egg" },
+        { "step": 4, "action": "GotoLocation", "target": "Microwave" },
+        { "step": 5, "action": "OpenObject", "target": "Microwave" },
+        { "step": 6, "action": "HeatObject", "target": "Egg", "appliance": "Microwave" },
+        { "step": 7, "action": "PickupObject", "target": "Egg" },
+        { "step": 8, "action": "GotoLocation", "target": "DiningTable" },
+        { "step": 9, "action": "PutObject", "target": "Egg", "receptacle": "DiningTable" }
+      ],
+      "required_skills": [
+        "alfworld-goal-interpreter",
+        "alfworld-environment-scanner",
+        "alfworld-object-locator",
+        "alfworld-receptacle-opener",
+        "alfworld-object-picker",
+        "alfworld-appliance-navigator",
+        "alfworld-appliance-preparer",
+        "alfworld-object-heater",
+        "alfworld-object-retriever",
+        "alfworld-location-navigator",
+        "alfworld-object-placer",
+        "alfworld-task-verifier"
+      ]
+    },
+    {
+      "task_id": "pick_cool_then_place_in_recep-Tomato-Fridge-Microwave",
+      "task_type": "pick_cool_then_place_in_recep",
+      "task_desc": "cool some tomato and put it in microwave",
+      "pddl_params": {
+        "object_target": ["Tomato"],
+        "parent_target": ["Microwave"],
+        "mrecep": ["Fridge"]
+      },
+      "expert_plan": [
+        { "step": 1, "action": "GotoLocation", "target": "CounterTop" },
+        { "step": 2, "action": "PickupObject", "target": "Tomato" },
+        { "step": 3, "action": "GotoLocation", "target": "Fridge" },
+        { "step": 4, "action": "OpenObject", "target": "Fridge" },
+        { "step": 5, "action": "CoolObject", "target": "Tomato", "appliance": "Fridge" },
+        { "step": 6, "action": "PickupObject", "target": "Tomato" },
+        { "step": 7, "action": "CloseObject", "target": "Fridge" },
+        { "step": 8, "action": "GotoLocation", "target": "Microwave" },
+        { "step": 9, "action": "OpenObject", "target": "Microwave" },
+        { "step": 10, "action": "PutObject", "target": "Tomato", "receptacle": "Microwave" }
+      ],
+      "required_skills": [
+        "alfworld-goal-interpreter",
+        "alfworld-environment-scanner",
+        "alfworld-object-locator",
+        "alfworld-object-picker",
+        "alfworld-appliance-navigator",
+        "alfworld-appliance-preparer",
+        "alfworld-object-cooler",
+        "alfworld-object-retriever",
+        "alfworld-receptacle-closer",
+        "alfworld-location-navigator",
+        "alfworld-object-placer",
+        "alfworld-task-verifier"
+      ]
+    },
+    {
+      "task_id": "pick_clean_then_place_in_recep-Apple-SinkBasin-Microwave",
+      "task_type": "pick_clean_then_place_in_recep",
+      "task_desc": "clean some apple and put it in microwave",
+      "pddl_params": {
+        "object_target": ["Apple"],
+        "parent_target": ["Microwave"],
+        "mrecep": ["SinkBasin"]
+      },
+      "expert_plan": [
+        { "step": 1, "action": "GotoLocation", "target": "Fridge" },
+        { "step": 2, "action": "OpenObject", "target": "Fridge" },
+        { "step": 3, "action": "PickupObject", "target": "Apple" },
+        { "step": 4, "action": "CloseObject", "target": "Fridge" },
+        { "step": 5, "action": "GotoLocation", "target": "SinkBasin" },
+        { "step": 6, "action": "CleanObject", "target": "Apple", "appliance": "SinkBasin" },
+        { "step": 7, "action": "GotoLocation", "target": "Microwave" },
+        { "step": 8, "action": "OpenObject", "target": "Microwave" },
+        { "step": 9, "action": "PutObject", "target": "Apple", "receptacle": "Microwave" }
+      ],
+      "required_skills": [
+        "alfworld-goal-interpreter",
+        "alfworld-environment-scanner",
+        "alfworld-object-locator",
+        "alfworld-receptacle-opener",
+        "alfworld-object-picker",
+        "alfworld-receptacle-closer",
+        "alfworld-appliance-navigator",
+        "alfworld-clean-object",
+        "alfworld-location-navigator",
+        "alfworld-object-storer",
+        "alfworld-task-verifier"
+      ]
+    },
+    {
+      "task_id": "look_at_obj_in_light-Pillow-DeskLamp",
+      "task_type": "look_at_obj_in_light",
+      "task_desc": "look at pillow under the desklamp",
+      "pddl_params": {
+        "object_target": ["Pillow"],
+        "mrecep": ["DeskLamp"]
+      },
+      "expert_plan": [
+        { "step": 1, "action": "GotoLocation", "target": "Desk" },
+        { "step": 2, "action": "ToggleObject", "target": "DeskLamp" },
+        { "step": 3, "action": "PickupObject", "target": "DeskLamp" },
+        { "step": 4, "action": "ExamineObject", "target": "Pillow" }
+      ],
+      "required_skills": [
+        "alfworld-goal-interpreter",
+        "alfworld-environment-scanner",
+        "alfworld-tool-locator",
+        "alfworld-device-operator",
+        "alfworld-object-locator",
+        "alfworld-object-picker",
+        "alfworld-object-state-inspector",
+        "alfworld-task-verifier"
+      ]
+    },
+    {
+      "task_id": "pick_two_obj_and_place-Book-Bed",
+      "task_type": "pick_two_obj_and_place",
+      "task_desc": "find two book and put them in bed",
+      "pddl_params": {
+        "object_target": ["Book"],
+        "quantity": 2,
+        "parent_target": ["Bed"]
+      },
+      "expert_plan": [
+        { "step": 1, "action": "GotoLocation", "target": "Shelf" },
+        { "step": 2, "action": "PickupObject", "target": "Book_1" },
+        { "step": 3, "action": "GotoLocation", "target": "Bed" },
+        { "step": 4, "action": "PutObject", "target": "Book_1", "receptacle": "Bed" },
+        { "step": 5, "action": "GotoLocation", "target": "Desk" },
+        { "step": 6, "action": "PickupObject", "target": "Book_2" },
+        { "step": 7, "action": "GotoLocation", "target": "Bed" },
+        { "step": 8, "action": "PutObject", "target": "Book_2", "receptacle": "Bed" }
+      ],
+      "required_skills": [
+        "alfworld-goal-interpreter",
+        "alfworld-environment-scanner",
+        "alfworld-inventory-management",
+        "alfworld-object-locator",
+        "alfworld-search-pattern-executor",
+        "alfworld-object-retriever",
+        "alfworld-location-navigator",
+        "alfworld-object-placer",
+        "alfworld-task-verifier"
+      ]
+    },
+    {
+      "task_id": "pick_heat_then_place_in_recep-Apple-Microwave-Fridge",
+      "task_type": "pick_heat_then_place_in_recep",
+      "task_desc": "put a hot apple in fridge",
+      "pddl_params": {
+        "object_target": ["Apple"],
+        "parent_target": ["Fridge"],
+        "mrecep": ["Microwave"]
+      },
+      "expert_plan": [
+        { "step": 1, "action": "GotoLocation", "target": "CounterTop" },
+        { "step": 2, "action": "PickupObject", "target": "Apple" },
+        { "step": 3, "action": "GotoLocation", "target": "Microwave" },
+        { "step": 4, "action": "OpenObject", "target": "Microwave" },
+        { "step": 5, "action": "HeatObject", "target": "Apple", "appliance": "Microwave" },
+        { "step": 6, "action": "PickupObject", "target": "Apple" },
+        { "step": 7, "action": "GotoLocation", "target": "Fridge" },
+        { "step": 8, "action": "OpenObject", "target": "Fridge" },
+        { "step": 9, "action": "PutObject", "target": "Apple", "receptacle": "Fridge" }
+      ],
+      "required_skills": [
+        "alfworld-goal-interpreter",
+        "alfworld-environment-scanner",
+        "alfworld-object-locator",
+        "alfworld-object-picker",
+        "alfworld-appliance-navigator",
+        "alfworld-appliance-preparer",
+        "alfworld-object-heater",
+        "alfworld-object-retriever",
+        "alfworld-location-navigator",
+        "alfworld-object-storer",
+        "alfworld-receptacle-closer",
+        "alfworld-task-verifier"
+      ]
+    },
+    {
+      "task_id": "pick_and_place_simple-SoapBottle-Toilet",
+      "task_type": "pick_and_place_simple",
+      "task_desc": "put a soapbottle in toilet",
+      "pddl_params": {
+        "object_target": ["SoapBottle"],
+        "parent_target": ["Toilet"]
+      },
+      "expert_plan": [
+        { "step": 1, "action": "GotoLocation", "target": "SinkBasin" },
+        { "step": 2, "action": "PickupObject", "target": "SoapBottle" },
+        { "step": 3, "action": "GotoLocation", "target": "Toilet" },
+        { "step": 4, "action": "PutObject", "target": "SoapBottle", "receptacle": "Toilet" }
+      ],
+      "required_skills": [
+        "alfworld-goal-interpreter",
+        "alfworld-object-locator",
+        "alfworld-object-picker",
+        "alfworld-location-navigator",
+        "alfworld-object-placer",
+        "alfworld-task-verifier"
+      ]
+    }
+  ]
+}
