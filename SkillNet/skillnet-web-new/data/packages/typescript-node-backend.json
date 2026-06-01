@@ -1,0 +1,321 @@
+{
+  "package_name": "typescript-node-backend",
+  "scene_description": "TypeScript and Node.js backend development with Express, NestJS, Prisma ORM, type-safe APIs, middleware patterns, WebSocket, and server-side JavaScript best practices",
+  "tags": [
+    "typescript",
+    "node.js",
+    "nestjs",
+    "prisma",
+    "backend",
+    "middleware",
+    "websocket",
+    "api development"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:19:01.775207",
+  "skill_count": 12,
+  "skills": [
+    {
+      "skill_name": "api-design",
+      "skill_description": "Guidelines for designing RESTful APIs and TypeScript interfaces. Use when designing new endpoints, reviewing API contracts, or structuring data models.",
+      "skill_url": "https://github.com/mastra-ai/mastra/blob/e6fc281896a3584e9e06465b356a44fe7faade65/examples/unified-workspace/skills/api-design",
+      "category": "Development",
+      "stars": 20639,
+      "tags": [
+        "API Design",
+        "REST",
+        "TypeScript",
+        "Software Engineering",
+        "Backend Development"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5086
+    },
+    {
+      "skill_name": "nestjs-expert",
+      "skill_description": "Nest.js framework expert specializing in module architecture, dependency injection, middleware, guards, interceptors, testing with Jest/Supertest, TypeORM/Mongoose integration, and Passport.js authentication. Use PROACTIVELY for any Nest.js application issues including architecture decisions, testing strategies, performance optimization, or debugging complex dependency injection problems. If a specialized expert is a better fit, I will recommend switching and stop.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/62b5d8de603adc03741b4aa526876f97f4e3cd56/cli-tool/components/skills/development/nestjs-expert",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "nestjs",
+        "backend-framework",
+        "nodejs",
+        "api-development",
+        "software-architecture"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5075
+    },
+    {
+      "skill_name": "build-free-types",
+      "skill_description": "This skill should be used when the user asks to \"set up types without a build step\", \"use vanilla JS with types\", \"configure erasable syntax\", or mentions \"JSDoc type checking\". It provides instructions for modern type safety using JSDoc in browsers and native TypeScript execution in Node.js.",
+      "skill_url": "https://github.com/paulirish/dotfiles/blob/cbcc2b63c9378889f7654e774e8d23118efb8062/agents/paulirish-skills/skills/build-free-types",
+      "category": "Development",
+      "stars": 4299,
+      "tags": [
+        "TypeScript",
+        "JSDoc",
+        "Node.js",
+        "Type Checking",
+        "Build Tools"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4919
+    },
+    {
+      "skill_name": "backend-patterns",
+      "skill_description": "Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes.",
+      "skill_url": "https://github.com/affaan-m/everything-claude-code/blob/ae2c063ddebccafec5ca4b2a7733ddd32361adb1/docs/zh-TW/skills/backend-patterns",
+      "category": "Development",
+      "stars": 36487,
+      "tags": [
+        "backend",
+        "architecture",
+        "API design",
+        "database optimization",
+        "Node.js"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4578
+    },
+    {
+      "skill_name": "typescript",
+      "skill_description": "TypeScript code style and optimization guidelines. Use when writing TypeScript code (.ts, .tsx, .mts files), reviewing code quality, or implementing type-safe patterns. Triggers on TypeScript development, type safety questions, or code style discussions.",
+      "skill_url": "https://github.com/lobehub/lobehub/blob/c5a1791e3212a07a5a622db459b5225ded5d4b24/.agents/skills/typescript",
+      "category": "Development",
+      "stars": 71773,
+      "tags": [
+        "TypeScript",
+        "Code Style",
+        "Type Safety",
+        "Best Practices",
+        "Software Engineering"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4346
+    },
+    {
+      "skill_name": "typescript-review",
+      "skill_description": "Review TypeScript and JavaScript code changes for compliance with Metabase coding standards, style violations, and code quality issues. Use when reviewing pull requests or diffs containing TypeScript/JavaScript code.",
+      "skill_url": "https://github.com/metabase/metabase/blob/9f30405075376726394c83310858ffd5a88edc22/.claude/skills/typescript-review",
+      "category": "Development",
+      "stars": 45770,
+      "tags": [
+        "TypeScript",
+        "Code Review",
+        "JavaScript",
+        "Coding Standards",
+        "Pull Requests"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4235
+    },
+    {
+      "skill_name": "fp-ts-errors",
+      "skill_description": "Handle errors as values using fp-ts Either and TaskEither for cleaner, more predictable TypeScript code. Use when implementing error handling patterns with fp-ts.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/59151b36719b9b7a06c10d8a04dd34e90d4ffc41/skills/fp-ts-errors",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "TypeScript",
+        "Error Handling",
+        "Functional Programming",
+        "fp-ts",
+        "Either"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4234
+    },
+    {
+      "skill_name": "typescript-expert",
+      "skill_description": "TypeScript and JavaScript expert with deep knowledge of type-level programming, performance optimization, monorepo management, migration strategies, and modern tooling. Use PROACTIVELY for any TypeScript/JavaScript issues including complex type gymnastics, build performance, debugging, and architectural decisions. If a specialized expert is a better fit, I will recommend switching and stop.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/56e2ccf719608b679926d97e313d6cea6e0dbf91/skills/typescript-expert",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "TypeScript",
+        "JavaScript",
+        "Performance Optimization",
+        "Monorepo Management",
+        "Migration Strategies"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4176
+    },
+    {
+      "skill_name": "better-auth-best-practices",
+      "skill_description": "Skill for integrating Better Auth - the comprehensive TypeScript authentication framework.",
+      "skill_url": "https://github.com/novuhq/novu/blob/3a3503b3d889d3ed05614f4850ae82306c570743/.cursor/skills/better-auth-best-practices",
+      "category": "Development",
+      "stars": 38512,
+      "tags": [
+        "authentication",
+        "TypeScript",
+        "web development",
+        "security",
+        "API integration"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4084
+    },
+    {
+      "skill_name": "typescript-write",
+      "skill_description": "Write TypeScript and JavaScript code following Metabase coding standards and best practices. Use when developing or refactoring TypeScript/JavaScript code.",
+      "skill_url": "https://github.com/metabase/metabase/blob/9f30405075376726394c83310858ffd5a88edc22/.claude/skills/typescript-write",
+      "category": "Development",
+      "stars": 45770,
+      "tags": [
+        "TypeScript",
+        "JavaScript",
+        "Coding Standards",
+        "Software Development",
+        "Refactoring"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4064
+    },
+    {
+      "skill_name": "openapi-to-typescript",
+      "skill_description": "Converts OpenAPI 3.0 JSON/YAML to TypeScript interfaces and type guards. This skill should be used when the user asks to generate types from OpenAPI, convert schema to TS, create API interfaces, or generate TypeScript types from an API specification.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/5b0ddf0d25666219f5a24bd589bd9ff9565619cb/cli-tool/components/skills/development/openapi-to-typescript",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "openapi",
+        "typescript",
+        "code-generation",
+        "api",
+        "type-guards"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4033
+    },
+    {
+      "skill_name": "code-review",
+      "skill_description": "Provides structured code review guidelines for TypeScript projects. Use when reviewing pull requests, analyzing code quality, or suggesting improvements.",
+      "skill_url": "https://github.com/mastra-ai/mastra/blob/9debe672e4c4fabe5bdb867f855aad77ff2d2668/examples/unified-workspace/skills/code-review",
+      "category": "Development",
+      "stars": 20639,
+      "tags": [
+        "code-review",
+        "typescript",
+        "best-practices",
+        "pull-request",
+        "quality-assurance"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4024
+    }
+  ],
+  "relationships": [
+    {
+      "source": "fp-ts-errors",
+      "target": "typescript",
+      "type": "belong_to",
+      "reason": "fp-ts error-handling patterns are a specific TypeScript-level pattern; it's a focused sub-topic within TypeScript development."
+    },
+    {
+      "source": "build-free-types",
+      "target": "typescript",
+      "type": "belong_to",
+      "reason": "Setting up types without a build step is a specific approach within the broader TypeScript/type-safety domain."
+    },
+    {
+      "source": "openapi-to-typescript",
+      "target": "api-design",
+      "type": "belong_to",
+      "reason": "Converting OpenAPI schemas into TypeScript types is a concrete sub-step in an API design/data-modeling workflow."
+    },
+    {
+      "source": "better-auth-best-practices",
+      "target": "backend-patterns",
+      "type": "belong_to",
+      "reason": "Integrating an authentication framework is a specific aspect of backend architecture and server-side best practices."
+    },
+    {
+      "source": "nestjs-expert",
+      "target": "backend-patterns",
+      "type": "belong_to",
+      "reason": "Nest.js expertise is a framework-specific specialization that fits under general backend architecture and patterns."
+    },
+    {
+      "source": "openapi-to-typescript",
+      "target": "typescript-write",
+      "type": "compose_with",
+      "reason": "The tool generates TypeScript interfaces/type guards which are then consumed when writing TypeScript code."
+    },
+    {
+      "source": "api-design",
+      "target": "typescript-write",
+      "type": "compose_with",
+      "reason": "API design and interface/schema decisions are commonly used together with writing TypeScript code (interfaces, models, clients)."
+    },
+    {
+      "source": "backend-patterns",
+      "target": "nestjs-expert",
+      "type": "compose_with",
+      "reason": "General backend best practices are often paired with framework-specific Nest.js expertise when building server-side applications."
+    },
+    {
+      "source": "typescript-review",
+      "target": "code-review",
+      "type": "similar_to",
+      "reason": "Both provide structured reviews of TypeScript/JavaScript code; they overlap in purpose and can be used interchangeably for reviewing code."
+    },
+    {
+      "source": "nestjs-expert",
+      "target": "typescript",
+      "type": "depend_on",
+      "reason": "Nest.js is a TypeScript-first framework; effectively applying Nest.js expertise typically requires TypeScript knowledge."
+    },
+    {
+      "source": "typescript-write",
+      "target": "typescript",
+      "type": "depend_on",
+      "reason": "Writing TypeScript/JavaScript code to meet standards inherently depends on TypeScript guidelines and type-safety practices."
+    },
+    {
+      "source": "typescript-expert",
+      "target": "typescript",
+      "type": "similar_to",
+      "reason": "Both provide TypeScript guidance - typescript-expert offers 'deep knowledge of type-level programming' while typescript provides 'code style and optimization guidelines'. They overlap in purpose with different depths."
+    },
+    {
+      "source": "typescript-review",
+      "target": "typescript-write",
+      "type": "compose_with",
+      "reason": "Code review and code writing are complementary activities in the development workflow - one writes code following standards, the other reviews for compliance."
+    },
+    {
+      "source": "fp-ts-errors",
+      "target": "typescript-write",
+      "type": "compose_with",
+      "reason": "fp-ts-errors provides error handling patterns 'for cleaner, more predictable TypeScript code', which are applied when writing TypeScript code."
+    },
+    {
+      "source": "api-design",
+      "target": "backend-patterns",
+      "type": "belong_to",
+      "reason": "backend-patterns explicitly includes 'API design, database optimization, and server-side best practices'. api-design is a specific aspect within this broader backend domain."
+    },
+    {
+      "source": "typescript-expert",
+      "target": "typescript-write",
+      "type": "compose_with",
+      "reason": "typescript-expert provides 'deep knowledge of type-level programming, performance optimization' which guides the writing of TypeScript code following best practices."
+    },
+    {
+      "source": "code-review",
+      "target": "typescript-write",
+      "type": "compose_with",
+      "reason": "code-review provides 'structured code review guidelines for TypeScript projects' and typescript-write 'writes TypeScript code following standards' - they are complementary activities."
+    },
+    {
+      "source": "typescript-review",
+      "target": "typescript",
+      "type": "depend_on",
+      "reason": "Reviewing TypeScript code for 'compliance with coding standards' and 'code quality issues' requires knowledge of TypeScript guidelines and best practices."
+    }
+  ]
+}

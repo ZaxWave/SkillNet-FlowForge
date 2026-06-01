@@ -1,0 +1,547 @@
+{
+  "package_name": "code-quality-refactoring",
+  "scene_description": "Code quality and refactoring with linting, formatting, static analysis, code smell detection, design patterns, clean code principles, and technical debt management",
+  "tags": [
+    "code quality",
+    "refactoring",
+    "linting",
+    "static analysis",
+    "eslint",
+    "code-review",
+    "best practices",
+    "coding standards"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:16:47.325301",
+  "skill_count": 22,
+  "skills": [
+    {
+      "skill_name": "refactor",
+      "skill_description": "Suggest refactoring improvements for code quality",
+      "skill_url": "https://github.com/phodal/auto-dev/blob/2f922617e9cc34090e88a8640b601dddcefcc284/examples/skills/refactor",
+      "category": "Development",
+      "stars": 4340,
+      "tags": [
+        "code quality",
+        "refactoring",
+        "software development",
+        "programming",
+        "best practices"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.6793
+    },
+    {
+      "skill_name": "code-review",
+      "skill_description": "Code review assistance with linting, style checking, and best practices",
+      "skill_url": "https://github.com/agno-agi/agno/blob/23d812429eebc84f53b0a1668caba7ddd3850f4d/cookbook/03_agents/skills/sample_skills/code-review",
+      "category": "Development",
+      "stars": 37415,
+      "tags": [
+        "code review",
+        "linting",
+        "style checking",
+        "best practices",
+        "software quality"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.6458
+    },
+    {
+      "skill_name": "lint",
+      "skill_description": "Check code quality and formatting before committing changes",
+      "skill_url": "https://github.com/RediSearch/RediSearch/blob/c7cf618d29336204ba76929e417b4427390efcad/.skills/lint",
+      "category": "Development",
+      "stars": 6074,
+      "tags": [
+        "code-quality",
+        "linting",
+        "formatting",
+        "rust",
+        "pre-commit"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5947
+    },
+    {
+      "skill_name": "taste-check",
+      "skill_description": "Review code using Linus Torvalds' \"good taste\" philosophy. Eliminates defensive code, special cases, and deep nesting. Use when reviewing code quality, refactoring, or checking for code smells.",
+      "skill_url": "https://github.com/kingkongshot/prompts/blob/ea62d45e674ebd5572861071417f7eea562389b6/skills/taste-check",
+      "category": "Development",
+      "stars": 2428,
+      "tags": [
+        "code review",
+        "code quality",
+        "refactoring",
+        "software engineering",
+        "best practices"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5132
+    },
+    {
+      "skill_name": "lint-fixer",
+      "skill_description": "Use this skill to run npm run lint and fix linting issues. Triggers on fixing lint errors after code changes or validating code against project style guidelines.",
+      "skill_url": "https://github.com/yamadashy/repomix/blob/055e2feeba60b36d6a471f9194f40c5a0131f88d/.claude/skills/lint-fixer",
+      "category": "Development",
+      "stars": 21613,
+      "tags": [
+        "linting",
+        "code quality",
+        "npm",
+        "automation",
+        "JavaScript"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4848
+    },
+    {
+      "skill_name": "code-maturity-assessor",
+      "skill_description": "Systematic code maturity assessment using Trail of Bits' 9-category framework. Analyzes codebase for arithmetic safety, auditing practices, access controls, complexity, decentralization, documentation, MEV risks, low-level code, and testing. Produces professional scorecard with evidence-based ratings and actionable recommendations. (project, gitignored)",
+      "skill_url": "https://github.com/trailofbits/skills/blob/fd46c1caa71937b57f29a8060b626f4a06e5e61b/plugins/building-secure-contracts/skills/development-guidelines/code-maturity-assessor",
+      "category": "Development",
+      "stars": 2276,
+      "tags": [
+        "code quality",
+        "security audit",
+        "software assessment",
+        "best practices",
+        "static analysis"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4809
+    },
+    {
+      "skill_name": "move-code-quality",
+      "skill_description": "Analyzes Move language packages against the official Move Book Code Quality Checklist. Use this skill when reviewing Move code, checking Move 2024 Edition compliance, or analyzing Move packages for best practices. Activates automatically when working with .move files or Move.toml manifests.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/development/move-code-quality",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "Move language",
+        "code quality",
+        "static analysis",
+        "best practices",
+        "Move 2024 Edition"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4757
+    },
+    {
+      "skill_name": "semgrep",
+      "skill_description": "Semgrep is a fast static analysis tool for finding bugs and enforcing code standards. Use when scanning code for security issues or integrating into CI/CD pipelines.\n",
+      "skill_url": "https://github.com/trailofbits/skills/blob/fd46c1caa71937b57f29a8060b626f4a06e5e61b/plugins/testing-handbook-skills/skills/semgrep",
+      "category": "Security",
+      "stars": 2276,
+      "tags": [
+        "static analysis",
+        "code scanning",
+        "security",
+        "CI/CD",
+        "code quality"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4609
+    },
+    {
+      "skill_name": "security-scanning-security-sast",
+      "skill_description": "Static Application Security Testing (SAST) for code vulnerability analysis across multiple languages and frameworks",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/4c400ca1218d73b032351bc083b40743dd9ec055/skills/security-scanning-security-sast",
+      "category": "Security",
+      "stars": 5919,
+      "tags": [
+        "SAST",
+        "code security",
+        "vulnerability scanning",
+        "static analysis",
+        "multi-language"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4444
+    },
+    {
+      "skill_name": "code-formatting",
+      "skill_description": "Format code on the current branch using Biome. Use when asked to format, lint, or clean up code before committing or creating a PR.",
+      "skill_url": "https://github.com/pollinations/pollinations/blob/3d7326eca1090124b66ca22ef4f07b68245cfd83/.claude/skills/code-formatting",
+      "category": "Development",
+      "stars": 3883,
+      "tags": [
+        "code formatting",
+        "Biome",
+        "linting",
+        "pre-commit",
+        "code quality"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4443
+    },
+    {
+      "skill_name": "1k-code-quality",
+      "skill_description": "Code quality standards for OneKey. Use when fixing lint warnings, running pre-commit tasks, handling unused variables, writing comments, or ensuring code quality. All comments must be in English. Triggers on lint, linting, eslint, oxlint, tsc, type check, unused variable, comment, documentation, spellcheck, code quality, pre-commit, yarn lint.",
+      "skill_url": "https://github.com/OneKeyHQ/app-monorepo/blob/059e0a8d966ff181622bdfee1d2861bc15720aab/.claude/skills/1k-code-quality",
+      "category": "Development",
+      "stars": 2276,
+      "tags": [
+        "code quality",
+        "linting",
+        "documentation",
+        "pre-commit",
+        "TypeScript"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4442
+    },
+    {
+      "skill_name": "ast-grep-find",
+      "skill_description": "AST-based code search and refactoring via ast-grep MCP",
+      "skill_url": "https://github.com/parcadei/Continuous-Claude-v3/blob/2e13e509099a93ef168ef5f24ca6c0d0adbcc052/.claude/skills/ast-grep-find",
+      "category": "Development",
+      "stars": 3449,
+      "tags": [
+        "code search",
+        "refactoring",
+        "AST",
+        "static analysis",
+        "developer tools"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4323
+    },
+    {
+      "skill_name": "review-code",
+      "skill_description": "Multi-dimensional code review with structured reports. Analyzes correctness, readability, performance, security, testing, and architecture. Triggers on \"review code\", \"code review\", \"审查代码\", \"代码审查\".",
+      "skill_url": "https://github.com/catlog22/Claude-Code-Workflow/blob/2f1c56285ae3b1043856a371069f5010cf889525/.claude/skills/review-code",
+      "category": "Development",
+      "stars": 1227,
+      "tags": [
+        "code review",
+        "software quality",
+        "static analysis",
+        "best practices",
+        "security audit"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4221
+    },
+    {
+      "skill_name": "windsurf-linting-config",
+      "skill_description": "Configure and enforce code quality with AI-assisted linting. Activate when users mention\n\"configure linting\", \"eslint setup\", \"code quality rules\", \"linting configuration\",\nor \"code standards\". Handles linting tool configuration. Use when configuring systems or services. Trigger with phrases like \"windsurf linting config\", \"windsurf config\", \"windsurf\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/plugins/saas-packs/skill-databases/windsurf/skills/windsurf-linting-config",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "linting",
+        "code quality",
+        "configuration",
+        "eslint",
+        "AI-assisted"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4165
+    },
+    {
+      "skill_name": "dust-test",
+      "skill_description": "Step-by-step guide for writing focused, practical tests for Dust codebases following the 80/20 principle.",
+      "skill_url": "https://github.com/dust-tt/dust/blob/597f4eaa113d94dd55b3e7184e5bd84afef137fe/.claude/skills/dust-test",
+      "category": "Testing",
+      "stars": 1275,
+      "tags": [
+        "testing",
+        "software development",
+        "code quality",
+        "best practices",
+        "Dust platform"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4088
+    },
+    {
+      "skill_name": "find-bugs",
+      "skill_description": "Find bugs, security vulnerabilities, and code quality issues in local branch changes. Use when asked to review changes, find bugs, security review, or audit code on the current branch.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/456e5a920daa47a69faf7b18797660e4053e4d26/cli-tool/components/skills/sentry/find-bugs",
+      "category": "Testing",
+      "stars": 19064,
+      "tags": [
+        "code review",
+        "bug detection",
+        "security audit",
+        "code quality",
+        "static analysis"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.407
+    },
+    {
+      "skill_name": "binary-analysis-patterns",
+      "skill_description": "Master binary analysis patterns including disassembly, decompilation, control flow analysis, and code pattern recognition. Use when analyzing executables, understanding compiled code, or performing static analysis on binaries.",
+      "skill_url": "https://github.com/wshobson/agents/blob/2d769d4f8466c823dadd7105d6537efdc4dfc804/plugins/reverse-engineering/skills/binary-analysis-patterns",
+      "category": "Security",
+      "stars": 27432,
+      "tags": [
+        "binary analysis",
+        "reverse engineering",
+        "static analysis",
+        "disassembly",
+        "decompilation"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4069
+    },
+    {
+      "skill_name": "code-review-ai-ai-review",
+      "skill_description": "You are an expert AI-powered code review specialist combining automated static analysis, intelligent pattern recognition, and modern DevOps practices. Leverage AI tools (GitHub Copilot, Qodo, GPT-5, C",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/4c400ca1218d73b032351bc083b40743dd9ec055/skills/code-review-ai-ai-review",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "code-review",
+        "static-analysis",
+        "ai-assisted",
+        "devops",
+        "security"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4068
+    },
+    {
+      "skill_name": "deslop",
+      "skill_description": "Remove AI-generated code slop from a branch. Use when cleaning up AI-generated code, removing unnecessary comments, defensive checks, or type casts. Checks diff against main and fixes style inconsistencies.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/77d0f72f88462b6f5d3a0159b0808d2685a6c83f/cli-tool/components/skills/sentry/deslop",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "code cleanup",
+        "AI-generated code",
+        "branch management",
+        "code review",
+        "refactoring"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4065
+    },
+    {
+      "skill_name": "fix-lint",
+      "skill_description": "Helps fix ESLint errors and warnings in the OneKey codebase. Use when running yarn lint and encountering warnings, cleaning up code before committing, or fixing spellcheck, unused variable, or other ESLint warnings.",
+      "skill_url": "https://github.com/OneKeyHQ/app-monorepo/blob/ccdb90dd7ba8c7d157b460e194bab273a62c2f84/.claude/skills/fix-lint",
+      "category": "Development",
+      "stars": 2276,
+      "tags": [
+        "ESLint",
+        "code quality",
+        "linting",
+        "JavaScript",
+        "automated fixes"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4055
+    },
+    {
+      "skill_name": "multi-pr-review",
+      "skill_description": "Multi-agent code review system that spawns three independent Claude sub-agents to review PR diffs. Each agent receives files in different randomized order to reduce ordering bias. One agent focuses specifically on code health and maintainability. Issues are classified as high/medium/low severity (sloppy code that hurts maintainability is MEDIUM). Results are aggregated using consensus voting - only issues identified by 2+ agents where at least one rated it medium or higher severity are reported. Automatically deduplicates against existing PR comments. Always posts a summary (even if no new issues), with low priority issues mentioned in a collapsible section.",
+      "skill_url": "https://github.com/dyad-sh/dyad/blob/eb909bb051c9a3a87d1984504d6d2e24697715b9/.claude/skills/multi-pr-review",
+      "category": "Development",
+      "stars": 19480,
+      "tags": [
+        "code-review",
+        "multi-agent",
+        "pull-request",
+        "software-quality",
+        "automation"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4011
+    },
+    {
+      "skill_name": "claude-code-guide",
+      "skill_description": "Master guide for using Claude Code effectively. Includes configuration templates, prompting strategies \"Thinking\" keywords, debugging techniques, and best practices for interacting with the agent.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/46d575b8d089b44a5ba9091f9d6369f9f1ed6c29/skills/claude-code-guide",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "Claude Code",
+        "AI interaction",
+        "prompt engineering",
+        "debugging techniques",
+        "best practices"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4006
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ast-grep-find",
+      "target": "refactor",
+      "type": "belong_to",
+      "reason": "AST-based search and refactoring is a specific tool/step used when performing refactoring suggestions."
+    },
+    {
+      "source": "deslop",
+      "target": "refactor",
+      "type": "belong_to",
+      "reason": "Removing AI-generated 'slop' is a specific cleanup step within a broader refactoring/code-cleanup workflow."
+    },
+    {
+      "source": "lint-fixer",
+      "target": "fix-lint",
+      "type": "similar_to",
+      "reason": "Both skills are focused on running lint fixes and resolving ESLint/npm linting issues."
+    },
+    {
+      "source": "lint",
+      "target": "code-formatting",
+      "type": "compose_with",
+      "reason": "Linting detects style/format issues while code formatting (Biome) produces formatted code that addresses many lint findings; they are commonly used together."
+    },
+    {
+      "source": "fix-lint",
+      "target": "code-formatting",
+      "type": "compose_with",
+      "reason": "Fixing ESLint warnings is often paired with automatic code formatting to resolve style-related problems."
+    },
+    {
+      "source": "semgrep",
+      "target": "security-scanning-security-sast",
+      "type": "similar_to",
+      "reason": "Semgrep is a static analysis tool and both entries provide static application security testing / SAST capabilities."
+    },
+    {
+      "source": "find-bugs",
+      "target": "semgrep",
+      "type": "compose_with",
+      "reason": "Finding bugs and vulnerabilities in branch changes is commonly done together with static analysis tools like Semgrep."
+    },
+    {
+      "source": "find-bugs",
+      "target": "security-scanning-security-sast",
+      "type": "compose_with",
+      "reason": "A local 'find bugs' workflow is typically paired with SAST/security scanning to detect vulnerabilities and quality issues."
+    },
+    {
+      "source": "code-review",
+      "target": "review-code",
+      "type": "similar_to",
+      "reason": "Both provide general code review assistance covering linting, style, correctness, and best practices."
+    },
+    {
+      "source": "code-review-ai-ai-review",
+      "target": "multi-pr-review",
+      "type": "similar_to",
+      "reason": "Both are AI-powered/agent-based code review systems that automate static analysis and produce review findings."
+    },
+    {
+      "source": "review-code",
+      "target": "code-review-ai-ai-review",
+      "type": "similar_to",
+      "reason": "Review-code and the AI review specialist both perform multi-dimensional code reviews and can be used interchangeably for review tasks."
+    },
+    {
+      "source": "taste-check",
+      "target": "review-code",
+      "type": "belong_to",
+      "reason": "Taste-check is a specific review philosophy/check used as a sub-step when performing detailed code reviews."
+    },
+    {
+      "source": "claude-code-guide",
+      "target": "code-review-ai-ai-review",
+      "type": "compose_with",
+      "reason": "The Claude Code guide contains prompting/configuration best practices that are used alongside Claude-based AI code review agents."
+    },
+    {
+      "source": "windsurf-linting-config",
+      "target": "lint",
+      "type": "compose_with",
+      "reason": "Windsurf config is used to configure and enforce linting tools and rules which are consumed by linting workflows."
+    },
+    {
+      "source": "windsurf-linting-config",
+      "target": "1k-code-quality",
+      "type": "compose_with",
+      "reason": "Windsurf's lint configuration is commonly paired with project-specific code quality standards like the OneKey (1k) ruleset when configuring linting."
+    },
+    {
+      "source": "1k-code-quality",
+      "target": "lint",
+      "type": "compose_with",
+      "reason": "The OneKey code quality standards are applied during linting runs and guide fixes for lint warnings and pre-commit checks."
+    },
+    {
+      "source": "1k-code-quality",
+      "target": "fix-lint",
+      "type": "compose_with",
+      "reason": "OneKey standards are referenced when fixing ESLint issues and implementing the fixes that fix-lint addresses."
+    },
+    {
+      "source": "move-code-quality",
+      "target": "lint",
+      "type": "similar_to",
+      "reason": "Move-specific code quality analysis serves a similar role to general linting—checking language-specific style and quality rules for Move packages."
+    },
+    {
+      "source": "code-maturity-assessor",
+      "target": "security-scanning-security-sast",
+      "type": "compose_with",
+      "reason": "A code maturity assessment leverages security scanning/SAST results as part of its evidence-based ratings and recommendations."
+    },
+    {
+      "source": "code-maturity-assessor",
+      "target": "semgrep",
+      "type": "compose_with",
+      "reason": "Semgrep static analysis is commonly used as input evidence when producing a systematic code maturity/security assessment."
+    },
+    {
+      "source": "code-maturity-assessor",
+      "target": "find-bugs",
+      "type": "compose_with",
+      "reason": "Automated bug-finding and local change audits feed into maturity assessments to evaluate testing, complexity, and security posture."
+    },
+    {
+      "source": "binary-analysis-patterns",
+      "target": "security-scanning-security-sast",
+      "type": "compose_with",
+      "reason": "Binary analysis techniques complement source-level SAST for security investigations and vulnerability analysis of compiled artifacts."
+    },
+    {
+      "source": "ast-grep-find",
+      "target": "deslop",
+      "type": "compose_with",
+      "reason": "AST-based search and transformation tools are often used together with AI-slop cleanup workflows to locate and remove patterns of undesirable code."
+    },
+    {
+      "source": "lint-fixer",
+      "target": "lint",
+      "type": "compose_with",
+      "reason": "Lint-fixer runs the lint tool to detect issues, then automatically applies fixes to resolve linting errors and warnings."
+    },
+    {
+      "source": "fix-lint",
+      "target": "lint",
+      "type": "compose_with",
+      "reason": "Fix-lint executes linting tools to identify ESLint warnings and errors, then implements fixes based on those findings."
+    },
+    {
+      "source": "code-review",
+      "target": "refactor",
+      "type": "compose_with",
+      "reason": "Code review identifies quality issues, best practice violations, and improvement opportunities that drive refactoring decisions."
+    },
+    {
+      "source": "review-code",
+      "target": "refactor",
+      "type": "compose_with",
+      "reason": "Multi-dimensional code review findings on correctness, readability, performance, and architecture directly inform refactoring tasks."
+    },
+    {
+      "source": "taste-check",
+      "target": "refactor",
+      "type": "compose_with",
+      "reason": "Taste-check identifies code smells, defensive code, and special cases that require refactoring to achieve 'good taste' principles."
+    },
+    {
+      "source": "semgrep",
+      "target": "refactor",
+      "type": "compose_with",
+      "reason": "Semgrep static analysis discovers bugs, security issues, and code quality problems that typically require refactoring to resolve."
+    }
+  ]
+}

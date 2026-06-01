@@ -1,0 +1,663 @@
+{
+  "package_name": "git-workflow-collaboration",
+  "scene_description": "Git workflow and team collaboration including branching strategies, code review, PR automation, merge conflict resolution, monorepo management, and GitHub/GitLab integrations",
+  "tags": [
+    "git",
+    "code-review",
+    "github",
+    "pull-request",
+    "monorepo",
+    "branch management",
+    "commit",
+    "collaboration"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:16:08.640536",
+  "skill_count": 24,
+  "skills": [
+    {
+      "skill_name": "git-workflow",
+      "skill_description": "Git workflow guidance for commits, branches, and pull requests",
+      "skill_url": "https://github.com/agno-agi/agno/blob/b50239acb79a11d6b3dd359b5b0dc75600fc303e/cookbook/03_agents/skills/sample_skills/git-workflow",
+      "category": "Development",
+      "stars": 37415,
+      "tags": [
+        "git",
+        "version control",
+        "workflow",
+        "collaboration",
+        "software development"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.6896
+    },
+    {
+      "skill_name": "add-review-comment",
+      "skill_description": "Add a review comment to a GitHub pull request.",
+      "skill_url": "https://github.com/mlflow/mlflow/blob/bb62d66070b9c369e261b72024e565ca8746a4a8/.claude/skills/add-review-comment",
+      "category": "Development",
+      "stars": 23922,
+      "tags": [
+        "GitHub",
+        "pull request",
+        "code review",
+        "collaboration",
+        "version control"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.6884
+    },
+    {
+      "skill_name": "pr-code-review",
+      "skill_description": "Comprehensive code review for GitHub pull requests using parallel agents. Checks bugs, CLAUDE.md compliance, git history, previous PR patterns, and code comments. Use when reviewing PRs, doing code review, or when user mentions \"review PR\", \"check PR\", or provides a PR number.",
+      "skill_url": "https://github.com/EvolvingLMMs-Lab/lmms-eval/blob/4814efac2eaf68f9f2e02181d6f7530f95713ef5/.claude/skills/pr-code-review",
+      "category": "Development",
+      "stars": 3606,
+      "tags": [
+        "code-review",
+        "github",
+        "pull-requests",
+        "software-quality",
+        "automated-review"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.6817
+    },
+    {
+      "skill_name": "github-workflow-automation",
+      "skill_description": "Automate GitHub workflows with AI assistance. Includes PR reviews, issue triage, CI/CD integration, and Git operations. Use when automating GitHub workflows, setting up PR review automation, creating GitHub Actions, or triaging issues.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/62b5d8de603adc03741b4aa526876f97f4e3cd56/cli-tool/components/skills/workflow-automation/github-workflow-automation",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "GitHub",
+        "Automation",
+        "CI/CD",
+        "DevOps",
+        "Code Review"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.6681
+    },
+    {
+      "skill_name": "create-pull-request",
+      "skill_description": "Create a GitHub pull request following project conventions. Use when the user asks to create a PR, submit changes for review, or open a pull request. Handles commit analysis, branch management, and PR creation using the gh CLI tool.",
+      "skill_url": "https://github.com/cline/cline/blob/13cf28d8f4be1bd3318450975f45e2843d288e9d/.cline/skills/create-pull-request",
+      "category": "Development",
+      "stars": 57413,
+      "tags": [
+        "GitHub",
+        "pull-request",
+        "version-control",
+        "gh-cli",
+        "code-review"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.6282
+    },
+    {
+      "skill_name": "github-code-review",
+      "skill_description": "Comprehensive GitHub code review with AI-powered swarm coordination",
+      "skill_url": "https://github.com/ruvnet/claude-flow/blob/87cc5634085b4696daba0bd2e63c09745aa0b90b/.claude/skills/github-code-review",
+      "category": "Development",
+      "stars": 13431,
+      "tags": [
+        "code review",
+        "GitHub",
+        "AI coordination",
+        "software development",
+        "collaboration"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.6002
+    },
+    {
+      "skill_name": "github-pr-triage",
+      "skill_description": "Triage GitHub Pull Requests with parallel analysis. 1 PR = 1 background agent. Exhaustive pagination. Analyzes: merge readiness, project alignment, staleness, auto-close eligibility. Conservative auto-close with friendly messages. Triggers: 'triage PRs', 'analyze PRs', 'PR cleanup'.",
+      "skill_url": "https://github.com/code-yeongyu/oh-my-opencode/blob/d165a6821da0977237d2e5985400fe22bb77dc9a/.opencode/skills/github-pr-triage",
+      "category": "Development",
+      "stars": 27138,
+      "tags": [
+        "github",
+        "pull-request",
+        "automation",
+        "triage",
+        "repository-management"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5887
+    },
+    {
+      "skill_name": "code-reviewer",
+      "skill_description": "Use this skill to review code. It supports both local changes (staged or working tree) and remote Pull Requests (by ID or URL). It focuses on correctness, maintainability, and adherence to project standards.",
+      "skill_url": "https://github.com/google-gemini/gemini-cli/blob/b611f9a519b1c9bc452629a6c361fcfb6a5127a8/.gemini/skills/code-reviewer",
+      "category": "Development",
+      "stars": 93186,
+      "tags": [
+        "code-review",
+        "software-engineering",
+        "quality-assurance",
+        "git",
+        "pull-request"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5845
+    },
+    {
+      "skill_name": "github-pull-request-description",
+      "skill_description": "Write a description to description GitHub Pull Request.",
+      "skill_url": "https://github.com/longbridge/gpui-component/blob/2a3c297d7635146958ff147054016e08f16ec9b4/.claude/skills/github-pull-request-description",
+      "category": "Development",
+      "stars": 9956,
+      "tags": [
+        "github",
+        "pull-request",
+        "documentation",
+        "code-review",
+        "versioning"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5394
+    },
+    {
+      "skill_name": "github",
+      "skill_description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+      "skill_url": "https://github.com/clawdbot/clawdbot/blob/62bf779c14eab24f9e0d337ba60290c268126659/skills/github",
+      "category": "Development",
+      "stars": 134924,
+      "tags": [
+        "GitHub",
+        "CLI",
+        "Version Control",
+        "Automation",
+        "DevOps"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5249
+    },
+    {
+      "skill_name": "worktree-manager",
+      "skill_description": "Create and manage Git worktrees for parallel development workflows. Use when multiple self-contained issues should NOT be fixed in a single branch, when human-Copilot iteration requires isolated environments with separate chat history and commits, or when parallel work items need independent build/test results. Triggers on requests involving branch isolation, work item separation, parallel development, or avoiding messy branch switching.",
+      "skill_url": "https://github.com/microsoft/WindowsAppSDK/blob/150de9a823165d92239a87b9b88e69eb1fa5caae/.github/skills/worktree-manager",
+      "category": "Development",
+      "stars": 4422,
+      "tags": [
+        "git",
+        "worktree",
+        "parallel development",
+        "version control",
+        "branch management"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5191
+    },
+    {
+      "skill_name": "gh-issue-fix-flow",
+      "skill_description": "End-to-end GitHub issue fix workflow using gh, local code changes, builds/tests, and git push. Use when asked to take an issue number, inspect the issue via gh, implement a fix, run XcodeBuildMCP builds/tests, commit with a closing message, and push.",
+      "skill_url": "https://github.com/Dimillian/Skills/blob/9826f404c3abc2066168776c1f650f13065e6c51/gh-issue-fix-flow",
+      "category": "Development",
+      "stars": 1615,
+      "tags": [
+        "GitHub",
+        "git",
+        "workflow",
+        "automation",
+        "issue-fixing"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5062
+    },
+    {
+      "skill_name": "github-release-management",
+      "skill_description": "Comprehensive GitHub release orchestration with AI swarm coordination for automated versioning, testing, deployment, and rollback management",
+      "skill_url": "https://github.com/ruvnet/claude-flow/blob/87cc5634085b4696daba0bd2e63c09745aa0b90b/.claude/skills/github-release-management",
+      "category": "Development",
+      "stars": 13431,
+      "tags": [
+        "GitHub",
+        "release management",
+        "automation",
+        "version control",
+        "deployment"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5061
+    },
+    {
+      "skill_name": "ai-summary-comment",
+      "skill_description": "Posts or updates automated progress comments on GitHub PRs. Use after completing any PR agent phase (pre-flight, tests, gate, fix, report). Triggers on 'post comment to PR', 'update PR progress', 'comment on PR with results', 'post pre-flight comment'. Creates single aggregated review comment with collapsible sections per commit.",
+      "skill_url": "https://github.com/dotnet/maui/blob/add9f44686ca261238ae5472ff35501da6e08df4/.github/skills/ai-summary-comment",
+      "category": "Development",
+      "stars": 23156,
+      "tags": [
+        "GitHub",
+        "Pull Request",
+        "Automation",
+        "Code Review",
+        "DevOps"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4788
+    },
+    {
+      "skill_name": "gitlab-address-comments",
+      "skill_description": "Help address review/issue comments on the open GitLab MR for the current branch using glab CLI. Use when the user wants help addressing review/issue comments on an open GitLab MR",
+      "skill_url": "https://github.com/openai/skills/blob/3eb3f6c8cc3961f2639a6cd65f05208d5bd412fd/skills/.experimental/gitlab-address-comments",
+      "category": "Development",
+      "stars": 2262,
+      "tags": [
+        "gitlab",
+        "code-review",
+        "pull-requests",
+        "cli-tool",
+        "collaboration"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4745
+    },
+    {
+      "skill_name": "multi-pr-review",
+      "skill_description": "Multi-agent code review system that spawns three independent Claude sub-agents to review PR diffs. Each agent receives files in different randomized order to reduce ordering bias. One agent focuses specifically on code health and maintainability. Issues are classified as high/medium/low severity (sloppy code that hurts maintainability is MEDIUM). Results are aggregated using consensus voting - only issues identified by 2+ agents where at least one rated it medium or higher severity are reported. Automatically deduplicates against existing PR comments. Always posts a summary (even if no new issues), with low priority issues mentioned in a collapsible section.",
+      "skill_url": "https://github.com/dyad-sh/dyad/blob/eb909bb051c9a3a87d1984504d6d2e24697715b9/.claude/skills/multi-pr-review",
+      "category": "Development",
+      "stars": 19480,
+      "tags": [
+        "code-review",
+        "multi-agent",
+        "pull-request",
+        "software-quality",
+        "automation"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4702
+    },
+    {
+      "skill_name": "pr-workflow",
+      "skill_description": "General guidelines for Commits, formatting, CI, dependencies, security",
+      "skill_url": "https://github.com/tursodatabase/turso/blob/46ed73530e44b7a8e3fa45e522263c473963d869/.claude/skills/pr-workflow",
+      "category": "Development",
+      "stars": 17095,
+      "tags": [
+        "git",
+        "code-review",
+        "ci-cd",
+        "software-development",
+        "best-practices"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.463
+    },
+    {
+      "skill_name": "gh-cli",
+      "skill_description": "GitHub CLI (gh) comprehensive reference for repositories, issues, pull requests, Actions, projects, releases, gists, codespaces, organizations, extensions, and all GitHub operations from the command line.",
+      "skill_url": "https://github.com/github/awesome-copilot/blob/ccdfd66cc2311cac15b9e22073a9314a1c0d0fce/skills/gh-cli",
+      "category": "Development",
+      "stars": 19732,
+      "tags": [
+        "GitHub",
+        "CLI",
+        "Version Control",
+        "DevOps",
+        "Automation"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4619
+    },
+    {
+      "skill_name": "pr-build-status",
+      "skill_description": "Retrieve Azure DevOps build information for GitHub Pull Requests, including build IDs, stage status, and failed jobs.",
+      "skill_url": "https://github.com/dotnet/maui/blob/fd9f93bdbed5dae791dd04b81f08be67f617a4d9/.github/skills/pr-build-status",
+      "category": "Development",
+      "stars": 23156,
+      "tags": [
+        "Azure DevOps",
+        "GitHub",
+        "CI/CD",
+        "Build Monitoring",
+        "Pull Requests"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.441
+    },
+    {
+      "skill_name": "pr-description",
+      "skill_description": "Update a GitHub PR description with a summary of changes",
+      "skill_url": "https://github.com/pipecat-ai/pipecat/blob/342ae7af41ff2e7316ef3d2fbb80fa4c3011ff3a/.claude/skills/pr-description",
+      "category": "Development",
+      "stars": 10121,
+      "tags": [
+        "GitHub",
+        "pull-request",
+        "documentation",
+        "automation",
+        "version-control"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4372
+    },
+    {
+      "skill_name": "changelog-generator",
+      "skill_description": "Automatically creates user-facing changelogs from git commits by analyzing commit history, categorizing changes, and transforming technical commits into clear, customer-friendly release notes. Turns hours of manual changelog writing into minutes of automated generation.",
+      "skill_url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/6ecabbb9145cdc3a7582b3bc8b457ba40834c676/changelog-generator",
+      "category": "Development",
+      "stars": 28705,
+      "tags": [
+        "automation",
+        "git",
+        "changelog",
+        "release-notes",
+        "version-control"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4257
+    },
+    {
+      "skill_name": "prp-core-runner",
+      "skill_description": "Orchestrate complete PRP workflow from feature request to pull request. Run create branch, create PRP, execute implementation, commit changes, and create PR in sequence. Use when implementing features using PRP methodology or when user requests full PRP workflow.",
+      "skill_url": "https://github.com/Wirasm/PRPs-agentic-eng/blob/ac89690b7560e9e62fa186dc34c5bac7b1f95eb5/.claude/skills/prp-core-runner",
+      "category": "Development",
+      "stars": 1980,
+      "tags": [
+        "workflow-automation",
+        "git",
+        "pull-request",
+        "development-methodology",
+        "continuous-integration"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4209
+    },
+    {
+      "skill_name": "prowler-commit",
+      "skill_description": "Creates professional git commits following conventional-commits format. Trigger: When creating commits, after completing code changes, when user asks to commit.\n",
+      "skill_url": "https://github.com/prowler-cloud/prowler/blob/0f55d6e21dccc21e499800f7e9091636eb02eae1/skills/prowler-commit",
+      "category": "Development",
+      "stars": 12861,
+      "tags": [
+        "git",
+        "commit",
+        "conventional-commits",
+        "version-control",
+        "workflow"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4171
+    },
+    {
+      "skill_name": "commit-helper",
+      "skill_description": "Help create git commits and PRs with properly formatted messages and release notes following CockroachDB conventions. Use when committing changes or creating pull requests.",
+      "skill_url": "https://github.com/cockroachdb/cockroach/blob/94a1e22436ad935d8c7f9524cb8fc0fd7b24faaa/.claude/skills/commit-helper",
+      "category": "Development",
+      "stars": 31805,
+      "tags": [
+        "git",
+        "version control",
+        "commit messages",
+        "pull requests",
+        "development workflow"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4051
+    }
+  ],
+  "relationships": [
+    {
+      "source": "pr-code-review",
+      "target": "github-code-review",
+      "type": "similar_to",
+      "reason": "Both are comprehensive GitHub PR code review skills using AI/swarm coordination and are functionally interchangeable for reviewing PRs."
+    },
+    {
+      "source": "pr-code-review",
+      "target": "multi-pr-review",
+      "type": "similar_to",
+      "reason": "Both perform parallel/multi-agent code reviews on PR diffs with aggregation/consensus; they serve the same high-level purpose."
+    },
+    {
+      "source": "code-reviewer",
+      "target": "pr-code-review",
+      "type": "similar_to",
+      "reason": "Both review code and PRs focusing on correctness and maintainability; code-reviewer is a general review skill overlapping pr-code-review's functionality."
+    },
+    {
+      "source": "add-review-comment",
+      "target": "pr-code-review",
+      "type": "compose_with",
+      "reason": "After running a PR code review the system typically posts review comments; add-review-comment is used to publish those comments to the PR."
+    },
+    {
+      "source": "add-review-comment",
+      "target": "multi-pr-review",
+      "type": "compose_with",
+      "reason": "Multi-agent review results are usually surfaced by posting comments to the PR, which add-review-comment performs."
+    },
+    {
+      "source": "add-review-comment",
+      "target": "code-reviewer",
+      "type": "compose_with",
+      "reason": "A code review often culminates in adding review comments to a PR; add-review-comment is the action that posts those comments."
+    },
+    {
+      "source": "ai-summary-comment",
+      "target": "add-review-comment",
+      "type": "depend_on",
+      "reason": "ai-summary-comment posts or updates aggregated progress comments on PRs and thus requires the ability to add comments (add-review-comment) to function."
+    },
+    {
+      "source": "create-pull-request",
+      "target": "github",
+      "type": "depend_on",
+      "reason": "create-pull-request explicitly uses the gh CLI to create PRs, so it requires the GitHub/gh CLI interaction capability provided by the github skill."
+    },
+    {
+      "source": "create-pull-request",
+      "target": "prowler-commit",
+      "type": "compose_with",
+      "reason": "Creating a PR commonly follows making commits; prowler-commit creates conventional commits that are often composed with PR creation."
+    },
+    {
+      "source": "create-pull-request",
+      "target": "commit-helper",
+      "type": "compose_with",
+      "reason": "commit-helper helps format commits and release notes which are often produced before opening a PR with create-pull-request."
+    },
+    {
+      "source": "create-pull-request",
+      "target": "worktree-manager",
+      "type": "compose_with",
+      "reason": "When working in isolated worktrees for parallel development, worktree-manager is commonly used alongside create-pull-request to manage branches and create PRs."
+    },
+    {
+      "source": "github",
+      "target": "gh-cli",
+      "type": "similar_to",
+      "reason": "Both relate to interacting with GitHub via the gh CLI; github is an interaction skill and gh-cli is the comprehensive gh reference—functionally overlapping."
+    },
+    {
+      "source": "prp-core-runner",
+      "target": "create-pull-request",
+      "type": "depend_on",
+      "reason": "prp-core-runner orchestrates a full PRP workflow that ends with creating a PR, so it relies on create-pull-request to perform that step."
+    },
+    {
+      "source": "prp-core-runner",
+      "target": "prowler-commit",
+      "type": "depend_on",
+      "reason": "prp-core-runner runs implementation and commits as part of the workflow; it depends on a commit-producing skill like prowler-commit."
+    },
+    {
+      "source": "prp-core-runner",
+      "target": "github",
+      "type": "depend_on",
+      "reason": "The PRP workflow includes creating branches and PRs via the gh CLI, so prp-core-runner requires GitHub/gh interaction capability."
+    },
+    {
+      "source": "prowler-commit",
+      "target": "pr-workflow",
+      "type": "belong_to",
+      "reason": "Creating properly formatted commits is a specific step within broader PR/workflow guidelines captured by pr-workflow."
+    },
+    {
+      "source": "commit-helper",
+      "target": "pr-workflow",
+      "type": "belong_to",
+      "reason": "commit-helper assists with commit messages and release notes, which are subcomponents of an overall PR/workflow."
+    },
+    {
+      "source": "pr-code-review",
+      "target": "pr-workflow",
+      "type": "belong_to",
+      "reason": "Code review of PRs is a specific part of the overall PR workflow guidance represented by pr-workflow."
+    },
+    {
+      "source": "create-pull-request",
+      "target": "pr-workflow",
+      "type": "belong_to",
+      "reason": "Opening a pull request is a distinct step inside the larger PR/workflow process."
+    },
+    {
+      "source": "pr-build-status",
+      "target": "pr-workflow",
+      "type": "belong_to",
+      "reason": "Checking build and CI status for PRs is a specific operation commonly included in PR workflow guidelines."
+    },
+    {
+      "source": "changelog-generator",
+      "target": "github-release-management",
+      "type": "belong_to",
+      "reason": "Generating user-facing changelogs is a sub-component of release orchestration and therefore belongs to release management."
+    },
+    {
+      "source": "worktree-manager",
+      "target": "prp-core-runner",
+      "type": "compose_with",
+      "reason": "prp-core-runner may be used in parallel development scenarios where worktree-manager provides isolated worktrees; they are often paired."
+    },
+    {
+      "source": "gh-issue-fix-flow",
+      "target": "github",
+      "type": "depend_on",
+      "reason": "The issue-fix flow inspects issues via gh and performs GH operations, so it requires the github/gh CLI interaction capability."
+    },
+    {
+      "source": "gh-issue-fix-flow",
+      "target": "prowler-commit",
+      "type": "compose_with",
+      "reason": "An end-to-end issue fix includes creating commits with appropriate messages; prowler-commit is commonly used alongside the fix flow."
+    },
+    {
+      "source": "gh-issue-fix-flow",
+      "target": "create-pull-request",
+      "type": "compose_with",
+      "reason": "After implementing and committing a fix for an issue, the workflow typically opens a PR, so gh-issue-fix-flow is composed with create-pull-request."
+    },
+    {
+      "source": "github-pr-triage",
+      "target": "github",
+      "type": "depend_on",
+      "reason": "Triage of GitHub PRs requires interacting with the repository via the gh CLI/API, so github interaction is a prerequisite."
+    },
+    {
+      "source": "github-pr-triage",
+      "target": "pr-build-status",
+      "type": "compose_with",
+      "reason": "Triage workflows often evaluate build/CI status for PRs; pr-build-status provides that build information for triage."
+    },
+    {
+      "source": "pr-build-status",
+      "target": "pr-code-review",
+      "type": "compose_with",
+      "reason": "Code review processes commonly consult CI/build results; pr-build-status supplies build details that pr-code-review can consume."
+    },
+    {
+      "source": "github-workflow-automation",
+      "target": "github",
+      "type": "depend_on",
+      "reason": "Automation of GitHub workflows requires GitHub/gh CLI access to perform PR reviews, issues triage, and CI/CD operations."
+    },
+    {
+      "source": "github-workflow-automation",
+      "target": "pr-code-review",
+      "type": "compose_with",
+      "reason": "Workflow automation that includes PR review will typically integrate with a PR code review skill like pr-code-review."
+    },
+    {
+      "source": "github-workflow-automation",
+      "target": "github-pr-triage",
+      "type": "compose_with",
+      "reason": "Automating repository workflows commonly pairs automation with triage routines to manage PR backlog and health."
+    },
+    {
+      "source": "github-release-management",
+      "target": "github",
+      "type": "depend_on",
+      "reason": "Release orchestration acts on GitHub repos (versioning, releases) and therefore needs GitHub/gh interaction capability."
+    },
+    {
+      "source": "add-review-comment",
+      "target": "github",
+      "type": "depend_on",
+      "reason": "Adding a review comment to a GitHub PR requires API/gh access provided by the github skill."
+    },
+    {
+      "source": "github-pull-request-description",
+      "target": "pr-description",
+      "type": "similar_to",
+      "reason": "Both skills write or update a GitHub PR description / summary of changes and are functionally equivalent."
+    },
+    {
+      "source": "github-pull-request-description",
+      "target": "github",
+      "type": "depend_on",
+      "reason": "Updating a GitHub PR description requires interacting with the repo via the gh CLI/API provided by github."
+    },
+    {
+      "source": "pr-description",
+      "target": "github",
+      "type": "depend_on",
+      "reason": "Updating PR descriptions involves GitHub API/gh operations, so pr-description depends on the github interaction capability."
+    },
+    {
+      "source": "gitlab-address-comments",
+      "target": "add-review-comment",
+      "type": "similar_to",
+      "reason": "Both help address review comments on merge requests/PRs, but for different platforms (GitLab vs GitHub); functionally analogous."
+    },
+    {
+      "source": "multi-pr-review",
+      "target": "ai-summary-comment",
+      "type": "compose_with",
+      "reason": "Multi-agent review produces aggregated findings that are commonly reported back to the PR via an automated summary comment."
+    },
+    {
+      "source": "code-reviewer",
+      "target": "add-review-comment",
+      "type": "compose_with",
+      "reason": "A code-reviewer skill will typically produce findings that need to be posted as review comments using add-review-comment."
+    },
+    {
+      "source": "commit-helper",
+      "target": "prowler-commit",
+      "type": "similar_to",
+      "reason": "Both create well-formed commits and messages; commit-helper focuses on CockroachDB conventions while prowler-commit focuses on conventional-commit format, but they overlap in purpose."
+    },
+    {
+      "source": "ai-summary-comment",
+      "target": "pr-code-review",
+      "type": "compose_with",
+      "reason": "After PR review phases, ai-summary-comment is used to post aggregated progress/results summaries alongside the code review outputs."
+    },
+    {
+      "source": "ai-summary-comment",
+      "target": "multi-pr-review",
+      "type": "compose_with",
+      "reason": "Multi-agent review workflows commonly post a single aggregated summary comment, which ai-summary-comment produces."
+    },
+    {
+      "source": "pr-workflow",
+      "target": "git-workflow",
+      "type": "belong_to",
+      "reason": "PR workflow provides specific guidelines for commits, formatting, CI, and dependencies within pull requests, which are concrete implementations of the broader git workflow guidance for commits, branches, and PRs."
+    }
+  ]
+}

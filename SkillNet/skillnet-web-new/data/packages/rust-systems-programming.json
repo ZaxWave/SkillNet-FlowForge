@@ -1,0 +1,389 @@
+{
+  "package_name": "rust-systems-programming",
+  "scene_description": "Rust systems programming for high-performance applications, including memory safety, concurrency, async runtime, CLI tools, WebAssembly compilation, and FFI integration",
+  "tags": [
+    "rust",
+    "concurrency",
+    "performance",
+    "cli",
+    "error handling",
+    "performance optimization",
+    "compiler",
+    "cargo"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:17:47.388925",
+  "skill_count": 17,
+  "skills": [
+    {
+      "skill_name": "write-rust-tests",
+      "skill_description": "Write Rust tests to verify correctness of Rust code.",
+      "skill_url": "https://github.com/RediSearch/RediSearch/blob/b2cbaa19dd18f204c4ad2db9bf73786b127c1092/.skills/write-rust-tests",
+      "category": "Development",
+      "stars": 6074,
+      "tags": [
+        "rust",
+        "testing",
+        "code-verification",
+        "unit-tests",
+        "software-engineering"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.6183
+    },
+    {
+      "skill_name": "handling-rust-errors",
+      "skill_description": "HASH error handling patterns using error-stack crate. Use when working with Result types, Report types, defining custom errors, propagating errors with change_context, adding context with attach, implementing Error trait, or documenting error conditions in Rust code.",
+      "skill_url": "https://github.com/hashintel/hash/blob/b8e1a877e459744a21df8c17344d072245d64ea6/.claude/skills/handling-rust-errors",
+      "category": "Development",
+      "stars": 1404,
+      "tags": [
+        "Rust",
+        "Error Handling",
+        "Programming",
+        "Software Development",
+        "Error-stack"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5687
+    },
+    {
+      "skill_name": "rust-pro",
+      "skill_description": "Master Rust 1.75+ with modern async patterns, advanced type system features, and production-ready systems programming. Expert in the latest Rust ecosystem including Tokio, axum, and cutting-edge crates. Use PROACTIVELY for Rust development, performance optimization, or systems programming.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/4c400ca1218d73b032351bc083b40743dd9ec055/skills/rust-pro",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "Rust",
+        "Systems Programming",
+        "Async Programming",
+        "Performance Optimization",
+        "Web Development"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5578
+    },
+    {
+      "skill_name": "run-rust-tests",
+      "skill_description": "Run Rust tests after making changes to verify correctness",
+      "skill_url": "https://github.com/RediSearch/RediSearch/blob/1d1172eb5ae12270682e9d7de420612c75285ec2/.skills/run-rust-tests",
+      "category": "Testing",
+      "stars": 6074,
+      "tags": [
+        "rust",
+        "testing",
+        "cargo",
+        "unit-tests",
+        "ci"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5458
+    },
+    {
+      "skill_name": "analyze-rust-ffi-crate-surface",
+      "skill_description": "Determine which parts of the C codebase use Rust-defined C symbols.",
+      "skill_url": "https://github.com/RediSearch/RediSearch/blob/1d1172eb5ae12270682e9d7de420612c75285ec2/.skills/analyze-rust-ffi-crate-surface",
+      "category": "Development",
+      "stars": 6074,
+      "tags": [
+        "Rust",
+        "FFI",
+        "C",
+        "code analysis",
+        "symbol tracking"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5354
+    },
+    {
+      "skill_name": "rust-errors",
+      "skill_description": "Rust to TypeScript error handling patterns for Tauri apps. Use when defining Rust errors that will be passed to TypeScript, handling Tauri command errors, or creating discriminated union error types.",
+      "skill_url": "https://github.com/EpicenterHQ/epicenter/blob/990d127bc077c58486809248dd190a90eb88ac8d/skills/rust-errors",
+      "category": "Development",
+      "stars": 3998,
+      "tags": [
+        "Rust",
+        "TypeScript",
+        "Error Handling",
+        "Tauri",
+        "Cross-Language Integration"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.532
+    },
+    {
+      "skill_name": "rust-docs-guidelines",
+      "skill_description": "Guidelines for writing Rust documentation",
+      "skill_url": "https://github.com/RediSearch/RediSearch/blob/c7cf618d29336204ba76929e417b4427390efcad/.skills/rust-docs-guidelines",
+      "category": "Development",
+      "stars": 6074,
+      "tags": [
+        "rust",
+        "documentation",
+        "guidelines",
+        "software-engineering",
+        "code-quality"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5285
+    },
+    {
+      "skill_name": "systems-programming-rust-project",
+      "skill_description": "You are a Rust project architecture expert specializing in scaffolding production-ready Rust applications. Generate complete project structures with cargo tooling, proper module organization, testing",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/4c400ca1218d73b032351bc083b40743dd9ec055/skills/systems-programming-rust-project",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "rust",
+        "project-scaffolding",
+        "software-architecture",
+        "cargo",
+        "systems-programming"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5263
+    },
+    {
+      "skill_name": "minimize-rust-ffi-crate-surface",
+      "skill_description": "Remove Rust-defined C symbols that are either unused or only used in C/C++ unit tests.",
+      "skill_url": "https://github.com/RediSearch/RediSearch/blob/1d1172eb5ae12270682e9d7de420612c75285ec2/.skills/minimize-rust-ffi-crate-surface",
+      "category": "Development",
+      "stars": 6074,
+      "tags": [
+        "Rust",
+        "FFI",
+        "C/C++",
+        "code optimization",
+        "unit testing"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5178
+    },
+    {
+      "skill_name": "port-c-module",
+      "skill_description": "Guide for porting a C module to Rust",
+      "skill_url": "https://github.com/RediSearch/RediSearch/blob/dde9824122858fadb06ebdfab9341adbac1fe82b/.skills/port-c-module",
+      "category": "Development",
+      "stars": 6074,
+      "tags": [
+        "rust",
+        "c",
+        "porting",
+        "ffi",
+        "module"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.517
+    },
+    {
+      "skill_name": "rust-backend",
+      "skill_description": "Rust coding guidelines for the Windmill backend. MUST use when writing or modifying Rust code in the backend directory.",
+      "skill_url": "https://github.com/windmill-labs/windmill/blob/720e3c543623c2612b1af704c13d032c53368efb/.claude/skills/rust-backend",
+      "category": "Development",
+      "stars": 15690,
+      "tags": [
+        "rust",
+        "backend",
+        "coding-guidelines",
+        "software-engineering",
+        "best-practices"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5126
+    },
+    {
+      "skill_name": "code-quality",
+      "skill_description": "General Correctness rules, Rust patterns, comments, avoiding over-engineering. When writing code always take these into account",
+      "skill_url": "https://github.com/tursodatabase/turso/blob/46ed73530e44b7a8e3fa45e522263c473963d869/.claude/skills/code-quality",
+      "category": "Development",
+      "stars": 17095,
+      "tags": [
+        "code-quality",
+        "rust",
+        "best-practices",
+        "error-handling",
+        "software-engineering"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4948
+    },
+    {
+      "skill_name": "check-rust-coverage",
+      "skill_description": "Check which Rust lines are not covered by Rust tests.",
+      "skill_url": "https://github.com/RediSearch/RediSearch/blob/c7cf618d29336204ba76929e417b4427390efcad/.skills/check-rust-coverage",
+      "category": "Testing",
+      "stars": 6074,
+      "tags": [
+        "rust",
+        "code-coverage",
+        "testing",
+        "software-development",
+        "qa"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4906
+    },
+    {
+      "skill_name": "gtars",
+      "skill_description": "High-performance toolkit for genomic interval analysis in Rust with Python bindings. Use when working with genomic regions, BED files, coverage tracks, overlap detection, tokenization for ML models, or fragment analysis in computational genomics and machine learning applications.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/5b0ddf0d25666219f5a24bd589bd9ff9565619cb/cli-tool/components/skills/scientific/gtars",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "genomics",
+        "bioinformatics",
+        "machine-learning",
+        "data-analysis",
+        "Rust"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4808
+    },
+    {
+      "skill_name": "review-rust-docs",
+      "skill_description": "Review the documentation of a Rust crate to ensure it meets our requirements and standards.",
+      "skill_url": "https://github.com/RediSearch/RediSearch/blob/c7cf618d29336204ba76929e417b4427390efcad/.skills/review-rust-docs",
+      "category": "Development",
+      "stars": 6074,
+      "tags": [
+        "code-review",
+        "documentation",
+        "rust",
+        "quality-assurance",
+        "guidelines"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4341
+    },
+    {
+      "skill_name": "cargo-fuzz",
+      "skill_description": "cargo-fuzz is the de facto fuzzing tool for Rust projects using Cargo. Use for fuzzing Rust code with libFuzzer backend.\n",
+      "skill_url": "https://github.com/trailofbits/skills/blob/fd46c1caa71937b57f29a8060b626f4a06e5e61b/plugins/testing-handbook-skills/skills/cargo-fuzz",
+      "category": "Testing",
+      "stars": 2276,
+      "tags": [
+        "fuzzing",
+        "rust",
+        "cargo",
+        "libfuzzer",
+        "security-testing"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4302
+    },
+    {
+      "skill_name": "rationalize-deps",
+      "skill_description": "Analyze Cargo.toml dependencies and attempt to remove unused features to reduce compile times and binary size",
+      "skill_url": "https://github.com/quickwit-oss/tantivy/blob/98ebbf922d5715941afa5afd1fc817a8c81ded97/.claude/skills/rationalize-deps",
+      "category": "Development",
+      "stars": 14449,
+      "tags": [
+        "rust",
+        "cargo",
+        "dependency-management",
+        "optimization",
+        "build-tools"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4007
+    }
+  ],
+  "relationships": [
+    {
+      "source": "handling-rust-errors",
+      "target": "rust-errors",
+      "type": "compose_with",
+      "reason": "General Rust error-handling patterns (error-stack, Result, Report) are often used together with Rust->TypeScript error mapping for Tauri apps so the internal error types can be adapted for frontend consumption."
+    },
+    {
+      "source": "write-rust-tests",
+      "target": "run-rust-tests",
+      "type": "compose_with",
+      "reason": "Writing tests and then running them are independent steps that are routinely paired in the test workflow."
+    },
+    {
+      "source": "check-rust-coverage",
+      "target": "run-rust-tests",
+      "type": "depend_on",
+      "reason": "Checking which lines are covered requires executing the test suite (coverage measurement depends on running tests)."
+    },
+    {
+      "source": "minimize-rust-ffi-crate-surface",
+      "target": "analyze-rust-ffi-crate-surface",
+      "type": "depend_on",
+      "reason": "Removing unused or test-only Rust-defined C symbols requires first determining which symbols are actually used by analyzing the FFI crate surface."
+    },
+    {
+      "source": "port-c-module",
+      "target": "analyze-rust-ffi-crate-surface",
+      "type": "compose_with",
+      "reason": "Porting a C module to Rust commonly uses analysis of which C code uses Rust-defined C symbols to guide what must be ported or re-exported."
+    },
+    {
+      "source": "systems-programming-rust-project",
+      "target": "rust-pro",
+      "type": "belong_to",
+      "reason": "Project scaffolding, module organization, and production-ready Rust architecture are specific capabilities that fit under the broader 'rust-pro' expertise."
+    },
+    {
+      "source": "rust-backend",
+      "target": "systems-programming-rust-project",
+      "type": "belong_to",
+      "reason": "Repository-specific backend coding guidelines are a sub-component of overall project architecture and scaffolding for production Rust applications."
+    },
+    {
+      "source": "review-rust-docs",
+      "target": "rust-docs-guidelines",
+      "type": "depend_on",
+      "reason": "Reviewing documentation to ensure it meets requirements presumes the existence of documentation guidelines as the criterion for the review."
+    },
+    {
+      "source": "code-quality",
+      "target": "write-rust-tests",
+      "type": "compose_with",
+      "reason": "General correctness and style guidance is independent but is usually applied alongside writing tests to ensure code quality."
+    },
+    {
+      "source": "code-quality",
+      "target": "systems-programming-rust-project",
+      "type": "compose_with",
+      "reason": "General code-quality and correctness rules are applied together with project scaffolding and architecture work to produce maintainable systems."
+    },
+    {
+      "source": "cargo-fuzz",
+      "target": "run-rust-tests",
+      "type": "compose_with",
+      "reason": "Fuzzing is an independent testing technique that is often used alongside running the standard test suite as part of overall testing and validation workflows."
+    },
+    {
+      "source": "rationalize-deps",
+      "target": "systems-programming-rust-project",
+      "type": "compose_with",
+      "reason": "Analyzing and trimming Cargo.toml dependencies is commonly done as part of building or optimizing a production Rust project scaffold to reduce compile times and binary size."
+    },
+    {
+      "source": "gtars",
+      "target": "systems-programming-rust-project",
+      "type": "compose_with",
+      "reason": "The gtars toolkit is a domain-specific Rust/Python component that would be integrated into broader systems programming projects when working with genomic data."
+    },
+    {
+      "source": "check-rust-coverage",
+      "target": "write-rust-tests",
+      "type": "compose_with",
+      "reason": "Checking test coverage identifies uncovered code lines, which then guides writing additional tests to fill coverage gaps; these are complementary steps in the test-driven development workflow."
+    },
+    {
+      "source": "handling-rust-errors",
+      "target": "rust-pro",
+      "type": "belong_to",
+      "reason": "Error handling patterns (Result types, error-stack, context propagation) are a fundamental component of mastering Rust and production-ready systems programming covered by rust-pro expertise."
+    },
+    {
+      "source": "rust-docs-guidelines",
+      "target": "systems-programming-rust-project",
+      "type": "belong_to",
+      "reason": "Documentation guidelines are an essential part of scaffolding production-ready Rust applications, fitting within the project organization and quality standards for proper module structure."
+    }
+  ]
+}

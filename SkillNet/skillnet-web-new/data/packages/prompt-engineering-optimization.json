@@ -1,0 +1,467 @@
+{
+  "package_name": "prompt-engineering-optimization",
+  "scene_description": "Prompt engineering and optimization techniques including chain-of-thought, few-shot learning, prompt templates, evaluation metrics, and systematic prompt design for various LLMs",
+  "tags": [
+    "prompt engineering",
+    "prompt-engineering",
+    "llm",
+    "benchmarking",
+    "templates",
+    "prompt optimization",
+    "llm evaluation",
+    "fine-tuning"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:22:17.052431",
+  "skill_count": 17,
+  "skills": [
+    {
+      "skill_name": "llm-tuning-patterns",
+      "skill_description": "LLM Tuning Patterns",
+      "skill_url": "https://github.com/parcadei/Continuous-Claude-v3/blob/20a3d31a85f43b2d3fa4da53e467d2dfb019f727/.claude/skills/llm-tuning-patterns",
+      "category": "AIGC",
+      "stars": 3449,
+      "tags": [
+        "LLM",
+        "fine-tuning",
+        "machine learning",
+        "AI models",
+        "optimization"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5733
+    },
+    {
+      "skill_name": "fine-tuning-axolotl",
+      "skill_description": "Expert guidance for fine-tuning LLMs with Axolotl - YAML configs, 100+ models, LoRA/QLoRA, DPO/KTO/ORPO/GRPO, multimodal support",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/0f6fa465821f11168374ae91670cc8b388cd8d17/cli-tool/components/skills/ai-research/fine-tuning-axolotl",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "fine-tuning",
+        "LLM",
+        "Axolotl",
+        "LoRA",
+        "machine learning"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5322
+    },
+    {
+      "skill_name": "fine-tuning-peft",
+      "skill_description": "Parameter-efficient fine-tuning for LLMs using LoRA, QLoRA, and 25+ methods. Use when fine-tuning large models (7B-70B) with limited GPU memory, when you need to train <1% of parameters with minimal accuracy loss, or for multi-adapter serving. HuggingFace's official library integrated with transformers ecosystem.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/ai-research/fine-tuning-peft",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "fine-tuning",
+        "LLM",
+        "LoRA",
+        "parameter-efficient",
+        "HuggingFace"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5261
+    },
+    {
+      "skill_name": "prompt-engineer",
+      "skill_description": "Expert in designing effective prompts for LLM-powered applications. Masters prompt structure, context management, output formatting, and prompt evaluation. Use when: prompt engineering, system prompt, few-shot, chain of thought, prompt design.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/62b5d8de603adc03741b4aa526876f97f4e3cd56/cli-tool/components/skills/ai-research/prompt-engineer",
+      "category": "AIGC",
+      "stars": 19107,
+      "tags": [
+        "prompt-engineering",
+        "LLM",
+        "AI-development",
+        "system-prompt",
+        "few-shot-learning"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5231
+    },
+    {
+      "skill_name": "senior-prompt-engineer",
+      "skill_description": "World-class prompt engineering skill for LLM optimization, prompt patterns, structured outputs, and AI product development. Expertise in Claude, GPT-4, prompt design patterns, few-shot learning, chain-of-thought, and AI evaluation. Includes RAG optimization, agent design, and LLM system architecture. Use when building AI products, optimizing LLM performance, designing agentic systems, or implementing advanced prompting techniques.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/e1ad0ef499dd2ea86e3e4bd05022faeb080b50f0/cli-tool/components/skills/development/senior-prompt-engineer",
+      "category": "AIGC",
+      "stars": 19064,
+      "tags": [
+        "prompt-engineering",
+        "LLM-optimization",
+        "AI-product-development",
+        "agent-design",
+        "RAG"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5064
+    },
+    {
+      "skill_name": "optimizing-prompts",
+      "skill_description": "Execute this skill optimizes prompts for large language models (llms) to reduce token usage, lower costs, and improve performance. it analyzes the prompt, identifies areas for simplification and redundancy removal, and rewrites the prompt to be more conci... Use when optimizing performance. Trigger with phrases like 'optimize', 'performance', or 'speed up'.\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/1e4d5973af6c1635c3f002fa09a22332eda18ab6/plugins/packages/ai-ml-engineering-pack/skills/optimizing-prompts",
+      "category": "AIGC",
+      "stars": 1215,
+      "tags": [
+        "prompt optimization",
+        "LLM efficiency",
+        "cost reduction",
+        "performance improvement",
+        "token management"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5047
+    },
+    {
+      "skill_name": "ai-ml-engineering-pack",
+      "skill_description": "This skill optimizes prompts for Large Language Models (LLMs) to reduce token usage, lower costs, and improve performance. It analyzes the prompt, identifies areas for simplification and redundancy removal, and rewrites the prompt to be more concise and effective. It is used when the user wants to reduce LLM costs, improve response speed, or enhance the quality of LLM outputs by optimizing the prompt. Trigger terms include \"optimize prompt\", \"reduce LLM cost\", \"improve prompt performance\", \"rewrite prompt\", \"prompt optimization\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/backups/skills-batch-20251204-000554/plugins/packages/ai-ml-engineering-pack/skills/ai-ml-engineering-pack",
+      "category": "AIGC",
+      "stars": 1215,
+      "tags": [
+        "prompt optimization",
+        "LLM efficiency",
+        "cost reduction",
+        "performance improvement",
+        "token usage"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5013
+    },
+    {
+      "skill_name": "prompt-engineering-guidance",
+      "skill_description": "Control LLM output with regex and grammars, guarantee valid JSON/XML/code generation, enforce structured formats, and build multi-step workflows with Guidance - Microsoft Research's constrained generation framework",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/ai-research/prompt-engineering-guidance",
+      "category": "AIGC",
+      "stars": 19064,
+      "tags": [
+        "prompt engineering",
+        "LLM control",
+        "constrained generation",
+        "structured output",
+        "workflow automation"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4995
+    },
+    {
+      "skill_name": "post-training-trl-fine-tuning",
+      "skill_description": "Fine-tune LLMs using reinforcement learning with TRL - SFT for instruction tuning, DPO for preference alignment, PPO/GRPO for reward optimization, and reward model training. Use when need RLHF, align model with preferences, or train from human feedback. Works with HuggingFace Transformers.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/4322a2278b755fa15b8d16927b1e610d6f40db1f/cli-tool/components/skills/ai-research/post-training-trl-fine-tuning",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "reinforcement learning",
+        "fine-tuning",
+        "LLM",
+        "TRL",
+        "RLHF"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4837
+    },
+    {
+      "skill_name": "fine-tuning-unsloth",
+      "skill_description": "Expert guidance for fast fine-tuning with Unsloth - 2-5x faster training, 50-80% less memory, LoRA/QLoRA optimization",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/456e5a920daa47a69faf7b18797660e4053e4d26/cli-tool/components/skills/ai-research/fine-tuning-unsloth",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "fine-tuning",
+        "machine learning",
+        "optimization",
+        "LoRA",
+        "QLoRA"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4506
+    },
+    {
+      "skill_name": "evaluation-lm-evaluation-harness",
+      "skill_description": "Evaluates LLMs across 60+ academic benchmarks (MMLU, HumanEval, GSM8K, TruthfulQA, HellaSwag). Use when benchmarking model quality, comparing models, reporting academic results, or tracking training progress. Industry standard used by EleutherAI, HuggingFace, and major labs. Supports HuggingFace, vLLM, APIs.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/4322a2278b755fa15b8d16927b1e610d6f40db1f/cli-tool/components/skills/ai-research/evaluation-lm-evaluation-harness",
+      "category": "Research",
+      "stars": 19064,
+      "tags": [
+        "LLM evaluation",
+        "benchmarking",
+        "model comparison",
+        "academic benchmarks",
+        "performance tracking"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4411
+    },
+    {
+      "skill_name": "skill-adapter",
+      "skill_description": "This skill optimizes prompts for Large Language Models (LLMs) to reduce token usage, lower costs, and improve performance. It analyzes the prompt, identifies areas for simplification and redundancy removal, and rewrites the prompt to be more concise and effective. It is used when the user wants to reduce LLM costs, improve response speed, or enhance the quality of LLM outputs by optimizing the prompt. Trigger terms include \"optimize prompt\", \"reduce LLM cost\", \"improve prompt performance\", \"rewrite prompt\", \"prompt optimization\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/backups/plugin-enhancements/plugin-backups/ai-ml-engineering-pack_20251019_161259/skills/skill-adapter",
+      "category": "AIGC",
+      "stars": 1215,
+      "tags": [
+        "prompt optimization",
+        "LLM efficiency",
+        "cost reduction",
+        "performance improvement",
+        "token management"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4312
+    },
+    {
+      "skill_name": "evaluation-nemo-evaluator",
+      "skill_description": "Evaluates LLMs across 100+ benchmarks from 18+ harnesses (MMLU, HumanEval, GSM8K, safety, VLM) with multi-backend execution. Use when needing scalable evaluation on local Docker, Slurm HPC, or cloud platforms. NVIDIA's enterprise-grade platform with container-first architecture for reproducible benchmarking.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/5b0ddf0d25666219f5a24bd589bd9ff9565619cb/cli-tool/components/skills/ai-research/evaluation-nemo-evaluator",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "LLM Evaluation",
+        "Benchmarking",
+        "NVIDIA",
+        "Containerized",
+        "Multi-Backend"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4128
+    },
+    {
+      "skill_name": "optimization-gptq",
+      "skill_description": "Post-training 4-bit quantization for LLMs with minimal accuracy loss. Use for deploying large models (70B, 405B) on consumer GPUs, when you need 4× memory reduction with <2% perplexity degradation, or for faster inference (3-4× speedup) vs FP16. Integrates with transformers and PEFT for QLoRA fine-tuning.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/4322a2278b755fa15b8d16927b1e610d6f40db1f/cli-tool/components/skills/ai-research/optimization-gptq",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "quantization",
+        "model optimization",
+        "LLM deployment",
+        "GPU efficiency",
+        "fine-tuning"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.41
+    },
+    {
+      "skill_name": "model-architecture-litgpt",
+      "skill_description": "Implements and trains LLMs using Lightning AI's LitGPT with 20+ pretrained architectures (Llama, Gemma, Phi, Qwen, Mistral). Use when need clean model implementations, educational understanding of architectures, or production fine-tuning with LoRA/QLoRA. Single-file implementations, no abstraction layers.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/4322a2278b755fa15b8d16927b1e610d6f40db1f/cli-tool/components/skills/ai-research/model-architecture-litgpt",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "LLM",
+        "model architecture",
+        "fine-tuning",
+        "LitGPT",
+        "machine learning"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4035
+    },
+    {
+      "skill_name": "prompt-engineering-outlines",
+      "skill_description": "Guarantee valid JSON/XML/code structure during generation, use Pydantic models for type-safe outputs, support local models (Transformers, vLLM), and maximize inference speed with Outlines - dottxt.ai's structured generation library",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/ai-research/prompt-engineering-outlines",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "prompt engineering",
+        "structured generation",
+        "Pydantic",
+        "local models",
+        "inference optimization"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4025
+    },
+    {
+      "skill_name": "evaluation-bigcode-evaluation-harness",
+      "skill_description": "Evaluates code generation models across HumanEval, MBPP, MultiPL-E, and 15+ benchmarks with pass@k metrics. Use when benchmarking code models, comparing coding abilities, testing multi-language support, or measuring code generation quality. Industry standard from BigCode Project used by HuggingFace leaderboards.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/4322a2278b755fa15b8d16927b1e610d6f40db1f/cli-tool/components/skills/ai-research/evaluation-bigcode-evaluation-harness",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "code generation evaluation",
+        "benchmarking",
+        "AI models",
+        "BigCode Project",
+        "pass@k metrics"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4008
+    }
+  ],
+  "relationships": [
+    {
+      "source": "optimizing-prompts",
+      "target": "ai-ml-engineering-pack",
+      "type": "similar_to",
+      "reason": "Both skills have nearly identical descriptions and purpose: analyze and rewrite prompts to reduce tokens, lower cost, and improve LLM performance."
+    },
+    {
+      "source": "optimizing-prompts",
+      "target": "skill-adapter",
+      "type": "similar_to",
+      "reason": "skill-adapter and optimizing-prompts perform the same prompt optimization function (concise rewrites, cost/performance improvements)."
+    },
+    {
+      "source": "ai-ml-engineering-pack",
+      "target": "skill-adapter",
+      "type": "similar_to",
+      "reason": "Both are described as prompt optimization utilities with the same triggers and goals, making them interchangeable."
+    },
+    {
+      "source": "prompt-engineering-guidance",
+      "target": "prompt-engineer",
+      "type": "belong_to",
+      "reason": "Guidance is a constrained generation framework used as a tool/technique within prompt engineering workflows (so the framework is a component used by prompt engineers)."
+    },
+    {
+      "source": "prompt-engineering-outlines",
+      "target": "prompt-engineer",
+      "type": "belong_to",
+      "reason": "Outlines provides structured-generation tooling (JSON/XML/type-safe outputs) that serves as a component of prompt engineering practice."
+    },
+    {
+      "source": "optimizing-prompts",
+      "target": "prompt-engineer",
+      "type": "belong_to",
+      "reason": "Prompt optimization is a specific step or component within the broader prompt-engineering workflow."
+    },
+    {
+      "source": "ai-ml-engineering-pack",
+      "target": "prompt-engineer",
+      "type": "belong_to",
+      "reason": "The prompt optimization pack provides a focused capability (rewrite/optimize prompts) which is a subtask of prompt engineering."
+    },
+    {
+      "source": "skill-adapter",
+      "target": "prompt-engineer",
+      "type": "belong_to",
+      "reason": "Skill-adapter offers prompt optimization functionality that fits as a component within prompt engineering workflows."
+    },
+    {
+      "source": "prompt-engineer",
+      "target": "prompt-engineering-guidance",
+      "type": "compose_with",
+      "reason": "Prompt engineers commonly use constrained-generation frameworks like Guidance to enforce formats, validate output, and structure multi-step prompts."
+    },
+    {
+      "source": "prompt-engineer",
+      "target": "prompt-engineering-outlines",
+      "type": "compose_with",
+      "reason": "Prompt engineers often pair their prompt design with structured-generation libraries (Outlines) to guarantee valid JSON/XML and type-safe outputs."
+    },
+    {
+      "source": "senior-prompt-engineer",
+      "target": "prompt-engineering-guidance",
+      "type": "compose_with",
+      "reason": "Advanced prompt engineering and agent design (the senior role) frequently employs Guidance for constrained and reliable generation in production systems."
+    },
+    {
+      "source": "senior-prompt-engineer",
+      "target": "prompt-engineering-outlines",
+      "type": "compose_with",
+      "reason": "Senior-level prompt engineering uses structured-generation libraries like Outlines to enforce strict output schemas and safe integration with systems."
+    },
+    {
+      "source": "fine-tuning-axolotl",
+      "target": "llm-tuning-patterns",
+      "type": "belong_to",
+      "reason": "Axolotl fine-tuning is a concrete implementation/recipe that fits under the broader category of LLM tuning patterns."
+    },
+    {
+      "source": "fine-tuning-peft",
+      "target": "llm-tuning-patterns",
+      "type": "belong_to",
+      "reason": "PEFT (LoRA/QLoRA etc.) represents specific parameter-efficient tuning patterns that are a subset of LLM tuning patterns."
+    },
+    {
+      "source": "post-training-trl-fine-tuning",
+      "target": "llm-tuning-patterns",
+      "type": "belong_to",
+      "reason": "Reinforcement-learning based fine-tuning (TRL/rlhf/DPO/PPO) is a distinct tuning pattern within the set of LLM tuning approaches."
+    },
+    {
+      "source": "fine-tuning-unsloth",
+      "target": "llm-tuning-patterns",
+      "type": "belong_to",
+      "reason": "Unsloth is a specific fast fine-tuning method/recipe and therefore a concrete example within LLM tuning patterns."
+    },
+    {
+      "source": "model-architecture-litgpt",
+      "target": "llm-tuning-patterns",
+      "type": "belong_to",
+      "reason": "Implementing and training model architectures is part of the overall set of patterns and practices for tuning and working with LLMs."
+    },
+    {
+      "source": "evaluation-lm-evaluation-harness",
+      "target": "fine-tuning-peft",
+      "type": "compose_with",
+      "reason": "Benchmarking/evaluation harnesses are commonly used with models fine-tuned via PEFT to measure quality across academic benchmarks after tuning."
+    },
+    {
+      "source": "evaluation-lm-evaluation-harness",
+      "target": "fine-tuning-axolotl",
+      "type": "compose_with",
+      "reason": "After fine-tuning models with Axolotl, users typically run evaluation harnesses to assess model performance across benchmarks."
+    },
+    {
+      "source": "evaluation-lm-evaluation-harness",
+      "target": "post-training-trl-fine-tuning",
+      "type": "compose_with",
+      "reason": "Evaluation harnesses are used to measure the effectiveness of RL-based fine-tuning (RLHF/DPO/PPO) on benchmark tasks."
+    },
+    {
+      "source": "evaluation-nemo-evaluator",
+      "target": "evaluation-lm-evaluation-harness",
+      "type": "similar_to",
+      "reason": "Both are evaluation platforms/harnesses for benchmarking LLMs across many academic and industry benchmarks; Nemo is an enterprise/containerized implementation while lm-evaluation-harness is the academic standard."
+    },
+    {
+      "source": "evaluation-nemo-evaluator",
+      "target": "fine-tuning-peft",
+      "type": "compose_with",
+      "reason": "NVIDIA's Nemo evaluator is used to run scalable evaluations on models that have been fine-tuned (including PEFT-tuned models) to validate improvements."
+    },
+    {
+      "source": "evaluation-bigcode-evaluation-harness",
+      "target": "fine-tuning-peft",
+      "type": "compose_with",
+      "reason": "BigCode's evaluation harness focuses on code-generation benchmarks and is typically used to evaluate code models that were fine-tuned (e.g., via PEFT)."
+    },
+    {
+      "source": "evaluation-bigcode-evaluation-harness",
+      "target": "model-architecture-litgpt",
+      "type": "compose_with",
+      "reason": "Implementations of model architectures (e.g., with LitGPT) are commonly evaluated with BigCode harnesses to measure code-generation capabilities."
+    },
+    {
+      "source": "optimization-gptq",
+      "target": "fine-tuning-peft",
+      "type": "compose_with",
+      "reason": "GPTQ quantization is often applied after fine-tuning (including PEFT/QLoRA workflows) to reduce memory and speed up inference for deployment."
+    },
+    {
+      "source": "optimization-gptq",
+      "target": "model-architecture-litgpt",
+      "type": "compose_with",
+      "reason": "Model implementations produced via LitGPT are candidates for post-training quantization with GPTQ to enable efficient deployment on consumer GPUs."
+    },
+    {
+      "source": "fine-tuning-peft",
+      "target": "post-training-trl-fine-tuning",
+      "type": "compose_with",
+      "reason": "Workflows often combine parameter-efficient fine-tuning (PEFT) with subsequent reward-based / RL fine-tuning (TRL) in sequence to align and optimize models."
+    },
+    {
+      "source": "prompt-engineer",
+      "target": "senior-prompt-engineer",
+      "type": "similar_to",
+      "reason": "Both are prompt engineering experts focused on LLM optimization and prompt design; senior-prompt-engineer offers broader depth including agent design and RAG optimization, but they serve similar prompt engineering roles at different expertise levels."
+    },
+    {
+      "source": "evaluation-lm-evaluation-harness",
+      "target": "fine-tuning-unsloth",
+      "type": "compose_with",
+      "reason": "After fast fine-tuning models with Unsloth (LoRA/QLoRA optimization), users run evaluation harnesses to benchmark model quality and measure performance improvements across academic benchmarks."
+    }
+  ]
+}

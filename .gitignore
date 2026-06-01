@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Streamlit
+.streamlit/
+
+# Downloaded skill packages (large data)
+SkillNet/skillnet-web-new/data/downloaded_package_skills/
+
+# User submitted data
+*.jsonl
+
+# Claude Code local config
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,341 @@
+{
+  "package_name": "database-design-management",
+  "scene_description": "Database design and management including SQL, PostgreSQL, MySQL, MongoDB, Redis, ORM tools, migration, query optimization, and data modeling",
+  "tags": [
+    "database",
+    "sql",
+    "postgresql",
+    "data modeling",
+    "orm",
+    "migration",
+    "redis",
+    "caching"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:14:07.700169",
+  "skill_count": 11,
+  "skills": [
+    {
+      "skill_name": "database-design",
+      "skill_description": "Database design principles and decision-making. Schema design, indexing strategy, ORM selection, serverless databases.",
+      "skill_url": "https://github.com/vudovn/antigravity-kit/blob/b3103a9d74d34b7070beb5db6a331a8d49d2eebc/.agent/skills/database-design",
+      "category": "Development",
+      "stars": 3795,
+      "tags": [
+        "database design",
+        "schema design",
+        "indexing",
+        "ORM",
+        "serverless databases"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5786
+    },
+    {
+      "skill_name": "design-postgres-tables",
+      "skill_description": "Comprehensive PostgreSQL-specific table design reference covering data types, indexing, constraints, performance patterns, and advanced features",
+      "skill_url": "https://github.com/timescale/pg-aiguide/blob/cec1be3c4f149255dedcd1f35105dfebd31f740d/skills/design-postgres-tables",
+      "category": "Development",
+      "stars": 1465,
+      "tags": [
+        "PostgreSQL",
+        "Database Design",
+        "SQL",
+        "Data Modeling",
+        "Performance Optimization"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5768
+    },
+    {
+      "skill_name": "postgres-patterns",
+      "skill_description": "PostgreSQL database patterns for query optimization, schema design, indexing, and security. Based on Supabase best practices.",
+      "skill_url": "https://github.com/affaan-m/everything-claude-code/blob/ae2c063ddebccafec5ca4b2a7733ddd32361adb1/docs/zh-TW/skills/postgres-patterns",
+      "category": "Development",
+      "stars": 36487,
+      "tags": [
+        "PostgreSQL",
+        "database",
+        "query-optimization",
+        "schema-design",
+        "indexing"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5146
+    },
+    {
+      "skill_name": "postgres-expert",
+      "skill_description": "PostgreSQL query optimization, JSONB operations, advanced indexing strategies, partitioning, connection management, and database administration. Use this skill for PostgreSQL-specific optimizations, performance tuning, replication setup, and PgBouncer configuration.",
+      "skill_url": "https://github.com/vudovn/antigravity-kit/blob/1525bb70a0d1297c5cabc15f77362b0ada7b7305/.agent/skills/postgres-expert",
+      "category": "Development",
+      "stars": 3795,
+      "tags": [
+        "PostgreSQL",
+        "Database Administration",
+        "Query Optimization",
+        "Performance Tuning",
+        "Data Management"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5125
+    },
+    {
+      "skill_name": "postgresql",
+      "skill_description": "PostgreSQL database documentation - SQL queries, database design, administration, performance tuning, and advanced features. Use when working with PostgreSQL databases, writing SQL, or managing database systems.",
+      "skill_url": "https://github.com/2025Emma/vibe-coding-cn/blob/9b42dd10ddf3fff58f8c7a4d347175db107d7bf9/i18n/zh/skills/postgresql",
+      "category": "Development",
+      "stars": 10822,
+      "tags": [
+        "database",
+        "SQL",
+        "database administration",
+        "performance tuning",
+        "data management"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4758
+    },
+    {
+      "skill_name": "database-migrations-sql-migrations",
+      "skill_description": "SQL database migrations with zero-downtime strategies for PostgreSQL, MySQL, SQL Server",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/3d79501eba74a14e053b67f655baee1ac978a87f/skills/database-migrations-sql-migrations",
+      "category": "Development",
+      "stars": 6048,
+      "tags": [
+        "database",
+        "sql",
+        "migrations",
+        "zero-downtime",
+        "postgresql"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.47
+    },
+    {
+      "skill_name": "sql-pro",
+      "skill_description": "Master modern SQL with cloud-native databases, OLTP/OLAP optimization, and advanced query techniques. Expert in performance tuning, data modeling, and hybrid analytical systems. Use PROACTIVELY for database optimization or complex analysis.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/4c400ca1218d73b032351bc083b40743dd9ec055/skills/sql-pro",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "SQL",
+        "Database Optimization",
+        "Cloud Databases",
+        "Data Modeling",
+        "Query Performance"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4567
+    },
+    {
+      "skill_name": "postgres-query",
+      "skill_description": "Run PostgreSQL queries for testing, debugging, and performance analysis. Use when you need to query the database directly, run EXPLAIN ANALYZE, compare query results, or test SQL optimizations. Always uses read-only connections unless explicitly directed otherwise.",
+      "skill_url": "https://github.com/civitai/civitai/blob/a707779a599ecf221ca0879bfdeb8a6ed61a9ebc/.claude/skills/postgres-query",
+      "category": "Development",
+      "stars": 7001,
+      "tags": [
+        "PostgreSQL",
+        "SQL",
+        "Database Querying",
+        "Performance Analysis",
+        "Debugging"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4502
+    },
+    {
+      "skill_name": "doc",
+      "skill_description": "PostGIS-focused SQL tips, tricks and gotchas. Use when in need of dealing with geospatial data in Postgres.",
+      "skill_url": "https://github.com/postgis/postgis/blob/e48062f7d65694c22841dab7587b2fdad9ea8549/doc",
+      "category": "Development",
+      "stars": 2026,
+      "tags": [
+        "PostGIS",
+        "SQL",
+        "Geospatial Data",
+        "PostgreSQL",
+        "Database Management"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.444
+    },
+    {
+      "skill_name": "query-writing",
+      "skill_description": "For writing and executing SQL queries - from simple single-table queries to complex multi-table JOINs and aggregations",
+      "skill_url": "https://github.com/langchain-ai/deepagents/blob/61b621b1dadeac3931f197e102447cb87be44b41/examples/text-to-sql-agent/skills/query-writing",
+      "category": "Development",
+      "stars": 8756,
+      "tags": [
+        "SQL",
+        "database",
+        "query-writing",
+        "data-analysis",
+        "data-querying"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4271
+    },
+    {
+      "skill_name": "orm-code-generator",
+      "skill_description": "This skill enables Claude to generate ORM models and database schemas. It is triggered when the user requests the creation of ORM models, database schemas, or wishes to generate code for interacting with databases. The skill supports various ORMs including TypeORM, Prisma, Sequelize, SQLAlchemy, Django ORM, Entity Framework, and Hibernate. Use this skill when the user mentions terms like \"ORM model\", \"database schema\", \"generate entities\", \"create migrations\", or specifies a particular ORM framework like \"TypeORM entities\" or \"SQLAlchemy models\". It facilitates both database-to-code and code-to-database schema generation.\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/backups/skills-batch-20251204-000554/plugins/database/orm-code-generator/skills/orm-code-generator",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "ORM",
+        "database",
+        "code-generation",
+        "backend",
+        "schema-design"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4229
+    }
+  ],
+  "relationships": [
+    {
+      "source": "design-postgres-tables",
+      "target": "database-design",
+      "type": "belong_to",
+      "reason": "Postgres-specific table design is a focused sub-component of broader database design principles and decision-making."
+    },
+    {
+      "source": "design-postgres-tables",
+      "target": "postgresql",
+      "type": "belong_to",
+      "reason": "This Postgres table design reference is a specialized part of overall PostgreSQL documentation and guidance."
+    },
+    {
+      "source": "postgres-patterns",
+      "target": "database-design",
+      "type": "belong_to",
+      "reason": "PostgreSQL patterns for schema and query optimization represent specific practices within overall database design."
+    },
+    {
+      "source": "postgres-patterns",
+      "target": "postgresql",
+      "type": "belong_to",
+      "reason": "These PostgreSQL-specific patterns are a subset of PostgreSQL knowledge and best practices."
+    },
+    {
+      "source": "postgres-expert",
+      "target": "postgresql",
+      "type": "belong_to",
+      "reason": "The expert-level Postgres optimization and administration skill is a specialized component of the PostgreSQL domain."
+    },
+    {
+      "source": "doc",
+      "target": "postgresql",
+      "type": "belong_to",
+      "reason": "PostGIS-focused SQL tips are a Postgres extension-specific subset of PostgreSQL documentation."
+    },
+    {
+      "source": "orm-code-generator",
+      "target": "database-design",
+      "type": "belong_to",
+      "reason": "Generating ORM models and schemas is an implementation step within the broader database design workflow."
+    },
+    {
+      "source": "database-migrations-sql-migrations",
+      "target": "database-design",
+      "type": "belong_to",
+      "reason": "SQL migrations and zero-downtime strategies are part of the database lifecycle and design/maintenance process."
+    },
+    {
+      "source": "query-writing",
+      "target": "sql-pro",
+      "type": "belong_to",
+      "reason": "Writing and executing SQL queries is a specific capability within the broader expert-level SQL skill set."
+    },
+    {
+      "source": "postgres-query",
+      "target": "postgresql",
+      "type": "belong_to",
+      "reason": "Running and testing PostgreSQL queries is a Postgres-specific operational action within PostgreSQL tooling/documentation."
+    },
+    {
+      "source": "postgres-query",
+      "target": "query-writing",
+      "type": "belong_to",
+      "reason": "Executing and analyzing queries is a concrete step within the task of writing and validating SQL queries."
+    },
+    {
+      "source": "design-postgres-tables",
+      "target": "orm-code-generator",
+      "type": "compose_with",
+      "reason": "Table design is often used as the input to generate ORM models and corresponding schema code."
+    },
+    {
+      "source": "database-migrations-sql-migrations",
+      "target": "orm-code-generator",
+      "type": "compose_with",
+      "reason": "Migrations are commonly produced or driven by ORM model changes, so migration tooling is used together with ORM code generation."
+    },
+    {
+      "source": "postgres-patterns",
+      "target": "postgres-expert",
+      "type": "compose_with",
+      "reason": "Pattern guidance for Postgres is often paired with expert-level tuning and operational actions to implement optimizations."
+    },
+    {
+      "source": "postgres-query",
+      "target": "postgres-expert",
+      "type": "compose_with",
+      "reason": "Running EXPLAIN ANALYZE and testing queries is commonly used alongside Postgres expert tuning and diagnostics."
+    },
+    {
+      "source": "doc",
+      "target": "postgres-query",
+      "type": "compose_with",
+      "reason": "PostGIS documentation and tips are used together with executing geospatial queries against PostgreSQL/PostGIS."
+    },
+    {
+      "source": "database-design",
+      "target": "sql-pro",
+      "type": "compose_with",
+      "reason": "Database design decisions and SQL expertise are frequently used together—design informs advanced SQL and vice versa."
+    },
+    {
+      "source": "sql-pro",
+      "target": "postgres-expert",
+      "type": "compose_with",
+      "reason": "General advanced SQL knowledge is often paired with PostgreSQL-specific expert techniques when optimizing Postgres systems."
+    },
+    {
+      "source": "design-postgres-tables",
+      "target": "postgres-patterns",
+      "type": "compose_with",
+      "reason": "PostgreSQL table design should follow PostgreSQL best practice patterns for schema design, indexing, and performance optimization."
+    },
+    {
+      "source": "postgres-patterns",
+      "target": "postgres-query",
+      "type": "compose_with",
+      "reason": "PostgreSQL patterns are validated and tested by executing queries to verify performance and correctness of optimizations."
+    },
+    {
+      "source": "database-migrations-sql-migrations",
+      "target": "postgresql",
+      "type": "compose_with",
+      "reason": "Database migration strategies explicitly support PostgreSQL as one of the target databases for zero-downtime migrations."
+    },
+    {
+      "source": "sql-pro",
+      "target": "query-writing",
+      "type": "compose_with",
+      "reason": "Advanced SQL expertise and modern optimization techniques are applied when writing complex queries and analytical workloads."
+    },
+    {
+      "source": "query-writing",
+      "target": "postgresql",
+      "type": "compose_with",
+      "reason": "SQL query writing skills are commonly applied to PostgreSQL databases for data analysis and querying tasks."
+    },
+    {
+      "source": "design-postgres-tables",
+      "target": "postgres-query",
+      "type": "compose_with",
+      "reason": "Table design decisions are tested and validated by running queries to verify performance characteristics and access patterns."
+    }
+  ]
+}

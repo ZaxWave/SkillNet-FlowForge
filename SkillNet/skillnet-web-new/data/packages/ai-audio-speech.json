@@ -1,0 +1,297 @@
+{
+  "package_name": "ai-audio-speech",
+  "scene_description": "AI audio and speech processing including text-to-speech (TTS), speech-to-text (STT), voice cloning, audio analysis, music generation, and real-time audio streaming",
+  "tags": [
+    "text-to-speech",
+    "speech-to-text",
+    "audio-processing",
+    "transcription",
+    "natural language processing",
+    "real-time",
+    "multimedia",
+    "streaming"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:21:33.448204",
+  "skill_count": 12,
+  "skills": [
+    {
+      "skill_name": "voice-ai-engine-development",
+      "skill_description": "Build real-time conversational AI voice engines using async worker pipelines, streaming transcription, LLM agents, and TTS synthesis with interrupt handling and multi-provider support",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/8b523ccc54e0c7260cd0d5f0682dda4f77df1293/skills/voice-ai-engine-development",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "voice-ai",
+        "real-time-streaming",
+        "async-pipeline",
+        "conversational-ai",
+        "audio-processing"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.6887
+    },
+    {
+      "skill_name": "voice-ai-development",
+      "skill_description": "Expert in building voice AI applications - from real-time voice agents to voice-enabled apps. Covers OpenAI Realtime API, Vapi for voice agents, Deepgram for transcription, ElevenLabs for synthesis, LiveKit for real-time infrastructure, and WebRTC fundamentals. Knows how to build low-latency, production-ready voice experiences. Use when: voice ai, voice agent, speech to text, text to speech, realtime voice.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/5b0ddf0d25666219f5a24bd589bd9ff9565619cb/cli-tool/components/skills/ai-research/voice-ai-development",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "voice-ai",
+        "real-time",
+        "speech-synthesis",
+        "speech-recognition",
+        "webrtc"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5739
+    },
+    {
+      "skill_name": "deepgram-core-workflow-b",
+      "skill_description": "Implement real-time streaming transcription with Deepgram.\nUse when building live transcription, voice interfaces,\nor real-time audio processing applications.\nTrigger with phrases like \"deepgram streaming\", \"real-time transcription\",\n\"live transcription\", \"websocket transcription\", \"voice streaming\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/358446372d30dec2ca753373057137888e84e9aa/plugins/saas-packs/deepgram-pack/skills/deepgram-core-workflow-b",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "real-time transcription",
+        "audio processing",
+        "voice interfaces",
+        "streaming",
+        "Deepgram API"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5625
+    },
+    {
+      "skill_name": "openai-whisper-api",
+      "skill_description": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+      "skill_url": "https://github.com/clawdbot/clawdbot/blob/858a5f48d8960570547c47203ee892c7f127ef7f/skills/openai-whisper-api",
+      "category": "AIGC",
+      "stars": 134924,
+      "tags": [
+        "audio transcription",
+        "OpenAI API",
+        "Whisper",
+        "speech-to-text",
+        "AI integration"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5485
+    },
+    {
+      "skill_name": "sherpa-onnx-tts",
+      "skill_description": "Local text-to-speech via sherpa-onnx (offline, no cloud)",
+      "skill_url": "https://github.com/openclaw/openclaw/blob/da71eaebd2f613f8afaddccdff12cb28c1d7e0f4/skills/sherpa-onnx-tts",
+      "category": "AIGC",
+      "stars": 134927,
+      "tags": [
+        "text-to-speech",
+        "offline",
+        "local",
+        "voice-synthesis",
+        "ai"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4924
+    },
+    {
+      "skill_name": "deepgram-hello-world",
+      "skill_description": "Create a minimal working Deepgram transcription example.\nUse when starting a new Deepgram integration, testing your setup,\nor learning basic Deepgram API patterns.\nTrigger with phrases like \"deepgram hello world\", \"deepgram example\",\n\"deepgram quick start\", \"simple transcription\", \"transcribe audio\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/plugins/saas-packs/deepgram-pack/skills/deepgram-hello-world",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "Deepgram",
+        "transcription",
+        "API integration",
+        "audio processing",
+        "quick start"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4639
+    },
+    {
+      "skill_name": "deepgram-core-workflow-a",
+      "skill_description": "Implement speech-to-text transcription workflow with Deepgram.\nUse when building pre-recorded audio transcription, batch processing,\nor implementing core transcription features.\nTrigger with phrases like \"deepgram transcription\", \"speech to text\",\n\"transcribe audio\", \"audio transcription workflow\", \"batch transcription\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/8b01e976093286e74c57b2c728fc12b98c8b2eaa/plugins/saas-packs/deepgram-pack/skills/deepgram-core-workflow-a",
+      "category": "AIGC",
+      "stars": 1215,
+      "tags": [
+        "speech-to-text",
+        "audio transcription",
+        "Deepgram",
+        "batch processing",
+        "workflow automation"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4623
+    },
+    {
+      "skill_name": "multimodal-whisper",
+      "skill_description": "OpenAI's general-purpose speech recognition model. Supports 99 languages, transcription, translation to English, and language identification. Six model sizes from tiny (39M params) to large (1550M params). Use for speech-to-text, podcast transcription, or multilingual audio processing. Best for robust, multilingual ASR.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/0f6fa465821f11168374ae91670cc8b388cd8d17/cli-tool/components/skills/ai-research/multimodal-whisper",
+      "category": "AIGC",
+      "stars": 19064,
+      "tags": [
+        "speech recognition",
+        "multilingual",
+        "transcription",
+        "translation",
+        "audio processing"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4617
+    },
+    {
+      "skill_name": "speech",
+      "skill_description": "Use when the user asks for text-to-speech narration or voiceover, accessibility reads, audio prompts, or batch speech generation via the OpenAI Audio API; run the bundled CLI (`scripts/text_to_speech.py`) with built-in voices and require `OPENAI_API_KEY` for live calls. Custom voice creation is out of scope.",
+      "skill_url": "https://github.com/openai/skills/blob/8766dfebfe2eafb3740e5f084b08682b299590ce/skills/.curated/speech",
+      "category": "AIGC",
+      "stars": 2262,
+      "tags": [
+        "text-to-speech",
+        "audio-generation",
+        "accessibility",
+        "voiceover",
+        "batch-processing"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4558
+    },
+    {
+      "skill_name": "deepgram-reference-architecture",
+      "skill_description": "Implement Deepgram reference architecture for scalable transcription systems.\nUse when designing transcription pipelines, building production architectures,\nor planning Deepgram integration at scale.\nTrigger with phrases like \"deepgram architecture\", \"transcription pipeline\",\n\"deepgram system design\", \"deepgram at scale\", \"enterprise deepgram\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/44933759526a1241cee690f8aa5b95bec9dae61e/plugins/saas-packs/deepgram-pack/skills/deepgram-reference-architecture",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "Deepgram",
+        "transcription",
+        "system architecture",
+        "scalability",
+        "AI integration"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4391
+    },
+    {
+      "skill_name": "openai-whisper",
+      "skill_description": "Local speech-to-text with the Whisper CLI (no API key).",
+      "skill_url": "https://github.com/clawdbot/clawdbot/blob/b5c32a4c7992fba48840920d24004061a1777fe5/skills/openai-whisper",
+      "category": "AIGC",
+      "stars": 134924,
+      "tags": [
+        "speech-to-text",
+        "openai",
+        "whisper",
+        "audio-processing",
+        "cli-tool"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4257
+    },
+    {
+      "skill_name": "transcribe",
+      "skill_description": "Transcribe audio files to text with optional diarization and known-speaker hints. Use when a user asks to transcribe speech from audio/video, extract text from recordings, or label speakers in interviews or meetings.",
+      "skill_url": "https://github.com/openai/skills/blob/94fa19526eea7676eb5ecde1b9d611d9889aa624/skills/.curated/transcribe",
+      "category": "AIGC",
+      "stars": 2262,
+      "tags": [
+        "audio-transcription",
+        "speaker-diarization",
+        "speech-to-text",
+        "meeting-notes",
+        "openai-api"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4179
+    }
+  ],
+  "relationships": [
+    {
+      "source": "openai-whisper-api",
+      "target": "openai-whisper",
+      "type": "similar_to",
+      "reason": "Both provide Whisper-based speech-to-text functionality (one via OpenAI Audio Transcriptions API, the other via local Whisper CLI) and can often be substituted for transcription tasks."
+    },
+    {
+      "source": "openai-whisper-api",
+      "target": "multimodal-whisper",
+      "type": "similar_to",
+      "reason": "OpenAI's Audio Transcriptions API and the described multimodal Whisper model both perform the same core function of general-purpose speech recognition and transcription."
+    },
+    {
+      "source": "openai-whisper",
+      "target": "multimodal-whisper",
+      "type": "similar_to",
+      "reason": "The local Whisper CLI and the multimodal Whisper model are implementations of the same family of speech-recognition capabilities (local vs model/API usage) and are functionally equivalent for transcription."
+    },
+    {
+      "source": "deepgram-hello-world",
+      "target": "deepgram-core-workflow-a",
+      "type": "belong_to",
+      "reason": "The 'hello world' is a minimal example specifically for starting a Deepgram transcription integration and thus is a sub-component/example of the core Deepgram batch transcription workflow."
+    },
+    {
+      "source": "deepgram-core-workflow-a",
+      "target": "deepgram-reference-architecture",
+      "type": "belong_to",
+      "reason": "The core batch transcription workflow is a specific component/step within the larger Deepgram reference architecture for scalable transcription systems."
+    },
+    {
+      "source": "deepgram-core-workflow-b",
+      "target": "deepgram-reference-architecture",
+      "type": "belong_to",
+      "reason": "The real-time/streaming Deepgram transcription workflow is a specific part of the overall Deepgram reference architecture for production transcription pipelines."
+    },
+    {
+      "source": "deepgram-core-workflow-a",
+      "target": "deepgram-core-workflow-b",
+      "type": "compose_with",
+      "reason": "Batch (core-workflow-a) and real-time streaming (core-workflow-b) transcription are independent Deepgram workflows that are often used together in systems that support both recorded and live audio processing."
+    },
+    {
+      "source": "voice-ai-engine-development",
+      "target": "voice-ai-development",
+      "type": "belong_to",
+      "reason": "Building real-time conversational AI voice engines is a specific, focused sub-area within the broader domain of voice AI development."
+    },
+    {
+      "source": "voice-ai-engine-development",
+      "target": "deepgram-core-workflow-b",
+      "type": "compose_with",
+      "reason": "Real-time voice engine development commonly pairs with streaming transcription services (Deepgram streaming) to convert live audio to text for LLM agents and pipelines."
+    },
+    {
+      "source": "voice-ai-engine-development",
+      "target": "sherpa-onnx-tts",
+      "type": "compose_with",
+      "reason": "A conversational voice engine requires TTS; the engine can integrate with a local TTS implementation like sherpa-onnx-tts to synthesize responses."
+    },
+    {
+      "source": "voice-ai-development",
+      "target": "deepgram-core-workflow-b",
+      "type": "compose_with",
+      "reason": "Voice AI development often involves integrating real-time transcription (Deepgram streaming) as part of building low-latency voice agents and applications."
+    },
+    {
+      "source": "speech",
+      "target": "sherpa-onnx-tts",
+      "type": "similar_to",
+      "reason": "Both provide text-to-speech capabilities (speech via OpenAI Audio API, sherpa-onnx-tts locally) and can be substituted depending on remote vs local requirements."
+    },
+    {
+      "source": "transcribe",
+      "target": "speech",
+      "type": "compose_with",
+      "reason": "Automatic speech recognition (transcribe) and text-to-speech (speech) are independent capabilities that are frequently composed in voice workflows (e.g., speech-to-text -> processing -> text-to-speech)."
+    },
+    {
+      "source": "transcribe",
+      "target": "deepgram-core-workflow-a",
+      "type": "similar_to",
+      "reason": "The general 'transcribe' skill (speech-to-text with diarization) and the Deepgram batch transcription workflow both serve the same primary function of converting recorded audio to text and can be alternatives for that task."
+    }
+  ]
+}

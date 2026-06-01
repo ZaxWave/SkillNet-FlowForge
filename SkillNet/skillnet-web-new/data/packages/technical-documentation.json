@@ -1,0 +1,529 @@
+{
+  "package_name": "technical-documentation",
+  "scene_description": "Technical documentation authoring including API docs, README templates, Docusaurus/MkDocs sites, diagram generation (Mermaid), changelog management, and documentation-as-code workflows",
+  "tags": [
+    "documentation",
+    "technical writing",
+    "api documentation",
+    "readme",
+    "changelog",
+    "mermaid",
+    "documentation generation",
+    "code documentation"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:30:37.321970",
+  "skill_count": 22,
+  "skills": [
+    {
+      "skill_name": "generate-docs",
+      "skill_description": "Based on existing docs styles and specific API implementations, and referencing same name stories, generate comprehensive documentation for the new component.",
+      "skill_url": "https://github.com/longbridge/gpui-component/blob/779ee50742d3f2865d04c9d6b96a54168ab8d9d8/.claude/skills/generate-docs",
+      "category": "Development",
+      "stars": 9956,
+      "tags": [
+        "documentation",
+        "technical writing",
+        "API documentation",
+        "component documentation",
+        "content generation"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.6318
+    },
+    {
+      "skill_name": "doc-gen",
+      "skill_description": "Generate comprehensive documentation from code",
+      "skill_url": "https://github.com/phodal/auto-dev/blob/2f922617e9cc34090e88a8640b601dddcefcc284/examples/skills/doc-gen",
+      "category": "Development",
+      "stars": 4340,
+      "tags": [
+        "documentation generation",
+        "code documentation",
+        "automated documentation",
+        "technical writing",
+        "software tools"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.6101
+    },
+    {
+      "skill_name": "documentation-templates",
+      "skill_description": "Documentation templates and structure guidelines. README, API docs, code comments, and AI-friendly documentation.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/62b5d8de603adc03741b4aa526876f97f4e3cd56/cli-tool/components/skills/document-processing/documentation-templates",
+      "category": "Development",
+      "stars": 19080,
+      "tags": [
+        "documentation",
+        "templates",
+        "guidelines",
+        "software-engineering",
+        "best-practices"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5804
+    },
+    {
+      "skill_name": "api-docs",
+      "skill_description": "Write and review XML API documentation for SkiaSharp following .NET guidelines. Use when user asks to document a class, add XML docs, write XML documentation, add triple-slash comments, review documentation quality, check docs for errors, fix doc issues, fill in missing docs, remove \"To be added\" placeholders, or mentions API documentation.",
+      "skill_url": "https://github.com/mono/SkiaSharp/blob/e1e0ca8fc7bbc2f246d73e04d60af7a200f89a89/.github/skills/api-docs",
+      "category": "Development",
+      "stars": 5253,
+      "tags": [
+        "API documentation",
+        "XML",
+        "code review",
+        "software development",
+        "technical writing"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5409
+    },
+    {
+      "skill_name": "changelog-generator",
+      "skill_description": "Automatically creates user-facing changelogs from git commits by analyzing commit history, categorizing changes, and transforming technical commits into clear, customer-friendly release notes. Turns hours of manual changelog writing into minutes of automated generation.",
+      "skill_url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/6ecabbb9145cdc3a7582b3bc8b457ba40834c676/changelog-generator",
+      "category": "Development",
+      "stars": 28705,
+      "tags": [
+        "automation",
+        "git",
+        "changelog",
+        "release-notes",
+        "version-control"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5399
+    },
+    {
+      "skill_name": "writing-docs",
+      "skill_description": "Guides for writing and editing Remotion documentation. Use when adding docs pages, editing MDX files in packages/docs, or writing documentation content.",
+      "skill_url": "https://github.com/remotion-dev/remotion/blob/7b2b7c278bef245bb74ae5fd1c11b4e5241afb8c/.claude/skills/writing-docs",
+      "category": "Development",
+      "stars": 34159,
+      "tags": [
+        "documentation",
+        "technical writing",
+        "MDX",
+        "Remotion",
+        "content editing"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5344
+    },
+    {
+      "skill_name": "update-docs",
+      "skill_description": "This skill should be used when the user asks to \"update documentation for my changes\", \"check docs for this PR\", \"what docs need updating\", \"sync docs with code\", \"scaffold docs for this feature\", \"document this feature\", \"review docs completeness\", \"add docs for this change\", \"what documentation is affected\", \"docs impact\", or mentions \"docs/\", \"docs/01-app\", \"docs/02-pages\", \"MDX\", \"documentation update\", \"API reference\", \".mdx files\". Provides guided workflow for updating Next.js documentation based on code changes.",
+      "skill_url": "https://github.com/vercel/next.js/blob/9d2d2421adfd903de2c487164fdfc71de664d6b0/.claude/skills/update-docs",
+      "category": "Development",
+      "stars": 137446,
+      "tags": [
+        "documentation",
+        "nextjs",
+        "git",
+        "mdx",
+        "api-reference"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5296
+    },
+    {
+      "skill_name": "doc-check",
+      "skill_description": "Checks if code changes require documentation updates",
+      "skill_url": "https://github.com/coder/coder/blob/a464ab67c60831f1ff798fdf4a1053d267c1e14c/.claude/skills/doc-check",
+      "category": "Development",
+      "stars": 12112,
+      "tags": [
+        "documentation",
+        "code-review",
+        "quality-assurance",
+        "devops",
+        "software-maintenance"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5119
+    },
+    {
+      "skill_name": "docs-writer",
+      "skill_description": "Use this skill for writing, reviewing, and editing documentation (`/docs` directory or any .md file) for Gemini CLI.",
+      "skill_url": "https://github.com/google-gemini/gemini-cli/blob/62346875e48395f7fb9e595e0dbe3c1dc6dfb5be/.gemini/skills/docs-writer",
+      "category": "Development",
+      "stars": 93186,
+      "tags": [
+        "documentation",
+        "technical-writing",
+        "markdown",
+        "code-documentation",
+        "editing"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5061
+    },
+    {
+      "skill_name": "generate-component-documentation",
+      "skill_description": "Generate documentation for new components. Use when writing docs, documenting components, or creating component documentation.",
+      "skill_url": "https://github.com/longbridge/gpui-component/blob/64ef2a69fdb04e562440fd982ac0a177547da9c3/.claude/skills/generate-component-documentation",
+      "category": "Development",
+      "stars": 9956,
+      "tags": [
+        "documentation",
+        "component documentation",
+        "technical writing",
+        "software components",
+        "docs generation"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.503
+    },
+    {
+      "skill_name": "documentation",
+      "skill_description": "Feature documentation and release notes patterns. Use when documenting changes, writing PR descriptions, or preparing releases.",
+      "skill_url": "https://github.com/comet-ml/opik/blob/4ce99da519437ed7165ed58ba6ca50de48ec09e6/.agents/skills/documentation",
+      "category": "Development",
+      "stars": 17582,
+      "tags": [
+        "documentation",
+        "release-notes",
+        "changelog",
+        "pr-description",
+        "technical-writing"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4969
+    },
+    {
+      "skill_name": "api-documenter",
+      "skill_description": "Master API documentation with OpenAPI 3.1, AI-powered tools, and modern developer experience practices. Create interactive docs, generate SDKs, and build comprehensive developer portals. Use PROACTIVELY for API documentation or developer portal creation.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/418982eb85f7890330a138b97c661062ace31abd/skills/api-documenter",
+      "category": "Development",
+      "stars": 5941,
+      "tags": [
+        "API documentation",
+        "OpenAPI",
+        "developer portal",
+        "SDK generation",
+        "technical writing"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4924
+    },
+    {
+      "skill_name": "repo-website-api-update",
+      "skill_description": "Update existing API documentation pages after source code changes. Use when syncing docs with library changes like new parameters, type constraint changes, interface updates, or function renames. Covers common change patterns and verification steps.",
+      "skill_url": "https://github.com/open-circle/valibot/blob/13f449a6b064aadcdabb26ad9aa32531c8df7233/skills/repo-website-api-update",
+      "category": "Development",
+      "stars": 8392,
+      "tags": [
+        "API Documentation",
+        "Code Maintenance",
+        "Technical Writing",
+        "TypeScript",
+        "Version Control"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4892
+    },
+    {
+      "skill_name": "docs-review",
+      "skill_description": "Review documentation changes for compliance with the Metabase writing style guide. Use when reviewing pull requests, files, or diffs containing documentation markdown files.",
+      "skill_url": "https://github.com/metabase/metabase/blob/ee9ba6576247b1aeef3a90aaebd0716247ea1e84/.claude/skills/docs-review",
+      "category": "Productivity",
+      "stars": 45770,
+      "tags": [
+        "documentation review",
+        "style guide compliance",
+        "markdown",
+        "pull request review",
+        "technical writing"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4883
+    },
+    {
+      "skill_name": "docs-sync",
+      "skill_description": "Analyze main branch implementation and configuration to find missing, incorrect, or outdated documentation in docs/. Use when asked to audit doc coverage, sync docs with code, or propose doc updates/structure changes. Only update English docs under docs/** and never touch translated docs under docs/ja, docs/ko, or docs/zh. Provide a report and ask for approval before editing docs.",
+      "skill_url": "https://github.com/openai/openai-agents-python/blob/e449a2dc7b15a2aba04a991840ea279fafe7028a/.codex/skills/docs-sync",
+      "category": "Productivity",
+      "stars": 18658,
+      "tags": [
+        "documentation audit",
+        "code-documentation sync",
+        "technical writing",
+        "documentation maintenance",
+        "version control"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.483
+    },
+    {
+      "skill_name": "changeset",
+      "skill_description": "Create changesets for version bump, release notes, changelog, PR description, semver patch/minor/major, breaking changes, and documentation updates after code changes",
+      "skill_url": "https://github.com/reactive/data-client/blob/e45322d5dbada2b3b2f644370cddcd6b5b46cf2d/.cursor/skills/changeset",
+      "category": "Development",
+      "stars": 2022,
+      "tags": [
+        "version-control",
+        "release-management",
+        "changelog",
+        "documentation",
+        "pull-requests"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4712
+    },
+    {
+      "skill_name": "update-api-docs",
+      "skill_description": "Update the API reference documentation by downloading the latest OpenAPI spec from production and regenerating the Docusaurus API docs",
+      "skill_url": "https://github.com/Agenta-AI/agenta/blob/2d0ed6e87c12b23647f56fb62b05fd3b40600937/.claude/skills/update-api-docs",
+      "category": "Development",
+      "stars": 3809,
+      "tags": [
+        "API Documentation",
+        "OpenAPI",
+        "Docusaurus",
+        "Technical Writing",
+        "API Reference"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4589
+    },
+    {
+      "skill_name": "create-changelog-announcement",
+      "skill_description": "Use this skill to create and publish changelog announcements for new features, improvements, or bug fixes. This skill handles the complete workflow - creating detailed changelog documentation pages, adding sidebar announcement cards, and ensuring everything follows project standards. Use when the user mentions adding changelog entries, documenting new features, creating release notes, or announcing product updates.",
+      "skill_url": "https://github.com/Agenta-AI/agenta/blob/8580dd1cfc8716090c4cff5312bb8facb4a422a4/.claude/skills/create-changelog-announcement",
+      "category": "Development",
+      "stars": 3809,
+      "tags": [
+        "changelog",
+        "release-notes",
+        "documentation",
+        "product-updates",
+        "announcements"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.456
+    },
+    {
+      "skill_name": "docs-voice",
+      "skill_description": "Use when writing any React documentation. Provides voice, tone, and style rules for all doc types.",
+      "skill_url": "https://github.com/reactjs/react.dev/blob/38b52cfdf059b2efc5ee3223a758efe00319fcc7/.claude/skills/docs-voice",
+      "category": "Development",
+      "stars": 11660,
+      "tags": [
+        "documentation",
+        "react",
+        "writing-style",
+        "technical-writing",
+        "guidelines"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4274
+    },
+    {
+      "skill_name": "jsdoc-comment-generator",
+      "skill_description": "Jsdoc Comment Generator - Auto-activating skill for Technical Documentation.\nTriggers on: jsdoc comment generator, jsdoc comment generator\nPart of the Technical Documentation skill category.\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/827f80253f89ee86c8bc9d07d6c9ee42829dceb9/planned-skills/generated/17-technical-docs/jsdoc-comment-generator",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "jsdoc",
+        "documentation",
+        "code comments",
+        "technical writing",
+        "automation"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4102
+    },
+    {
+      "skill_name": "readme-generator",
+      "skill_description": "Readme Generator - Auto-activating skill for DevOps Basics.\nTriggers on: readme generator, readme generator\nPart of the DevOps Basics skill category.\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/a774f2760bcb46eb3da06aa1894cac24e91f9b14/planned-skills/generated/01-devops-basics/readme-generator",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "readme",
+        "devops",
+        "documentation",
+        "automation",
+        "git"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4013
+    },
+    {
+      "skill_name": "docs",
+      "skill_description": "ALWAYS use this when writing docs",
+      "skill_url": "https://github.com/revokslab/ShipFree/blob/22988462f997364818ae96c5fbd81e4514acfbaf/.cursor/skills/docs",
+      "category": "Development",
+      "stars": 1598,
+      "tags": [
+        "documentation",
+        "technical writing",
+        "code formatting",
+        "content guidelines",
+        "commit conventions"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4009
+    }
+  ],
+  "relationships": [
+    {
+      "source": "doc-gen",
+      "target": "generate-docs",
+      "type": "similar_to",
+      "reason": "Both generate comprehensive documentation from code and appear interchangeable for code-to-doc generation."
+    },
+    {
+      "source": "generate-component-documentation",
+      "target": "generate-docs",
+      "type": "similar_to",
+      "reason": "Both specifically generate documentation for new components and overlap in purpose; users could substitute one for the other."
+    },
+    {
+      "source": "documentation-templates",
+      "target": "docs",
+      "type": "belong_to",
+      "reason": "Templates and structure guidelines are a sub-component used when writing documentation and thus belong to the general docs workflow."
+    },
+    {
+      "source": "docs-voice",
+      "target": "docs",
+      "type": "belong_to",
+      "reason": "Voice, tone, and style rules are part of the overall documentation practice and therefore a child of the docs skill."
+    },
+    {
+      "source": "writing-docs",
+      "target": "docs",
+      "type": "belong_to",
+      "reason": "Guides for writing and editing documentation are a specific subtask within the broader docs skill."
+    },
+    {
+      "source": "docs-writer",
+      "target": "docs",
+      "type": "belong_to",
+      "reason": "The docs-writer skill is specifically for writing and editing docs and thus is a sub-component of the general docs capability."
+    },
+    {
+      "source": "jsdoc-comment-generator",
+      "target": "docs",
+      "type": "belong_to",
+      "reason": "An auto-activating jsdoc comment generator is a technical documentation subtool and fits under the overall docs domain."
+    },
+    {
+      "source": "readme-generator",
+      "target": "docs",
+      "type": "belong_to",
+      "reason": "Automating README creation is a documentation task and therefore a part of the larger docs workflow."
+    },
+    {
+      "source": "doc-check",
+      "target": "update-docs",
+      "type": "belong_to",
+      "reason": "Checking whether code changes require documentation updates is a specific step within the documentation update workflow."
+    },
+    {
+      "source": "docs-sync",
+      "target": "update-docs",
+      "type": "compose_with",
+      "reason": "Docs-sync analyzes the codebase to find missing or outdated docs and is typically used together with update-docs to apply the proposed updates."
+    },
+    {
+      "source": "docs-review",
+      "target": "docs-writer",
+      "type": "compose_with",
+      "reason": "Reviewing documentation changes is logically paired with writing/editing workflows and is often used alongside docs-writer."
+    },
+    {
+      "source": "repo-website-api-update",
+      "target": "update-api-docs",
+      "type": "similar_to",
+      "reason": "Both update API documentation pages after source/spec changes and serve a similar role in syncing API docs with code or specs."
+    },
+    {
+      "source": "api-documenter",
+      "target": "update-api-docs",
+      "type": "compose_with",
+      "reason": "API-documenter (broader API documentation tooling) is commonly used together with a process that regenerates docs from an OpenAPI spec like update-api-docs."
+    },
+    {
+      "source": "api-docs",
+      "target": "api-documenter",
+      "type": "compose_with",
+      "reason": "Writing and reviewing specific XML API docs for a library is commonly paired with broader API documentation tooling and practices."
+    },
+    {
+      "source": "changelog-generator",
+      "target": "create-changelog-announcement",
+      "type": "compose_with",
+      "reason": "Changelog generation from commits is typically used together with a workflow that creates and publishes changelog announcement pages."
+    },
+    {
+      "source": "changelog-generator",
+      "target": "changeset",
+      "type": "compose_with",
+      "reason": "Automatically generating changelogs often happens alongside creating changesets for releases and versioning."
+    },
+    {
+      "source": "create-changelog-announcement",
+      "target": "documentation",
+      "type": "belong_to",
+      "reason": "Creating and publishing changelog announcement pages is a specific activity within the broader feature documentation and release notes patterns."
+    },
+    {
+      "source": "changeset",
+      "target": "documentation",
+      "type": "belong_to",
+      "reason": "Producing changesets for version bumps and release notes is a subtask of preparing release documentation and PR descriptions."
+    },
+    {
+      "source": "generate-docs",
+      "target": "docs",
+      "type": "belong_to",
+      "reason": "Generating comprehensive documentation for new components is a concrete documentation task and therefore a child activity of the overall docs capability."
+    },
+    {
+      "source": "doc-gen",
+      "target": "docs",
+      "type": "belong_to",
+      "reason": "Generating comprehensive documentation from code is a documentation task that belongs to the broader docs capability, similar to generate-docs."
+    },
+    {
+      "source": "generate-component-documentation",
+      "target": "docs",
+      "type": "belong_to",
+      "reason": "Generating documentation for new components is a specific documentation task within the overall docs capability."
+    },
+    {
+      "source": "api-docs",
+      "target": "update-api-docs",
+      "type": "compose_with",
+      "reason": "Writing and reviewing API documentation works together with updating API docs from OpenAPI specs; these are complementary API documentation maintenance activities."
+    },
+    {
+      "source": "update-docs",
+      "target": "docs",
+      "type": "belong_to",
+      "reason": "Updating documentation based on code changes is a specific documentation workflow within the broader docs practice."
+    },
+    {
+      "source": "jsdoc-comment-generator",
+      "target": "doc-gen",
+      "type": "compose_with",
+      "reason": "JSDoc comment generation is commonly used together with comprehensive documentation generation from code, providing inline code documentation alongside generated docs."
+    },
+    {
+      "source": "readme-generator",
+      "target": "documentation-templates",
+      "type": "compose_with",
+      "reason": "README generation typically uses documentation templates to follow structure guidelines and best practices for README content."
+    },
+    {
+      "source": "docs-sync",
+      "target": "doc-check",
+      "type": "compose_with",
+      "reason": "Both skills check documentation synchronization status; docs-sync audits overall coverage while doc-check verifies if specific code changes need doc updates, working together in doc maintenance workflows."
+    }
+  ]
+}

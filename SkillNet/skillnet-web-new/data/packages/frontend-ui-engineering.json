@@ -1,0 +1,389 @@
+{
+  "package_name": "frontend-ui-engineering",
+  "scene_description": "Frontend UI engineering including CSS/SCSS, responsive design, accessibility (a11y), component libraries, design systems, animation, and cross-browser compatibility",
+  "tags": [
+    "css",
+    "accessibility",
+    "responsive design",
+    "ui components",
+    "design systems",
+    "animation",
+    "ui design",
+    "frontend development"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:12:04.446683",
+  "skill_count": 17,
+  "skills": [
+    {
+      "skill_name": "design-system-starter",
+      "skill_description": "Create and evolve design systems with design tokens, component architecture, accessibility guidelines, and documentation templates. Ensures consistent, scalable, and accessible UI across products.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/5b0ddf0d25666219f5a24bd589bd9ff9565619cb/cli-tool/components/skills/development/design-system-starter",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "design-system",
+        "ui-components",
+        "frontend",
+        "accessibility",
+        "react"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.6212
+    },
+    {
+      "skill_name": "responsive-design",
+      "skill_description": "Implement modern responsive layouts using container queries, fluid typography, CSS Grid, and mobile-first breakpoint strategies. Use when building adaptive interfaces, implementing fluid layouts, or creating component-level responsive behavior.",
+      "skill_url": "https://github.com/wshobson/agents/blob/1135ac606247648d9e4724f027280d4114282858/plugins/ui-design/skills/responsive-design",
+      "category": "Development",
+      "stars": 27432,
+      "tags": [
+        "responsive design",
+        "CSS Grid",
+        "container queries",
+        "fluid typography",
+        "mobile-first"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5603
+    },
+    {
+      "skill_name": "ui-ux-designer",
+      "skill_description": "Create interface designs, wireframes, and design systems. Masters user research, accessibility standards, and modern design tools. Specializes in design tokens, component libraries, and inclusive design. Use PROACTIVELY for design systems, user flows, or interface optimization.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/4c400ca1218d73b032351bc083b40743dd9ec055/skills/ui-ux-designer",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "UI/UX Design",
+        "Design Systems",
+        "Accessibility",
+        "User Research",
+        "Figma"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5181
+    },
+    {
+      "skill_name": "frontend-ui-ux",
+      "skill_description": "Designer-turned-developer who crafts stunning UI/UX even without design mockups",
+      "skill_url": "https://github.com/code-yeongyu/oh-my-opencode/blob/91c490a35898a06cf140a3cd7de6efedfc725f59/src/features/builtin-skills/frontend-ui-ux",
+      "category": "Development",
+      "stars": 26639,
+      "tags": [
+        "UI Design",
+        "UX Design",
+        "Frontend Development",
+        "Web Design",
+        "User Interface"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5176
+    },
+    {
+      "skill_name": "ui-development",
+      "skill_description": "Build UI with Redpanda Registry components, Tailwind v4, and accessibility best practices.",
+      "skill_url": "https://github.com/redpanda-data/console/blob/c7976b8c9b4c3f2b080df7ee125ec5829188668e/frontend/.claude/skills/ui-development",
+      "category": "Development",
+      "stars": 4228,
+      "tags": [
+        "UI development",
+        "frontend",
+        "design system",
+        "component library",
+        "accessibility"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5169
+    },
+    {
+      "skill_name": "accessibility-compliance",
+      "skill_description": "Implement WCAG 2.2 compliant interfaces with mobile accessibility, inclusive design patterns, and assistive technology support. Use when auditing accessibility, implementing ARIA patterns, building for screen readers, or ensuring inclusive user experiences.",
+      "skill_url": "https://github.com/wshobson/agents/blob/1135ac606247648d9e4724f027280d4114282858/plugins/ui-design/skills/accessibility-compliance",
+      "category": "Development",
+      "stars": 27432,
+      "tags": [
+        "accessibility",
+        "WCAG compliance",
+        "inclusive design",
+        "ARIA patterns",
+        "assistive technology"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5111
+    },
+    {
+      "skill_name": "epic-ui-guidelines",
+      "skill_description": "Guide on UI/UX guidelines, accessibility, and component usage for Epic Stack",
+      "skill_url": "https://github.com/epicweb-dev/epic-stack/blob/f533988e9e8cb61fe617049be88f7a1ce58fc725/docs/skills/epic-ui-guidelines",
+      "category": "Development",
+      "stars": 5528,
+      "tags": [
+        "UI/UX",
+        "Accessibility",
+        "Frontend Development",
+        "React",
+        "Tailwind CSS"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5069
+    },
+    {
+      "skill_name": "accessibility",
+      "skill_description": "WCAG 2.2 AA accessibility standards for the Exceptionless frontend. Semantic HTML, keyboard\nnavigation, ARIA patterns, focus management, and form accessibility.\nKeywords: WCAG, accessibility, a11y, ARIA, semantic HTML, keyboard navigation, focus management,\nscreen reader, alt text, aria-label, aria-describedby, skip links, focus trap\n",
+      "skill_url": "https://github.com/exceptionless/Exceptionless/blob/26ee2ffe021bd68be9ee4079580cc137b0a4712f/.github/skills/accessibility",
+      "category": "Development",
+      "stars": 2449,
+      "tags": [
+        "accessibility",
+        "WCAG",
+        "ARIA",
+        "semantic HTML",
+        "frontend development"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4812
+    },
+    {
+      "skill_name": "frontend-design",
+      "skill_description": "Create distinctive, production-grade frontend interfaces with intentional aesthetics, high craft, and non-generic visual identity. Use when building or styling web UIs, components, pages, dashboards, or frontend applications.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/4c400ca1218d73b032351bc083b40743dd9ec055/skills/frontend-design",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "frontend",
+        "UI design",
+        "web development",
+        "CSS",
+        "design system"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4712
+    },
+    {
+      "skill_name": "ui-ux-pro-max",
+      "skill_description": "UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 9 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, Tailwind, shadcn/ui). Actions: plan, build, create, design, implement, review, fix, improve, optimize, enhance, refactor, check UI/UX code. Projects: website, landing page, dashboard, admin panel, e-commerce, SaaS, portfolio, blog, mobile app, .html, .tsx, .vue, .svelte. Elements: button, modal, navbar, sidebar, card, table, form, chart. Styles: glassmorphism, claymorphism, minimalism, brutalism, neumorphism, bento grid, dark mode, responsive, skeuomorphism, flat design. Topics: color palette, accessibility, animation, layout, typography, font pairing, spacing, hover, shadow, gradient.",
+      "skill_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/7f22b57363d71d4b8a07e8d0fa86dfd071fa435b/.codex/skills/ui-ux-pro-max",
+      "category": "Development",
+      "stars": 25659,
+      "tags": [
+        "UI/UX Design",
+        "Frontend Development",
+        "Design Systems",
+        "Responsive Design",
+        "Component Libraries"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4672
+    },
+    {
+      "skill_name": "retro-css-architecture",
+      "skill_description": "Organize 8-bit CSS with custom properties, pixel fonts, and responsive pixel art. Apply when creating or modifying retro-styled components and their CSS.",
+      "skill_url": "https://github.com/TheOrcDev/8bitcn-ui/blob/1e89962672ae0a7984060a4a1fdb3025f1423189/.claude/skills/retro-css-architecture",
+      "category": "Development",
+      "stars": 1564,
+      "tags": [
+        "CSS",
+        "Retro Design",
+        "Responsive Design",
+        "Pixel Art",
+        "Frontend Development"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4629
+    },
+    {
+      "skill_name": "ui-design-styling",
+      "skill_description": "Design and style UI components for ryOS following the 4 OS themes (System 7, macOS Aqua, Windows XP, Windows 98). Use when creating UI components, styling elements, working with themes, adding visual effects, or implementing retro OS aesthetics.",
+      "skill_url": "https://github.com/ryokun6/ryos/blob/bf700fef4fb46d31b92a3589add022708e976c0f/.cursor/skills/ui-design-styling",
+      "category": "Development",
+      "stars": 1070,
+      "tags": [
+        "UI Design",
+        "Frontend Development",
+        "Styling",
+        "Theming",
+        "Retro UI"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4545
+    },
+    {
+      "skill_name": "frontend-developer",
+      "skill_description": "Build React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern frontend architecture. Optimizes performance and ensures accessibility. Use PROACTIVELY when creating UI components or fixing frontend issues.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/d2f3423a139e2ea5e627ce2021360d6c5ac11537/skills/frontend-developer",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "React",
+        "Next.js",
+        "Frontend Development",
+        "Web Performance",
+        "TypeScript"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4316
+    },
+    {
+      "skill_name": "design-system-patterns",
+      "skill_description": "Build scalable design systems with design tokens, theming infrastructure, and component architecture patterns. Use when creating design tokens, implementing theme switching, building component libraries, or establishing design system foundations.",
+      "skill_url": "https://github.com/wshobson/agents/blob/1135ac606247648d9e4724f027280d4114282858/plugins/ui-design/skills/design-system-patterns",
+      "category": "Development",
+      "stars": 27432,
+      "tags": [
+        "design systems",
+        "UI design",
+        "component architecture",
+        "design tokens",
+        "theming"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4264
+    },
+    {
+      "skill_name": "frontend-mobile-development-component-scaffold",
+      "skill_description": "You are a React component architecture expert specializing in scaffolding production-ready, accessible, and performant components. Generate complete component implementations with TypeScript, tests, s",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/4c400ca1218d73b032351bc083b40743dd9ec055/skills/frontend-mobile-development-component-scaffold",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "React",
+        "TypeScript",
+        "Component Scaffolding",
+        "Frontend Development",
+        "Mobile Development"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4219
+    },
+    {
+      "skill_name": "mobile-android-design",
+      "skill_description": "Master Material Design 3 and Jetpack Compose patterns for building native Android apps. Use when designing Android interfaces, implementing Compose UI, or following Google's Material Design guidelines.",
+      "skill_url": "https://github.com/wshobson/agents/blob/1135ac606247648d9e4724f027280d4114282858/plugins/ui-design/skills/mobile-android-design",
+      "category": "Development",
+      "stars": 27432,
+      "tags": [
+        "Android Development",
+        "UI Design",
+        "Material Design",
+        "Jetpack Compose",
+        "Mobile App Design"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4131
+    },
+    {
+      "skill_name": "accessibility-expert",
+      "skill_description": "WCAG 2.1/2.2 compliance, WAI-ARIA implementation, screen reader optimization, keyboard navigation, and accessibility testing expert. Use PROACTIVELY for accessibility violations, ARIA errors, keyboard navigation issues, screen reader compatibility problems, or accessibility testing automation needs.",
+      "skill_url": "https://github.com/vudovn/antigravity-kit/blob/365d1221449c30788e22adc4c0af3573eda3cba4/.agent/skills/accessibility-expert",
+      "category": "Development",
+      "stars": 3795,
+      "tags": [
+        "accessibility",
+        "WCAG",
+        "WAI-ARIA",
+        "screen reader",
+        "keyboard navigation"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4037
+    }
+  ],
+  "relationships": [
+    {
+      "source": "design-system-starter",
+      "target": "design-system-patterns",
+      "type": "similar_to",
+      "reason": "Both explicitly focus on creating scalable design systems with design tokens, component architecture, theming and documentation; functionally interchangeable for building design systems."
+    },
+    {
+      "source": "epic-ui-guidelines",
+      "target": "design-system-starter",
+      "type": "belong_to",
+      "reason": "Epic UI guidelines are a specific guide on UI/UX, accessibility, and component usage and fit as a documentation/guidelines artifact within a design system workflow."
+    },
+    {
+      "source": "frontend-mobile-development-component-scaffold",
+      "target": "frontend-developer",
+      "type": "belong_to",
+      "reason": "Scaffolding production-ready React components is a sub-task and concrete step within the broader frontend developer workflow."
+    },
+    {
+      "source": "ui-development",
+      "target": "frontend-developer",
+      "type": "belong_to",
+      "reason": "Building UI with specific component libraries and Tailwind is an implementation-focused part of frontend developer responsibilities."
+    },
+    {
+      "source": "frontend-ui-ux",
+      "target": "frontend-developer",
+      "type": "similar_to",
+      "reason": "Both craft and implement UI/UX and components; the 'designer-turned-developer' role overlaps functionally with frontend development responsibilities."
+    },
+    {
+      "source": "ui-ux-designer",
+      "target": "ui-ux-pro-max",
+      "type": "similar_to",
+      "reason": "Both produce interface designs, design systems, palettes, typography and UI patterns — they serve the same design creation purpose."
+    },
+    {
+      "source": "accessibility",
+      "target": "accessibility-compliance",
+      "type": "similar_to",
+      "reason": "Both describe implementing WCAG 2.2 accessibility standards, ARIA patterns, and inclusive design for front-end interfaces."
+    },
+    {
+      "source": "accessibility-expert",
+      "target": "accessibility-compliance",
+      "type": "similar_to",
+      "reason": "The accessibility expert skill and the compliance-oriented skill both focus on WCAG/ARIA implementation and remediation; they address the same accessibility domain."
+    },
+    {
+      "source": "responsive-design",
+      "target": "frontend-developer",
+      "type": "compose_with",
+      "reason": "Responsive design techniques (container queries, fluid typography, Grid) are commonly used alongside frontend development to produce adaptive interfaces."
+    },
+    {
+      "source": "ui-ux-pro-max",
+      "target": "frontend-developer",
+      "type": "compose_with",
+      "reason": "UI/UX style systems, palettes, and component patterns produced by this design intelligence are typically consumed by frontend developers to implement UIs."
+    },
+    {
+      "source": "retro-css-architecture",
+      "target": "ui-design-styling",
+      "type": "compose_with",
+      "reason": "Retro CSS patterns (8-bit styles, pixel fonts) are often used together with themed UI styling workflows when creating retro-styled components and themes."
+    },
+    {
+      "source": "ui-design-styling",
+      "target": "design-system-starter",
+      "type": "belong_to",
+      "reason": "Theme-specific styling (ryOS themes) is a component of a design system's theming and component styling documentation and thus fits as part of a design-system starter workflow."
+    },
+    {
+      "source": "frontend-design",
+      "target": "frontend-ui-ux",
+      "type": "similar_to",
+      "reason": "Both focus on creating distinctive, production-grade front-end interfaces and visual identity; they overlap in purpose of styling and crafting UI experiences."
+    },
+    {
+      "source": "accessibility-compliance",
+      "target": "design-system-starter",
+      "type": "belong_to",
+      "reason": "Accessibility compliance standards and practices (WCAG 2.2, ARIA patterns, inclusive design) are concrete implementations of the accessibility guidelines component within design systems."
+    },
+    {
+      "source": "responsive-design",
+      "target": "design-system-patterns",
+      "type": "belong_to",
+      "reason": "Responsive design patterns (container queries, fluid typography, CSS Grid, mobile-first strategies) are fundamental building blocks of component architecture patterns in design systems."
+    },
+    {
+      "source": "ui-ux-designer",
+      "target": "design-system-starter",
+      "type": "compose_with",
+      "reason": "UI/UX designers who specialize in design tokens and component libraries use design system tools to create, document, and evolve design systems."
+    }
+  ]
+}

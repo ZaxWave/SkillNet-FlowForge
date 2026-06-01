@@ -1,0 +1,469 @@
+{
+  "package_name": "e2e-browser-testing",
+  "scene_description": "End-to-end browser testing with Playwright, Cypress, Selenium, including page object model, visual regression, API mocking, test parallelization, and cross-browser testing",
+  "tags": [
+    "playwright",
+    "e2e testing",
+    "browser automation",
+    "end-to-end testing",
+    "test automation",
+    "ui testing",
+    "web testing",
+    "testing"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:24:26.597068",
+  "skill_count": 19,
+  "skills": [
+    {
+      "skill_name": "skill-adapter",
+      "skill_description": "This skill enables Claude to generate end-to-end (E2E) tests for web applications. It leverages Playwright, Cypress, or Selenium to automate browser interactions and validate user workflows. Use this skill when the user requests to \"create E2E tests\", \"generate end-to-end tests\", or asks for help with \"browser-based testing\". The skill is particularly useful for testing user registration, login flows, shopping cart functionality, and other multi-step processes within a web application. It supports cross-browser testing and can be used to verify the responsiveness of web applications on different devices.\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/backups/plugin-enhancements/plugin-backups/e2e-test-framework_20251019_145520/skills/skill-adapter",
+      "category": "Testing",
+      "stars": 1215,
+      "tags": [
+        "end-to-end testing",
+        "web testing",
+        "automated testing",
+        "Playwright",
+        "Cypress"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.67
+    },
+    {
+      "skill_name": "write-e2e-tests",
+      "skill_description": "Writing Playwright E2E tests for tldraw. Use when creating browser tests, testing UI interactions, or adding E2E coverage in apps/examples/e2e or apps/dotcom/client/e2e.",
+      "skill_url": "https://github.com/tldraw/tldraw/blob/9433fac410583de842457eb63fff5e83471038fc/.claude/skills/write-e2e-tests",
+      "category": "Testing",
+      "stars": 44987,
+      "tags": [
+        "Playwright",
+        "E2E Testing",
+        "Browser Testing",
+        "UI Testing",
+        "Test Automation"
+      ],
+      "tag_hits": 4,
+      "semantic_score": 0.6625
+    },
+    {
+      "skill_name": "browser-automation",
+      "skill_description": "Browser automation powers web testing, scraping, and AI agent interactions. The difference between a flaky script and a reliable system comes down to understanding selectors, waiting strategies, and anti-detection patterns.  This skill covers Playwright (recommended) and Puppeteer, with patterns for testing, scraping, and agentic browser control. Key insight: Playwright won the framework war. Unless you need Puppeteer's stealth ecosystem or are Chrome-only, Playwright is the better choice in 202",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/57b21f902f8e3b807d3595a4a860dfe75541199d/cli-tool/components/skills/utilities/browser-automation",
+      "category": "Testing",
+      "stars": 19064,
+      "tags": [
+        "browser-automation",
+        "playwright",
+        "web-scraping",
+        "e2e-testing",
+        "ui-automation"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.6331
+    },
+    {
+      "skill_name": "playwright",
+      "skill_description": "Playwright E2E testing patterns. Trigger: When writing Playwright E2E tests (Page Object Model, selectors, MCP exploration workflow). For Prowler-specific UI conventions under ui/tests, also use prowler-test-ui.\n",
+      "skill_url": "https://github.com/prowler-cloud/prowler/blob/864b2099c31f287f64791080c086740b6b5933bd/skills/playwright",
+      "category": "Testing",
+      "stars": 12861,
+      "tags": [
+        "playwright",
+        "e2e testing",
+        "automated testing",
+        "test automation",
+        "ui testing"
+      ],
+      "tag_hits": 4,
+      "semantic_score": 0.6157
+    },
+    {
+      "skill_name": "e2e-testing-patterns",
+      "skill_description": "Master end-to-end testing with Playwright and Cypress to build reliable test suites that catch bugs, improve confidence, and enable fast deployment. Use when implementing E2E tests, debugging flaky tests, or establishing testing standards.",
+      "skill_url": "https://github.com/wshobson/agents/blob/1135ac606247648d9e4724f027280d4114282858/plugins/developer-essentials/skills/e2e-testing-patterns",
+      "category": "Testing",
+      "stars": 27432,
+      "tags": [
+        "e2e testing",
+        "Playwright",
+        "Cypress",
+        "test automation",
+        "software testing"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5915
+    },
+    {
+      "skill_name": "javascript-testing-expert",
+      "skill_description": "Expert-level JavaScript testing skill focused on writing high-quality tests that find bugs, serve as documentation, and prevent regressions. Advocates for property-based testing with fast-check and protects against indeterministic code in tests. Does not cover black-box e2e testing.",
+      "skill_url": "https://github.com/dubzzz/fast-check/blob/a70df00c24871061a4023dc935577d132264144c/skills/javascript-testing-expert",
+      "category": "Testing",
+      "stars": 4759,
+      "tags": [
+        "JavaScript",
+        "Testing",
+        "Quality Assurance",
+        "Property-Based Testing",
+        "Unit Testing"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5478
+    },
+    {
+      "skill_name": "web-renderer-test",
+      "skill_description": "Add a test case to the web renderer",
+      "skill_url": "https://github.com/remotion-dev/remotion/blob/7b2b7c278bef245bb74ae5fd1c11b4e5241afb8c/.claude/skills/web-renderer-test",
+      "category": "Testing",
+      "stars": 34159,
+      "tags": [
+        "testing",
+        "web development",
+        "renderer",
+        "test case",
+        "software quality"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5099
+    },
+    {
+      "skill_name": "cli-e2e-testing",
+      "skill_description": "Guide for writing Aspire CLI end-to-end tests using Hex1b terminal automation. Use this when asked to create, modify, or debug CLI E2E tests.",
+      "skill_url": "https://github.com/dotnet/aspire/blob/b931ffcad6105feb02f13c2f116851a740adbc7b/.github/skills/cli-e2e-testing",
+      "category": "Testing",
+      "stars": 5383,
+      "tags": [
+        "cli",
+        "e2e testing",
+        "test automation",
+        "terminal automation",
+        "software testing"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4926
+    },
+    {
+      "skill_name": "running-e2e-tests",
+      "skill_description": "Execute end-to-end tests covering full user workflows across frontend and backend.\nUse when performing specialized testing.\nTrigger with phrases like \"run end-to-end tests\", \"test user flows\", or \"execute E2E suite\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/plugins/testing/e2e-test-framework/skills/running-e2e-tests",
+      "category": "Testing",
+      "stars": 1215,
+      "tags": [
+        "testing",
+        "end-to-end testing",
+        "software testing",
+        "quality assurance",
+        "automation"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.468
+    },
+    {
+      "skill_name": "chrome-devtools",
+      "skill_description": "Expert-level browser automation, debugging, and performance analysis using Chrome DevTools MCP. Use for interacting with web pages, capturing screenshots, analyzing network traffic, and profiling performance.",
+      "skill_url": "https://github.com/github/awesome-copilot/blob/ccdfd66cc2311cac15b9e22073a9314a1c0d0fce/skills/chrome-devtools",
+      "category": "Development",
+      "stars": 19745,
+      "tags": [
+        "browser automation",
+        "debugging",
+        "performance analysis",
+        "web testing",
+        "Chrome DevTools"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4675
+    },
+    {
+      "skill_name": "test-writer",
+      "skill_description": "Generate comprehensive Vitest tests for code examples in JavaScript concept documentation pages, following project conventions and referencing source lines",
+      "skill_url": "https://github.com/leonardomso/33-js-concepts/blob/18e153d71f658440468d49c12fc38715cb80f690/.claude/skills/test-writer",
+      "category": "Testing",
+      "stars": 66215,
+      "tags": [
+        "testing",
+        "vitest",
+        "javascript",
+        "documentation",
+        "automation"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4593
+    },
+    {
+      "skill_name": "browser-setup-devtools",
+      "skill_description": "Guide users through browser automation setup using Chrome DevTools MCP as the primary path and the OpenCode browser extension as a fallback. Use when the user asks to set up browser automation, Chrome DevTools MCP, browser MCP, browser extension, or runs the browser-setup command.",
+      "skill_url": "https://github.com/different-ai/openwork/blob/bd8d4b75925b06e95ae25a931587df259e444d1d/.opencode/skills/browser-setup-devtools",
+      "category": "Development",
+      "stars": 8108,
+      "tags": [
+        "browser automation",
+        "Chrome DevTools",
+        "MCP setup",
+        "browser extension",
+        "development tools"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4565
+    },
+    {
+      "skill_name": "testing-expert",
+      "skill_description": "Testing expert with comprehensive knowledge of test structure, mocking strategies, async testing, coverage analysis, and cross-framework debugging. Use PROACTIVELY for test reliability, flaky test debugging, framework migration, and testing architecture decisions. Covers Jest, Vitest, Playwright, and Testing Library.",
+      "skill_url": "https://github.com/vudovn/antigravity-kit/blob/365d1221449c30788e22adc4c0af3573eda3cba4/.agent/skills/testing-expert",
+      "category": "Testing",
+      "stars": 3795,
+      "tags": [
+        "testing",
+        "software testing",
+        "test automation",
+        "debugging",
+        "quality assurance"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4447
+    },
+    {
+      "skill_name": "positron-pr-helper",
+      "skill_description": "Generates well-structured PR bodies with dynamically fetched e2e test tags",
+      "skill_url": "https://github.com/posit-dev/positron/blob/2e5a02e9924b7e6880c19dd84998b18bd010d7d4/.claude/skills/positron-pr-helper",
+      "category": "Development",
+      "stars": 3929,
+      "tags": [
+        "pull request",
+        "automation",
+        "testing",
+        "documentation",
+        "software development"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4241
+    },
+    {
+      "skill_name": "e2e-frontend-validation",
+      "skill_description": "E2E validation workflow for frontend changes in playground packages using Playwright MCP",
+      "skill_url": "https://github.com/mastra-ai/mastra/blob/664f1ca64e871aecda3f0bd4bda81a9de6f8b183/.claude/skills/e2e-frontend-validation",
+      "category": "Testing",
+      "stars": 20639,
+      "tags": [
+        "frontend testing",
+        "Playwright",
+        "end-to-end testing",
+        "MCP",
+        "validation workflow"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4184
+    },
+    {
+      "skill_name": "senior-qa",
+      "skill_description": "Comprehensive QA and testing skill for quality assurance, test automation, and testing strategies for ReactJS, NextJS, NodeJS applications. Includes test suite generation, coverage analysis, E2E testing setup, and quality metrics. Use when designing test strategies, writing test cases, implementing test automation, performing manual testing, or analyzing test coverage.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/e1ad0ef499dd2ea86e3e4bd05022faeb080b50f0/cli-tool/components/skills/development/senior-qa",
+      "category": "Testing",
+      "stars": 19064,
+      "tags": [
+        "Quality Assurance",
+        "Test Automation",
+        "Software Testing",
+        "ReactJS",
+        "NodeJS"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4165
+    },
+    {
+      "skill_name": "deployment-e2e-testing",
+      "skill_description": "Guide for writing Aspire deployment end-to-end tests. Use this when asked to create, modify, or debug deployment E2E tests that deploy to Azure.",
+      "skill_url": "https://github.com/dotnet/aspire/blob/af0e27eb5b5af9dbd78889865f005e2d25746d4d/.github/skills/deployment-e2e-testing",
+      "category": "Testing",
+      "stars": 5383,
+      "tags": [
+        "end-to-end testing",
+        "Azure deployment",
+        "Aspire",
+        "CI/CD",
+        "terminal automation"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4161
+    },
+    {
+      "skill_name": "scoutqa-test",
+      "skill_description": "This skill should be used when the user asks to \"test this website\", \"run exploratory testing\", \"check for accessibility issues\", \"verify the login flow works\", \"find bugs on this page\", or requests automated QA testing. Triggers on web application testing scenarios including smoke tests, accessibility audits, e-commerce flows, and user flow validation using ScoutQA CLI. IMPORTANT: Use this skill proactively after implementing web application features to verify they work correctly - don't wait for the user to ask for testing.\n",
+      "skill_url": "https://github.com/github/awesome-copilot/blob/ccdfd66cc2311cac15b9e22073a9314a1c0d0fce/skills/scoutqa-test",
+      "category": "Testing",
+      "stars": 19732,
+      "tags": [
+        "web testing",
+        "automated QA",
+        "exploratory testing",
+        "accessibility audit",
+        "bug detection"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4111
+    },
+    {
+      "skill_name": "gpui-test",
+      "skill_description": "Writing tests for GPUI applications. Use when testing components, async operations, or UI behavior.",
+      "skill_url": "https://github.com/longbridge/gpui-component/blob/64ef2a69fdb04e562440fd982ac0a177547da9c3/.claude/skills/gpui-test",
+      "category": "Testing",
+      "stars": 9956,
+      "tags": [
+        "testing",
+        "GPUI",
+        "UI testing",
+        "async testing",
+        "component testing"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4101
+    }
+  ],
+  "relationships": [
+    {
+      "source": "write-e2e-tests",
+      "target": "skill-adapter",
+      "type": "belong_to",
+      "reason": "Writing Playwright E2E tests for tldraw is a specific test-writing task that fits as a sub-component of the broader E2E test generation workflow provided by skill-adapter."
+    },
+    {
+      "source": "write-e2e-tests",
+      "target": "playwright",
+      "type": "depend_on",
+      "reason": "The skill specifically writes Playwright E2E tests and cannot produce Playwright tests without the Playwright testing framework."
+    },
+    {
+      "source": "playwright",
+      "target": "browser-automation",
+      "type": "belong_to",
+      "reason": "Playwright is a specific browser automation/testing framework and thus is a sub-component of the broader browser-automation skill."
+    },
+    {
+      "source": "e2e-testing-patterns",
+      "target": "playwright",
+      "type": "compose_with",
+      "reason": "E2E testing patterns describe techniques used when implementing tests with Playwright; the patterns and the tool are independent but commonly used together."
+    },
+    {
+      "source": "skill-adapter",
+      "target": "playwright",
+      "type": "depend_on",
+      "reason": "skill-adapter leverages Playwright (among other frameworks) to generate end-to-end tests, so it requires Playwright to produce Playwright-based E2E tests."
+    },
+    {
+      "source": "skill-adapter",
+      "target": "e2e-testing-patterns",
+      "type": "compose_with",
+      "reason": "skill-adapter generates E2E tests and commonly uses established E2E testing patterns to create reliable tests; the adapter and pattern guidance are paired in workflows."
+    },
+    {
+      "source": "browser-setup-devtools",
+      "target": "chrome-devtools",
+      "type": "depend_on",
+      "reason": "browser-setup-devtools guides setup using Chrome DevTools MCP as the primary path, so it requires Chrome DevTools to perform that setup."
+    },
+    {
+      "source": "chrome-devtools",
+      "target": "browser-automation",
+      "type": "compose_with",
+      "reason": "Chrome DevTools is an expert debugging/automation tool that is often used alongside general browser automation frameworks and tooling."
+    },
+    {
+      "source": "e2e-frontend-validation",
+      "target": "running-e2e-tests",
+      "type": "belong_to",
+      "reason": "E2E frontend validation is a specific validation workflow for frontend changes and represents a sub-step within the overall activity of running end-to-end tests."
+    },
+    {
+      "source": "e2e-frontend-validation",
+      "target": "playwright",
+      "type": "depend_on",
+      "reason": "The validation workflow explicitly uses Playwright MCP, so it cannot run without Playwright."
+    },
+    {
+      "source": "running-e2e-tests",
+      "target": "playwright",
+      "type": "depend_on",
+      "reason": "Executing end-to-end tests requires an underlying framework such as Playwright; running-e2e-tests depends on such frameworks to execute E2E suites."
+    },
+    {
+      "source": "cli-e2e-testing",
+      "target": "running-e2e-tests",
+      "type": "belong_to",
+      "reason": "CLI E2E testing is a specific category/type of end-to-end tests and therefore is a sub-component of the general task of running E2E tests."
+    },
+    {
+      "source": "deployment-e2e-testing",
+      "target": "running-e2e-tests",
+      "type": "belong_to",
+      "reason": "Deployment E2E testing is a specialized kind of end-to-end test (deploy and verify) and is a sub-workflow of running E2E tests."
+    },
+    {
+      "source": "scoutqa-test",
+      "target": "running-e2e-tests",
+      "type": "compose_with",
+      "reason": "ScoutQA provides CLI-based web application testing and exploratory checks; it is an independent testing tool that is often used alongside the general process of running E2E tests."
+    },
+    {
+      "source": "positron-pr-helper",
+      "target": "write-e2e-tests",
+      "type": "compose_with",
+      "reason": "positron-pr-helper generates PR bodies with dynamically fetched E2E test tags and is typically used together with the test-writing workflow to reference or tag relevant tests."
+    },
+    {
+      "source": "positron-pr-helper",
+      "target": "running-e2e-tests",
+      "type": "compose_with",
+      "reason": "The PR helper embeds E2E test tags and metadata that relate to executing test suites, so it is commonly paired with the process of running E2E tests."
+    },
+    {
+      "source": "test-writer",
+      "target": "testing-expert",
+      "type": "belong_to",
+      "reason": "Generating Vitest tests for documentation examples is a specific task that falls under the broader expertise offered by the testing-expert skill."
+    },
+    {
+      "source": "javascript-testing-expert",
+      "target": "testing-expert",
+      "type": "similar_to",
+      "reason": "Both skills represent expert-level JavaScript testing knowledge and overlap substantially in purpose and capabilities around writing high-quality tests."
+    },
+    {
+      "source": "senior-qa",
+      "target": "testing-expert",
+      "type": "compose_with",
+      "reason": "Senior QA provides broad QA strategy and processes and is an independent but complementary capability that is commonly used together with testing-expert for test architecture and execution."
+    },
+    {
+      "source": "gpui-test",
+      "target": "testing-expert",
+      "type": "belong_to",
+      "reason": "Writing tests for GPUI applications is a specialized testing task that fits under the umbrella of general testing expertise provided by testing-expert."
+    },
+    {
+      "source": "web-renderer-test",
+      "target": "e2e-frontend-validation",
+      "type": "belong_to",
+      "reason": "Adding a test case to the web renderer is a concrete test case addition that is a sub-step within the broader E2E frontend validation workflow."
+    },
+    {
+      "source": "e2e-testing-patterns",
+      "target": "testing-expert",
+      "type": "belong_to",
+      "reason": "E2E testing patterns with Playwright and Cypress represent specialized testing knowledge that belongs to the broader testing expertise domain."
+    },
+    {
+      "source": "chrome-devtools",
+      "target": "playwright",
+      "type": "compose_with",
+      "reason": "Chrome DevTools is commonly used to debug Playwright tests, analyze test performance, inspect DOM during test execution, and troubleshoot flaky tests."
+    },
+    {
+      "source": "senior-qa",
+      "target": "playwright",
+      "type": "compose_with",
+      "reason": "Senior QA skill explicitly covers E2E testing setup for web applications; Playwright is a primary framework used to implement those E2E testing strategies."
+    }
+  ]
+}

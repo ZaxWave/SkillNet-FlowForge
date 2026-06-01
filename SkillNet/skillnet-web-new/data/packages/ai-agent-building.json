@@ -1,0 +1,371 @@
+{
+  "package_name": "ai-agent-building",
+  "scene_description": "AI agent and autonomous workflow building with tool use, planning, multi-agent orchestration, MCP servers, function calling, and agent frameworks like AutoGen or CrewAI",
+  "tags": [
+    "ai agents",
+    "mcp",
+    "multi-agent",
+    "orchestration",
+    "agent-development",
+    "automation",
+    "ai",
+    "workflow orchestration"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:20:28.607715",
+  "skill_count": 17,
+  "skills": [
+    {
+      "skill_name": "orchestrate",
+      "skill_description": "Activate multi-agent orchestration mode",
+      "skill_url": "https://github.com/Yeachan-Heo/oh-my-claudecode/blob/3a02feb187f1185fc51379a84ad001b114ac12af/skills/orchestrate",
+      "category": "Development",
+      "stars": 3950,
+      "tags": [
+        "multi-agent systems",
+        "orchestration",
+        "AI coordination",
+        "automation",
+        "workflow management"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.6398
+    },
+    {
+      "skill_name": "agent-orchestration-multi-agent-optimize",
+      "skill_description": "Optimize multi-agent systems with coordinated profiling, workload distribution, and cost-aware orchestration. Use when improving agent performance, throughput, or reliability.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/4c400ca1218d73b032351bc083b40743dd9ec055/skills/agent-orchestration-multi-agent-optimize",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "multi-agent",
+        "optimization",
+        "performance",
+        "orchestration",
+        "profiling"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.6275
+    },
+    {
+      "skill_name": "workflow-router",
+      "skill_description": "Goal-based workflow orchestration - routes tasks to specialist agents based on user goals",
+      "skill_url": "https://github.com/parcadei/Continuous-Claude-v3/blob/27e8296c6f15ae8f95f91fe495a103350c3d3d22/.claude/skills/workflow-router",
+      "category": "Productivity",
+      "stars": 3449,
+      "tags": [
+        "workflow orchestration",
+        "task routing",
+        "agent-based systems",
+        "goal-oriented automation",
+        "AI agents"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.6024
+    },
+    {
+      "skill_name": "agent-workflow",
+      "skill_description": "Complete workflow for building, implementing, and testing goal-driven agents. Orchestrates building-agents-* and testing-agent skills. Use when starting a new agent project, unsure which skill to use, or need end-to-end guidance.",
+      "skill_url": "https://github.com/adenhq/hive/blob/58b60b84fde1a5a5df3d40d1056e8f3b22cfbaeb/.claude/skills/agent-workflow",
+      "category": "Development",
+      "stars": 4263,
+      "tags": [
+        "agent-development",
+        "workflow-orchestration",
+        "software-engineering",
+        "testing",
+        "automation"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5947
+    },
+    {
+      "skill_name": "copilot-sdk",
+      "skill_description": "Build agentic applications with GitHub Copilot SDK. Use when embedding AI agents in apps, creating custom tools, implementing streaming responses, managing sessions, connecting to MCP servers, or creating custom agents. Triggers on Copilot SDK, GitHub SDK, agentic app, embed Copilot, programmable agent, MCP server, custom agent.",
+      "skill_url": "https://github.com/github/awesome-copilot/blob/ccdfd66cc2311cac15b9e22073a9314a1c0d0fce/skills/copilot-sdk",
+      "category": "Development",
+      "stars": 19732,
+      "tags": [
+        "GitHub Copilot",
+        "SDK",
+        "AI Agents",
+        "Software Development",
+        "API Integration"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5838
+    },
+    {
+      "skill_name": "agent-builder",
+      "skill_description": "Design and build AI agents for any domain. Use when users:\n(1) ask to \"create an agent\", \"build an assistant\", or \"design an AI system\"\n(2) want to understand agent architecture, agentic patterns, or autonomous AI\n(3) need help with capabilities, subagents, planning, or skill mechanisms\n(4) ask about Claude Code, Cursor, or similar agent internals\n(5) want to build agents for business, research, creative, or operational tasks\nKeywords: agent, assistant, autonomous, workflow, tool use, multi-step, orchestration\n",
+      "skill_url": "https://github.com/shareAI-lab/learn-claude-code/blob/65e26083de0f8d42d6ab159413fa91653ffa5396/skills/agent-builder",
+      "category": "Development",
+      "stars": 15970,
+      "tags": [
+        "AI agents",
+        "autonomous systems",
+        "agent architecture",
+        "workflow orchestration",
+        "AI development"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5486
+    },
+    {
+      "skill_name": "agentica-sdk",
+      "skill_description": "Build Python agents with Agentica SDK - @agentic decorator, spawn(), persistence, MCP integration",
+      "skill_url": "https://github.com/parcadei/Continuous-Claude-v3/blob/23be62fce1928ffcafac4a9ec2a76379eeed6a89/.claude/skills/agentica-sdk",
+      "category": "Development",
+      "stars": 3449,
+      "tags": [
+        "Python",
+        "SDK",
+        "Agents",
+        "MCP",
+        "Automation"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5096
+    },
+    {
+      "skill_name": "crewai",
+      "skill_description": "Expert in CrewAI - the leading role-based multi-agent framework used by 60% of Fortune 500 companies. Covers agent design with roles and goals, task definition, crew orchestration, process types (sequential, hierarchical, parallel), memory systems, and flows for complex workflows. Essential for building collaborative AI agent teams. Use when: crewai, multi-agent team, agent roles, crew of agents, role-based agents.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/5b0ddf0d25666219f5a24bd589bd9ff9565619cb/cli-tool/components/skills/ai-research/crewai",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "multi-agent",
+        "crewai",
+        "agent-orchestration",
+        "workflow-automation",
+        "python-framework"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5039
+    },
+    {
+      "skill_name": "build",
+      "skill_description": "Workflow orchestrator that chains existing skills for feature development",
+      "skill_url": "https://github.com/parcadei/Continuous-Claude-v3/blob/59e359a86e72cd8bca1bc372fe2ac63766c2902f/.claude/skills/build",
+      "category": "Development",
+      "stars": 3449,
+      "tags": [
+        "workflow orchestration",
+        "automation",
+        "skill chaining",
+        "feature development",
+        "integration"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4667
+    },
+    {
+      "skill_name": "create-mcp-server",
+      "skill_description": "Instructions for creating MCP (Model Context Protocol) servers that expose tools and resources for the agent to use. Use when the user asks to create a new MCP server or add MCP capabilities.",
+      "skill_url": "https://github.com/RooCodeInc/Roo-Code/blob/ede1d292993e21e98a4de9d44f54090f8e6f9b3e/src/services/skills/built-in/create-mcp-server",
+      "category": "Development",
+      "stars": 22054,
+      "tags": [
+        "MCP",
+        "server-creation",
+        "API-integration",
+        "tool-development",
+        "configuration"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4634
+    },
+    {
+      "skill_name": "github-workflow-automation",
+      "skill_description": "Automate GitHub workflows with AI assistance. Includes PR reviews, issue triage, CI/CD integration, and Git operations. Use when automating GitHub workflows, setting up PR review automation, creating GitHub Actions, or triaging issues.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/62b5d8de603adc03741b4aa526876f97f4e3cd56/cli-tool/components/skills/workflow-automation/github-workflow-automation",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "GitHub",
+        "Automation",
+        "CI/CD",
+        "DevOps",
+        "Code Review"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4382
+    },
+    {
+      "skill_name": "agents-langchain",
+      "skill_description": "Framework for building LLM-powered applications with agents, chains, and RAG. Supports multiple providers (OpenAI, Anthropic, Google), 500+ integrations, ReAct agents, tool calling, memory management, and vector store retrieval. Use for building chatbots, question-answering systems, autonomous agents, or RAG applications. Best for rapid prototyping and production deployments.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/ai-research/agents-langchain",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "LLM",
+        "LangChain",
+        "AI Agents",
+        "RAG",
+        "AI Development"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4324
+    },
+    {
+      "skill_name": "agentica-spawn",
+      "skill_description": "Spawn Agentica multi-agent patterns",
+      "skill_url": "https://github.com/parcadei/Continuous-Claude-v3/blob/20a3d31a85f43b2d3fa4da53e467d2dfb019f727/.claude/skills/agentica-spawn",
+      "category": "Development",
+      "stars": 3449,
+      "tags": [
+        "multi-agent",
+        "AI agents",
+        "agent patterns",
+        "automation",
+        "AI orchestration"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4321
+    },
+    {
+      "skill_name": "agent-development",
+      "skill_description": "This skill should be used when the user asks to \"create an agent\", \"add an agent\", \"write a subagent\", \"agent frontmatter\", \"when to use description\", \"agent examples\", \"agent tools\", \"agent colors\", \"autonomous agent\", or needs guidance on agent structure, system prompts, triggering conditions, or agent development best practices for Claude Code plugins.",
+      "skill_url": "https://github.com/anthropics/claude-code/blob/74cc597eb5c1a604e955ce97e7e3b82524f1062c/plugins/plugin-dev/skills/agent-development",
+      "category": "Development",
+      "stars": 62837,
+      "tags": [
+        "agent-development",
+        "autonomous-agents",
+        "claude-code-plugins",
+        "system-prompts",
+        "ai-agents"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4307
+    },
+    {
+      "skill_name": "langchain-architecture",
+      "skill_description": "Design LLM applications using LangChain 1.x and LangGraph for agents, memory, and tool integration. Use when building LangChain applications, implementing AI agents, or creating complex LLM workflows.",
+      "skill_url": "https://github.com/wshobson/agents/blob/1135ac606247648d9e4724f027280d4114282858/plugins/llm-application-dev/skills/langchain-architecture",
+      "category": "Development",
+      "stars": 27432,
+      "tags": [
+        "LangChain",
+        "LLM Applications",
+        "AI Agents",
+        "LangGraph",
+        "Workflow Design"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4115
+    },
+    {
+      "skill_name": "mcp-chaining",
+      "skill_description": "Research-to-implement pipeline chaining 5 MCP tools with graceful degradation",
+      "skill_url": "https://github.com/parcadei/Continuous-Claude-v3/blob/60690e0061a84e03548c09ef0f36fd2cbe977e34/.claude/skills/mcp-chaining",
+      "category": "Research",
+      "stars": 3449,
+      "tags": [
+        "MCP",
+        "pipeline",
+        "tool chaining",
+        "automation",
+        "graceful degradation"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.405
+    },
+    {
+      "skill_name": "n8n-mcp-tools-expert",
+      "skill_description": "Expert guide for using n8n-mcp MCP tools effectively. Use when searching for nodes, validating configurations, accessing templates, managing workflows, or using any n8n-mcp tool. Provides tool selection guidance, parameter formats, and common patterns.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/b8551774f62e60097df5edb10385d26ceb3e21dd/cli-tool/components/skills/workflow-automation/n8n/n8n-mcp-tools-expert",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "n8n",
+        "MCP",
+        "workflow automation",
+        "tool integration",
+        "configuration"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4023
+    }
+  ],
+  "relationships": [
+    {
+      "source": "agent-development",
+      "target": "agent-workflow",
+      "type": "belong_to",
+      "reason": "agent-workflow 'orchestrates building-agents-*' and agent-development is a concrete building/dev step for creating agents, so it is a sub-component of the agent-workflow."
+    },
+    {
+      "source": "agent-builder",
+      "target": "agent-workflow",
+      "type": "belong_to",
+      "reason": "agent-workflow coordinates end-to-end agent projects and agent-builder is the design/build step for creating agents, making it part of the overall agent-workflow."
+    },
+    {
+      "source": "agents-langchain",
+      "target": "agent-workflow",
+      "type": "belong_to",
+      "reason": "agents-langchain is a framework used to build LLM agents and fits as a specific building approach inside the agent-workflow."
+    },
+    {
+      "source": "agentica-sdk",
+      "target": "agent-workflow",
+      "type": "belong_to",
+      "reason": "agent-workflow covers building agents and agentica-sdk is a concrete SDK option for building Python agents, so it is a sub-component."
+    },
+    {
+      "source": "langchain-architecture",
+      "target": "agent-workflow",
+      "type": "belong_to",
+      "reason": "langchain-architecture provides design guidance for LangChain-based agents and therefore represents a specific design step within the broader agent-workflow."
+    },
+    {
+      "source": "copilot-sdk",
+      "target": "agent-workflow",
+      "type": "belong_to",
+      "reason": "copilot-sdk is an SDK for embedding/customizing agentic apps and would be one of the concrete tool choices used inside an end-to-end agent-workflow."
+    },
+    {
+      "source": "crewai",
+      "target": "agent-workflow",
+      "type": "belong_to",
+      "reason": "crewai is a specific multi-agent framework and role-based design approach that can be used as a component/choice within the broader agent-workflow."
+    },
+    {
+      "source": "agentica-spawn",
+      "target": "agentica-sdk",
+      "type": "belong_to",
+      "reason": "agentica-spawn provides spawn patterns for Agentica multi-agent usage and is a specific feature/pattern belonging to the Agentica SDK ecosystem."
+    },
+    {
+      "source": "workflow-router",
+      "target": "orchestrate",
+      "type": "belong_to",
+      "reason": "workflow-router routes tasks to specialist agents and routing is a clear sub-component of activating multi-agent orchestration, so it belongs to orchestrate."
+    },
+    {
+      "source": "agent-orchestration-multi-agent-optimize",
+      "target": "orchestrate",
+      "type": "belong_to",
+      "reason": "Optimizing multi-agent systems is a specific step/function within multi-agent orchestration, so the optimization skill is a sub-component of orchestrate."
+    },
+    {
+      "source": "build",
+      "target": "agent-workflow",
+      "type": "compose_with",
+      "reason": "build chains existing skills for feature development and is often used together with agent-workflow to assemble the steps needed to create agents."
+    },
+    {
+      "source": "mcp-chaining",
+      "target": "create-mcp-server",
+      "type": "depend_on",
+      "reason": "Chaining MCP tools across a pipeline requires an MCP server/environment to expose those tools, so mcp-chaining cannot be executed without creating/configuring an MCP server."
+    },
+    {
+      "source": "workflow-router",
+      "target": "agent-orchestration-multi-agent-optimize",
+      "type": "compose_with",
+      "reason": "Routing tasks to appropriate agents (workflow-router) and optimizing multi-agent performance are independent but typically used together in multi-agent orchestration workflows."
+    }
+  ]
+}

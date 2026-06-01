@@ -1,0 +1,334 @@
+{
+  "package_name": "cheminformatics-drug-design",
+  "scene_description": "Cheminformatics and computational drug design including molecular docking, QSAR modeling, virtual screening, chemical databases, molecular descriptor calculation, and structure-based drug design",
+  "tags": [
+    "cheminformatics",
+    "drug discovery",
+    "molecular modeling",
+    "chemistry",
+    "molecular docking",
+    "virtual screening",
+    "python",
+    "research",
+    "bioinformatics"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T23:48:51.479879",
+  "skill_count": 12,
+  "skills": [
+    {
+      "skill_name": "chembl-database",
+      "skill_description": "Query ChEMBL's bioactive molecules and drug discovery data. Search compounds by structure/properties, retrieve bioactivity data (IC50, Ki), find inhibitors, perform SAR studies, for medicinal chemistry.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/4322a2278b755fa15b8d16927b1e610d6f40db1f/cli-tool/components/skills/scientific/chembl-database",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "medicinal chemistry",
+        "drug discovery",
+        "bioactivity data",
+        "compound search",
+        "SAR studies"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5766
+    },
+    {
+      "skill_name": "datamol",
+      "skill_description": "Pythonic wrapper around RDKit with simplified interface and sensible defaults. Preferred for standard drug discovery: SMILES parsing, standardization, descriptors, fingerprints, clustering, 3D conformers, parallel processing. Returns native rdkit.Chem.Mol objects. For advanced control or custom parameters, use rdkit directly.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/scientific/datamol",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "drug discovery",
+        "cheminformatics",
+        "python",
+        "RDKit",
+        "molecular modeling"
+      ],
+      "tag_hits": 4,
+      "semantic_score": 0.5684
+    },
+    {
+      "skill_name": "zinc-database",
+      "skill_description": "Access ZINC (230M+ purchasable compounds). Search by ZINC ID/SMILES, similarity searches, 3D-ready structures for docking, analog discovery, for virtual screening and drug discovery.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/b8551774f62e60097df5edb10385d26ceb3e21dd/cli-tool/components/skills/scientific/zinc-database",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "database",
+        "drug discovery",
+        "virtual screening",
+        "chemical compounds",
+        "bioinformatics"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5617
+    },
+    {
+      "skill_name": "drugbank-database",
+      "skill_description": "Access and analyze comprehensive drug information from the DrugBank database including drug properties, interactions, targets, pathways, chemical structures, and pharmacology data. This skill should be used when working with pharmaceutical data, drug discovery research, pharmacology studies, drug-drug interaction analysis, target identification, chemical similarity searches, ADMET predictions, or any task requiring detailed drug and drug target information from DrugBank.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/4322a2278b755fa15b8d16927b1e610d6f40db1f/cli-tool/components/skills/scientific/drugbank-database",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "pharmacology",
+        "drug discovery",
+        "database analysis",
+        "chemical structures",
+        "drug interactions"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5581
+    },
+    {
+      "skill_name": "pdb-database",
+      "skill_description": "Access RCSB PDB for 3D protein/nucleic acid structures. Search by text/sequence/structure, download coordinates (PDB/mmCIF), retrieve metadata, for structural biology and drug discovery.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/e1ad0ef499dd2ea86e3e4bd05022faeb080b50f0/cli-tool/components/skills/scientific/pdb-database",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "structural biology",
+        "protein database",
+        "bioinformatics",
+        "drug discovery",
+        "molecular visualization"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.529
+    },
+    {
+      "skill_name": "torchdrug",
+      "skill_description": "Graph-based drug discovery toolkit. Molecular property prediction (ADMET), protein modeling, knowledge graph reasoning, molecular generation, retrosynthesis, GNNs (GIN, GAT, SchNet), 40+ datasets, for PyTorch-based ML on molecules, proteins, and biomedical graphs.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/5b0ddf0d25666219f5a24bd589bd9ff9565619cb/cli-tool/components/skills/scientific/torchdrug",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "drug discovery",
+        "machine learning",
+        "graph neural networks",
+        "cheminformatics",
+        "bioinformatics"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5247
+    },
+    {
+      "skill_name": "opentargets-database",
+      "skill_description": "Query Open Targets Platform for target-disease associations, drug target discovery, tractability/safety data, genetics/omics evidence, known drugs, for therapeutic target identification.",
+      "skill_url": "https://github.com/K-Dense-AI/claude-scientific-skills/blob/955a36ac82d8d572d3e8d859fea4eb8a60df7c47/scientific-skills/opentargets-database",
+      "category": "Science",
+      "stars": 7634,
+      "tags": [
+        "bioinformatics",
+        "drug discovery",
+        "genomics",
+        "data querying",
+        "therapeutic targets"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5165
+    },
+    {
+      "skill_name": "medchem",
+      "skill_description": "Medicinal chemistry filters. Apply drug-likeness rules (Lipinski, Veber), PAINS filters, structural alerts, complexity metrics, for compound prioritization and library filtering.",
+      "skill_url": "https://github.com/K-Dense-AI/claude-scientific-skills/blob/955a36ac82d8d572d3e8d859fea4eb8a60df7c47/scientific-skills/medchem",
+      "category": "Science",
+      "stars": 7634,
+      "tags": [
+        "medicinal chemistry",
+        "drug discovery",
+        "compound filtering",
+        "molecular properties",
+        "pharmaceutical analysis"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4785
+    },
+    {
+      "skill_name": "rdkit",
+      "skill_description": "Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, LogP, TPSA), fingerprints, substructure search, 2D/3D generation, similarity, reactions. For standard workflows with simpler interface, use datamol (wrapper around RDKit). Use rdkit for advanced control, custom sanitization, specialized algorithms.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/scientific/rdkit",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "cheminformatics",
+        "molecular modeling",
+        "chemistry",
+        "bioinformatics",
+        "data analysis"
+      ],
+      "tag_hits": 4,
+      "semantic_score": 0.4752
+    },
+    {
+      "skill_name": "molfeat",
+      "skill_description": "Molecular featurization for ML (100+ featurizers). ECFP, MACCS, descriptors, pretrained models (ChemBERTa), convert SMILES to features, for QSAR and molecular ML.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/scientific/molfeat",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "molecular featurization",
+        "machine learning",
+        "QSAR",
+        "SMILES",
+        "cheminformatics"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4749
+    },
+    {
+      "skill_name": "rowan",
+      "skill_description": "Cloud-based quantum chemistry platform with Python API. Preferred for computational chemistry workflows including pKa prediction, geometry optimization, conformer searching, molecular property calculations, protein-ligand docking (AutoDock Vina), and AI protein cofolding (Chai-1, Boltz-1/2). Use when tasks involve quantum chemistry calculations, molecular property prediction, DFT or semiempirical methods, neural network potentials (AIMNet2), protein-ligand binding predictions, or automated computational chemistry pipelines. Provides cloud compute resources with no local setup required.",
+      "skill_url": "https://github.com/K-Dense-AI/claude-scientific-skills/blob/955a36ac82d8d572d3e8d859fea4eb8a60df7c47/scientific-skills/rowan",
+      "category": "Science",
+      "stars": 7634,
+      "tags": [
+        "quantum chemistry",
+        "computational chemistry",
+        "molecular modeling",
+        "protein-ligand docking",
+        "cloud computing"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.445
+    },
+    {
+      "skill_name": "pubchem-database",
+      "skill_description": "Query PubChem via PUG-REST API/PubChemPy (110M+ compounds). Search by name/CID/SMILES, retrieve properties, similarity/substructure searches, bioactivity, for cheminformatics.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/5b0ddf0d25666219f5a24bd589bd9ff9565619cb/cli-tool/components/skills/scientific/pubchem-database",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "cheminformatics",
+        "chemical-database",
+        "PubChem",
+        "molecular-properties",
+        "bioactivity"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4343
+    }
+  ],
+  "relationships": [
+    {
+      "source": "datamol",
+      "target": "rdkit",
+      "type": "depend_on",
+      "reason": "Datamol is described as a Pythonic wrapper around RDKit and returns native rdkit.Chem.Mol objects, so datamol depends on RDKit to function."
+    },
+    {
+      "source": "chembl-database",
+      "target": "pubchem-database",
+      "type": "compose_with",
+      "reason": "ChEMBL focuses on bioactive molecules with assay data while PubChem provides comprehensive chemical structures and properties; they are complementary resources often used together in drug discovery workflows."
+    },
+    {
+      "source": "chembl-database",
+      "target": "datamol",
+      "type": "compose_with",
+      "reason": "ChEMBL provides compound structures and bioactivity data that are commonly consumed by datamol for SMILES parsing, standardization, descriptor and fingerprint calculations."
+    },
+    {
+      "source": "pubchem-database",
+      "target": "datamol",
+      "type": "compose_with",
+      "reason": "PubChem supplies compound structures/properties that are commonly processed by datamol for parsing, standardization, and descriptor/fingerprint generation."
+    },
+    {
+      "source": "zinc-database",
+      "target": "datamol",
+      "type": "compose_with",
+      "reason": "ZINC provides purchasable, 3D-ready compounds used as inputs for datamol workflows (SMILES parsing, conformer generation, descriptors) during virtual screening preparation."
+    },
+    {
+      "source": "chembl-database",
+      "target": "molfeat",
+      "type": "compose_with",
+      "reason": "ChEMBL's bioactivity and compound records are natural inputs for molfeat featurizers when building datasets for QSAR and molecular ML."
+    },
+    {
+      "source": "pubchem-database",
+      "target": "molfeat",
+      "type": "compose_with",
+      "reason": "PubChem compound data (SMILES/properties) are commonly converted into ML features by molfeat for downstream QSAR/modeling tasks."
+    },
+    {
+      "source": "molfeat",
+      "target": "torchdrug",
+      "type": "compose_with",
+      "reason": "Molfeat provides molecular feature vectors and pretrained models that can be consumed by TorchDrug's graph/ML pipelines for property prediction and modeling."
+    },
+    {
+      "source": "pdb-database",
+      "target": "rowan",
+      "type": "compose_with",
+      "reason": "RCSB PDB supplies 3D protein structures that Rowan's computational chemistry and protein-ligand docking workflows can consume for modeling and docking tasks."
+    },
+    {
+      "source": "zinc-database",
+      "target": "rowan",
+      "type": "compose_with",
+      "reason": "ZINC supplies 3D-ready, purchasable compounds which Rowan can use as inputs for geometry optimization, docking and other computational chemistry pipelines."
+    },
+    {
+      "source": "medchem",
+      "target": "rdkit",
+      "type": "compose_with",
+      "reason": "Medicinal chemistry filters (Lipinski, PAINS, structural alerts) are typically applied to molecule objects and descriptors produced by RDKit in compound prioritization workflows."
+    },
+    {
+      "source": "medchem",
+      "target": "datamol",
+      "type": "compose_with",
+      "reason": "MedChem filtering rules are commonly applied to standardized molecules and descriptors produced by datamol during library filtering and prioritization."
+    },
+    {
+      "source": "opentargets-database",
+      "target": "drugbank-database",
+      "type": "compose_with",
+      "reason": "Open Targets' target-disease associations are often paired with DrugBank's drug/target and pharmacology information to link target evidence to known drugs and pharmacology data."
+    },
+    {
+      "source": "rdkit",
+      "target": "torchdrug",
+      "type": "compose_with",
+      "reason": "RDKit generates molecular representations, descriptors, and fingerprints that serve as inputs for TorchDrug's graph neural network models and molecular property prediction."
+    },
+    {
+      "source": "datamol",
+      "target": "torchdrug",
+      "type": "compose_with",
+      "reason": "Datamol simplifies molecular data preparation and standardization, providing clean molecule objects for downstream machine learning with TorchDrug's graph-based models."
+    },
+    {
+      "source": "rdkit",
+      "target": "molfeat",
+      "type": "compose_with",
+      "reason": "RDKit generates molecule objects and basic descriptors that molfeat extends with 100+ advanced featurizers and pretrained models for ML applications."
+    },
+    {
+      "source": "chembl-database",
+      "target": "rdkit",
+      "type": "compose_with",
+      "reason": "ChEMBL provides bioactive compound structures and SMILES that are parsed, standardized, and analyzed using RDKit's cheminformatics toolkit."
+    },
+    {
+      "source": "zinc-database",
+      "target": "rdkit",
+      "type": "compose_with",
+      "reason": "ZINC supplies purchasable compound structures that are processed with RDKit for descriptor calculation, similarity searches, and virtual screening preparation."
+    },
+    {
+      "source": "drugbank-database",
+      "target": "chembl-database",
+      "type": "compose_with",
+      "reason": "DrugBank provides approved drug information and targets while ChEMBL offers bioactivity data; combining both enriches drug discovery and pharmacology analyses."
+    },
+    {
+      "source": "rowan",
+      "target": "datamol",
+      "type": "compose_with",
+      "reason": "Datamol prepares and standardizes molecular inputs that Rowan's quantum chemistry platform uses for pKa prediction, geometry optimization, and computational chemistry calculations."
+    }
+  ]
+}

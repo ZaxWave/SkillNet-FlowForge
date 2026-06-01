@@ -1,0 +1,513 @@
+{
+  "package_name": "cloud-infrastructure-iac",
+  "scene_description": "Cloud infrastructure and Infrastructure as Code (IaC) with Terraform, AWS CDK, Pulumi, serverless functions, cloud networking, and multi-cloud deployment strategies",
+  "tags": [
+    "terraform",
+    "aws",
+    "cloud infrastructure",
+    "serverless",
+    "infrastructure as code",
+    "deployment",
+    "cloud computing",
+    "infrastructure"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:18:29.195456",
+  "skill_count": 21,
+  "skills": [
+    {
+      "skill_name": "aws-solution-architect",
+      "skill_description": "Expert AWS solution architecture for startups focusing on serverless, scalable, and cost-effective cloud infrastructure with modern DevOps practices and infrastructure-as-code",
+      "skill_url": "https://github.com/alirezarezvani/claude-skills/blob/77027821ddd74cca56d9989719039ad649bf71c9/engineering-team/aws-solution-architect",
+      "category": "Development",
+      "stars": 1504,
+      "tags": [
+        "AWS",
+        "Cloud Architecture",
+        "Serverless",
+        "DevOps",
+        "Infrastructure-as-Code"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.6771
+    },
+    {
+      "skill_name": "aws-serverless",
+      "skill_description": "Specialized skill for building production-ready serverless applications on AWS. Covers Lambda functions, API Gateway, DynamoDB, SQS/SNS event-driven patterns, SAM/CDK deployment, and cold start optimization.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/11b94d265e20a0906ae0df1b1c327e0a6b8b217f/skills/aws-serverless",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "AWS",
+        "Serverless",
+        "Cloud Computing",
+        "Lambda",
+        "API Gateway"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.6297
+    },
+    {
+      "skill_name": "aws-skills",
+      "skill_description": "AWS development with infrastructure automation and cloud architecture patterns",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/3d79501eba74a14e053b67f655baee1ac978a87f/skills/aws-skills",
+      "category": "Development",
+      "stars": 6055,
+      "tags": [
+        "AWS",
+        "cloud infrastructure",
+        "DevOps",
+        "infrastructure automation",
+        "cloud architecture"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.6144
+    },
+    {
+      "skill_name": "terraform-skill",
+      "skill_description": "Terraform infrastructure as code best practices",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/4c400ca1218d73b032351bc083b40743dd9ec055/skills/terraform-skill",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "terraform",
+        "infrastructure-as-code",
+        "devops",
+        "cloud-infrastructure",
+        "iac-testing"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.6091
+    },
+    {
+      "skill_name": "terraform-specialist",
+      "skill_description": "Expert Terraform/OpenTofu specialist mastering advanced IaC automation, state management, and enterprise infrastructure patterns. Handles complex module design, multi-cloud deployments, GitOps workflows, policy as code, and CI/CD integration. Covers migration strategies, security best practices, and modern IaC ecosystems. Use PROACTIVELY for advanced IaC, state management, or infrastructure automation.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/4c400ca1218d73b032351bc083b40743dd9ec055/skills/terraform-specialist",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "Terraform",
+        "Infrastructure as Code",
+        "DevOps",
+        "Cloud Automation",
+        "CI/CD"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5937
+    },
+    {
+      "skill_name": "devops-iac-engineer",
+      "skill_description": "Implements infrastructure as code using Terraform, Kubernetes, and cloud platforms. Designs scalable architectures, CI/CD pipelines, and observability solutions. Provides security-first DevOps practices and site reliability engineering guidance.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/0f6fa465821f11168374ae91670cc8b388cd8d17/cli-tool/components/skills/development/devops-iac-engineer",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "DevOps",
+        "Infrastructure as Code",
+        "Terraform",
+        "Kubernetes",
+        "CI/CD"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5765
+    },
+    {
+      "skill_name": "generating-infrastructure-as-code",
+      "skill_description": "Execute use when generating infrastructure as code configurations. Trigger with phrases like \"create Terraform config\", \"generate CloudFormation template\", \"write Pulumi code\", or \"IaC for AWS/GCP/Azure\". Produces production-ready code for Terraform, CloudFormation, Pulumi, ARM templates, and CDK across multiple cloud providers.\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/1e4d5973af6c1635c3f002fa09a22332eda18ab6/plugins/devops/infrastructure-as-code-generator/skills/generating-infrastructure-as-code",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "Infrastructure as Code",
+        "Cloud Computing",
+        "DevOps",
+        "Automation",
+        "Terraform"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5649
+    },
+    {
+      "skill_name": "infrastructure-as-code-generator",
+      "skill_description": "This skill enables Claude to generate Infrastructure as Code (IaC) configurations. It uses the infrastructure-as-code-generator plugin to create production-ready IaC for Terraform, CloudFormation, Pulumi, ARM Templates, and CDK. Use this skill when the user requests IaC configurations for cloud infrastructure, specifying the platform (e.g., Terraform, CloudFormation) and cloud provider (e.g., AWS, Azure, GCP), or when the user needs help automating infrastructure deployment. Trigger terms include: \"generate IaC\", \"create Terraform\", \"CloudFormation template\", \"Pulumi program\", \"infrastructure code\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/backups/skills-migration-20251108-070147/plugins/devops/infrastructure-as-code-generator/skills/infrastructure-as-code-generator",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "Infrastructure as Code",
+        "Cloud Computing",
+        "Automation",
+        "DevOps",
+        "Terraform"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5185
+    },
+    {
+      "skill_name": "genkit-infra-expert",
+      "skill_description": "Terraform infrastructure specialist for deploying Genkit applications to production.\nProvisions Firebase Functions, Cloud Run services, GKE clusters, monitoring, and CI/CD for Genkit AI workflows.\nTriggers: \"deploy genkit terraform\", \"genkit infrastructure\", \"firebase functions terraform\", \"cloud run genkit\"\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/backups/skills-batch-20251204-000554/plugins/devops/jeremy-genkit-terraform/skills/genkit-infra-expert",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "Terraform",
+        "Infrastructure as Code",
+        "Cloud Deployment",
+        "Genkit",
+        "CI/CD"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5147
+    },
+    {
+      "skill_name": "infrastructure-skypilot",
+      "skill_description": "Multi-cloud orchestration for ML workloads with automatic cost optimization. Use when you need to run training or batch jobs across multiple clouds, leverage spot instances with auto-recovery, or optimize GPU costs across providers.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/4322a2278b755fa15b8d16927b1e610d6f40db1f/cli-tool/components/skills/ai-research/infrastructure-skypilot",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "multi-cloud orchestration",
+        "machine learning workloads",
+        "cost optimization",
+        "GPU management",
+        "cloud computing"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5129
+    },
+    {
+      "skill_name": "skill-adapter",
+      "skill_description": "This skill enables Claude to generate Infrastructure as Code (IaC) configurations. It uses the infrastructure-as-code-generator plugin to create production-ready IaC for Terraform, CloudFormation, Pulumi, ARM Templates, and CDK. Use this skill when the user requests IaC configurations for cloud infrastructure, specifying the platform (e.g., Terraform, CloudFormation) and cloud provider (e.g., AWS, Azure, GCP), or when the user needs help automating infrastructure deployment. Trigger terms include: \"generate IaC\", \"create Terraform\", \"CloudFormation template\", \"Pulumi program\", \"infrastructure code\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/backups/plugin-enhancements/plugin-backups/infrastructure-as-code-generator_20251020_064129/skills/skill-adapter",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "Infrastructure as Code",
+        "Cloud Computing",
+        "Automation",
+        "DevOps",
+        "Terraform"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5087
+    },
+    {
+      "skill_name": "adk-infra-expert",
+      "skill_description": "Terraform infrastructure specialist for Vertex AI ADK Agent Engine production deployments.\nProvisions Agent Engine runtime, Code Execution Sandbox, Memory Bank, VPC-SC, IAM, and secure multi-agent infrastructure.\nTriggers: \"deploy adk terraform\", \"agent engine infrastructure\", \"adk production deployment\", \"vpc-sc agent engine\"\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/e1eb06ee361492944a431ca90d4106dbd4b5a1c2/backups/skills-batch-20251204-000554/plugins/devops/jeremy-adk-terraform/skills/adk-infra-expert",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "Terraform",
+        "Vertex AI",
+        "Infrastructure as Code",
+        "Cloud Infrastructure",
+        "Multi-agent Systems"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4756
+    },
+    {
+      "skill_name": "gcp-cloud-run",
+      "skill_description": "Specialized skill for building production-ready serverless applications on GCP. Covers Cloud Run services (containerized), Cloud Run Functions (event-driven), cold start optimization, and event-driven architecture with Pub/Sub.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/b76ad28225744f66c43f1eb415d49794a7285fe3/skills/gcp-cloud-run",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "GCP",
+        "serverless",
+        "cloud computing",
+        "containerization",
+        "event-driven architecture"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4756
+    },
+    {
+      "skill_name": "terraform-provider-config",
+      "skill_description": "Terraform Provider Config - Auto-activating skill for DevOps Advanced.\nTriggers on: terraform provider config, terraform provider config\nPart of the DevOps Advanced skill category.\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/827f80253f89ee86c8bc9d07d6c9ee42829dceb9/planned-skills/generated/02-devops-advanced/terraform-provider-config",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "Terraform",
+        "DevOps",
+        "Infrastructure as Code",
+        "Cloud Automation",
+        "Configuration Management"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4748
+    },
+    {
+      "skill_name": "vertex-infra-expert",
+      "skill_description": "Execute use when provisioning Vertex AI infrastructure with Terraform. Trigger with phrases like \"vertex ai terraform\", \"deploy gemini terraform\", \"model garden infrastructure\", \"vertex ai endpoints terraform\", or \"vector search terraform\". Provisions Model Garden models, Gemini endpoints, vector search indices, ML pipelines, and production AI services with encryption and auto-scaling.\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/plugins/devops/jeremy-vertex-terraform/skills/vertex-infra-expert",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "Terraform",
+        "Vertex AI",
+        "Infrastructure as Code",
+        "Machine Learning Operations",
+        "Cloud Infrastructure"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4595
+    },
+    {
+      "skill_name": "cloudflare-deploy",
+      "skill_description": "Deploy applications and infrastructure to Cloudflare using Workers, Pages, and related platform services. Use when the user asks to deploy, host, publish, or set up a project on Cloudflare.",
+      "skill_url": "https://github.com/openai/skills/blob/94fa19526eea7676eb5ecde1b9d611d9889aa624/skills/.curated/cloudflare-deploy",
+      "category": "Development",
+      "stars": 2262,
+      "tags": [
+        "cloudflare",
+        "deployment",
+        "devops",
+        "serverless",
+        "infrastructure"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4496
+    },
+    {
+      "skill_name": "epic-deployment",
+      "skill_description": "Guide on deployment with Fly.io, multi-region setup, and CI/CD for Epic Stack",
+      "skill_url": "https://github.com/epicweb-dev/epic-stack/blob/f533988e9e8cb61fe617049be88f7a1ce58fc725/docs/skills/epic-deployment",
+      "category": "Development",
+      "stars": 5528,
+      "tags": [
+        "deployment",
+        "fly-io",
+        "ci-cd",
+        "docker",
+        "devops"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4423
+    },
+    {
+      "skill_name": "database-cloud-optimization-cost-optimize",
+      "skill_description": "You are a cloud cost optimization expert specializing in reducing infrastructure expenses while maintaining performance and reliability. Analyze cloud spending, identify savings opportunities, and implement cost-effective architectures across AWS, Azure, and GCP.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/f2c3e783b5285d9c2dd09884db03860c56dec2bd/skills/database-cloud-optimization-cost-optimize",
+      "category": "Business",
+      "stars": 5919,
+      "tags": [
+        "cloud-cost-optimization",
+        "AWS",
+        "Azure",
+        "GCP",
+        "infrastructure-management"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4299
+    },
+    {
+      "skill_name": "infrastructure-lambda-labs",
+      "skill_description": "Reserved and on-demand GPU cloud instances for ML training and inference. Use when you need dedicated GPU instances with simple SSH access, persistent filesystems, or high-performance multi-node clusters for large-scale training.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/ai-research/infrastructure-lambda-labs",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "GPU instances",
+        "cloud computing",
+        "machine learning training",
+        "ML inference",
+        "high-performance clusters"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4238
+    },
+    {
+      "skill_name": "infrastructure-modal",
+      "skill_description": "Serverless GPU cloud platform for running ML workloads. Use when you need on-demand GPU access without infrastructure management, deploying ML models as APIs, or running batch jobs with automatic scaling.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/4322a2278b755fa15b8d16927b1e610d6f40db1f/cli-tool/components/skills/ai-research/infrastructure-modal",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "serverless",
+        "GPU cloud",
+        "machine learning",
+        "ML deployment",
+        "cloud computing"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.42
+    },
+    {
+      "skill_name": "cloudflare",
+      "skill_description": "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), networking (Tunnel, Spectrum), security (WAF, DDoS), and infrastructure-as-code (Terraform, Pulumi). Use for any Cloudflare development task.",
+      "skill_url": "https://github.com/cloudflare/cloudflare-docs/blob/9b3f5eed73da9601f293179312336131683c63d8/public/.well-known/skills/cloudflare",
+      "category": "Development",
+      "stars": 4347,
+      "tags": [
+        "cloudflare",
+        "serverless",
+        "devops",
+        "cloud-infrastructure",
+        "web-development"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4178
+    }
+  ],
+  "relationships": [
+    {
+      "source": "infrastructure-as-code-generator",
+      "target": "generating-infrastructure-as-code",
+      "type": "similar_to",
+      "reason": "Both describe the same IaC-generation capability (produce Terraform/CloudFormation/Pulumi/CDK) and are interchangeable triggers for generating infrastructure code."
+    },
+    {
+      "source": "infrastructure-as-code-generator",
+      "target": "skill-adapter",
+      "type": "similar_to",
+      "reason": "The skill-adapter description duplicates the infrastructure-as-code-generator functionality for creating production-ready IaC configurations."
+    },
+    {
+      "source": "generating-infrastructure-as-code",
+      "target": "skill-adapter",
+      "type": "similar_to",
+      "reason": "All three entries are effectively the same IaC-generation skill and can be used interchangeably."
+    },
+    {
+      "source": "terraform-provider-config",
+      "target": "terraform-skill",
+      "type": "belong_to",
+      "reason": "Terraform provider configuration is a specific sub-component/step within general Terraform best-practices and workflows."
+    },
+    {
+      "source": "aws-serverless",
+      "target": "aws-solution-architect",
+      "type": "belong_to",
+      "reason": "Serverless application design on AWS is a focused sub-area within broader AWS solution architecture responsibilities."
+    },
+    {
+      "source": "cloudflare-deploy",
+      "target": "cloudflare",
+      "type": "belong_to",
+      "reason": "Cloudflare-deploy is a specific deployment/hosting action that is a sub-component of the broader Cloudflare platform skill."
+    },
+    {
+      "source": "infrastructure-as-code-generator",
+      "target": "terraform-skill",
+      "type": "compose_with",
+      "reason": "The IaC generator produces Terraform configurations which are consumed or applied following Terraform best practices."
+    },
+    {
+      "source": "infrastructure-as-code-generator",
+      "target": "terraform-specialist",
+      "type": "compose_with",
+      "reason": "Generated Terraform code is often used together with advanced Terraform expertise to implement, modularize, and operate infrastructure."
+    },
+    {
+      "source": "infrastructure-as-code-generator",
+      "target": "vertex-infra-expert",
+      "type": "compose_with",
+      "reason": "Vertex infra expert provisions Vertex AI via Terraform; IaC generation complements that workflow by producing the required Terraform configs."
+    },
+    {
+      "source": "infrastructure-as-code-generator",
+      "target": "adk-infra-expert",
+      "type": "compose_with",
+      "reason": "ADK Agent Engine deployments are expressed as Terraform configs; the IaC generator and the ADK infra expert are used together to create and deploy that infra."
+    },
+    {
+      "source": "infrastructure-as-code-generator",
+      "target": "genkit-infra-expert",
+      "type": "compose_with",
+      "reason": "Genkit Terraform deployments benefit from generated Terraform/CICD templates; the generator produces artifacts the Genkit infra expert will use."
+    },
+    {
+      "source": "infrastructure-as-code-generator",
+      "target": "gcp-cloud-run",
+      "type": "compose_with",
+      "reason": "Generating IaC often targets GCP Cloud Run resources; the IaC generator produces Cloud Run configurations that the gcp-cloud-run skill implements."
+    },
+    {
+      "source": "infrastructure-as-code-generator",
+      "target": "cloudflare",
+      "type": "compose_with",
+      "reason": "Cloudflare supports Terraform/Pulumi IaC; the generator can produce Cloudflare IaC which is then applied using the Cloudflare platform skill."
+    },
+    {
+      "source": "terraform-skill",
+      "target": "terraform-specialist",
+      "type": "similar_to",
+      "reason": "Both focus on Terraform infrastructure-as-code practices; the specialist is a more advanced/enterprise-focused variant but functionally covers Terraform IaC."
+    },
+    {
+      "source": "aws-skills",
+      "target": "aws-solution-architect",
+      "type": "similar_to",
+      "reason": "Both cover AWS architecture and infrastructure automation; the solution-architect is a specialized/expert framing of general AWS skills."
+    },
+    {
+      "source": "infrastructure-lambda-labs",
+      "target": "infrastructure-modal",
+      "type": "similar_to",
+      "reason": "Both provide GPU compute platforms for ML workloads (on-demand/managed GPU compute) and are alternative options for running training/inference."
+    },
+    {
+      "source": "devops-iac-engineer",
+      "target": "terraform-skill",
+      "type": "compose_with",
+      "reason": "A DevOps/IaC engineer implements Terraform as part of their workflows; the engineer role and Terraform expertise are commonly used together."
+    },
+    {
+      "source": "database-cloud-optimization-cost-optimize",
+      "target": "aws-solution-architect",
+      "type": "compose_with",
+      "reason": "Cloud cost optimization is frequently applied alongside AWS solution architecture to design cost-effective cloud deployments."
+    },
+    {
+      "source": "devops-iac-engineer",
+      "target": "terraform-specialist",
+      "type": "compose_with",
+      "reason": "DevOps IaC engineers use advanced Terraform/OpenTofu expertise for complex module design and enterprise infrastructure patterns."
+    },
+    {
+      "source": "aws-solution-architect",
+      "target": "terraform-skill",
+      "type": "compose_with",
+      "reason": "AWS solution architects frequently use Terraform to implement infrastructure-as-code for AWS deployments."
+    },
+    {
+      "source": "aws-serverless",
+      "target": "aws-skills",
+      "type": "belong_to",
+      "reason": "AWS serverless application development is a specialized subset of general AWS development skills."
+    },
+    {
+      "source": "vertex-infra-expert",
+      "target": "terraform-skill",
+      "type": "compose_with",
+      "reason": "Vertex AI infrastructure expert uses Terraform best practices to provision and manage Vertex AI resources."
+    },
+    {
+      "source": "adk-infra-expert",
+      "target": "terraform-skill",
+      "type": "compose_with",
+      "reason": "ADK Agent Engine infrastructure deployment relies on Terraform configurations and best practices."
+    },
+    {
+      "source": "genkit-infra-expert",
+      "target": "terraform-skill",
+      "type": "compose_with",
+      "reason": "Genkit application infrastructure deployment uses Terraform to provision Firebase Functions and Cloud Run services."
+    },
+    {
+      "source": "gcp-cloud-run",
+      "target": "infrastructure-skypilot",
+      "type": "compose_with",
+      "reason": "SkyPilot multi-cloud orchestration can manage and deploy workloads across multiple clouds including GCP Cloud Run."
+    },
+    {
+      "source": "infrastructure-modal",
+      "target": "infrastructure-skypilot",
+      "type": "compose_with",
+      "reason": "SkyPilot can orchestrate ML workloads across multiple GPU platforms including Modal for unified multi-cloud management."
+    }
+  ]
+}

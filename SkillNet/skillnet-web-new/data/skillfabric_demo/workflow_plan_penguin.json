@@ -1,0 +1,286 @@
+{
+  "schema_version": "skillfabric.workflow_plan.v1",
+  "plan_id": "penguin_morphology_report_and_slides",
+  "demo": {
+    "name": "SkillFabric Routing Demo",
+    "workspace": "demo",
+    "task_id": "data_computation_task1",
+    "title": "Penguin Species Research Report and Presentation",
+    "query": "Analyze penguin morphology data, generate publication-quality figures, write a specialist report, and create conference slides.",
+    "input_artifact": "artifacts/penguins.csv",
+    "expected_deliverables": [
+      "report.docx",
+      "presentation.pptx",
+      "at least 4 PNG figures"
+    ]
+  },
+  "routing_context": {
+    "skill_kg": {
+      "skills": 53,
+      "communities": 5,
+      "graph_links": 271,
+      "interfaces": 53,
+      "interfaces_accepted": 52
+    },
+    "wiki_memory": {
+      "pages": 67,
+      "skill_pages": 53,
+      "community_pages": 5,
+      "workflow_pages": 5,
+      "index_debug_pages": 4
+    },
+    "query_local_bundle": {
+      "candidate_count": 16,
+      "wiki_pages": 21,
+      "workflow_hints": 2,
+      "retrieval_signals": [
+        "semantic",
+        "lexical",
+        "graph"
+      ]
+    }
+  },
+  "selected_skills": [
+    {
+      "skill_id": "xlsx",
+      "role": "Load and prepare tabular data",
+      "reason": "Reads the penguins dataset and prepares clean grouped tables for downstream analysis."
+    },
+    {
+      "skill_id": "statistical-analysis",
+      "role": "Run species and sex comparisons",
+      "reason": "Provides the explicit statistical reasoning required by the benchmark task."
+    },
+    {
+      "skill_id": "data-visualization",
+      "role": "Create publication-quality figures",
+      "reason": "Generates the required PNG figures used by both report and slides."
+    },
+    {
+      "skill_id": "doc-coauthoring",
+      "role": "Write the research report",
+      "reason": "Turns tables and figures into a specialist-facing DOCX report with interpretation."
+    },
+    {
+      "skill_id": "pptx",
+      "role": "Create conference slides",
+      "reason": "Handles the presentation.pptx deliverable and slide layout requirements."
+    }
+  ],
+  "workflow": {
+    "execution_model": "serial data preparation and analysis, then parallel report and slide generation",
+    "steps": [
+      {
+        "id": "step_1",
+        "op": "invoke_skill",
+        "skill_id": "xlsx",
+        "title": "Prepare tabular data",
+        "purpose": "Load artifacts/penguins.csv and prepare clean analysis tables.",
+        "inputs": [
+          "artifacts/penguins.csv"
+        ],
+        "outputs": [
+          "clean_analysis_tables"
+        ],
+        "depends_on": []
+      },
+      {
+        "id": "step_2",
+        "op": "invoke_skill",
+        "skill_id": "statistical-analysis",
+        "title": "Analyze morphology differences",
+        "purpose": "Compute species-level descriptive statistics and comparison tests.",
+        "inputs": [
+          "clean_analysis_tables"
+        ],
+        "outputs": [
+          "statistical_findings"
+        ],
+        "depends_on": [
+          "step_1"
+        ]
+      },
+      {
+        "id": "step_3",
+        "op": "invoke_skill",
+        "skill_id": "data-visualization",
+        "title": "Generate research figures",
+        "purpose": "Generate at least four publication-quality PNG figures.",
+        "inputs": [
+          "clean_analysis_tables",
+          "statistical_findings"
+        ],
+        "outputs": [
+          "png_figures"
+        ],
+        "depends_on": [
+          "step_1",
+          "step_2"
+        ]
+      },
+      {
+        "id": "step_4a",
+        "op": "invoke_skill",
+        "skill_id": "doc-coauthoring",
+        "title": "Write specialist report",
+        "purpose": "Assemble report.docx with tables, figures, and written interpretation.",
+        "inputs": [
+          "statistical_findings",
+          "png_figures"
+        ],
+        "outputs": [
+          "report.docx"
+        ],
+        "depends_on": [
+          "step_2",
+          "step_3"
+        ]
+      },
+      {
+        "id": "step_4b",
+        "op": "invoke_skill",
+        "skill_id": "pptx",
+        "title": "Create conference slides",
+        "purpose": "Create presentation.pptx with at least 10 academic-style slides.",
+        "inputs": [
+          "statistical_findings",
+          "png_figures"
+        ],
+        "outputs": [
+          "presentation.pptx"
+        ],
+        "depends_on": [
+          "step_2",
+          "step_3"
+        ]
+      },
+      {
+        "id": "step_5",
+        "op": "aggregate",
+        "skill_id": "aggregate",
+        "title": "Collect deliverables",
+        "purpose": "Collect report.docx, presentation.pptx, PNG figures, and validation trace.",
+        "inputs": [
+          "report.docx",
+          "presentation.pptx",
+          "png_figures"
+        ],
+        "outputs": [
+          "report.docx",
+          "presentation.pptx",
+          "at least 4 PNG figures",
+          "workflow_validation.json"
+        ],
+        "depends_on": [
+          "step_4a",
+          "step_4b"
+        ]
+      }
+    ],
+    "execution_edges": [
+      {
+        "from": "step_1",
+        "to": "step_2",
+        "label": "clean_tables_ready",
+        "confidence": 0.97
+      },
+      {
+        "from": "step_2",
+        "to": "step_3",
+        "label": "findings_ready",
+        "confidence": 0.96
+      },
+      {
+        "from": "step_1",
+        "to": "step_3",
+        "label": "clean_tables_for_figures",
+        "confidence": 0.94
+      },
+      {
+        "from": "step_2",
+        "to": "step_4a",
+        "label": "findings_for_report",
+        "confidence": 0.95
+      },
+      {
+        "from": "step_3",
+        "to": "step_4a",
+        "label": "figures_for_report",
+        "confidence": 0.95
+      },
+      {
+        "from": "step_2",
+        "to": "step_4b",
+        "label": "findings_for_slides",
+        "confidence": 0.95
+      },
+      {
+        "from": "step_3",
+        "to": "step_4b",
+        "label": "figures_for_slides",
+        "confidence": 0.95
+      },
+      {
+        "from": "step_4a",
+        "to": "step_5",
+        "label": "deliverables_collected",
+        "confidence": 0.98
+      },
+      {
+        "from": "step_4b",
+        "to": "step_5",
+        "label": "deliverables_collected",
+        "confidence": 0.98
+      }
+    ]
+  },
+  "route_dependency_evidence": [
+    {
+      "before": "xlsx",
+      "after": "statistical-analysis",
+      "confidence": 0.97,
+      "label": "clean_tables_ready"
+    },
+    {
+      "before": "statistical-analysis",
+      "after": "data-visualization",
+      "confidence": 0.96,
+      "label": "findings_ready"
+    },
+    {
+      "before": "data-visualization",
+      "after": "doc-coauthoring",
+      "confidence": 0.95,
+      "label": "figures_for_report"
+    },
+    {
+      "before": "data-visualization",
+      "after": "pptx",
+      "confidence": 0.95,
+      "label": "figures_for_slides"
+    },
+    {
+      "before": "doc-coauthoring / pptx",
+      "after": "aggregate",
+      "confidence": 0.98,
+      "label": "deliverables_collected"
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "allowed_skill_ids": [
+      "xlsx",
+      "statistical-analysis",
+      "data-visualization",
+      "doc-coauthoring",
+      "pptx"
+    ],
+    "checks": [
+      "Every invoke_skill step uses a selected skill.",
+      "All non-root steps depend only on earlier workflow steps.",
+      "The workflow covers report.docx, presentation.pptx, and at least 4 PNG figures.",
+      "Report and slide generation are correctly parallelized after statistical findings and figures are available.",
+      "The final aggregate step collects both document deliverables and figure outputs."
+    ]
+  }
+}

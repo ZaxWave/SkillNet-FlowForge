@@ -1,0 +1,565 @@
+{
+  "package_name": "bioinformatics-compbio",
+  "scene_description": "Bioinformatics and computational biology including genomics, sequence analysis, protein structure prediction, molecular dynamics, biological data pipelines, and research tools",
+  "tags": [
+    "bioinformatics",
+    "genomics",
+    "research",
+    "drug discovery",
+    "scientific computing",
+    "python",
+    "data analysis",
+    "optimization"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:26:56.863472",
+  "skill_count": 25,
+  "skills": [
+    {
+      "skill_name": "biopython",
+      "skill_description": "Primary Python toolkit for molecular biology. Preferred for Python-based PubMed/NCBI queries (Bio.Entrez), sequence manipulation, file parsing (FASTA, GenBank, FASTQ, PDB), advanced BLAST workflows, structures, phylogenetics. For quick BLAST, use gget. For direct REST API, use pubmed-database.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/scientific/biopython",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "bioinformatics",
+        "molecular biology",
+        "Python",
+        "data analysis",
+        "genomics"
+      ],
+      "tag_hits": 4,
+      "semantic_score": 0.626
+    },
+    {
+      "skill_name": "bioservices",
+      "skill_description": "Primary Python tool for 40+ bioinformatics services. Preferred for multi-database workflows: UniProt, KEGG, ChEMBL, PubChem, Reactome, QuickGO. Unified API for queries, ID mapping, pathway analysis. For direct REST control, use individual database skills (uniprot-database, kegg-database).",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/5b0ddf0d25666219f5a24bd589bd9ff9565619cb/cli-tool/components/skills/scientific/bioservices",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "bioinformatics",
+        "python",
+        "data-retrieval",
+        "identifier-mapping",
+        "pathway-analysis"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.6041
+    },
+    {
+      "skill_name": "torchdrug",
+      "skill_description": "Graph-based drug discovery toolkit. Molecular property prediction (ADMET), protein modeling, knowledge graph reasoning, molecular generation, retrosynthesis, GNNs (GIN, GAT, SchNet), 40+ datasets, for PyTorch-based ML on molecules, proteins, and biomedical graphs.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/5b0ddf0d25666219f5a24bd589bd9ff9565619cb/cli-tool/components/skills/scientific/torchdrug",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "drug discovery",
+        "machine learning",
+        "graph neural networks",
+        "cheminformatics",
+        "bioinformatics"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.6013
+    },
+    {
+      "skill_name": "datamol",
+      "skill_description": "Pythonic wrapper around RDKit with simplified interface and sensible defaults. Preferred for standard drug discovery: SMILES parsing, standardization, descriptors, fingerprints, clustering, 3D conformers, parallel processing. Returns native rdkit.Chem.Mol objects. For advanced control or custom parameters, use rdkit directly.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/scientific/datamol",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "drug discovery",
+        "cheminformatics",
+        "python",
+        "RDKit",
+        "molecular modeling"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.6007
+    },
+    {
+      "skill_name": "gget",
+      "skill_description": "CLI/Python toolkit for rapid bioinformatics queries. Preferred for quick BLAST searches. Access to 20+ databases: gene info (Ensembl/UniProt), AlphaFold, ARCHS4, Enrichr, OpenTargets, COSMIC, genome downloads. For advanced BLAST/batch processing, use biopython. For multi-database integration, use bioservices.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/444b020ca1804271570f20e0aa26918ad206f5f5/cli-tool/components/skills/scientific/gget",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "bioinformatics",
+        "CLI tool",
+        "Python toolkit",
+        "BLAST",
+        "genomics"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5866
+    },
+    {
+      "skill_name": "pyopenms",
+      "skill_description": "Python interface to OpenMS for mass spectrometry data analysis. Use for LC-MS/MS proteomics and metabolomics workflows including file handling (mzML, mzXML, mzTab, FASTA, pepXML, protXML, mzIdentML), signal processing, feature detection, peptide identification, and quantitative analysis. Apply when working with mass spectrometry data, analyzing proteomics experiments, or processing metabolomics datasets.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/0f6fa465821f11168374ae91670cc8b388cd8d17/cli-tool/components/skills/scientific/pyopenms",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "mass spectrometry",
+        "proteomics",
+        "metabolomics",
+        "data analysis",
+        "bioinformatics"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5652
+    },
+    {
+      "skill_name": "anndata",
+      "skill_description": "This skill should be used when working with annotated data matrices in Python, particularly for single-cell genomics analysis, managing experimental measurements with metadata, or handling large-scale biological datasets. Use when tasks involve AnnData objects, h5ad files, single-cell RNA-seq data, or integration with scanpy/scverse tools.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/5b0ddf0d25666219f5a24bd589bd9ff9565619cb/cli-tool/components/skills/scientific/anndata",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "bioinformatics",
+        "single-cell analysis",
+        "data management",
+        "genomics",
+        "Python"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5597
+    },
+    {
+      "skill_name": "kegg-database",
+      "skill_description": "Direct REST API access to KEGG (academic use only). Pathway analysis, gene-pathway mapping, metabolic pathways, drug interactions, ID conversion. For Python workflows with multiple databases, prefer bioservices. Use this for direct HTTP/REST work or KEGG-specific control.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/b8551774f62e60097df5edb10385d26ceb3e21dd/cli-tool/components/skills/scientific/kegg-database",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "bioinformatics",
+        "REST API",
+        "pathway analysis",
+        "metabolic pathways",
+        "data integration"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5047
+    },
+    {
+      "skill_name": "pdb-database",
+      "skill_description": "Access RCSB PDB for 3D protein/nucleic acid structures. Search by text/sequence/structure, download coordinates (PDB/mmCIF), retrieve metadata, for structural biology and drug discovery.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/e1ad0ef499dd2ea86e3e4bd05022faeb080b50f0/cli-tool/components/skills/scientific/pdb-database",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "structural biology",
+        "protein database",
+        "bioinformatics",
+        "drug discovery",
+        "molecular visualization"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5012
+    },
+    {
+      "skill_name": "gtars",
+      "skill_description": "High-performance toolkit for genomic interval analysis in Rust with Python bindings. Use when working with genomic regions, BED files, coverage tracks, overlap detection, tokenization for ML models, or fragment analysis in computational genomics and machine learning applications.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/5b0ddf0d25666219f5a24bd589bd9ff9565619cb/cli-tool/components/skills/scientific/gtars",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "genomics",
+        "bioinformatics",
+        "machine-learning",
+        "data-analysis",
+        "Rust"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4965
+    },
+    {
+      "skill_name": "rdkit",
+      "skill_description": "Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, LogP, TPSA), fingerprints, substructure search, 2D/3D generation, similarity, reactions. For standard workflows with simpler interface, use datamol (wrapper around RDKit). Use rdkit for advanced control, custom sanitization, specialized algorithms.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/scientific/rdkit",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "cheminformatics",
+        "molecular modeling",
+        "chemistry",
+        "bioinformatics",
+        "data analysis"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4963
+    },
+    {
+      "skill_name": "reactome-database",
+      "skill_description": "Query Reactome REST API for pathway analysis, enrichment, gene-pathway mapping, disease pathways, molecular interactions, expression analysis, for systems biology studies.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/0f6fa465821f11168374ae91670cc8b388cd8d17/cli-tool/components/skills/scientific/reactome-database",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "bioinformatics",
+        "pathway analysis",
+        "systems biology",
+        "data integration",
+        "REST API"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4933
+    },
+    {
+      "skill_name": "scikit-learn",
+      "skill_description": "Machine learning in Python with scikit-learn. Use when working with supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), model evaluation, hyperparameter tuning, preprocessing, or building ML pipelines. Provides comprehensive reference documentation for algorithms, preprocessing techniques, pipelines, and best practices.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/scientific/scikit-learn",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "machine learning",
+        "Python",
+        "data science",
+        "supervised learning",
+        "unsupervised learning"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.488
+    },
+    {
+      "skill_name": "dnanexus-integration",
+      "skill_description": "DNAnexus cloud genomics platform. Build apps/applets, manage data (upload/download), dxpy Python SDK, run workflows, FASTQ/BAM/VCF, for genomics pipeline development and execution.",
+      "skill_url": "https://github.com/K-Dense-AI/claude-scientific-skills/blob/955a36ac82d8d572d3e8d859fea4eb8a60df7c47/scientific-skills/dnanexus-integration",
+      "category": "Development",
+      "stars": 7634,
+      "tags": [
+        "genomics",
+        "cloud platform",
+        "data management",
+        "bioinformatics",
+        "workflow automation"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4863
+    },
+    {
+      "skill_name": "exploratory-data-analysis",
+      "skill_description": "Perform comprehensive exploratory data analysis on scientific data files across 200+ file formats. This skill should be used when analyzing any scientific data file to understand its structure, content, quality, and characteristics. Automatically detects file type and generates detailed markdown reports with format-specific analysis, quality metrics, and downstream analysis recommendations. Covers chemistry, bioinformatics, microscopy, spectroscopy, proteomics, metabolomics, and general scientific data formats.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/scientific/exploratory-data-analysis",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "data analysis",
+        "scientific data",
+        "data quality",
+        "file format detection",
+        "research automation"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4788
+    },
+    {
+      "skill_name": "chembl-database",
+      "skill_description": "Query ChEMBL's bioactive molecules and drug discovery data. Search compounds by structure/properties, retrieve bioactivity data (IC50, Ki), find inhibitors, perform SAR studies, for medicinal chemistry.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/4322a2278b755fa15b8d16927b1e610d6f40db1f/cli-tool/components/skills/scientific/chembl-database",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "medicinal chemistry",
+        "drug discovery",
+        "bioactivity data",
+        "compound search",
+        "SAR studies"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4728
+    },
+    {
+      "skill_name": "pydeseq2",
+      "skill_description": "Differential gene expression analysis (Python DESeq2). Identify DE genes from bulk RNA-seq counts, Wald tests, FDR correction, volcano/MA plots, for RNA-seq analysis.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/scientific/pydeseq2",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "bioinformatics",
+        "RNA-seq",
+        "differential expression",
+        "data analysis",
+        "Python"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4669
+    },
+    {
+      "skill_name": "arboreto",
+      "skill_description": "Infer gene regulatory networks (GRNs) from gene expression data using scalable algorithms (GRNBoost2, GENIE3). Use when analyzing transcriptomics data (bulk RNA-seq, single-cell RNA-seq) to identify transcription factor-target gene relationships and regulatory interactions. Supports distributed computation for large-scale datasets.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/62b5d8de603adc03741b4aa526876f97f4e3cd56/cli-tool/components/skills/scientific/arboreto",
+      "category": "Science",
+      "stars": 19070,
+      "tags": [
+        "gene regulatory networks",
+        "bioinformatics",
+        "transcriptomics",
+        "single-cell RNA-seq",
+        "distributed computing"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4598
+    },
+    {
+      "skill_name": "cosmic-database",
+      "skill_description": "Access COSMIC cancer mutation database. Query somatic mutations, Cancer Gene Census, mutational signatures, gene fusions, for cancer research and precision oncology. Requires authentication.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/4322a2278b755fa15b8d16927b1e610d6f40db1f/cli-tool/components/skills/scientific/cosmic-database",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "cancer research",
+        "genomics",
+        "mutation database",
+        "precision oncology",
+        "bioinformatics"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4522
+    },
+    {
+      "skill_name": "clinvar-database",
+      "skill_description": "Query NCBI ClinVar for variant clinical significance. Search by gene/position, interpret pathogenicity classifications, access via E-utilities API or FTP, annotate VCFs, for genomic medicine.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/b8551774f62e60097df5edb10385d26ceb3e21dd/cli-tool/components/skills/scientific/clinvar-database",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "genomics",
+        "bioinformatics",
+        "clinical data",
+        "variant analysis",
+        "API integration"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4443
+    },
+    {
+      "skill_name": "geniml",
+      "skill_description": "This skill should be used when working with genomic interval data (BED files) for machine learning tasks. Use for training region embeddings (Region2Vec, BEDspace), single-cell ATAC-seq analysis (scEmbed), building consensus peaks (universes), or any ML-based analysis of genomic regions. Applies to BED file collections, scATAC-seq data, chromatin accessibility datasets, and region-based genomic feature learning.",
+      "skill_url": "https://github.com/K-Dense-AI/claude-scientific-skills/blob/955a36ac82d8d572d3e8d859fea4eb8a60df7c47/scientific-skills/geniml",
+      "category": "Science",
+      "stars": 7634,
+      "tags": [
+        "genomics",
+        "machine learning",
+        "bioinformatics",
+        "data analysis",
+        "genomic intervals"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4379
+    },
+    {
+      "skill_name": "geo-database",
+      "skill_description": "Access NCBI GEO for gene expression/genomics data. Search/download microarray and RNA-seq datasets (GSE, GSM, GPL), retrieve SOFT/Matrix files, for transcriptomics and expression analysis.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/444b020ca1804271570f20e0aa26918ad206f5f5/cli-tool/components/skills/scientific/geo-database",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "bioinformatics",
+        "genomics",
+        "data retrieval",
+        "gene expression",
+        "transcriptomics"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4362
+    },
+    {
+      "skill_name": "latchbio-integration",
+      "skill_description": "Latch platform for bioinformatics workflows. Build pipelines with Latch SDK, @workflow/@task decorators, deploy serverless workflows, LatchFile/LatchDir, Nextflow/Snakemake integration.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/4322a2278b755fa15b8d16927b1e610d6f40db1f/cli-tool/components/skills/scientific/latchbio-integration",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "bioinformatics",
+        "workflow automation",
+        "Latch SDK",
+        "serverless computing",
+        "pipeline development"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4321
+    },
+    {
+      "skill_name": "gene-database",
+      "skill_description": "Query NCBI Gene via E-utilities/Datasets API. Search by symbol/ID, retrieve gene info (RefSeqs, GO, locations, phenotypes), batch lookups, for gene annotation and functional analysis.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/5b0ddf0d25666219f5a24bd589bd9ff9565619cb/cli-tool/components/skills/scientific/gene-database",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "gene-database",
+        "bioinformatics",
+        "NCBI",
+        "genomics",
+        "data-retrieval"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4131
+    },
+    {
+      "skill_name": "zarr-python",
+      "skill_description": "Chunked N-D arrays for cloud storage. Compressed arrays, parallel I/O, S3/GCS integration, NumPy/Dask/Xarray compatible, for large-scale scientific computing pipelines.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/scientific/zarr-python",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "data storage",
+        "scientific computing",
+        "parallel I/O",
+        "cloud integration",
+        "array processing"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4059
+    }
+  ],
+  "relationships": [
+    {
+      "source": "datamol",
+      "target": "rdkit",
+      "type": "depend_on",
+      "reason": "Datamol is a Pythonic wrapper around RDKit and returns native rdkit.Chem.Mol objects, so datamol requires rdkit to function."
+    },
+    {
+      "source": "rdkit",
+      "target": "torchdrug",
+      "type": "compose_with",
+      "reason": "RDKit generates molecular representations (SMILES, descriptors, fingerprints, 2D/3D structures) that are commonly consumed as features by graph/ML toolkits like TorchDrug."
+    },
+    {
+      "source": "chembl-database",
+      "target": "rdkit",
+      "type": "compose_with",
+      "reason": "ChEMBL provides compound structures and bioactivity data which are typically processed and analyzed with RDKit for cheminformatics workflows."
+    },
+    {
+      "source": "bioservices",
+      "target": "kegg-database",
+      "type": "compose_with",
+      "reason": "Bioservices provides a unified API for many resources, while kegg-database offers direct REST control of KEGG; workflows may use bioservices for integration and kegg-database for KEGG-specific REST operations."
+    },
+    {
+      "source": "bioservices",
+      "target": "reactome-database",
+      "type": "compose_with",
+      "reason": "Bioservices supports multi-database workflows while reactome-database provides direct Reactome REST access; they are often used together for pathway and enrichment analyses across services."
+    },
+    {
+      "source": "bioservices",
+      "target": "chembl-database",
+      "type": "compose_with",
+      "reason": "Bioservices can integrate multiple databases, but users may still call the dedicated ChEMBL API for direct control; both are used together in multi-source workflows."
+    },
+    {
+      "source": "gget",
+      "target": "biopython",
+      "type": "compose_with",
+      "reason": "gget is optimized for rapid/CLI queries (including quick BLAST), while biopython is a fuller Python toolkit for advanced BLAST and NCBI workflows; users often start with gget and move to biopython for more advanced processing."
+    },
+    {
+      "source": "pdb-database",
+      "target": "biopython",
+      "type": "compose_with",
+      "reason": "PDB/RCSB coordinate downloads are typically retrieved via a PDB access skill and then parsed or analyzed using Biopython's structure/sequence tools."
+    },
+    {
+      "source": "pdb-database",
+      "target": "torchdrug",
+      "type": "compose_with",
+      "reason": "3D protein/nucleic acid structures from the PDB are commonly used as inputs for structural modeling or property prediction in graph-based drug discovery toolkits like TorchDrug."
+    },
+    {
+      "source": "pydeseq2",
+      "target": "geo-database",
+      "type": "compose_with",
+      "reason": "NCBI GEO provides bulk RNA-seq datasets that can be downloaded and used as input count matrices for differential expression analysis with pydeseq2."
+    },
+    {
+      "source": "arboreto",
+      "target": "anndata",
+      "type": "compose_with",
+      "reason": "Arboreto infers gene regulatory networks from expression data, including single-cell RNA-seq; AnnData is the common container for single-cell expression and metadata that arboreto can consume."
+    },
+    {
+      "source": "arboreto",
+      "target": "geo-database",
+      "type": "compose_with",
+      "reason": "Arboreto needs expression datasets to infer GRNs; GEO is a common source of bulk or single-cell expression data that can feed arboreto analyses."
+    },
+    {
+      "source": "geniml",
+      "target": "gtars",
+      "type": "compose_with",
+      "reason": "Geniml focuses on ML for genomic interval data (BED files) and region embeddings, while gtars provides high-performance genomic interval analysis and tokenization; they are complementary in region-based ML workflows."
+    },
+    {
+      "source": "anndata",
+      "target": "zarr-python",
+      "type": "compose_with",
+      "reason": "AnnData objects and large single-cell datasets can be stored and accessed using chunked array formats like Zarr for scalable I/O in cloud/distributed workflows."
+    },
+    {
+      "source": "exploratory-data-analysis",
+      "target": "pyopenms",
+      "type": "compose_with",
+      "reason": "Exploratory-data-analysis detects and summarizes scientific files across domains, and is often used prior to specialized mass-spectrometry processing with pyopenms."
+    },
+    {
+      "source": "exploratory-data-analysis",
+      "target": "biopython",
+      "type": "compose_with",
+      "reason": "Exploratory-data-analysis inspects bioinformatics file formats and can be used to profile data before deeper processing with Biopython toolkits."
+    },
+    {
+      "source": "exploratory-data-analysis",
+      "target": "rdkit",
+      "type": "compose_with",
+      "reason": "The EDA skill detects chemistry file formats and generates reports that inform downstream cheminformatics processing with RDKit."
+    },
+    {
+      "source": "latchbio-integration",
+      "target": "dnanexus-integration",
+      "type": "similar_to",
+      "reason": "Both are cloud genomics workflow/platform integrations for building and running bioinformatics pipelines (Latch and DNAnexus platforms) and are functionally analogous."
+    },
+    {
+      "source": "gene-database",
+      "target": "biopython",
+      "type": "compose_with",
+      "reason": "Gene-level annotations from NCBI Gene can be retrieved and then programmatically used or further processed with Biopython's NCBI/sequence utilities."
+    },
+    {
+      "source": "clinvar-database",
+      "target": "gene-database",
+      "type": "compose_with",
+      "reason": "ClinVar variant clinical significance annotations are commonly combined with gene-level information from NCBI Gene in variant interpretation pipelines."
+    },
+    {
+      "source": "cosmic-database",
+      "target": "gene-database",
+      "type": "compose_with",
+      "reason": "COSMIC somatic mutation data is often integrated with gene annotations (from NCBI Gene) for cancer research and variant interpretation workflows."
+    },
+    {
+      "source": "pydeseq2",
+      "target": "anndata",
+      "type": "compose_with",
+      "reason": "PyDESeq2 analyzes differential gene expression from count matrices, which are commonly stored and managed in AnnData objects for single-cell or bulk RNA-seq workflows."
+    },
+    {
+      "source": "datamol",
+      "target": "torchdrug",
+      "type": "compose_with",
+      "reason": "Datamol simplifies molecular data preparation and standardization, providing clean inputs for downstream machine learning with TorchDrug's graph-based models."
+    },
+    {
+      "source": "biopython",
+      "target": "bioservices",
+      "type": "compose_with",
+      "reason": "Biopython focuses on sequence manipulation and file parsing, while bioservices provides unified database access; they are commonly used together in bioinformatics pipelines."
+    }
+  ]
+}

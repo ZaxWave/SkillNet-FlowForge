@@ -1,0 +1,309 @@
+{
+  "package_name": "mobile-cross-platform",
+  "scene_description": "Cross-platform mobile app development with React Native, Flutter, or native iOS/Android, including navigation, state management, native modules, and app store deployment",
+  "tags": [
+    "mobile development",
+    "react native",
+    "flutter",
+    "ios development",
+    "android",
+    "swift",
+    "kotlin",
+    "cross-platform"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:14:31.519381",
+  "skill_count": 12,
+  "skills": [
+    {
+      "skill_name": "mobile-design",
+      "skill_description": "Mobile-first design thinking and decision-making for iOS and Android apps. Touch interaction, performance patterns, platform conventions. Teaches principles, not fixed values. Use when building React Native, Flutter, or native mobile apps.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/56e2ccf719608b679926d97e313d6cea6e0dbf91/skills/mobile-design",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "mobile design",
+        "UI/UX",
+        "iOS",
+        "Android",
+        "React Native"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5943
+    },
+    {
+      "skill_name": "flutter-expert",
+      "skill_description": "Master Flutter development with Dart 3, advanced widgets, and multi-platform deployment. Handles state management, animations, testing, and performance optimization for mobile, web, desktop, and embedded platforms. Use PROACTIVELY for Flutter architecture, UI implementation, or cross-platform features.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/4c400ca1218d73b032351bc083b40743dd9ec055/skills/flutter-expert",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Cross-Platform Development",
+        "Mobile App Development",
+        "UI/UX"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5822
+    },
+    {
+      "skill_name": "react-native-architecture",
+      "skill_description": "Build production React Native apps with Expo, navigation, native modules, offline sync, and cross-platform patterns. Use when developing mobile apps, implementing native integrations, or architecting React Native projects.",
+      "skill_url": "https://github.com/wshobson/agents/blob/87231b828ddaa9eef41e0cca3700241afb21491e/plugins/frontend-mobile-development/skills/react-native-architecture",
+      "category": "Development",
+      "stars": 27432,
+      "tags": [
+        "React Native",
+        "Mobile Development",
+        "Cross-Platform",
+        "Expo",
+        "App Architecture"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5735
+    },
+    {
+      "skill_name": "omi-flutter-patterns",
+      "skill_description": "Flutter Dart BLE device communication state management Provider backend integration localization cross-platform iOS Android",
+      "skill_url": "https://github.com/BasedHardware/omi/blob/281d65b5251288e386eaf5bb5c196e5e482c8951/.cursor/skills/omi-flutter-patterns",
+      "category": "Development",
+      "stars": 7617,
+      "tags": [
+        "Flutter",
+        "Dart",
+        "BLE",
+        "State Management",
+        "Cross-Platform"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.558
+    },
+    {
+      "skill_name": "multi-platform-apps-multi-platform",
+      "skill_description": "Build and deploy the same feature consistently across web, mobile, and desktop platforms using API-first architecture and parallel implementation strategies.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/4c400ca1218d73b032351bc083b40743dd9ec055/skills/multi-platform-apps-multi-platform",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "cross-platform",
+        "software-architecture",
+        "API-design",
+        "mobile-development",
+        "web-development"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5205
+    },
+    {
+      "skill_name": "react-native-skills",
+      "skill_description": "React Native and Expo best practices for building performant mobile apps. Use when building React Native components, optimizing list performance, implementing animations, or working with native modules. Triggers on tasks involving React Native, Expo, mobile performance, or native platform APIs.",
+      "skill_url": "https://github.com/vercel-labs/agent-skills/blob/e23951b8cad2f4b1e7e176c5731127c1263fe86f/skills/react-native-skills",
+      "category": "Development",
+      "stars": 18235,
+      "tags": [
+        "React Native",
+        "Expo",
+        "Mobile Development",
+        "Performance Optimization",
+        "Best Practices"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5158
+    },
+    {
+      "skill_name": "webf-native-plugin-dev",
+      "skill_description": "Develop custom WebF native plugins based on Flutter packages. Create reusable plugins that wrap Flutter/platform capabilities as JavaScript APIs. Use when building plugins for native features like camera, payments, sensors, file access, or wrapping existing Flutter packages.",
+      "skill_url": "https://github.com/openwebf/webf/blob/d1c68a5930658cc12987c92b04bee7ab8151e4cd/skills/webf-native-plugin-dev",
+      "category": "Development",
+      "stars": 2290,
+      "tags": [
+        "WebF",
+        "Flutter",
+        "JavaScript API",
+        "Native Plugin Development",
+        "Cross-Platform Development"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5024
+    },
+    {
+      "skill_name": "webf-native-ui-dev",
+      "skill_description": "Develop custom native UI libraries based on Flutter widgets for WebF. Create reusable component libraries that wrap Flutter widgets as web-accessible custom elements. Use when building UI libraries, wrapping Flutter packages, or creating native component systems.",
+      "skill_url": "https://github.com/openwebf/webf/blob/102057c61f1ee081c17979ff3fc6e5e98c5bc6f0/skills/webf-native-ui-dev",
+      "category": "Development",
+      "stars": 2290,
+      "tags": [
+        "Flutter",
+        "WebF",
+        "UI Development",
+        "Custom Elements",
+        "Component Libraries"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5012
+    },
+    {
+      "skill_name": "react-native-design",
+      "skill_description": "Master React Native styling, navigation, and Reanimated animations for cross-platform mobile development. Use when building React Native apps, implementing navigation patterns, or creating performant animations.",
+      "skill_url": "https://github.com/wshobson/agents/blob/1135ac606247648d9e4724f027280d4114282858/plugins/ui-design/skills/react-native-design",
+      "category": "Development",
+      "stars": 27432,
+      "tags": [
+        "React Native",
+        "Mobile Development",
+        "UI Styling",
+        "Navigation",
+        "Animations"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4934
+    },
+    {
+      "skill_name": "iphone-apps",
+      "skill_description": "Build professional native iPhone apps in Swift with SwiftUI and UIKit. Full lifecycle - build, debug, test, optimize, ship. CLI-only, no Xcode. Targets iOS 26 with iOS 18 compatibility.",
+      "skill_url": "https://github.com/glittercowboy/taches-cc-resources/blob/b4f744411cd31fc8d13dfd7c527b0bf794445981/skills/expertise/iphone-apps",
+      "category": "Development",
+      "stars": 1223,
+      "tags": [
+        "iOS Development",
+        "Swift",
+        "SwiftUI",
+        "UIKit",
+        "Mobile App Development"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4684
+    },
+    {
+      "skill_name": "macos-apps",
+      "skill_description": "Build professional native macOS apps in Swift with SwiftUI and AppKit. Full lifecycle - build, debug, test, optimize, ship. CLI-only, no Xcode.",
+      "skill_url": "https://github.com/glittercowboy/taches-cc-resources/blob/b4f744411cd31fc8d13dfd7c527b0bf794445981/skills/expertise/macos-apps",
+      "category": "Development",
+      "stars": 1223,
+      "tags": [
+        "macOS Development",
+        "Swift",
+        "SwiftUI",
+        "AppKit",
+        "CLI Tools"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4377
+    },
+    {
+      "skill_name": "ios-developer",
+      "skill_description": "Develop native iOS applications with Swift/SwiftUI. Masters iOS 18, SwiftUI, UIKit integration, Core Data, networking, and App Store optimization. Use PROACTIVELY for iOS-specific features, App Store optimization, or native iOS development.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/4c400ca1218d73b032351bc083b40743dd9ec055/skills/ios-developer",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "iOS",
+        "Swift",
+        "SwiftUI",
+        "App Development",
+        "Mobile"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4208
+    }
+  ],
+  "relationships": [
+    {
+      "source": "react-native-architecture",
+      "target": "react-native-skills",
+      "type": "belong_to",
+      "reason": "Architecture for production React Native apps is a specific sub-area within broader React Native best practices and skills."
+    },
+    {
+      "source": "react-native-design",
+      "target": "react-native-skills",
+      "type": "belong_to",
+      "reason": "React Native styling, navigation, and animation techniques are a focused subset of overall React Native skills and best practices."
+    },
+    {
+      "source": "mobile-design",
+      "target": "react-native-design",
+      "type": "compose_with",
+      "reason": "Mobile-first design principles are commonly applied together with React Native-specific styling and animation patterns when building apps."
+    },
+    {
+      "source": "mobile-design",
+      "target": "flutter-expert",
+      "type": "compose_with",
+      "reason": "Mobile-first design thinking is used alongside Flutter expertise when implementing mobile UIs and interactions across iOS and Android."
+    },
+    {
+      "source": "omi-flutter-patterns",
+      "target": "flutter-expert",
+      "type": "belong_to",
+      "reason": "The listed Flutter patterns (BLE comms, state management, Provider, localization) are specific patterns/concerns within the broader Flutter expertise domain."
+    },
+    {
+      "source": "flutter-expert",
+      "target": "multi-platform-apps-multi-platform",
+      "type": "compose_with",
+      "reason": "Flutter's multi-platform deployment capabilities are commonly used as part of a multi-platform strategy to deliver the same feature across mobile, web, and desktop."
+    },
+    {
+      "source": "react-native-architecture",
+      "target": "multi-platform-apps-multi-platform",
+      "type": "compose_with",
+      "reason": "React Native architecture and patterns are often used in workflows aiming to deliver features across multiple platforms as part of a multi-platform approach."
+    },
+    {
+      "source": "webf-native-plugin-dev",
+      "target": "webf-native-ui-dev",
+      "type": "compose_with",
+      "reason": "Developing WebF native plugins (functional wrappers) is often paired with building native UI libraries (components) to expose functionality and UI together on the web platform."
+    },
+    {
+      "source": "webf-native-plugin-dev",
+      "target": "flutter-expert",
+      "type": "compose_with",
+      "reason": "Creating WebF plugins wraps Flutter packages and platform capabilities, so WebF plugin development is commonly done alongside Flutter expertise."
+    },
+    {
+      "source": "webf-native-ui-dev",
+      "target": "flutter-expert",
+      "type": "compose_with",
+      "reason": "Building WebF UI libraries reuses and wraps Flutter widgets, so UI library development for WebF is typically done together with Flutter knowledge."
+    },
+    {
+      "source": "iphone-apps",
+      "target": "ios-developer",
+      "type": "belong_to",
+      "reason": "Building native iPhone apps in Swift is a specific, platform-focused part of the broader iOS development skillset."
+    },
+    {
+      "source": "macos-apps",
+      "target": "multi-platform-apps-multi-platform",
+      "type": "belong_to",
+      "reason": "Developing native macOS apps represents one desktop-platform component within a larger multi-platform app strategy."
+    },
+    {
+      "source": "ios-developer",
+      "target": "multi-platform-apps-multi-platform",
+      "type": "compose_with",
+      "reason": "Native iOS development is often one part of a multi-platform implementation plan and is used together with multi-platform strategies."
+    },
+    {
+      "source": "react-native-skills",
+      "target": "multi-platform-apps-multi-platform",
+      "type": "compose_with",
+      "reason": "React Native best practices and components are frequently used in multi-platform workflows to deliver consistent features across devices."
+    },
+    {
+      "source": "mobile-design",
+      "target": "ios-developer",
+      "type": "compose_with",
+      "reason": "Mobile-first design thinking and iOS/Android platform conventions are applied together with native iOS development using Swift/SwiftUI to build well-designed iPhone apps."
+    },
+    {
+      "source": "react-native-architecture",
+      "target": "react-native-design",
+      "type": "compose_with",
+      "reason": "React Native architecture (app structure, navigation setup, native modules) and design (styling, animations, navigation UI) are complementary aspects that work together when building production React Native apps."
+    }
+  ]
+}

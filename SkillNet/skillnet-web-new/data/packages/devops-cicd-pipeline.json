@@ -1,0 +1,545 @@
+{
+  "package_name": "devops-cicd-pipeline",
+  "scene_description": "DevOps and CI/CD pipeline setup with Docker, Kubernetes, GitHub Actions, Jenkins, monitoring, logging, and automated deployment workflows",
+  "tags": [
+    "devops",
+    "ci/cd",
+    "docker",
+    "kubernetes",
+    "github actions",
+    "deployment",
+    "monitoring",
+    "containerization"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:13:27.199757",
+  "skill_count": 23,
+  "skills": [
+    {
+      "skill_name": "maintainx-deploy-integration",
+      "skill_description": "Deploy MaintainX integrations to production environments.\nUse when deploying to cloud platforms, configuring production environments,\nor automating deployment pipelines for MaintainX integrations.\nTrigger with phrases like \"deploy maintainx\", \"maintainx deployment\",\n\"maintainx cloud deploy\", \"maintainx kubernetes\", \"maintainx docker\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/22fc789350af7c18c233242da6f7b578dbf59fce/plugins/saas-packs/maintainx-pack/skills/maintainx-deploy-integration",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "deployment",
+        "docker",
+        "kubernetes",
+        "cloud",
+        "devops"
+      ],
+      "tag_hits": 4,
+      "semantic_score": 0.5771
+    },
+    {
+      "skill_name": "devops-iac-engineer",
+      "skill_description": "Implements infrastructure as code using Terraform, Kubernetes, and cloud platforms. Designs scalable architectures, CI/CD pipelines, and observability solutions. Provides security-first DevOps practices and site reliability engineering guidance.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/0f6fa465821f11168374ae91670cc8b388cd8d17/cli-tool/components/skills/development/devops-iac-engineer",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "DevOps",
+        "Infrastructure as Code",
+        "Terraform",
+        "Kubernetes",
+        "CI/CD"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5479
+    },
+    {
+      "skill_name": "pr-build-status",
+      "skill_description": "Retrieve Azure DevOps build information for GitHub Pull Requests, including build IDs, stage status, and failed jobs.",
+      "skill_url": "https://github.com/dotnet/maui/blob/fd9f93bdbed5dae791dd04b81f08be67f617a4d9/.github/skills/pr-build-status",
+      "category": "Development",
+      "stars": 23156,
+      "tags": [
+        "Azure DevOps",
+        "GitHub",
+        "CI/CD",
+        "Build Monitoring",
+        "Pull Requests"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.545
+    },
+    {
+      "skill_name": "analyze-ci",
+      "skill_description": "Analyze failed GitHub Action jobs for a pull request.",
+      "skill_url": "https://github.com/mlflow/mlflow/blob/8af609d8dbf9db9d7f8fe0de20e13217d41c4ac2/.claude/skills/analyze-ci",
+      "category": "Testing",
+      "stars": 23922,
+      "tags": [
+        "GitHub Actions",
+        "CI/CD",
+        "debugging",
+        "pull requests",
+        "automation"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5428
+    },
+    {
+      "skill_name": "documenso-ci-integration",
+      "skill_description": "Configure CI/CD pipelines for Documenso integrations.\nUse when setting up automated testing, deployment pipelines,\nor continuous integration for Documenso projects.\nTrigger with phrases like \"documenso CI\", \"documenso GitHub Actions\",\n\"documenso pipeline\", \"documenso automated testing\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/22fc789350af7c18c233242da6f7b578dbf59fce/plugins/saas-packs/documenso-pack/skills/documenso-ci-integration",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "CI/CD",
+        "GitHub Actions",
+        "GitLab CI",
+        "automated testing",
+        "deployment"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5358
+    },
+    {
+      "skill_name": "github-workflow-automation",
+      "skill_description": "Automate GitHub workflows with AI assistance. Includes PR reviews, issue triage, CI/CD integration, and Git operations. Use when automating GitHub workflows, setting up PR review automation, creating GitHub Actions, or triaging issues.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/62b5d8de603adc03741b4aa526876f97f4e3cd56/cli-tool/components/skills/workflow-automation/github-workflow-automation",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "GitHub",
+        "Automation",
+        "CI/CD",
+        "DevOps",
+        "Code Review"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5217
+    },
+    {
+      "skill_name": "deployment-engineer",
+      "skill_description": "Expert deployment engineer specializing in modern CI/CD pipelines, GitOps workflows, and advanced deployment automation. Masters GitHub Actions, ArgoCD/Flux, progressive delivery, container security, and platform engineering. Handles zero-downtime deployments, security scanning, and developer experience optimization. Use PROACTIVELY for CI/CD design, GitOps implementation, or deployment automation.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/4c400ca1218d73b032351bc083b40743dd9ec055/skills/deployment-engineer",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "CI/CD",
+        "DevOps",
+        "Deployment Automation",
+        "GitOps",
+        "Kubernetes"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5173
+    },
+    {
+      "skill_name": "kubernetes-deployment-creator",
+      "skill_description": "Kubernetes Deployment Creator - Auto-activating skill for DevOps Advanced.\nTriggers on: kubernetes deployment creator, kubernetes deployment creator\nPart of the DevOps Advanced skill category.\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/827f80253f89ee86c8bc9d07d6c9ee42829dceb9/planned-skills/generated/02-devops-advanced/kubernetes-deployment-creator",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "kubernetes",
+        "devops",
+        "deployment",
+        "automation",
+        "containerization"
+      ],
+      "tag_hits": 4,
+      "semantic_score": 0.4957
+    },
+    {
+      "skill_name": "ci-monitor",
+      "skill_description": "Monitor Nx Cloud CI pipeline and handle self-healing fixes automatically. Checks for Nx Cloud connection before starting.",
+      "skill_url": "https://github.com/nrwl/nx/blob/251121530deae9bb881090d8e631aa3ff148c6ed/.cursor/skills/ci-monitor",
+      "category": "Development",
+      "stars": 28031,
+      "tags": [
+        "CI/CD",
+        "Nx Cloud",
+        "Pipeline Monitoring",
+        "Self-Healing",
+        "DevOps"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4817
+    },
+    {
+      "skill_name": "windsurf-cicd-github-actions",
+      "skill_description": "Generate and maintain GitHub Actions with Cascade assistance. Activate when users mention\n\"github actions\", \"ci/cd pipeline\", \"workflow automation\", \"continuous integration\",\nor \"deployment pipeline\". Handles CI/CD configuration with AI assistance. Use when working with windsurf cicd github actions functionality. Trigger with phrases like \"windsurf cicd github actions\", \"windsurf actions\", \"windsurf\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/plugins/saas-packs/skill-databases/windsurf/skills/windsurf-cicd-github-actions",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "GitHub Actions",
+        "CI/CD",
+        "Workflow Automation",
+        "DevOps",
+        "AI Assistance"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4816
+    },
+    {
+      "skill_name": "github",
+      "skill_description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+      "skill_url": "https://github.com/clawdbot/clawdbot/blob/62bf779c14eab24f9e0d337ba60290c268126659/skills/github",
+      "category": "Development",
+      "stars": 134924,
+      "tags": [
+        "GitHub",
+        "CLI",
+        "Version Control",
+        "Automation",
+        "DevOps"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4689
+    },
+    {
+      "skill_name": "obsidian-ci-integration",
+      "skill_description": "Set up GitHub Actions CI/CD for Obsidian plugin development.\nUse when automating builds, tests, and releases for your plugin,\nor setting up continuous integration for Obsidian projects.\nTrigger with phrases like \"obsidian CI\", \"obsidian github actions\",\n\"obsidian automated build\", \"obsidian CI/CD\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/22fc789350af7c18c233242da6f7b578dbf59fce/plugins/saas-packs/obsidian-pack/skills/obsidian-ci-integration",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "CI/CD",
+        "GitHub Actions",
+        "Obsidian Plugin",
+        "Automation",
+        "DevOps"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4613
+    },
+    {
+      "skill_name": "deploying-vmcp-locally",
+      "skill_description": "Deploys a VirtualMCPServer configuration locally for manual testing and verification",
+      "skill_url": "https://github.com/stacklok/toolhive/blob/f9bcd741875ccc4101cd66648d4c9851ef577f29/.claude/skills/deploying-vmcp-locally",
+      "category": "Development",
+      "stars": 1556,
+      "tags": [
+        "kubernetes",
+        "deployment",
+        "testing",
+        "devops",
+        "mcp"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4602
+    },
+    {
+      "skill_name": "managing-devops-pipeline",
+      "skill_description": "管理蓝盾流水线的构建操作，包括查询构建历史、获取启动参数、查看构建状态、启动构建。当用户提及流水线、构建、部署、CI/CD、蓝盾或需要触发构建任务时使用。",
+      "skill_url": "https://github.com/TencentBlueKing/bk-ci/blob/90f659c2a13d7d5b8d7b9fd71396a8536c3b63d1/ai/skills/managing-devops-pipeline",
+      "category": "Development",
+      "stars": 2495,
+      "tags": [
+        "DevOps",
+        "CI/CD",
+        "Pipeline Management",
+        "Build Automation",
+        "Cloud Infrastructure"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4568
+    },
+    {
+      "skill_name": "devops-expert",
+      "skill_description": "DevOps and Infrastructure expert with comprehensive knowledge of CI/CD pipelines, containerization, orchestration, infrastructure as code, monitoring, security, and performance optimization. Use PROACTIVELY for any DevOps, deployment, infrastructure, or operational issues. If a specialized expert is a better fit, I will recommend switching and stop.",
+      "skill_url": "https://github.com/vudovn/antigravity-kit/blob/2651633269adb485652d90f7dde01af491643f19/templates/.agent/skills/devops-expert",
+      "category": "Development",
+      "stars": 3795,
+      "tags": [
+        "DevOps",
+        "CI/CD",
+        "Containerization",
+        "Infrastructure as Code",
+        "Monitoring"
+      ],
+      "tag_hits": 4,
+      "semantic_score": 0.4567
+    },
+    {
+      "skill_name": "azure-devops-cli",
+      "skill_description": "Manage Azure DevOps resources via CLI including projects, repos, pipelines, builds, pull requests, work items, artifacts, and service endpoints. Use when working with Azure DevOps, az commands, devops automation, CI/CD, or when user mentions Azure DevOps CLI.",
+      "skill_url": "https://github.com/github/awesome-copilot/blob/ccdfd66cc2311cac15b9e22073a9314a1c0d0fce/skills/azure-devops-cli",
+      "category": "Development",
+      "stars": 19732,
+      "tags": [
+        "Azure DevOps",
+        "CLI",
+        "CI/CD",
+        "Automation",
+        "DevOps"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4537
+    },
+    {
+      "skill_name": "cicd-automation-workflow-automate",
+      "skill_description": "You are a workflow automation expert specializing in creating efficient CI/CD pipelines, GitHub Actions workflows, and automated development processes. Design automation that reduces manual work, improves consistency, and accelerates delivery while maintaining quality and security.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/f2c3e783b5285d9c2dd09884db03860c56dec2bd/skills/cicd-automation-workflow-automate",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "CI/CD",
+        "automation",
+        "GitHub Actions",
+        "deployment",
+        "workflow"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4504
+    },
+    {
+      "skill_name": "service",
+      "skill_description": "Check service status, rename services, change service icons, link services, or create services with Docker images. For creating services with local code, prefer railway-new skill. For GitHub repo sources, use railway-new skill to create empty service then railway-environment skill to configure source.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/0f6fa465821f11168374ae91670cc8b388cd8d17/cli-tool/components/skills/railway/service",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "service management",
+        "Docker",
+        "DevOps",
+        "containerization",
+        "deployment"
+      ],
+      "tag_hits": 4,
+      "semantic_score": 0.4464
+    },
+    {
+      "skill_name": "deployment-procedures",
+      "skill_description": "Production deployment principles and decision-making. Safe deployment workflows, rollback strategies, and verification. Teaches thinking, not scripts.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/5b0ddf0d25666219f5a24bd589bd9ff9565619cb/cli-tool/components/skills/development/deployment-procedures",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "deployment",
+        "production",
+        "devops",
+        "rollback",
+        "best-practices"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4396
+    },
+    {
+      "skill_name": "argocd-app-deployer",
+      "skill_description": "Argocd App Deployer - Auto-activating skill for DevOps Advanced.\nTriggers on: argocd app deployer, argocd app deployer\nPart of the DevOps Advanced skill category.\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/827f80253f89ee86c8bc9d07d6c9ee42829dceb9/planned-skills/generated/02-devops-advanced/argocd-app-deployer",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "argocd",
+        "devops",
+        "deployment",
+        "kubernetes",
+        "automation"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4277
+    },
+    {
+      "skill_name": "docker-expert",
+      "skill_description": "Docker containerization expert with deep knowledge of multi-stage builds, image optimization, container security, Docker Compose orchestration, and production deployment patterns. Use PROACTIVELY for Dockerfile optimization, container issues, image size problems, security hardening, networking, and orchestration challenges.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/56e2ccf719608b679926d97e313d6cea6e0dbf91/skills/docker-expert",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "Docker",
+        "Containerization",
+        "DevOps",
+        "Orchestration",
+        "Security"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4197
+    },
+    {
+      "skill_name": "vercel-ci-integration",
+      "skill_description": "Configure Vercel CI/CD integration with GitHub Actions and testing.\nUse when setting up automated testing, configuring CI pipelines,\nor integrating Vercel tests into your build process.\nTrigger with phrases like \"vercel CI\", \"vercel GitHub Actions\",\n\"vercel automated tests\", \"CI vercel\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/827f80253f89ee86c8bc9d07d6c9ee42829dceb9/plugins/saas-packs/vercel-pack/skills/vercel-ci-integration",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "Vercel",
+        "CI/CD",
+        "GitHub Actions",
+        "Automated Testing",
+        "Deployment"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4122
+    },
+    {
+      "skill_name": "github-actions-starter",
+      "skill_description": "Manage github actions starter operations. Auto-activating skill for DevOps Basics.\nTriggers on: github actions starter, github actions starter\nPart of the DevOps Basics skill category. Use when working with github actions starter functionality. Trigger with phrases like \"github actions starter\", \"github starter\", \"github\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/skills/01-devops-basics/github-actions-starter",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "GitHub Actions",
+        "DevOps",
+        "Automation",
+        "CI/CD",
+        "Version Control"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4051
+    }
+  ],
+  "relationships": [
+    {
+      "source": "pr-build-status",
+      "target": "azure-devops-cli",
+      "type": "depend_on",
+      "reason": "pr-build-status retrieves Azure DevOps build information which would require Azure DevOps CLI access to query builds and pipeline details."
+    },
+    {
+      "source": "analyze-ci",
+      "target": "github",
+      "type": "depend_on",
+      "reason": "analyze-ci analyzes failed GitHub Action jobs and would need the GitHub CLI or API access (provided by the github skill) to fetch runs and job logs."
+    },
+    {
+      "source": "github-workflow-automation",
+      "target": "github",
+      "type": "depend_on",
+      "reason": "github-workflow-automation automates GitHub workflows and must interact with GitHub (issues, PRs, actions) via the GitHub CLI/API."
+    },
+    {
+      "source": "windsurf-cicd-github-actions",
+      "target": "github",
+      "type": "depend_on",
+      "reason": "windsurf-cicd-github-actions generates and maintains GitHub Actions, so it requires access to GitHub to create and update workflows."
+    },
+    {
+      "source": "github-actions-starter",
+      "target": "github",
+      "type": "depend_on",
+      "reason": "github-actions-starter manages starter operations for GitHub Actions and therefore needs GitHub access to create or modify workflows and repos."
+    },
+    {
+      "source": "kubernetes-deployment-creator",
+      "target": "devops-iac-engineer",
+      "type": "belong_to",
+      "reason": "kubernetes-deployment-creator is a focused tool for creating Kubernetes Deployments and is a sub-component of infrastructure-as-code/kubernetes responsibilities described by devops-iac-engineer."
+    },
+    {
+      "source": "argocd-app-deployer",
+      "target": "deployment-engineer",
+      "type": "belong_to",
+      "reason": "argocd-app-deployer is a specific GitOps deployment action (ArgoCD) and fits as a sub-component of the deployment-engineer’s ArgoCD/GitOps deployment responsibilities."
+    },
+    {
+      "source": "documenso-ci-integration",
+      "target": "github-workflow-automation",
+      "type": "compose_with",
+      "reason": "documenso-ci-integration configures CI/CD pipelines (often GitHub Actions) and is commonly used together with a GitHub workflow automation capability to implement and automate those pipelines."
+    },
+    {
+      "source": "obsidian-ci-integration",
+      "target": "github-workflow-automation",
+      "type": "compose_with",
+      "reason": "obsidian-ci-integration sets up GitHub Actions CI/CD for Obsidian plugins and is typically paired with GitHub workflow automation to manage and run those pipelines."
+    },
+    {
+      "source": "vercel-ci-integration",
+      "target": "windsurf-cicd-github-actions",
+      "type": "compose_with",
+      "reason": "vercel-ci-integration configures Vercel-related CI and testing which is often implemented using GitHub Actions; windsurf-cicd-github-actions generates and maintains those Actions, so they are used together."
+    },
+    {
+      "source": "maintainx-deploy-integration",
+      "target": "deployment-engineer",
+      "type": "compose_with",
+      "reason": "maintainx-deploy-integration deploys integrations to production/cloud and is commonly paired with deployment-engineer expertise to design and execute safe production deployments."
+    },
+    {
+      "source": "service",
+      "target": "docker-expert",
+      "type": "compose_with",
+      "reason": "service can create services from Docker images and is frequently used together with Docker expertise when building, optimizing, and deploying container images."
+    },
+    {
+      "source": "cicd-automation-workflow-automate",
+      "target": "github-workflow-automation",
+      "type": "similar_to",
+      "reason": "Both skills specialize in designing and automating CI/CD pipelines and GitHub Actions workflows; they provide overlapping automation capabilities for CI/CD."
+    },
+    {
+      "source": "deployment-procedures",
+      "target": "deployment-engineer",
+      "type": "compose_with",
+      "reason": "deployment-procedures provides principles and decision-making guidance that are used alongside a deployment engineer’s implementation work during production deployments."
+    },
+    {
+      "source": "windsurf-cicd-github-actions",
+      "target": "github-workflow-automation",
+      "type": "compose_with",
+      "reason": "windsurf-cicd-github-actions generates and maintains GitHub Actions while github-workflow-automation automates PR/CI workflows; the generator and automation capabilities are commonly paired in CI/CD workflows."
+    },
+    {
+      "source": "deployment-engineer",
+      "target": "devops-iac-engineer",
+      "type": "compose_with",
+      "reason": "deployment-engineer (deployment automation, GitOps) and devops-iac-engineer (IaC, Terraform, Kubernetes) are independent specialties that are frequently used together when designing and operating deployment platforms and infrastructure."
+    },
+    {
+      "source": "docker-expert",
+      "target": "deployment-engineer",
+      "type": "compose_with",
+      "reason": "Docker expertise is commonly paired with deployment engineering for building, securing, and deploying containerized applications in production."
+    },
+    {
+      "source": "devops-expert",
+      "target": "deployment-engineer",
+      "type": "compose_with",
+      "reason": "devops-expert provides broad operational and infrastructure guidance that is often used alongside deployment-engineer activities for CI/CD, reliability, and security in deployments."
+    },
+    {
+      "source": "kubernetes-deployment-creator",
+      "target": "docker-expert",
+      "type": "compose_with",
+      "reason": "Kubernetes deployments require containerized applications, so Kubernetes deployment creation is commonly paired with Docker expertise for building and optimizing container images."
+    },
+    {
+      "source": "argocd-app-deployer",
+      "target": "kubernetes-deployment-creator",
+      "type": "compose_with",
+      "reason": "ArgoCD deploys applications to Kubernetes clusters, so ArgoCD deployment workflows are commonly used together with Kubernetes deployment manifests and configurations."
+    },
+    {
+      "source": "devops-expert",
+      "target": "devops-iac-engineer",
+      "type": "compose_with",
+      "reason": "DevOps expert provides operational guidance that works alongside IaC engineer implementation for infrastructure automation and platform engineering."
+    },
+    {
+      "source": "ci-monitor",
+      "target": "github-workflow-automation",
+      "type": "compose_with",
+      "reason": "CI pipeline monitoring and self-healing capabilities work together with GitHub workflow automation for maintaining reliable CI/CD operations."
+    },
+    {
+      "source": "deploying-vmcp-locally",
+      "target": "kubernetes-deployment-creator",
+      "type": "compose_with",
+      "reason": "Local Kubernetes deployment testing commonly uses Kubernetes deployment creation tools to configure and verify deployments before production."
+    },
+    {
+      "source": "github-actions-starter",
+      "target": "windsurf-cicd-github-actions",
+      "type": "compose_with",
+      "reason": "GitHub Actions starter creates initial workflow templates that are then maintained and enhanced using windsurf CI/CD generation capabilities."
+    },
+    {
+      "source": "azure-devops-cli",
+      "target": "devops-expert",
+      "type": "compose_with",
+      "reason": "Azure DevOps CLI tooling is commonly used alongside DevOps expertise for managing Azure pipelines, repos, and infrastructure automation."
+    },
+    {
+      "source": "managing-devops-pipeline",
+      "target": "devops-expert",
+      "type": "compose_with",
+      "reason": "DevOps pipeline management capabilities work together with DevOps expert guidance for operating CI/CD systems and build automation."
+    }
+  ]
+}

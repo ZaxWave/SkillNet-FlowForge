@@ -1,0 +1,229 @@
+{
+  "scenario": {
+    "title": "Penguin Species Research Report and Presentation",
+    "query": "Analyze penguin morphology data, generate publication-quality figures, write a specialist report, and create conference slides.",
+    "description": "A curated SkillFabric demo based on the official AgentSkillOS data_computation_task1 benchmark. The task requires statistical analysis, visualization, DOCX report generation, and PPTX slide composition.",
+    "pool": "AgentSkillOS skill seeds",
+    "model": "gpt-5.4-mini",
+    "build_id": "1780139613",
+    "task_id": "data_computation_task1",
+    "input_artifact": "artifacts/penguins.csv",
+    "official_outputs": ["report.docx", "presentation.pptx", "at least 4 PNG figures"]
+  },
+  "stats": {
+    "skills": 53,
+    "communities": 5,
+    "graph_links": 271,
+    "workflow_hints": 6,
+    "wiki_pages": 67,
+    "wiki_skill_pages": 53,
+    "wiki_community_pages": 5,
+    "wiki_workflow_pages": 5,
+    "wiki_root_pages": 4,
+    "query_local_candidates": 16,
+    "query_local_pages": 21,
+    "query_local_workflow_hints": 2,
+    "interfaces": 53,
+    "interfaces_accepted": 52
+  },
+  "task_requirements": [
+    {
+      "title": "Analyze morphology data",
+      "detail": "Compute descriptive statistics, species comparison tests, and sex-based morphology comparisons."
+    },
+    {
+      "title": "Generate research figures",
+      "detail": "Create at least four publication-quality PNG charts for species comparisons, correlations, and distributions."
+    },
+    {
+      "title": "Produce research deliverables",
+      "detail": "Assemble report.docx and presentation.pptx with coherent scientific interpretation."
+    }
+  ],
+  "communities": [
+    {
+      "name": "Data Analysis and Visualization",
+      "summary": "Skills for loading tabular data, computing statistics, and rendering charts."
+    },
+    {
+      "name": "Document and Presentation Production",
+      "summary": "Skills for creating polished DOCX reports, PPTX slides, and narrative deliverables."
+    },
+    {
+      "name": "Data Storytelling",
+      "summary": "Skills that turn analysis outputs into a coherent research argument."
+    }
+  ],
+  "candidates": [
+    {
+      "skill": "data-visualization",
+      "score": 1.24,
+      "reason": "Directly supports publication-quality plots, correlation charts, distribution views, and figure-ready visual storytelling.",
+      "signals": ["semantic", "wiki", "graph"]
+    },
+    {
+      "skill": "xlsx",
+      "score": 0.55,
+      "reason": "Handles tabular data loading and pandas-style analysis over CSV/XLSX-like datasets.",
+      "signals": ["semantic", "lexical"]
+    },
+    {
+      "skill": "statistical-analysis",
+      "score": 0.53,
+      "reason": "Matches the requirement for descriptive statistics, comparison tests, and group-wise analysis.",
+      "signals": ["semantic", "wiki"]
+    },
+    {
+      "skill": "doc-coauthoring",
+      "score": 0.56,
+      "reason": "Supports writing a specialist-facing report with interpretation, tables, and embedded figures.",
+      "signals": ["semantic", "wiki"]
+    },
+    {
+      "skill": "pptx",
+      "score": 0.51,
+      "reason": "Covers PowerPoint generation and layout validation for conference-style slides.",
+      "signals": ["lexical", "wiki", "deliverable"]
+    },
+    {
+      "skill": "data-storytelling",
+      "score": 0.47,
+      "reason": "Helps convert statistical findings into a coherent research narrative for report and slides.",
+      "signals": ["semantic", "graph"]
+    },
+    {
+      "skill": "docx",
+      "score": 0.42,
+      "reason": "A specialized document-format skill useful when final DOCX layout needs direct handling.",
+      "signals": ["lexical", "deliverable"]
+    },
+    {
+      "skill": "diagramming",
+      "score": 0.31,
+      "reason": "Potentially useful for illustrative diagrams, but less central than statistical charts.",
+      "signals": ["graph"]
+    }
+  ],
+  "pages_read": [
+    "query_local_wiki.md",
+    "skills/xlsx.md",
+    "skills/statistical-analysis.md",
+    "skills/data-visualization.md",
+    "skills/data-storytelling.md",
+    "skills/doc-coauthoring.md",
+    "skills/docx.md",
+    "skills/pptx.md",
+    "communities/data-analysis-and-visualization.md",
+    "communities/document-and-presentation-production.md"
+  ],
+  "selected_skills": [
+    {
+      "skill": "xlsx",
+      "role": "Load and prepare tabular data",
+      "reason": "Reads the penguins dataset and prepares clean grouped tables for downstream analysis."
+    },
+    {
+      "skill": "statistical-analysis",
+      "role": "Run species and sex comparisons",
+      "reason": "Provides the explicit statistical reasoning required by the benchmark task."
+    },
+    {
+      "skill": "data-visualization",
+      "role": "Create publication-quality figures",
+      "reason": "Generates the required PNG figures used by both report and slides."
+    },
+    {
+      "skill": "doc-coauthoring",
+      "role": "Write the research report",
+      "reason": "Turns tables and figures into a specialist-facing DOCX report with interpretation."
+    },
+    {
+      "skill": "pptx",
+      "role": "Create conference slides",
+      "reason": "Handles the presentation.pptx deliverable and slide layout requirements."
+    }
+  ],
+  "rerank_summary": "The query-local wiki narrows the task to five complementary skills: tabular data preparation, statistical comparison, scientific visualization, report writing, and PPTX slide generation. The curated package keeps presentation-specific capability separate from general document coauthoring so both official deliverables are covered.",
+  "workflow": [
+    {
+      "id": "step_1",
+      "op": "invoke_skill",
+      "skill": "xlsx",
+      "purpose": "Load artifacts/penguins.csv and prepare clean analysis tables.",
+      "depends_on": []
+    },
+    {
+      "id": "step_2",
+      "op": "invoke_skill",
+      "skill": "statistical-analysis",
+      "purpose": "Compute species-level descriptive statistics and comparison tests.",
+      "depends_on": ["step_1"]
+    },
+    {
+      "id": "step_3",
+      "op": "invoke_skill",
+      "skill": "data-visualization",
+      "purpose": "Generate at least four publication-quality PNG figures.",
+      "depends_on": ["step_1", "step_2"]
+    },
+    {
+      "id": "step_4a",
+      "op": "invoke_skill",
+      "skill": "doc-coauthoring",
+      "purpose": "Assemble report.docx with tables, figures, and written interpretation.",
+      "depends_on": ["step_2", "step_3"]
+    },
+    {
+      "id": "step_4b",
+      "op": "invoke_skill",
+      "skill": "pptx",
+      "purpose": "Create presentation.pptx with at least 10 academic-style slides.",
+      "depends_on": ["step_2", "step_3"]
+    },
+    {
+      "id": "step_5",
+      "op": "aggregate",
+      "skill": "aggregate",
+      "purpose": "Collect report.docx, presentation.pptx, PNG figures, and validation trace.",
+      "depends_on": ["step_4a", "step_4b"]
+    }
+  ],
+  "dependencies": [
+    {
+      "before": "xlsx",
+      "after": "statistical-analysis",
+      "confidence": 0.97,
+      "label": "clean_tables_ready"
+    },
+    {
+      "before": "statistical-analysis",
+      "after": "data-visualization",
+      "confidence": 0.96,
+      "label": "findings_ready"
+    },
+    {
+      "before": "data-visualization",
+      "after": "doc-coauthoring",
+      "confidence": 0.95,
+      "label": "figures_for_report"
+    },
+    {
+      "before": "data-visualization",
+      "after": "pptx",
+      "confidence": 0.95,
+      "label": "figures_for_slides"
+    },
+    {
+      "before": "doc-coauthoring / pptx",
+      "after": "aggregate",
+      "confidence": 0.98,
+      "label": "deliverables_collected"
+    }
+  ],
+  "outputs": [
+    "route.json",
+    "query-local wiki context",
+    "workflow_plan.json",
+    "workflow_validation.json"
+  ]
+}

@@ -1,0 +1,577 @@
+{
+  "package_name": "ml-model-pipeline",
+  "scene_description": "Machine learning model pipeline including scikit-learn, PyTorch, TensorFlow, feature engineering, model training, hyperparameter tuning, MLOps, and model deployment",
+  "tags": [
+    "machine learning",
+    "pytorch",
+    "mlops",
+    "model training",
+    "ai models",
+    "data modeling",
+    "model deployment",
+    "optimization"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:25:56.091585",
+  "skill_count": 25,
+  "skills": [
+    {
+      "skill_name": "ml-engineer",
+      "skill_description": "Build production ML systems with PyTorch 2.x, TensorFlow, and modern ML frameworks. Implements model serving, feature engineering, A/B testing, and monitoring. Use PROACTIVELY for ML model deployment, inference optimization, or production ML infrastructure.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/4c400ca1218d73b032351bc083b40743dd9ec055/skills/ml-engineer",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "machine learning",
+        "MLOps",
+        "model deployment",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "tag_hits": 4,
+      "semantic_score": 0.6737
+    },
+    {
+      "skill_name": "scikit-learn",
+      "skill_description": "Machine learning in Python with scikit-learn. Use when working with supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), model evaluation, hyperparameter tuning, preprocessing, or building ML pipelines. Provides comprehensive reference documentation for algorithms, preprocessing techniques, pipelines, and best practices.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/scientific/scikit-learn",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "machine learning",
+        "Python",
+        "data science",
+        "supervised learning",
+        "unsupervised learning"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.6049
+    },
+    {
+      "skill_name": "mlops-mlflow",
+      "skill_description": "Track ML experiments, manage model registry with versioning, deploy models to production, and reproduce experiments with MLflow - framework-agnostic ML lifecycle platform",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/ai-research/mlops-mlflow",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "machine learning",
+        "MLOps",
+        "model deployment",
+        "experiment tracking",
+        "model versioning"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5877
+    },
+    {
+      "skill_name": "distributed-training-accelerate",
+      "skill_description": "Simplest distributed training API. 4 lines to add distributed support to any PyTorch script. Unified API for DeepSpeed/FSDP/Megatron/DDP. Automatic device placement, mixed precision (FP16/BF16/FP8). Interactive config, single launch command. HuggingFace ecosystem standard.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/4322a2278b755fa15b8d16927b1e610d6f40db1f/cli-tool/components/skills/ai-research/distributed-training-accelerate",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "distributed training",
+        "PyTorch",
+        "machine learning",
+        "HuggingFace",
+        "deep learning"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5759
+    },
+    {
+      "skill_name": "distributed-training-pytorch-lightning",
+      "skill_description": "High-level PyTorch framework with Trainer class, automatic distributed training (DDP/FSDP/DeepSpeed), callbacks system, and minimal boilerplate. Scales from laptop to supercomputer with same code. Use when you want clean training loops with built-in best practices.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/4322a2278b755fa15b8d16927b1e610d6f40db1f/cli-tool/components/skills/ai-research/distributed-training-pytorch-lightning",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "PyTorch",
+        "distributed training",
+        "machine learning",
+        "deep learning",
+        "model training"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5748
+    },
+    {
+      "skill_name": "ml-model-trainer",
+      "skill_description": "This skill trains machine learning models using automated workflows. It analyzes datasets, selects appropriate model types (classification, regression, etc.), configures training parameters, trains the model with cross-validation, generates performance metrics, and saves the trained model artifact. Use this skill when the user requests to \"train\" a model, needs to evaluate a dataset for machine learning purposes, or wants to optimize model performance. The skill supports common frameworks like scikit-learn.\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/backups/skills-migration-20251108-070147/plugins/ai-ml/ml-model-trainer/skills/ml-model-trainer",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "machine learning",
+        "model training",
+        "data analysis",
+        "scikit-learn",
+        "automation"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5574
+    },
+    {
+      "skill_name": "deploying-machine-learning-models",
+      "skill_description": "Deploy this skill enables AI assistant to deploy machine learning models to production environments. it automates the deployment workflow, implements best practices for serving models, optimizes performance, and handles potential errors. use this skill when th... Use when deploying or managing infrastructure. Trigger with phrases like 'deploy', 'infrastructure', or 'CI/CD'.\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/plugins/ai-ml/model-deployment-helper/skills/deploying-machine-learning-models",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "machine learning",
+        "model deployment",
+        "production",
+        "automation",
+        "CI/CD"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5554
+    },
+    {
+      "skill_name": "tensorflow-serving-setup",
+      "skill_description": "Configure tensorflow serving setup operations. Auto-activating skill for ML Deployment.\nTriggers on: tensorflow serving setup, tensorflow serving setup\nPart of the ML Deployment skill category. Use when working with tensorflow serving setup functionality. Trigger with phrases like \"tensorflow serving setup\", \"tensorflow setup\", \"tensorflow\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/skills/08-ml-deployment/tensorflow-serving-setup",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "tensorflow",
+        "machine learning",
+        "deployment",
+        "serving",
+        "MLOps"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5346
+    },
+    {
+      "skill_name": "mlops-tensorboard",
+      "skill_description": "Visualize training metrics, debug models with histograms, compare experiments, visualize model graphs, and profile performance with TensorBoard - Google's ML visualization toolkit",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/ai-research/mlops-tensorboard",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "machine learning",
+        "data visualization",
+        "model debugging",
+        "experiment tracking",
+        "performance profiling"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5298
+    },
+    {
+      "skill_name": "training-machine-learning-models",
+      "skill_description": "Build train machine learning models with automated workflows. Analyzes datasets, selects model types (classification, regression), configures parameters, trains with cross-validation, and saves model artifacts. Use when asked to \"train model\" or \"evalua... Trigger with relevant phrases based on skill purpose.\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/plugins/ai-ml/ml-model-trainer/skills/training-machine-learning-models",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "machine learning",
+        "model training",
+        "automated workflows",
+        "data analysis",
+        "cross-validation"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5252
+    },
+    {
+      "skill_name": "senior-ml-engineer",
+      "skill_description": "World-class ML engineering skill for productionizing ML models, MLOps, and building scalable ML systems. Expertise in PyTorch, TensorFlow, model deployment, feature stores, model monitoring, and ML infrastructure. Includes LLM integration, fine-tuning, RAG systems, and agentic AI. Use when deploying ML models, building ML platforms, implementing MLOps, or integrating LLMs into production systems.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/0f6fa465821f11168374ae91670cc8b388cd8d17/cli-tool/components/skills/development/senior-ml-engineer",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "machine learning",
+        "MLOps",
+        "model deployment",
+        "LLM integration",
+        "PyTorch"
+      ],
+      "tag_hits": 4,
+      "semantic_score": 0.5225
+    },
+    {
+      "skill_name": "mlops-weights-and-biases",
+      "skill_description": "Track ML experiments with automatic logging, visualize training in real-time, optimize hyperparameters with sweeps, and manage model registry with W&B - collaborative MLOps platform",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/ai-research/mlops-weights-and-biases",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "MLOps",
+        "Machine Learning",
+        "Experiment Tracking",
+        "Model Management",
+        "Hyperparameter Optimization"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5208
+    },
+    {
+      "skill_name": "model-deployment-helper",
+      "skill_description": "This skill enables Claude to deploy machine learning models to production environments. It automates the deployment workflow, implements best practices for serving models, optimizes performance, and handles potential errors. Use this skill when the user requests to deploy a model, serve a model via an API, or put a trained model into a production environment. The skill is triggered by requests containing terms like \"deploy model,\" \"productionize model,\" \"serve model,\" or \"model deployment.\"\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/2500019d4cf6df4556be201c897d960593fcec18/backups/skill-structure-cleanup-20251108-073936/plugins/ai-ml/model-deployment-helper/skills/model-deployment-helper",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "model deployment",
+        "machine learning",
+        "production environment",
+        "API serving",
+        "automation"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5013
+    },
+    {
+      "skill_name": "tensorflow-model-trainer",
+      "skill_description": "Build tensorflow model trainer operations. Auto-activating skill for ML Training.\nTriggers on: tensorflow model trainer, tensorflow model trainer\nPart of the ML Training skill category. Use when working with tensorflow model trainer functionality. Trigger with phrases like \"tensorflow model trainer\", \"tensorflow trainer\", \"tensorflow\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/skills/07-ml-training/tensorflow-model-trainer",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "tensorflow",
+        "machine learning",
+        "model training",
+        "AI",
+        "deep learning"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5008
+    },
+    {
+      "skill_name": "skill-adapter",
+      "skill_description": "This skill enables Claude to deploy machine learning models to production environments. It automates the deployment workflow, implements best practices for serving models, optimizes performance, and handles potential errors. Use this skill when the user requests to deploy a model, serve a model via an API, or put a trained model into a production environment. The skill is triggered by requests containing terms like \"deploy model,\" \"productionize model,\" \"serve model,\" or \"model deployment.\"\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/8aeed6381facc765e5bca0ff30aaeedee35caca5/backups/plugin-enhancements/plugin-backups/model-deployment-helper_20251020_021543/skills/skill-adapter",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "machine learning",
+        "model deployment",
+        "production",
+        "automation",
+        "API"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4987
+    },
+    {
+      "skill_name": "MLOps Prototyping",
+      "skill_description": "Guide to create structured, reproducible Jupyter notebooks for MLOps prototyping, emphasizing configuration management and pipeline integrity.",
+      "skill_url": "https://github.com/fmind/mlops-python-package/blob/d8715c4666ecad7ac95bc8fa86c49ebc7fb7e4fd/.gemini/skills/MLOps%20Prototyping",
+      "category": "Development",
+      "stars": 1389,
+      "tags": [
+        "MLOps",
+        "Jupyter Notebooks",
+        "Machine Learning",
+        "Reproducibility",
+        "Data Science"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4976
+    },
+    {
+      "skill_name": "MLOps Automation",
+      "skill_description": "Guide to refine MLOps projects with task automation, containerization, CI/CD pipelines, and robust experiment tracking.",
+      "skill_url": "https://github.com/fmind/mlops-python-package/blob/d8715c4666ecad7ac95bc8fa86c49ebc7fb7e4fd/.gemini/skills/MLOps%20Automation",
+      "category": "Development",
+      "stars": 1389,
+      "tags": [
+        "MLOps",
+        "Automation",
+        "CI/CD",
+        "Containerization",
+        "Machine Learning"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4848
+    },
+    {
+      "skill_name": "data-augmentation-pipeline",
+      "skill_description": "Data Augmentation Pipeline - Auto-activating skill for ML Training.\nTriggers on: data augmentation pipeline, data augmentation pipeline\nPart of the ML Training skill category.\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/827f80253f89ee86c8bc9d07d6c9ee42829dceb9/planned-skills/generated/07-ml-training/data-augmentation-pipeline",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "data augmentation",
+        "machine learning",
+        "ML training",
+        "pipeline automation",
+        "AI models"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4728
+    },
+    {
+      "skill_name": "pytorch-model-trainer",
+      "skill_description": "Build pytorch model trainer operations. Auto-activating skill for ML Training.\nTriggers on: pytorch model trainer, pytorch model trainer\nPart of the ML Training skill category. Use when working with pytorch model trainer functionality. Trigger with phrases like \"pytorch model trainer\", \"pytorch trainer\", \"pytorch\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/skills/07-ml-training/pytorch-model-trainer",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "PyTorch",
+        "machine learning",
+        "model training",
+        "deep learning",
+        "AI development"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4547
+    },
+    {
+      "skill_name": "model-architecture-torchtitan",
+      "skill_description": "Provides PyTorch-native distributed LLM pretraining using torchtitan with 4D parallelism (FSDP2, TP, PP, CP). Use when pretraining Llama 3.1, DeepSeek V3, or custom models at scale from 8 to 512+ GPUs with Float8, torch.compile, and distributed checkpointing.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/5b0ddf0d25666219f5a24bd589bd9ff9565619cb/cli-tool/components/skills/ai-research/model-architecture-torchtitan",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "Distributed Training",
+        "LLM Pretraining",
+        "PyTorch",
+        "Parallel Computing",
+        "Deep Learning"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4508
+    },
+    {
+      "skill_name": "tensorflow-savedmodel-creator",
+      "skill_description": "Create tensorflow savedmodel creator operations. Auto-activating skill for ML Deployment.\nTriggers on: tensorflow savedmodel creator, tensorflow savedmodel creator\nPart of the ML Deployment skill category. Use when working with tensorflow savedmodel creator functionality. Trigger with phrases like \"tensorflow savedmodel creator\", \"tensorflow creator\", \"tensorflow\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/2500019d4cf6df4556be201c897d960593fcec18/skills/08-ml-deployment/tensorflow-savedmodel-creator",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "tensorflow",
+        "machine learning",
+        "model deployment",
+        "savedmodel",
+        "AI operations"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4409
+    },
+    {
+      "skill_name": "emerging-techniques-moe-training",
+      "skill_description": "Train Mixture of Experts (MoE) models using DeepSpeed or HuggingFace. Use when training large-scale models with limited compute (5× cost reduction vs dense models), implementing sparse architectures like Mixtral 8x7B or DeepSeek-V3, or scaling model capacity without proportional compute increase. Covers MoE architectures, routing mechanisms, load balancing, expert parallelism, and inference optimization.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/ai-research/emerging-techniques-moe-training",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "Mixture of Experts",
+        "DeepSpeed",
+        "HuggingFace",
+        "model training",
+        "sparse architectures"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4401
+    },
+    {
+      "skill_name": "post-training-miles",
+      "skill_description": "Provides guidance for enterprise-grade RL training using miles, a production-ready fork of slime. Use when training large MoE models with FP8/INT4, needing train-inference alignment, or requiring speculative RL for maximum throughput.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/5b0ddf0d25666219f5a24bd589bd9ff9565619cb/cli-tool/components/skills/ai-research/post-training-miles",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "Reinforcement Learning",
+        "Machine Learning",
+        "Model Training",
+        "MoE",
+        "FP8"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4307
+    },
+    {
+      "skill_name": "post-training-torchforge",
+      "skill_description": "Provides guidance for PyTorch-native agentic RL using torchforge, Meta's library separating infra from algorithms. Use when you want clean RL abstractions, easy algorithm experimentation, or scalable training with Monarch and TorchTitan.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/5b0ddf0d25666219f5a24bd589bd9ff9565619cb/cli-tool/components/skills/ai-research/post-training-torchforge",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "Reinforcement Learning",
+        "PyTorch",
+        "Machine Learning",
+        "Distributed Training",
+        "AI Research"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4296
+    },
+    {
+      "skill_name": "distributed-training-setup",
+      "skill_description": "Configure distributed training setup operations. Auto-activating skill for ML Training.\nTriggers on: distributed training setup, distributed training setup\nPart of the ML Training skill category. Use when working with distributed training setup functionality. Trigger with phrases like \"distributed training setup\", \"distributed setup\", \"distributed\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/skills/07-ml-training/distributed-training-setup",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "distributed training",
+        "machine learning",
+        "AI models",
+        "training setup",
+        "parallel computing"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4113
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ml-model-trainer",
+      "target": "training-machine-learning-models",
+      "type": "similar_to",
+      "reason": "Both are general automated training skills that analyze data, select models, train with cross-validation, produce metrics, and save artifacts; they are functionally interchangeable for training tasks."
+    },
+    {
+      "source": "model-deployment-helper",
+      "target": "deploying-machine-learning-models",
+      "type": "similar_to",
+      "reason": "Both automate the workflow to deploy and serve ML models to production and have nearly identical descriptions and trigger intents."
+    },
+    {
+      "source": "skill-adapter",
+      "target": "deploying-machine-learning-models",
+      "type": "similar_to",
+      "reason": "The skill-adapter description matches deploying-machine-learning-models (automation of deployment/serving), making them interchangeable for deployment requests."
+    },
+    {
+      "source": "model-deployment-helper",
+      "target": "skill-adapter",
+      "type": "similar_to",
+      "reason": "Both provide the same deployment automation and serving capabilities and appear to be alternate implementations of the same functionality."
+    },
+    {
+      "source": "mlops-mlflow",
+      "target": "mlops-weights-and-biases",
+      "type": "similar_to",
+      "reason": "Both are experiment tracking and model-registry platforms used to track experiments, versions, and manage models; users can choose either as the tracking solution."
+    },
+    {
+      "source": "distributed-training-accelerate",
+      "target": "distributed-training-pytorch-lightning",
+      "type": "similar_to",
+      "reason": "Both provide high-level distributed training support for PyTorch and enable scaling training with minimal boilerplate; they serve analogous roles for distributed training."
+    },
+    {
+      "source": "tensorflow-savedmodel-creator",
+      "target": "deploying-machine-learning-models",
+      "type": "belong_to",
+      "reason": "tensorflow-savedmodel-creator is explicitly part of the ML Deployment skill category and creates SavedModel artifacts as a sub-step in model deployment workflows."
+    },
+    {
+      "source": "tensorflow-serving-setup",
+      "target": "deploying-machine-learning-models",
+      "type": "belong_to",
+      "reason": "tensorflow-serving-setup is described as part of the ML Deployment category and configures TensorFlow Serving as a deployment sub-component."
+    },
+    {
+      "source": "distributed-training-setup",
+      "target": "training-machine-learning-models",
+      "type": "belong_to",
+      "reason": "distributed-training-setup is labeled as part of the ML Training category and configures distributed training as a sub-component of training workflows."
+    },
+    {
+      "source": "pytorch-model-trainer",
+      "target": "training-machine-learning-models",
+      "type": "belong_to",
+      "reason": "pytorch-model-trainer is an auto-activating skill described as part of the ML Training category and provides the PyTorch-specific trainer functionality as a sub-step of training workflows."
+    },
+    {
+      "source": "tensorflow-model-trainer",
+      "target": "training-machine-learning-models",
+      "type": "belong_to",
+      "reason": "tensorflow-model-trainer is an ML Training sub-skill that implements TensorFlow-specific training operations within broader training workflows."
+    },
+    {
+      "source": "data-augmentation-pipeline",
+      "target": "training-machine-learning-models",
+      "type": "belong_to",
+      "reason": "Data augmentation is a preprocessing/training sub-component and this skill is listed as part of the ML Training category, making it a step within training workflows."
+    },
+    {
+      "source": "scikit-learn",
+      "target": "ml-model-trainer",
+      "type": "compose_with",
+      "reason": "ml-model-trainer supports common frameworks like scikit-learn; scikit-learn produces models/preprocessing that the trainer can use in training pipelines."
+    },
+    {
+      "source": "scikit-learn",
+      "target": "training-machine-learning-models",
+      "type": "compose_with",
+      "reason": "Generic ML training workflows commonly use scikit-learn for modeling, preprocessing, and evaluation; the training skill and scikit-learn are often paired."
+    },
+    {
+      "source": "mlops-mlflow",
+      "target": "ml-model-trainer",
+      "type": "compose_with",
+      "reason": "MLflow is commonly used alongside training to track experiments, log metrics, and register models produced by automated trainers."
+    },
+    {
+      "source": "mlops-weights-and-biases",
+      "target": "ml-model-trainer",
+      "type": "compose_with",
+      "reason": "Weights & Biases is another experiment-tracking tool that is typically used in conjunction with model training to log experiments and visualize runs."
+    },
+    {
+      "source": "mlops-tensorboard",
+      "target": "training-machine-learning-models",
+      "type": "compose_with",
+      "reason": "TensorBoard visualizes training metrics and graphs and is commonly used alongside training workflows to monitor and debug models."
+    },
+    {
+      "source": "model-architecture-torchtitan",
+      "target": "distributed-training-setup",
+      "type": "compose_with",
+      "reason": "TorchTitan provides PyTorch-native large-scale pretraining that relies on distributed training infrastructure; it is commonly paired with distributed training setup/configuration."
+    },
+    {
+      "source": "emerging-techniques-moe-training",
+      "target": "post-training-miles",
+      "type": "compose_with",
+      "reason": "The MoE training guide and the miles-specific guidance are related: miles provides production-ready RL/training patterns that are applicable when training MoE models, so they are often used together."
+    },
+    {
+      "source": "emerging-techniques-moe-training",
+      "target": "post-training-torchforge",
+      "type": "compose_with",
+      "reason": "Emerging MoE techniques and TorchForge (PyTorch agentic RL) are complementary for large-scale or specialized training workflows and can be paired in advanced training pipelines."
+    },
+    {
+      "source": "post-training-miles",
+      "target": "post-training-torchforge",
+      "type": "compose_with",
+      "reason": "Both are post-training guidance/tools for large-scale or RL-oriented training; users working with one often consult or integrate the other for advanced training/inference patterns."
+    },
+    {
+      "source": "MLOps Prototyping",
+      "target": "training-machine-learning-models",
+      "type": "compose_with",
+      "reason": "MLOps Prototyping is a guide to creating reproducible notebooks and pipelines for prototyping, which complements automated training workflows and is commonly used alongside training skills."
+    },
+    {
+      "source": "MLOps Automation",
+      "target": "deploying-machine-learning-models",
+      "type": "compose_with",
+      "reason": "MLOps Automation focuses on CI/CD, containerization, and automation for MLOps projects, which are commonly paired with deployment skills to productionize models."
+    },
+    {
+      "source": "MLOps Automation",
+      "target": "mlops-mlflow",
+      "type": "compose_with",
+      "reason": "Automation of MLOps projects commonly integrates experiment tracking and model registry (e.g., MLflow) as part of CI/CD and reproducibility pipelines."
+    },
+    {
+      "source": "ml-engineer",
+      "target": "senior-ml-engineer",
+      "type": "similar_to",
+      "reason": "Both represent ML engineering expertise for productionizing models and MLOps; the senior version denotes greater breadth/depth but they cover overlapping ML engineering responsibilities."
+    },
+    {
+      "source": "tensorflow-savedmodel-creator",
+      "target": "tensorflow-serving-setup",
+      "type": "compose_with",
+      "reason": "SavedModel is the standard format for TensorFlow Serving; creating SavedModels with tensorflow-savedmodel-creator is typically followed by configuring TensorFlow Serving with tensorflow-serving-setup to serve the models in production."
+    }
+  ]
+}

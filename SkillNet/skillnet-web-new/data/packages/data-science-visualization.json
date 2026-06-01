@@ -1,0 +1,503 @@
+{
+  "package_name": "data-science-visualization",
+  "scene_description": "Data science and visualization with pandas, NumPy, Matplotlib, Seaborn, Plotly, Jupyter notebooks, data cleaning, exploratory data analysis, and statistical modeling",
+  "tags": [
+    "data visualization",
+    "data analysis",
+    "python",
+    "statistics",
+    "visualization",
+    "data processing",
+    "data science",
+    "reporting"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:25:11.684195",
+  "skill_count": 17,
+  "skills": [
+    {
+      "skill_name": "plotly",
+      "skill_description": "Interactive scientific and statistical data visualization library for Python. Use when creating charts, plots, or visualizations including scatter plots, line charts, bar charts, heatmaps, 3D plots, geographic maps, statistical distributions, financial charts, and dashboards. Supports both quick visualizations (Plotly Express) and fine-grained customization (graph objects). Outputs interactive HTML or static images (PNG, PDF, SVG).",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/0f6fa465821f11168374ae91670cc8b388cd8d17/cli-tool/components/skills/scientific/plotly",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "data visualization",
+        "Python library",
+        "statistical charts",
+        "interactive plots",
+        "dashboard creation"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.6753
+    },
+    {
+      "skill_name": "data-visualization",
+      "skill_description": "Create effective data visualizations using best practices for clarity, accuracy, and visual communication of insights",
+      "skill_url": "https://github.com/kyegomez/swarms/blob/a6862c305760d75c0a5905c4c3aade887527a131/examples/single_agent/agent_skill_examples/data-visualization",
+      "category": "Development",
+      "stars": 5672,
+      "tags": [
+        "data visualization",
+        "data analysis",
+        "visual communication",
+        "insights",
+        "best practices"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.6321
+    },
+    {
+      "skill_name": "seaborn",
+      "skill_description": "Statistical visualization. Scatter, box, violin, heatmaps, pair plots, regression, correlation matrices, KDE, faceted plots, for exploratory analysis and publication figures.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/scientific/seaborn",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "data visualization",
+        "statistical analysis",
+        "exploratory data analysis",
+        "Python library",
+        "plotting"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5886
+    },
+    {
+      "skill_name": "data-visualization-creator",
+      "skill_description": "This skill enables Claude to generate data visualizations, plots, charts, and graphs from provided data. It analyzes the data, selects the most appropriate visualization type, and creates a visually appealing and informative graphic. Use this skill when the user requests a visualization, plot, chart, or graph; when data needs to be presented visually; or when exploring data patterns. The skill is triggered by requests for \"visualization\", \"plot\", \"chart\", or \"graph\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/backups/skills-migration-20251108-070147/plugins/ai-ml/data-visualization-creator/skills/data-visualization-creator",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "data visualization",
+        "charts",
+        "graphs",
+        "data analysis",
+        "plots"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5771
+    },
+    {
+      "skill_name": "scientific-visualization",
+      "skill_description": "Create publication figures with matplotlib/seaborn/plotly. Multi-panel layouts, error bars, significance markers, colorblind-safe, export PDF/EPS/TIFF, for journal-ready scientific plots.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/444b020ca1804271570f20e0aa26918ad206f5f5/cli-tool/components/skills/scientific/scientific-visualization",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "data visualization",
+        "scientific plotting",
+        "matplotlib",
+        "seaborn",
+        "plotly"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5713
+    },
+    {
+      "skill_name": "chart-visualization",
+      "skill_description": "This skill should be used when the user wants to visualize data. It intelligently selects the most suitable chart type from 25 available options, extracts parameters based on detailed specifications, and generates a chart image using a Python script.",
+      "skill_url": "https://github.com/antvis/mcp-server-chart/blob/5377ba0805245a21d552ebca4c12908b4dcfb7ef/.skills/chart-visualization",
+      "category": "Development",
+      "stars": 3598,
+      "tags": [
+        "data visualization",
+        "charts",
+        "data analysis",
+        "Python scripting",
+        "automated visualization"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5419
+    },
+    {
+      "skill_name": "matplotlib",
+      "skill_description": "Low-level plotting library for full customization. Use when you need fine-grained control over every plot element, creating novel plot types, or integrating with specific scientific workflows. Export to PNG/PDF/SVG for publication. For quick statistical plots use seaborn; for interactive plots use plotly; for publication-ready multi-panel figures with journal styling, use scientific-visualization.",
+      "skill_url": "https://github.com/K-Dense-AI/claude-scientific-skills/blob/955a36ac82d8d572d3e8d859fea4eb8a60df7c47/scientific-skills/matplotlib",
+      "category": "Development",
+      "stars": 7634,
+      "tags": [
+        "data visualization",
+        "plotting",
+        "scientific plotting",
+        "Python library",
+        "publication graphics"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5111
+    },
+    {
+      "skill_name": "mlops-tensorboard",
+      "skill_description": "Visualize training metrics, debug models with histograms, compare experiments, visualize model graphs, and profile performance with TensorBoard - Google's ML visualization toolkit",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/ai-research/mlops-tensorboard",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "machine learning",
+        "data visualization",
+        "model debugging",
+        "experiment tracking",
+        "performance profiling"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5047
+    },
+    {
+      "skill_name": "creating-data-visualizations",
+      "skill_description": "Generate plots, charts, and graphs from data with automatic visualization type selection. Use when requesting \"visualization\", \"plot\", \"chart\", or \"graph\". Trigger with phrases like 'generate', 'create', or 'scaffold'.\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/plugins/ai-ml/data-visualization-creator/skills/creating-data-visualizations",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "data visualization",
+        "charts",
+        "graphs",
+        "plotting",
+        "data analysis"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5022
+    },
+    {
+      "skill_name": "excel-pivot-wizard",
+      "skill_description": "Generate pivot tables and charts from raw data using natural language - analyze sales by region, summarize data by category, and create visualizations effortlessly",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/44933759526a1241cee690f8aa5b95bec9dae61e/backups/skills-migration-20251108-070147/plugins/business-tools/excel-analyst-pro/skills/excel-pivot-wizard",
+      "category": "Business",
+      "stars": 1215,
+      "tags": [
+        "Excel",
+        "Pivot Tables",
+        "Data Analysis",
+        "Data Visualization",
+        "Natural Language Processing"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4951
+    },
+    {
+      "skill_name": "skill-adapter",
+      "skill_description": "This skill enables Claude to generate data visualizations, plots, charts, and graphs from provided data. It analyzes the data, selects the most appropriate visualization type, and creates a visually appealing and informative graphic. Use this skill when the user requests a visualization, plot, chart, or graph; when data needs to be presented visually; or when exploring data patterns. The skill is triggered by requests for \"visualization\", \"plot\", \"chart\", or \"graph\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/ae6c20cac8a5727144a04341d536ecfebf9cb8f0/backups/plugin-enhancements/plugin-backups/data-visualization-creator_20251019_190508/skills/skill-adapter",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "data visualization",
+        "charts",
+        "graphs",
+        "data analysis",
+        "plotting"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4795
+    },
+    {
+      "skill_name": "songsee",
+      "skill_description": "Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.",
+      "skill_url": "https://github.com/clawdbot/clawdbot/blob/62bf779c14eab24f9e0d337ba60290c268126659/skills/songsee",
+      "category": "AIGC",
+      "stars": 134924,
+      "tags": [
+        "audio analysis",
+        "spectrogram",
+        "data visualization",
+        "CLI tool",
+        "feature extraction"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4416
+    },
+    {
+      "skill_name": "data-analysis",
+      "skill_description": "Help analyze datasets and results",
+      "skill_url": "https://github.com/nix-community/home-manager/blob/297a08510894822ddd93ee2cfc66d6ac65a3cebb/tests/modules/programs/opencode/skill-dir/data-analysis",
+      "category": "Business",
+      "stars": 9293,
+      "tags": [
+        "data analysis",
+        "dataset",
+        "results",
+        "analytics",
+        "statistics"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4358
+    },
+    {
+      "skill_name": "exploratory-data-analysis",
+      "skill_description": "Perform comprehensive exploratory data analysis on scientific data files across 200+ file formats. This skill should be used when analyzing any scientific data file to understand its structure, content, quality, and characteristics. Automatically detects file type and generates detailed markdown reports with format-specific analysis, quality metrics, and downstream analysis recommendations. Covers chemistry, bioinformatics, microscopy, spectroscopy, proteomics, metabolomics, and general scientific data formats.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/scientific/exploratory-data-analysis",
+      "category": "Science",
+      "stars": 19064,
+      "tags": [
+        "data analysis",
+        "scientific data",
+        "data quality",
+        "file format detection",
+        "research automation"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.424
+    },
+    {
+      "skill_name": "dask",
+      "skill_description": "Parallel/distributed computing. Scale pandas/NumPy beyond memory, parallel DataFrames/Arrays, multi-file processing, task graphs, for larger-than-RAM datasets and parallel workflows.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/b8551774f62e60097df5edb10385d26ceb3e21dd/cli-tool/components/skills/scientific/dask",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "parallel computing",
+        "distributed computing",
+        "data processing",
+        "big data",
+        "python libraries"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4206
+    },
+    {
+      "skill_name": "geopandas",
+      "skill_description": "Python library for working with geospatial vector data including shapefiles, GeoJSON, and GeoPackage files. Use when working with geographic data for spatial analysis, geometric operations, coordinate transformations, spatial joins, overlay operations, choropleth mapping, or any task involving reading/writing/analyzing vector geographic data. Supports PostGIS databases, interactive maps, and integration with matplotlib/folium/cartopy. Use for tasks like buffer analysis, spatial joins between datasets, dissolving boundaries, clipping data, calculating areas/distances, reprojecting coordinate systems, creating maps, or converting between spatial file formats.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/0f6fa465821f11168374ae91670cc8b388cd8d17/cli-tool/components/skills/scientific/geopandas",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "geospatial analysis",
+        "Python",
+        "GIS",
+        "data visualization",
+        "spatial data"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4164
+    },
+    {
+      "skill_name": "python-observability",
+      "skill_description": "Python observability patterns including structured logging, metrics, and distributed tracing. Use when adding logging, implementing metrics collection, setting up tracing, or debugging production systems.",
+      "skill_url": "https://github.com/wshobson/agents/blob/cbb60494b1df88ff43bff46821df5e71af6883c7/plugins/python-development/skills/python-observability",
+      "category": "Development",
+      "stars": 27432,
+      "tags": [
+        "observability",
+        "logging",
+        "metrics",
+        "tracing",
+        "python"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4007
+    }
+  ],
+  "relationships": [
+    {
+      "source": "creating-data-visualizations",
+      "target": "data-visualization-creator",
+      "type": "similar_to",
+      "reason": "Both skills have nearly identical descriptions and intent: automatically generate visualizations/plots from provided data and are interchangeable."
+    },
+    {
+      "source": "skill-adapter",
+      "target": "data-visualization-creator",
+      "type": "similar_to",
+      "reason": "skill-adapter has the same description and trigger behavior as data-visualization-creator, indicating functional equivalence."
+    },
+    {
+      "source": "chart-visualization",
+      "target": "data-visualization-creator",
+      "type": "similar_to",
+      "reason": "chart-visualization also selects chart types and generates charts from data; it serves the same core purpose of creating visualizations."
+    },
+    {
+      "source": "data-visualization-creator",
+      "target": "data-visualization",
+      "type": "belong_to",
+      "reason": "data-visualization-creator is a concrete skill that generates visualizations and therefore is a sub-component of the broader data-visualization capability."
+    },
+    {
+      "source": "creating-data-visualizations",
+      "target": "data-visualization",
+      "type": "belong_to",
+      "reason": "This skill is an implementation of generating visualizations and thus a specific part of the general data-visualization domain."
+    },
+    {
+      "source": "skill-adapter",
+      "target": "data-visualization",
+      "type": "belong_to",
+      "reason": "skill-adapter implements automatic visualization generation and is therefore a sub-component of data-visualization."
+    },
+    {
+      "source": "chart-visualization",
+      "target": "data-visualization",
+      "type": "belong_to",
+      "reason": "chart-visualization produces chart images from data and parameter extraction, making it a specific part of data-visualization functionality."
+    },
+    {
+      "source": "scientific-visualization",
+      "target": "data-visualization",
+      "type": "belong_to",
+      "reason": "scientific-visualization focuses on publication-ready figures and is a specialized subdomain of general data-visualization."
+    },
+    {
+      "source": "matplotlib",
+      "target": "data-visualization",
+      "type": "belong_to",
+      "reason": "matplotlib is a core plotting library used to create visualizations and thus is a tool within the data-visualization domain."
+    },
+    {
+      "source": "seaborn",
+      "target": "data-visualization",
+      "type": "belong_to",
+      "reason": "seaborn provides statistical plotting capabilities and is a library used for data visualization tasks, making it part of the data-visualization domain."
+    },
+    {
+      "source": "plotly",
+      "target": "data-visualization",
+      "type": "belong_to",
+      "reason": "plotly is an interactive plotting library used to create visualizations and therefore belongs to the data-visualization area."
+    },
+    {
+      "source": "seaborn",
+      "target": "matplotlib",
+      "type": "depend_on",
+      "reason": "Seaborn is built on top of matplotlib as a high-level interface; it requires matplotlib as its underlying plotting engine."
+    },
+    {
+      "source": "scientific-visualization",
+      "target": "matplotlib",
+      "type": "depend_on",
+      "reason": "scientific-visualization explicitly cites creating figures with matplotlib (it cannot produce publication-ready plots without plotting libraries like matplotlib)."
+    },
+    {
+      "source": "scientific-visualization",
+      "target": "seaborn",
+      "type": "depend_on",
+      "reason": "The skill states it creates publication figures with seaborn among other libraries, indicating it depends on seaborn to produce statistical-style plots."
+    },
+    {
+      "source": "scientific-visualization",
+      "target": "plotly",
+      "type": "depend_on",
+      "reason": "scientific-visualization lists plotly as one of the plotting backends it uses, implying a dependency on plotly for interactive/advanced figures."
+    },
+    {
+      "source": "exploratory-data-analysis",
+      "target": "data-analysis",
+      "type": "belong_to",
+      "reason": "Exploratory data analysis is a specific step and sub-component within the broader data-analysis workflow."
+    },
+    {
+      "source": "exploratory-data-analysis",
+      "target": "data-visualization-creator",
+      "type": "compose_with",
+      "reason": "Exploratory-data-analysis produces summaries and visual needs that are commonly visualized using a visualization-creation skill; the two are often used together."
+    },
+    {
+      "source": "exploratory-data-analysis",
+      "target": "creating-data-visualizations",
+      "type": "compose_with",
+      "reason": "EDA workflows typically feed into automated visualization generation, so the EDA skill is often used alongside creating-data-visualizations."
+    },
+    {
+      "source": "data-analysis",
+      "target": "data-visualization",
+      "type": "compose_with",
+      "reason": "Data analysis and visualization are independent capabilities that are commonly paired: analysis produces results that visualization communicates."
+    },
+    {
+      "source": "dask",
+      "target": "exploratory-data-analysis",
+      "type": "compose_with",
+      "reason": "Dask is used to scale DataFrame/array computations for larger-than-memory datasets and is commonly employed alongside exploratory-data-analysis to handle big data."
+    },
+    {
+      "source": "dask",
+      "target": "data-analysis",
+      "type": "compose_with",
+      "reason": "Dask enables parallel/distributed processing for analyses and is often used together with general data-analysis workflows."
+    },
+    {
+      "source": "geopandas",
+      "target": "matplotlib",
+      "type": "compose_with",
+      "reason": "Geopandas integrates with matplotlib for creating maps and spatial plots, so they are commonly paired in geospatial workflows."
+    },
+    {
+      "source": "geopandas",
+      "target": "plotly",
+      "type": "compose_with",
+      "reason": "Geopandas supports creating interactive maps and can be used together with plotly for interactive geospatial visualizations."
+    },
+    {
+      "source": "excel-pivot-wizard",
+      "target": "data-visualization-creator",
+      "type": "compose_with",
+      "reason": "excel-pivot-wizard produces summarized pivot tables and charts from raw data which are natural inputs for automated visualization-creation tools."
+    },
+    {
+      "source": "songsee",
+      "target": "exploratory-data-analysis",
+      "type": "compose_with",
+      "reason": "songsee generates spectrograms and audio feature visualizations that are useful in exploratory analysis of audio data; they are often used together."
+    },
+    {
+      "source": "mlops-tensorboard",
+      "target": "python-observability",
+      "type": "compose_with",
+      "reason": "TensorBoard visualizes training metrics and profiling data while python-observability covers logging/metrics/tracing; observability data and TensorBoard visualizations are commonly used together."
+    },
+    {
+      "source": "geopandas",
+      "target": "data-visualization",
+      "type": "belong_to",
+      "reason": "Geopandas provides geospatial visualization capabilities including maps and spatial plots, making it part of the data visualization domain."
+    },
+    {
+      "source": "mlops-tensorboard",
+      "target": "data-visualization",
+      "type": "belong_to",
+      "reason": "TensorBoard is a specialized visualization toolkit for ML training metrics, model graphs, and performance profiling, belonging to the data visualization domain."
+    },
+    {
+      "source": "excel-pivot-wizard",
+      "target": "data-visualization",
+      "type": "belong_to",
+      "reason": "Excel-pivot-wizard generates charts and visualizations from pivot tables, making it a business intelligence visualization tool within the data visualization domain."
+    },
+    {
+      "source": "songsee",
+      "target": "data-visualization",
+      "type": "belong_to",
+      "reason": "Songsee generates spectrograms and feature visualizations for audio data, which is a specialized form of scientific data visualization."
+    },
+    {
+      "source": "geopandas",
+      "target": "seaborn",
+      "type": "compose_with",
+      "reason": "Geopandas spatial data can be visualized with seaborn for statistical analysis of geographic features and attributes."
+    },
+    {
+      "source": "exploratory-data-analysis",
+      "target": "matplotlib",
+      "type": "compose_with",
+      "reason": "EDA workflows commonly use matplotlib to create plots for understanding data distributions, patterns, and relationships."
+    },
+    {
+      "source": "exploratory-data-analysis",
+      "target": "seaborn",
+      "type": "compose_with",
+      "reason": "EDA frequently employs seaborn for statistical visualizations like correlation matrices, pair plots, and distribution plots."
+    },
+    {
+      "source": "data-analysis",
+      "target": "matplotlib",
+      "type": "compose_with",
+      "reason": "Data analysis results are commonly visualized using matplotlib to communicate findings through plots and charts."
+    },
+    {
+      "source": "data-analysis",
+      "target": "seaborn",
+      "type": "compose_with",
+      "reason": "Data analysis workflows use seaborn for creating statistical graphics to visualize relationships and patterns in analyzed data."
+    }
+  ]
+}

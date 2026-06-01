@@ -1,0 +1,555 @@
+{
+  "package_name": "llm-app-development",
+  "scene_description": "LLM application development including prompt engineering, RAG (Retrieval-Augmented Generation), LangChain, vector databases, chat interfaces, fine-tuning, and LLM API integration",
+  "tags": [
+    "llm",
+    "rag",
+    "langchain",
+    "prompt engineering",
+    "ai",
+    "api integration",
+    "vector database",
+    "llm integration"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:19:49.404122",
+  "skill_count": 21,
+  "skills": [
+    {
+      "skill_name": "vector-database-engineer",
+      "skill_description": "Expert in vector databases, embedding strategies, and semantic search implementation. Masters Pinecone, Weaviate, Qdrant, Milvus, and pgvector for RAG applications, recommendation systems, and similar",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/f2c3e783b5285d9c2dd09884db03860c56dec2bd/skills/vector-database-engineer",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "vector-database",
+        "semantic-search",
+        "RAG",
+        "embedding",
+        "database-engineering"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5672
+    },
+    {
+      "skill_name": "agents-llamaindex",
+      "skill_description": "Data framework for building LLM applications with RAG. Specializes in document ingestion (300+ connectors), indexing, and querying. Features vector indices, query engines, agents, and multi-modal support. Use for document Q&A, chatbots, knowledge retrieval, or building RAG pipelines. Best for data-centric LLM applications.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/ai-research/agents-llamaindex",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "LLM applications",
+        "RAG",
+        "document ingestion",
+        "vector indexing",
+        "knowledge retrieval"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5609
+    },
+    {
+      "skill_name": "langchain-architecture",
+      "skill_description": "Design LLM applications using LangChain 1.x and LangGraph for agents, memory, and tool integration. Use when building LangChain applications, implementing AI agents, or creating complex LLM workflows.",
+      "skill_url": "https://github.com/wshobson/agents/blob/1135ac606247648d9e4724f027280d4114282858/plugins/llm-application-dev/skills/langchain-architecture",
+      "category": "Development",
+      "stars": 27432,
+      "tags": [
+        "LangChain",
+        "LLM Applications",
+        "AI Agents",
+        "LangGraph",
+        "Workflow Design"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5591
+    },
+    {
+      "skill_name": "agents-langchain",
+      "skill_description": "Framework for building LLM-powered applications with agents, chains, and RAG. Supports multiple providers (OpenAI, Anthropic, Google), 500+ integrations, ReAct agents, tool calling, memory management, and vector store retrieval. Use for building chatbots, question-answering systems, autonomous agents, or RAG applications. Best for rapid prototyping and production deployments.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/ai-research/agents-langchain",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "LLM",
+        "LangChain",
+        "AI Agents",
+        "RAG",
+        "AI Development"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.557
+    },
+    {
+      "skill_name": "llm-app-patterns",
+      "skill_description": "Production-ready patterns for building LLM applications. Covers RAG pipelines, agent architectures, prompt IDEs, and LLMOps monitoring. Use when designing AI applications, implementing RAG, building agents, or setting up LLM observability.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/62b5d8de603adc03741b4aa526876f97f4e3cd56/cli-tool/components/skills/ai-research/llm-app-patterns",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "LLM",
+        "RAG",
+        "AI Agents",
+        "LLMOps",
+        "Prompt Engineering"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5283
+    },
+    {
+      "skill_name": "rag-pinecone",
+      "skill_description": "Managed vector database for production AI applications. Fully managed, auto-scaling, with hybrid search (dense + sparse), metadata filtering, and namespaces. Low latency (<100ms p95). Use for production RAG, recommendation systems, or semantic search at scale. Best for serverless, managed infrastructure.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/8d1ecd770292e3040dcc6ec465d8b9a6608f4a5c/cli-tool/components/skills/ai-research/rag-pinecone",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "vector database",
+        "AI infrastructure",
+        "RAG",
+        "semantic search",
+        "managed service"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5224
+    },
+    {
+      "skill_name": "skills",
+      "skill_description": "Systematically evaluate your LLM application with TruLens",
+      "skill_url": "https://github.com/truera/trulens/blob/09edfc4b833b713b1fdd3a75b611d1780627c77e/skills",
+      "category": "Development",
+      "stars": 3070,
+      "tags": [
+        "llm",
+        "evaluation",
+        "workflow",
+        "orchestration",
+        "testing"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.5135
+    },
+    {
+      "skill_name": "langchain-migration-deep-dive",
+      "skill_description": "Complex migration strategies for LangChain applications.\nUse when migrating from legacy LLM frameworks, refactoring large codebases,\nor implementing phased migration approaches.\nTrigger with phrases like \"langchain migration strategy\", \"migrate to langchain\",\n\"langchain refactor\", \"legacy LLM migration\", \"langchain transition\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/44933759526a1241cee690f8aa5b95bec9dae61e/plugins/saas-packs/langchain-pack/skills/langchain-migration-deep-dive",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "LangChain",
+        "Migration Strategy",
+        "LLM Frameworks",
+        "Code Refactoring",
+        "Legacy System Migration"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4772
+    },
+    {
+      "skill_name": "rag-chroma",
+      "skill_description": "Open-source embedding database for AI applications. Store embeddings and metadata, perform vector and full-text search, filter by metadata. Simple 4-function API. Scales from notebooks to production clusters. Use for semantic search, RAG applications, or document retrieval. Best for local development and open-source projects.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/4322a2278b755fa15b8d16927b1e610d6f40db1f/cli-tool/components/skills/ai-research/rag-chroma",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "vector database",
+        "embeddings",
+        "semantic search",
+        "RAG",
+        "AI applications"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4735
+    },
+    {
+      "skill_name": "prompt-engineer",
+      "skill_description": "Expert in designing effective prompts for LLM-powered applications. Masters prompt structure, context management, output formatting, and prompt evaluation. Use when: prompt engineering, system prompt, few-shot, chain of thought, prompt design.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/62b5d8de603adc03741b4aa526876f97f4e3cd56/cli-tool/components/skills/ai-research/prompt-engineer",
+      "category": "AIGC",
+      "stars": 19107,
+      "tags": [
+        "prompt-engineering",
+        "LLM",
+        "AI-development",
+        "system-prompt",
+        "few-shot-learning"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.453
+    },
+    {
+      "skill_name": "instrumentation",
+      "skill_description": "Instrument LLM apps with TruLens OTEL-based tracing - from setup to debugging and optimization",
+      "skill_url": "https://github.com/truera/trulens/blob/09edfc4b833b713b1fdd3a75b611d1780627c77e/skills/instrumentation",
+      "category": "Development",
+      "stars": 3070,
+      "tags": [
+        "llm",
+        "instrumentation",
+        "debugging",
+        "tracing",
+        "opentelemetry"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4504
+    },
+    {
+      "skill_name": "langchain-reference-architecture",
+      "skill_description": "Implement LangChain reference architecture patterns for production.\nUse when designing LangChain systems, implementing scalable patterns,\nor architecting enterprise LLM applications.\nTrigger with phrases like \"langchain architecture\", \"langchain design\",\n\"langchain scalable\", \"langchain enterprise\", \"langchain patterns\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/358446372d30dec2ca753373057137888e84e9aa/plugins/saas-packs/langchain-pack/skills/langchain-reference-architecture",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "LangChain",
+        "AI Architecture",
+        "LLM Applications",
+        "Scalable Patterns",
+        "Enterprise AI"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4329
+    },
+    {
+      "skill_name": "langchain-core-workflow-a",
+      "skill_description": "Build LangChain chains and prompts for structured LLM workflows.\nUse when creating prompt templates, building LCEL chains,\nor implementing sequential processing pipelines.\nTrigger with phrases like \"langchain chains\", \"langchain prompts\",\n\"LCEL workflow\", \"langchain pipeline\", \"prompt template\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/1e4d5973af6c1635c3f002fa09a22332eda18ab6/plugins/saas-packs/langchain-pack/skills/langchain-core-workflow-a",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "LangChain",
+        "LLM Workflows",
+        "Prompt Engineering",
+        "LCEL",
+        "AI Pipelines"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4261
+    },
+    {
+      "skill_name": "prompt-engineering-instructor",
+      "skill_description": "Extract structured data from LLM responses with Pydantic validation, retry failed extractions automatically, parse complex JSON with type safety, and stream partial results with Instructor - battle-tested structured output library",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/ca759c961021e9aff1d14fa9e5c2d0bb043bbe9e/cli-tool/components/skills/ai-research/prompt-engineering-instructor",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "prompt engineering",
+        "structured output",
+        "LLM integration",
+        "data validation",
+        "Python libraries"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4218
+    },
+    {
+      "skill_name": "genkit-production-expert",
+      "skill_description": "Build production Firebase Genkit applications including RAG systems, multi-step flows, and tool calling for Node.js/Python/Go. Deploy to Firebase Functions or Cloud Run with AI monitoring. Use when asked to \"create genkit flow\" or \"implement RAG\". Trigger with relevant phrases based on skill purpose.\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/827f80253f89ee86c8bc9d07d6c9ee42829dceb9/plugins/ai-ml/jeremy-genkit-pro/skills/genkit-production-expert",
+      "category": "Development",
+      "stars": 1215,
+      "tags": [
+        "Firebase Genkit",
+        "RAG",
+        "AI Application Development",
+        "Node.js",
+        "Cloud Deployment"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4183
+    },
+    {
+      "skill_name": "phoenix-cli",
+      "skill_description": "Debug LLM applications using the Phoenix CLI. Fetch traces, analyze errors, review experiments, and inspect datasets. Use when debugging AI/LLM applications, analyzing trace data, working with Phoenix observability, or investigating LLM performance issues.",
+      "skill_url": "https://github.com/Arize-ai/phoenix/blob/d6d19530e319e215695e418c99e706d2c270dc4a/skills/phoenix-cli",
+      "category": "Development",
+      "stars": 8415,
+      "tags": [
+        "debugging",
+        "LLM",
+        "observability",
+        "CLI",
+        "performance-analysis"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4143
+    },
+    {
+      "skill_name": "ai-product",
+      "skill_description": "Every product will be AI-powered. The question is whether you'll build it right or ship a demo that falls apart in production.  This skill covers LLM integration patterns, RAG architecture, prompt engineering that scales, AI UX that users trust, and cost optimization that doesn't bankrupt you. Use when: keywords, file_patterns, code_patterns.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/f2c3e783b5285d9c2dd09884db03860c56dec2bd/skills/ai-product",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "LLM integration",
+        "RAG architecture",
+        "prompt engineering",
+        "AI UX",
+        "production optimization"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4119
+    },
+    {
+      "skill_name": "rag-implementation",
+      "skill_description": "Retrieval-Augmented Generation patterns including chunking, embeddings, vector stores, and retrieval optimization Use when: rag, retrieval augmented, vector search, embeddings, semantic search.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/62b5d8de603adc03741b4aa526876f97f4e3cd56/cli-tool/components/skills/ai-research/rag-implementation",
+      "category": "Development",
+      "stars": 19101,
+      "tags": [
+        "rag",
+        "vector-search",
+        "embeddings",
+        "retrieval",
+        "semantic-search"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4081
+    },
+    {
+      "skill_name": "rag-qdrant",
+      "skill_description": "High-performance vector similarity search engine for RAG and semantic search. Use when building production RAG systems requiring fast nearest neighbor search, hybrid search with filtering, or scalable vector storage with Rust-powered performance.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/b8551774f62e60097df5edb10385d26ceb3e21dd/cli-tool/components/skills/ai-research/rag-qdrant",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "vector search",
+        "RAG",
+        "semantic search",
+        "nearest neighbor search",
+        "vector database"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4059
+    },
+    {
+      "skill_name": "langchain-data-handling",
+      "skill_description": "Implement LangChain data privacy and handling best practices.\nUse when handling sensitive data, implementing PII protection,\nor ensuring data compliance in LLM applications.\nTrigger with phrases like \"langchain data privacy\", \"langchain PII\",\n\"langchain GDPR\", \"langchain data handling\", \"langchain compliance\".\n",
+      "skill_url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/blob/44933759526a1241cee690f8aa5b95bec9dae61e/plugins/saas-packs/langchain-pack/skills/langchain-data-handling",
+      "category": "Security",
+      "stars": 1215,
+      "tags": [
+        "LangChain",
+        "Data Privacy",
+        "PII Protection",
+        "Compliance",
+        "LLM Applications"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4037
+    },
+    {
+      "skill_name": "senior-prompt-engineer",
+      "skill_description": "World-class prompt engineering skill for LLM optimization, prompt patterns, structured outputs, and AI product development. Expertise in Claude, GPT-4, prompt design patterns, few-shot learning, chain-of-thought, and AI evaluation. Includes RAG optimization, agent design, and LLM system architecture. Use when building AI products, optimizing LLM performance, designing agentic systems, or implementing advanced prompting techniques.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/e1ad0ef499dd2ea86e3e4bd05022faeb080b50f0/cli-tool/components/skills/development/senior-prompt-engineer",
+      "category": "AIGC",
+      "stars": 19064,
+      "tags": [
+        "prompt-engineering",
+        "LLM-optimization",
+        "AI-product-development",
+        "agent-design",
+        "RAG"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4007
+    }
+  ],
+  "relationships": [
+    {
+      "source": "agents-llamaindex",
+      "target": "agents-langchain",
+      "type": "similar_to",
+      "reason": "Both are frameworks for building LLM/RAG applications, agents, and document-based retrieval systems and can often be used interchangeably for RAG workflows."
+    },
+    {
+      "source": "rag-pinecone",
+      "target": "rag-qdrant",
+      "type": "similar_to",
+      "reason": "Both are production-grade vector databases / similarity search engines used for RAG and semantic search."
+    },
+    {
+      "source": "rag-pinecone",
+      "target": "rag-chroma",
+      "type": "similar_to",
+      "reason": "All three provide vector storage and retrieval capabilities for embeddings and semantic search; Pinecone and Chroma are alternative vector store options."
+    },
+    {
+      "source": "rag-qdrant",
+      "target": "rag-chroma",
+      "type": "similar_to",
+      "reason": "Qdrant and Chroma are alternative vector database implementations for storing embeddings and performing nearest-neighbor search."
+    },
+    {
+      "source": "langchain-core-workflow-a",
+      "target": "agents-langchain",
+      "type": "belong_to",
+      "reason": "Building LangChain chains and prompt templates is a sub-component of using the agents-langchain framework (chains and prompts are core parts of LangChain workflows)."
+    },
+    {
+      "source": "langchain-reference-architecture",
+      "target": "langchain-architecture",
+      "type": "belong_to",
+      "reason": "The reference architecture provides concrete patterns and is a specific instantiation / subset of the broader LangChain architecture guidance."
+    },
+    {
+      "source": "langchain-data-handling",
+      "target": "langchain-reference-architecture",
+      "type": "belong_to",
+      "reason": "Data privacy and handling practices are a specific concern within the broader LangChain reference architecture for production systems."
+    },
+    {
+      "source": "langchain-migration-deep-dive",
+      "target": "langchain-architecture",
+      "type": "belong_to",
+      "reason": "Migration strategies and phased refactors are specific tasks within the broader activity of designing and operating LangChain-based architectures."
+    },
+    {
+      "source": "rag-implementation",
+      "target": "llm-app-patterns",
+      "type": "belong_to",
+      "reason": "RAG patterns (chunking, embeddings, vector stores, retrieval optimization) are a specific subset of production-ready LLM application patterns."
+    },
+    {
+      "source": "rag-implementation",
+      "target": "rag-pinecone",
+      "type": "compose_with",
+      "reason": "RAG implementation patterns are commonly executed using a vector store like Pinecone that stores embeddings and serves retrieval."
+    },
+    {
+      "source": "rag-implementation",
+      "target": "rag-qdrant",
+      "type": "compose_with",
+      "reason": "RAG patterns typically pair with a vector database such as Qdrant to store embeddings and perform nearest-neighbor search."
+    },
+    {
+      "source": "rag-implementation",
+      "target": "rag-chroma",
+      "type": "compose_with",
+      "reason": "Open-source RAG implementations often use Chroma as the embedding store for semantic search and retrieval."
+    },
+    {
+      "source": "agents-langchain",
+      "target": "rag-pinecone",
+      "type": "compose_with",
+      "reason": "LangChain applications frequently integrate with vector stores like Pinecone for retrieval in RAG pipelines."
+    },
+    {
+      "source": "agents-langchain",
+      "target": "rag-chroma",
+      "type": "compose_with",
+      "reason": "LangChain projects commonly pair with Chroma as a local/open-source vector store for development and production."
+    },
+    {
+      "source": "agents-llamaindex",
+      "target": "rag-chroma",
+      "type": "compose_with",
+      "reason": "LlamaIndex's ingestion and indexing workflows commonly use vector stores such as Chroma to persist embeddings and metadata."
+    },
+    {
+      "source": "vector-database-engineer",
+      "target": "rag-pinecone",
+      "type": "compose_with",
+      "reason": "A vector database engineer works with managed vector databases like Pinecone as part of building RAG and recommendation systems."
+    },
+    {
+      "source": "vector-database-engineer",
+      "target": "rag-qdrant",
+      "type": "compose_with",
+      "reason": "Expertise in vector databases entails using engines like Qdrant in production workflows for fast similarity search."
+    },
+    {
+      "source": "vector-database-engineer",
+      "target": "rag-chroma",
+      "type": "compose_with",
+      "reason": "Vector database specialists often use open-source stores like Chroma for local development and certain deployments."
+    },
+    {
+      "source": "prompt-engineer",
+      "target": "senior-prompt-engineer",
+      "type": "similar_to",
+      "reason": "Both focus on prompt design, structuring context, and output formatting for LLMs; the senior variant represents a more advanced/experienced form of the same function."
+    },
+    {
+      "source": "prompt-engineering-instructor",
+      "target": "prompt-engineer",
+      "type": "compose_with",
+      "reason": "The Instructor library for structured outputs and validation is commonly used alongside prompt engineering to produce reliable, typed LLM outputs."
+    },
+    {
+      "source": "prompt-engineering-instructor",
+      "target": "senior-prompt-engineer",
+      "type": "compose_with",
+      "reason": "Advanced prompt engineering workflows often incorporate the Instructor library to validate and stream structured responses in production."
+    },
+    {
+      "source": "llm-app-patterns",
+      "target": "langchain-reference-architecture",
+      "type": "compose_with",
+      "reason": "General production-ready LLM patterns are used together with LangChain reference architecture when implementing scalable LangChain-based systems."
+    },
+    {
+      "source": "ai-product",
+      "target": "llm-app-patterns",
+      "type": "compose_with",
+      "reason": "AI product guidance draws on production-ready LLM application patterns (RAG, agent architectures, prompt engineering) when designing robust products."
+    },
+    {
+      "source": "ai-product",
+      "target": "rag-implementation",
+      "type": "compose_with",
+      "reason": "Product-level decisions for AI solutions commonly pair with concrete RAG implementation best practices to ensure scalable retrieval and generation."
+    },
+    {
+      "source": "instrumentation",
+      "target": "phoenix-cli",
+      "type": "compose_with",
+      "reason": "Instrumentation produces traces and telemetry that observability tools like the Phoenix CLI consume when debugging and analyzing LLM application behavior."
+    },
+    {
+      "source": "instrumentation",
+      "target": "skills",
+      "type": "compose_with",
+      "reason": "Both entries reference TruLens-based evaluation and tracing; instrumentation sets up tracing that TruLens-based evaluation workflows consume."
+    },
+    {
+      "source": "phoenix-cli",
+      "target": "skills",
+      "type": "compose_with",
+      "reason": "Phoenix CLI and TruLens evaluation workflows are both part of debugging and evaluating LLM applications and are often used together to inspect traces and metrics."
+    },
+    {
+      "source": "genkit-production-expert",
+      "target": "rag-implementation",
+      "type": "compose_with",
+      "reason": "Genkit production flows that implement RAG will use RAG implementation patterns (chunking, embeddings, vector stores) as part of building multi-step flows."
+    },
+    {
+      "source": "genkit-production-expert",
+      "target": "agents-langchain",
+      "type": "compose_with",
+      "reason": "Building production Genkit apps with tool calling and multi-step flows commonly integrates with agent frameworks like LangChain for orchestration and tool use."
+    },
+    {
+      "source": "agents-langchain",
+      "target": "rag-qdrant",
+      "type": "compose_with",
+      "reason": "LangChain applications integrate with high-performance vector databases like Qdrant for production RAG pipelines and semantic search."
+    },
+    {
+      "source": "agents-llamaindex",
+      "target": "rag-pinecone",
+      "type": "compose_with",
+      "reason": "LlamaIndex's document ingestion and indexing workflows commonly use managed vector stores like Pinecone for production-scale RAG applications."
+    },
+    {
+      "source": "agents-llamaindex",
+      "target": "rag-qdrant",
+      "type": "compose_with",
+      "reason": "LlamaIndex supports multiple vector database backends including Qdrant for high-performance semantic search and retrieval."
+    },
+    {
+      "source": "prompt-engineer",
+      "target": "llm-app-patterns",
+      "type": "compose_with",
+      "reason": "Prompt engineering expertise is applied together with production-ready LLM application patterns (prompt IDEs, agent architectures) to design effective prompts at scale."
+    }
+  ]
+}

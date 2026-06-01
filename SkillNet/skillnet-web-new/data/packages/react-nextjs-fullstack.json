@@ -1,0 +1,435 @@
+{
+  "package_name": "react-nextjs-fullstack",
+  "scene_description": "React and Next.js full-stack web development, including component design, state management, server-side rendering, API routes, routing, styling, and deployment",
+  "tags": [
+    "react",
+    "next.js",
+    "frontend development",
+    "typescript",
+    "tailwind css",
+    "state management",
+    "node.js",
+    "deployment"
+  ],
+  "curated": true,
+  "created_at": "2026-02-07T22:11:14.083764",
+  "skill_count": 18,
+  "skills": [
+    {
+      "skill_name": "frontend-developer",
+      "skill_description": "Build React components, implement responsive layouts, and handle client-side state management. Masters React 19, Next.js 15, and modern frontend architecture. Optimizes performance and ensures accessibility. Use PROACTIVELY when creating UI components or fixing frontend issues.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/d2f3423a139e2ea5e627ce2021360d6c5ac11537/skills/frontend-developer",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "React",
+        "Next.js",
+        "Frontend Development",
+        "Web Performance",
+        "TypeScript"
+      ],
+      "tag_hits": 4,
+      "semantic_score": 0.5367
+    },
+    {
+      "skill_name": "fp-ts-react",
+      "skill_description": "Practical patterns for using fp-ts with React - hooks, state, forms, data fetching. Use when building React apps with functional programming patterns. Works with React 18/19, Next.js 14/15.",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/4c400ca1218d73b032351bc083b40743dd9ec055/skills/fp-ts-react",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "fp-ts",
+        "React",
+        "functional programming",
+        "state management",
+        "TypeScript"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.5329
+    },
+    {
+      "skill_name": "nextjs-performance",
+      "skill_description": "Next.js 15 critical performance fixes. Use when writing React components, data fetching, Server Actions, or optimizing bundle size.",
+      "skill_url": "https://github.com/srbhr/Resume-Matcher/blob/12e7415af76751b3ac9106414217e090b773fada/.agent/skills/nextjs-performance",
+      "category": "Development",
+      "stars": 25836,
+      "tags": [
+        "Next.js",
+        "Performance Optimization",
+        "React",
+        "Web Development",
+        "Code Quality"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.5312
+    },
+    {
+      "skill_name": "app-router",
+      "skill_description": "This skill should be used when the user asks to \"create a Next.js route\", \"add a page\", \"set up layouts\", \"implement loading states\", \"add error boundaries\", \"organize routes\", \"create dynamic routes\", or needs guidance on Next.js App Router file conventions and routing patterns.",
+      "skill_url": "https://github.com/davepoon/buildwithclaude/blob/da529109bca35c46ccf15d687ebc59da0488baad/plugins/nextjs-expert/skills/app-router",
+      "category": "Development",
+      "stars": 2342,
+      "tags": [
+        "Next.js",
+        "App Router",
+        "Routing",
+        "Web Development",
+        "React"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.511
+    },
+    {
+      "skill_name": "frontend-patterns",
+      "skill_description": "Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices.",
+      "skill_url": "https://github.com/affaan-m/everything-claude-code/blob/ae2c063ddebccafec5ca4b2a7733ddd32361adb1/docs/zh-TW/skills/frontend-patterns",
+      "category": "Development",
+      "stars": 36487,
+      "tags": [
+        "frontend",
+        "React",
+        "Next.js",
+        "state management",
+        "performance optimization"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4876
+    },
+    {
+      "skill_name": "server-components",
+      "skill_description": "This skill should be used when the user asks about \"Server Components\", \"Client Components\", \"'use client' directive\", \"when to use server vs client\", \"RSC patterns\", \"component composition\", \"data fetching in components\", or needs guidance on React Server Components architecture in Next.js.",
+      "skill_url": "https://github.com/davepoon/buildwithclaude/blob/61faf2ea8021236bffa76fee9551ac6161f41bad/plugins/nextjs-expert/skills/server-components",
+      "category": "Development",
+      "stars": 2342,
+      "tags": [
+        "React",
+        "Next.js",
+        "Server Components",
+        "Web Development",
+        "Frontend Architecture"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4845
+    },
+    {
+      "skill_name": "react-patterns",
+      "skill_description": "React and Next.js performance optimization guidelines from Vercel Engineering, tuned for local/offline or docker-deployed apps.",
+      "skill_url": "https://github.com/srbhr/Resume-Matcher/blob/1a86ec87e59d50c1464117ace12f33ab1ae7d47c/.claude/skills/react-patterns",
+      "category": "Development",
+      "stars": 25837,
+      "tags": [
+        "React",
+        "Next.js",
+        "Performance Optimization",
+        "Web Development",
+        "Docker"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4805
+    },
+    {
+      "skill_name": "cache-components",
+      "skill_description": "Expert guidance for Next.js Cache Components and Partial Prerendering (PPR).\n\n**PROACTIVE ACTIVATION**: Use this skill automatically when working in Next.js projects that have `cacheComponents: true` in their next.config.ts/next.config.js. When this config is detected, proactively apply Cache Components patterns and best practices to all React Server Component implementations.\n\n**DETECTION**: At the start of a session in a Next.js project, check for `cacheComponents: true` in next.config. If enabled, this skill's patterns should guide all component authoring, data fetching, and caching decisions.\n\n**USE CASES**: Implementing 'use cache' directive, configuring cache lifetimes with cacheLife(), tagging cached data with cacheTag(), invalidating caches with updateTag()/revalidateTag(), optimizing static vs dynamic content boundaries, debugging cache issues, and reviewing Cache Component implementations.\n",
+      "skill_url": "https://github.com/vercel/next.js/blob/d32486a2e4b2f898f35a4f67285601ea1e0fbd49/.claude-plugin/plugins/cache-components/skills/cache-components",
+      "category": "Development",
+      "stars": 137446,
+      "tags": [
+        "Next.js",
+        "Cache Components",
+        "Partial Prerendering",
+        "React Server Components",
+        "Performance Optimization"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4705
+    },
+    {
+      "skill_name": "backend-patterns",
+      "skill_description": "Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes.",
+      "skill_url": "https://github.com/affaan-m/everything-claude-code/blob/ae2c063ddebccafec5ca4b2a7733ddd32361adb1/docs/zh-TW/skills/backend-patterns",
+      "category": "Development",
+      "stars": 36487,
+      "tags": [
+        "backend",
+        "architecture",
+        "API design",
+        "database optimization",
+        "Node.js"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.467
+    },
+    {
+      "skill_name": "nextjs-expert",
+      "skill_description": "Next.js framework expert specializing in App Router, Server Components, performance optimization, data fetching patterns, and full-stack development. Use this skill for Next.js routing issues, hydration errors, build problems, or deployment challenges.",
+      "skill_url": "https://github.com/vudovn/antigravity-kit/blob/365d1221449c30788e22adc4c0af3573eda3cba4/.agent/skills/nextjs-expert",
+      "category": "Development",
+      "stars": 3795,
+      "tags": [
+        "Next.js",
+        "Full-Stack Development",
+        "Web Framework",
+        "Performance Optimization",
+        "React"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4626
+    },
+    {
+      "skill_name": "senior-frontend",
+      "skill_description": "Comprehensive frontend development skill for building modern, performant web applications using ReactJS, NextJS, TypeScript, Tailwind CSS. Includes component scaffolding, performance optimization, bundle analysis, and UI best practices. Use when developing frontend features, optimizing performance, implementing UI/UX designs, managing state, or reviewing frontend code.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/456e5a920daa47a69faf7b18797660e4053e4d26/cli-tool/components/skills/development/senior-frontend",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "frontend development",
+        "ReactJS",
+        "NextJS",
+        "TypeScript",
+        "UI/UX"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4319
+    },
+    {
+      "skill_name": "vue-best-practices",
+      "skill_description": "MUST be used for Vue.js tasks. Strongly recommends Composition API with `<script setup>` and TypeScript as the standard approach. Covers Vue 3, SSR, Volar, vue-tsc. Load for any Vue, .vue files, Vue Router, Pinia, or Vite with Vue work. ALWAYS use Composition API unless the project explicitly requires Options API.",
+      "skill_url": "https://github.com/antfu/skills/blob/e809d40b5c0e1a88a005bc6a0ec51ab1e6e26e1e/skills/vue-best-practices",
+      "category": "Development",
+      "stars": 2481,
+      "tags": [
+        "Vue.js",
+        "Frontend Development",
+        "Best Practices",
+        "TypeScript",
+        "Web Development"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4247
+    },
+    {
+      "skill_name": "cc-skill-frontend-patterns",
+      "skill_description": "Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/5b0ddf0d25666219f5a24bd589bd9ff9565619cb/cli-tool/components/skills/development/cc-skill-frontend-patterns",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "frontend",
+        "React",
+        "Next.js",
+        "state management",
+        "performance optimization"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4237
+    },
+    {
+      "skill_name": "frontend-mobile-development-component-scaffold",
+      "skill_description": "You are a React component architecture expert specializing in scaffolding production-ready, accessible, and performant components. Generate complete component implementations with TypeScript, tests, s",
+      "skill_url": "https://github.com/sickn33/antigravity-awesome-skills/blob/4c400ca1218d73b032351bc083b40743dd9ec055/skills/frontend-mobile-development-component-scaffold",
+      "category": "Development",
+      "stars": 5919,
+      "tags": [
+        "React",
+        "TypeScript",
+        "Component Scaffolding",
+        "Frontend Development",
+        "Mobile Development"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4172
+    },
+    {
+      "skill_name": "react",
+      "skill_description": "React component development guide. Use when working with React components (.tsx files), creating UI, using @lobehub/ui components, implementing routing, or building frontend features. Triggers on React component creation, modification, layout implementation, or navigation tasks.",
+      "skill_url": "https://github.com/lobehub/lobehub/blob/7496511917979314579e2e397109bd7c622d0e42/.agents/skills/react",
+      "category": "Development",
+      "stars": 71773,
+      "tags": [
+        "React",
+        "Frontend Development",
+        "UI Components",
+        "Routing",
+        "TypeScript"
+      ],
+      "tag_hits": 3,
+      "semantic_score": 0.4163
+    },
+    {
+      "skill_name": "senior-fullstack",
+      "skill_description": "Comprehensive fullstack development skill for building complete web applications with React, Next.js, Node.js, GraphQL, and PostgreSQL. Includes project scaffolding, code quality analysis, architecture patterns, and complete tech stack guidance. Use when building new projects, analyzing code quality, implementing design patterns, or setting up development workflows.",
+      "skill_url": "https://github.com/davila7/claude-code-templates/blob/456e5a920daa47a69faf7b18797660e4053e4d26/cli-tool/components/skills/development/senior-fullstack",
+      "category": "Development",
+      "stars": 19064,
+      "tags": [
+        "fullstack development",
+        "web development",
+        "React",
+        "Node.js",
+        "GraphQL"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4094
+    },
+    {
+      "skill_name": "react-state-management",
+      "skill_description": "Master modern React state management with Redux Toolkit, Zustand, Jotai, and React Query. Use when setting up global state, managing server state, or choosing between state management solutions.",
+      "skill_url": "https://github.com/wshobson/agents/blob/2d769d4f8466c823dadd7105d6537efdc4dfc804/plugins/frontend-mobile-development/skills/react-state-management",
+      "category": "Development",
+      "stars": 27432,
+      "tags": [
+        "React",
+        "State Management",
+        "Redux Toolkit",
+        "Zustand",
+        "React Query"
+      ],
+      "tag_hits": 2,
+      "semantic_score": 0.4064
+    },
+    {
+      "skill_name": "api-design",
+      "skill_description": "Guidelines for designing RESTful APIs and TypeScript interfaces. Use when designing new endpoints, reviewing API contracts, or structuring data models.",
+      "skill_url": "https://github.com/mastra-ai/mastra/blob/e6fc281896a3584e9e06465b356a44fe7faade65/examples/unified-workspace/skills/api-design",
+      "category": "Development",
+      "stars": 20639,
+      "tags": [
+        "API Design",
+        "REST",
+        "TypeScript",
+        "Software Engineering",
+        "Backend Development"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.4009
+    }
+  ],
+  "relationships": [
+    {
+      "source": "cc-skill-frontend-patterns",
+      "target": "frontend-patterns",
+      "type": "similar_to",
+      "reason": "Both descriptions are effectively the same: frontend development patterns for React/Next.js, state management, performance, and UI best practices."
+    },
+    {
+      "source": "frontend-patterns",
+      "target": "react-patterns",
+      "type": "similar_to",
+      "reason": "Both provide frontend/React/Next.js patterns and performance best practices and can be used interchangeably for guidance on those topics."
+    },
+    {
+      "source": "fp-ts-react",
+      "target": "react",
+      "type": "depend_on",
+      "reason": "fp-ts-react provides patterns for using fp-ts with React and therefore cannot be applied without React being the core library."
+    },
+    {
+      "source": "fp-ts-react",
+      "target": "frontend-patterns",
+      "type": "belong_to",
+      "reason": "fp-ts-react is a specialized pattern set for React apps (functional programming) and is a specific sub-topic within general frontend patterns."
+    },
+    {
+      "source": "app-router",
+      "target": "nextjs-expert",
+      "type": "belong_to",
+      "reason": "App Router guidance is a specific sub-area of Next.js expertise, which nextjs-expert covers broadly."
+    },
+    {
+      "source": "server-components",
+      "target": "nextjs-expert",
+      "type": "belong_to",
+      "reason": "Server/Client Components and RSC patterns are specific aspects of Next.js knowledge that fall under nextjs-expert."
+    },
+    {
+      "source": "nextjs-performance",
+      "target": "nextjs-expert",
+      "type": "belong_to",
+      "reason": "Next.js performance fixes and optimizations are a focused subset of Next.js expertise provided by nextjs-expert."
+    },
+    {
+      "source": "cache-components",
+      "target": "nextjs-expert",
+      "type": "belong_to",
+      "reason": "Cache Components and PPR are Next.js-specific patterns and therefore a specialized part of Next.js expertise."
+    },
+    {
+      "source": "frontend-developer",
+      "target": "react",
+      "type": "depend_on",
+      "reason": "The frontend-developer skill is centered on building React components and therefore requires React as a core dependency."
+    },
+    {
+      "source": "senior-frontend",
+      "target": "react",
+      "type": "depend_on",
+      "reason": "Senior-frontend focuses on React/Next.js development and cannot operate without React as the foundational library."
+    },
+    {
+      "source": "frontend-mobile-development-component-scaffold",
+      "target": "react",
+      "type": "depend_on",
+      "reason": "This skill scaffolds React component implementations, so it requires React to function."
+    },
+    {
+      "source": "react-state-management",
+      "target": "react",
+      "type": "depend_on",
+      "reason": "React state management guidance (Redux Toolkit, Zustand, Jotai, etc.) presumes React is present as the runtime."
+    },
+    {
+      "source": "react-patterns",
+      "target": "react",
+      "type": "depend_on",
+      "reason": "React-patterns provides guidance for React and Next.js, and thus depends on React as the core technology."
+    },
+    {
+      "source": "api-design",
+      "target": "backend-patterns",
+      "type": "belong_to",
+      "reason": "API design is a specific component of broader backend architecture and server-side patterns that backend-patterns covers."
+    },
+    {
+      "source": "senior-frontend",
+      "target": "senior-fullstack",
+      "type": "belong_to",
+      "reason": "Senior-frontend is a focused frontend role/skillset that represents a subset of the broader fullstack capabilities described by senior-fullstack."
+    },
+    {
+      "source": "frontend-developer",
+      "target": "senior-fullstack",
+      "type": "belong_to",
+      "reason": "Frontend developer responsibilities (React/Next.js UI work) are a sub-component of the full application scope handled by senior-fullstack."
+    },
+    {
+      "source": "nextjs-expert",
+      "target": "backend-patterns",
+      "type": "compose_with",
+      "reason": "Next.js full-stack work is often paired with backend architecture and API patterns; they are independent skills frequently used together in app development."
+    },
+    {
+      "source": "react-state-management",
+      "target": "frontend-patterns",
+      "type": "belong_to",
+      "reason": "React state management (Redux Toolkit, Zustand, Jotai, React Query) is a specific component within the broader set of frontend development patterns that includes state management as a core topic."
+    },
+    {
+      "source": "cache-components",
+      "target": "server-components",
+      "type": "compose_with",
+      "reason": "Cache Components are explicitly designed to work with React Server Components; the cache-components description states patterns should guide 'all React Server Component implementations', making them complementary technologies used together in Next.js."
+    },
+    {
+      "source": "nextjs-expert",
+      "target": "senior-fullstack",
+      "type": "belong_to",
+      "reason": "nextjs-expert specializes in 'full-stack development' with Next.js and is a focused skillset within the broader senior-fullstack capabilities that cover React, Next.js, Node.js, GraphQL, and PostgreSQL for complete web applications."
+    },
+    {
+      "source": "frontend-patterns",
+      "target": "react",
+      "type": "depend_on",
+      "reason": "frontend-patterns explicitly focuses on 'Frontend development patterns for React, Next.js' and cannot be applied without React as the foundational library."
+    }
+  ]
+}

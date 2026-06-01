@@ -1,0 +1,1569 @@
+{
+  "package_name": "toolathlon",
+  "scene_description": "Toolathlon benchmark environment for complex tool-use workflows - AI agents orchestrating multi-step automation tasks across domains including academic research, data processing, system administration, e-commerce operations, document analysis, and multi-tool coordination for real-world professional scenarios",
+  "tags": [
+    "toolathlon"
+  ],
+  "curated": true,
+  "created_at": "2026-02-08T10:30:00.000000",
+  "skill_count": 120,
+  "skills": [
+    {
+      "skill_name": "leave-excusal-communication-handler",
+      "skill_description": "When the user needs to communicate about approved leaves or excusals to instructors/TAs, including locating leave documents and sending reminder emails with attachments. This skill triggers when users mention 'excused assignments', 'leave documents', or need to remind instructors about approved absences. It handles document retrieval, email composition with proper context, and attachment management for official documentation.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/leave-excusal-communication-handler",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.72
+    },
+    {
+      "skill_name": "multi-dataset-unification-pipeline",
+      "skill_description": "When the user requests to find, analyze, and merge multiple datasets from Hugging Face or similar repositories into a unified format. This skill handles the complete pipeline searching for datasets, examining their structure, parsing format specifications, converting diverse dataset formats (ToolACE, Glaive, XLAM, etc.) into a standardized schema, and merging them into a single output file. Key triggers include requests involving 'dataset unification', 'format conversion', 'merge datasets', 'Hugging Face datasets', 'tool-calling datasets', 'JSONL output', or when users provide a format specification document like 'unified_format.md'.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/multi-dataset-unification-pipeline",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.723
+    },
+    {
+      "skill_name": "paper-implementation-finder",
+      "skill_description": "Finds the most popular unofficial GitHub implementation for a given academic paper (PDF) and updates a JSON file with the repository URL.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/paper-implementation-finder",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.726
+    },
+    {
+      "skill_name": "statistical-anomaly-detector",
+      "skill_description": "When the user requests anomaly detection in numerical datasets using statistical methods such as mean and standard deviation thresholds (e.g., 'amount > mean + 3*std'). This skill calculates per-group statistics, identifies outliers, and flags abnormal records. It is triggered by keywords like 'anomaly detection', 'outlier identification', 'statistical threshold', 'abnormal transactions', or any request involving standard deviation-based filtering in financial or transactional data.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/statistical-anomaly-detector",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.729
+    },
+    {
+      "skill_name": "web-form-autofiller",
+      "skill_description": "When the user needs to fill out web forms with data from memory or structured sources, this skill automates the entire workflow reads form links from files, navigates to web forms, analyzes form structure and fields, extracts relevant data from memory or knowledge bases, maps data to form fields, fills text inputs, selects checkboxes and radio buttons, handles multi-page forms with navigation, and submits forms. It's triggered when users mention filling forms, questionnaires, surveys, or registration forms, especially when combined with data from memory systems or structured files.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/web-form-autofiller",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.732
+    },
+    {
+      "skill_name": "youtube-playlist-tech-extractor",
+      "skill_description": "When the user requests analysis of a YouTube playlist to identify technical content, extract specific technologies, and locate their corresponding GitHub repositories. This skill enables browsing YouTube playlists, filtering for technical/machine learning videos, identifying mentioned technologies, searching for their GitHub repositories, and compiling structured documentation with project details, repository URLs, and main functions. Triggers include YouTube playlist URLs, requests to find technical/ML videos, needs to locate GitHub repositories for technologies, and requirements to create documentation about tech projects.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/youtube-playlist-tech-extractor",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.735
+    },
+    {
+      "skill_name": "graduate-program-locator",
+      "skill_description": "When the user needs to find graduate programs based on specific ranking criteria, geographical constraints, and filtering requirements. This skill extracts university rankings from academic ranking websites (like CSRankings), filters programs by specific criteria (ranking position, research areas, year), geocodes locations, calculates driving distances from a reference point, and compiles structured data into formatted reports. It handles web scraping of ranking data, geographic distance calculations, and JSON data formatting for academic program comparisons.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/graduate-program-locator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.738
+    },
+    {
+      "skill_name": "notion-project-notification-manager",
+      "skill_description": "When the user needs to update Notion pages with project status, completion notifications, or resource links, this skill searches for specific Notion pages, adds content updates, and posts comments or notifications. It can locate pages by title, add formatted text, and include external resource links. Triggers include requests to 'write on Notion page', 'add comment to page', 'update Notion', or notifications about task completion.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/notion-project-notification-manager",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.741
+    },
+    {
+      "skill_name": "multi-source-data-integration-workflow",
+      "skill_description": "When the user requires an end-to-end workflow that integrates data from multiple sources (financial APIs, local files) and outputs to collaboration tools (Google Sheets, Notion), this skill orchestrates the complete pipeline reading template formats, fetching external data, processing and transforming data, writing to cloud spreadsheets, and updating project management tools. Triggers include complex requests involving 'retrieve data and record in', 'create sheet with data from', or workflows that span multiple platforms with specific formatting requirements.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/multi-source-data-integration-workflow",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.744
+    },
+    {
+      "skill_name": "media-content-researcher",
+      "skill_description": "When the user requests to find official media content like movie trailers, YouTube links, or other online resources, this skill performs targeted web searches to locate specific media content, extracts relevant URLs and metadata, and verifies the authenticity of sources. It's triggered by requests for 'official trailer', 'YouTube link', 'search for', or when specific media content needs to be found and integrated into other systems.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/media-content-researcher",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.747
+    },
+    {
+      "skill_name": "inventory-monitoring-and-alert-system",
+      "skill_description": "When the user needs to monitor product inventory levels, check stock quantities against safety thresholds, identify low-stock items, and trigger automated notifications and documentation updates. This skill is triggered by keywords like 'inventory levels', 'stock quantity', 'safety threshold', 'low-stock', 'purchase requisition', 'stock alert', or when working with e-commerce platforms like WooCommerce. It provides capabilities to 1) Retrieve product data from e-commerce systems, 2) Analyze stock levels against configurable thresholds, 3) Identify products requiring replenishment, 4) Update Google Sheets or other documentation systems with low-stock items, and 5) Send automated email notifications to purchasing managers using customizable templates.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/inventory-monitoring-and-alert-system",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.75
+    },
+    {
+      "skill_name": "web-content-extraction-navigator",
+      "skill_description": "When the user needs to extract specific content from websites that require interactive navigation, particularly when dealing with dynamic content, truncated text, or pages that require clicking buttons to reveal full information. This skill handles browser automation to navigate web pages, interact with page elements (like expanding truncated descriptions), extract structured content from complex page layouts, and overcome common web scraping challenges like bot detection or IP blocking. It's triggered when dealing with websites that require clicking 'show more', 'expand', or similar interactive elements to access complete information.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/web-content-extraction-navigator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.753
+    },
+    {
+      "skill_name": "git-performance-issue-investigator",
+      "skill_description": "When the user needs to investigate performance issues in a Git repository by finding specific code changes, identifying responsible commits, and contacting authors. This skill is triggered by requests involving finding commits containing specific variables or code patterns, identifying earliest/introducing commits, extracting author information (name, email), and communicating about performance issues. It provides capabilities for searching Git history for specific code patterns using git log -S, retrieving full commit details with git show, extracting author metadata, and generating formatted communications using templates.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/git-performance-issue-investigator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.756
+    },
+    {
+      "skill_name": "multi-currency-expense-aggregator",
+      "skill_description": "When the user needs to calculate total expenses across multiple individuals with costs in different currencies and convert them to a target currency using historical exchange rates. This skill handles reading multiple CSV/JSON files containing expense data, fetching exchange rates from financial APIs for specific dates, performing currency conversions, aggregating totals per person, and generating structured JSON reports with calculated results. Key triggers include requests for 'total trip cost', 'expense calculation with exchange rates', 'convert multiple currencies to [target currency]', or tasks involving reading multiple expense files with USD, EUR, TRY, CNY amounts.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/multi-currency-expense-aggregator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.759
+    },
+    {
+      "skill_name": "no-trajectory-analyzer",
+      "skill_description": "When the execution trajectory is empty or missing, this skill provides a fallback analysis to identify potential missing data, suggest common skill patterns, and generate placeholder metadata for review.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/no-trajectory-analyzer",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.762
+    },
+    {
+      "skill_name": "file-system-organizer",
+      "skill_description": "Organizes or restructures files and directories according to a specified hierarchy or categorization scheme. Analyzes existing structures, creates new directory trees, intelligently moves files based on content and naming patterns, and verifies the final organization.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/file-system-organizer",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.765
+    },
+    {
+      "skill_name": "route-data-compiler",
+      "skill_description": "When the user requires detailed transit line information including complete station sequences between transfer points. This skill fetches comprehensive transit network data from authoritative sources, extracts station lists for specific line segments, identifies transfer stations, and organizes the information into sequential itineraries for route documentation.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/route-data-compiler",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.768
+    },
+    {
+      "skill_name": "github-repository-data-collector",
+      "skill_description": "When the user needs to collect specific repository information from GitHub for analysis, reporting, or archival purposes. This skill fetches repository data from the GitHub API using repository IDs, extracts key metrics (name, owner, stars, forks, creation time, description, language, URL), handles missing/inaccessible repositories gracefully by skipping them, and saves the formatted data to a JSON file with specified structure. Triggers include GitHub repository data collection, milestone repository tracking, API data fetching from GitHub, JSON file creation with repository metrics.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/github-repository-data-collector",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.771
+    },
+    {
+      "skill_name": "competitive-price-analysis-pipeline",
+      "skill_description": "Performs competitive price analysis by comparing internal pricing data with competitor information from different sources (PDFs, CSVs, spreadsheets), calculates price differences, generates insights, and stores results in BigQuery for decision-making.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/competitive-price-analysis-pipeline",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.774
+    },
+    {
+      "skill_name": "kubernetes-database-analyst",
+      "skill_description": "Analyzes data from databases in Kubernetes clusters by setting up port forwarding, executing SQL queries, and generating CSV reports.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/kubernetes-database-analyst",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.777
+    },
+    {
+      "skill_name": "ecommerce-customer-onboarding-automator",
+      "skill_description": "Automates customer onboarding workflows for e-commerce platforms. Fetches recent WooCommerce orders, identifies first-time customers within a specified timeframe, syncs their information to a BigQuery CRM database, and sends personalized welcome emails using a template.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/ecommerce-customer-onboarding-automator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.78
+    },
+    {
+      "skill_name": "automated-job-application-sender",
+      "skill_description": "When the user needs to automatically send job application emails using templates with personalized placeholders and update application status in tracking systems. This skill generates personalized email content from templates with {Company Name}, {Position} placeholders, sends emails to specified contacts, and updates status fields in databases. Triggers include 'send job application email', 'apply for position', 'update status to Applied', 'email template', or when automating job application workflows.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/automated-job-application-sender",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.783
+    },
+    {
+      "skill_name": "academic-publication-status-updater",
+      "skill_description": "When the user needs to update their academic homepage with recent paper acceptance information and code repository links. This skill scans email notifications for paper acceptance confirmations, identifies papers marked as 'preprint' or 'under review' on the user's GitHub-hosted homepage, updates their status to 'accepted', and adds corresponding GitHub repository links for code open-sourcing. It handles conference notifications (COML, COAI, COLM, etc.), workshop papers, and oral presentation selections. Triggers include requests to 'update homepage papers', 'add acceptance information', 'link code repositories', or 'sync paper status from emails'.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/academic-publication-status-updater",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.786
+    },
+    {
+      "skill_name": "canvas-quiz-creator",
+      "skill_description": "When the user needs to create or manage quizzes in Canvas Learning Management System, particularly when they provide quiz questions and answers that need to be formatted and uploaded. This skill handles the complete workflow including 1) Finding the target course in Canvas, 2) Creating a new quiz with proper metadata (title, description, quiz type), 3) Adding multiple-choice questions with correct answer weights, 4) Verifying the quiz creation and providing a summary. Use this skill when users mention 'Canvas quiz', 'create test on Canvas', 'upload questions to Canvas', or when they provide structured quiz questions with multiple-choice options that need to be formatted for Canvas API integration.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/canvas-quiz-creator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.789
+    },
+    {
+      "skill_name": "workspace-file-discovery-manager",
+      "skill_description": "When the user needs to search for specific files in a workspace based on content patterns, assignment names, or file types, especially when filenames are unknown. This skill triggers when users mention 'files saved somewhere in workspace' or 'can't remember filenames'. It performs directory exploration, content-based file matching, and organizes found files by relevance to specific assignments or document types.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/workspace-file-discovery-manager",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.792
+    },
+    {
+      "skill_name": "web-application-e2e-tester",
+      "skill_description": "When the user needs to run end-to-end tests on a web application, especially for e-commerce checkout flows, and requires manual or automated testing of UI functionality like adding items to cart, applying coupons, form validation, and responsive design. This skill includes browser automation, test execution, and validation of test cases against a live application.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/web-application-e2e-tester",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.795
+    },
+    {
+      "skill_name": "test-results-reporter",
+      "skill_description": "When the user needs to execute test suites and generate formatted test reports with pass/fail status, summary statistics, and detailed results. This skill involves reading test specifications, running tests, evaluating outcomes, and creating structured markdown reports with proper formatting and summary metrics.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/test-results-reporter",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.798
+    },
+    {
+      "skill_name": "wandb-experiment-analyzer",
+      "skill_description": "When the user asks to analyze a Weights & Biases (wandb) project or experiment results, particularly when they need to identify the best-performing run based on validation metrics and find the optimal training step within that run. This skill handles querying wandb projects via GraphQL API, extracting run summaries and history data, comparing validation scores across experiments, analyzing step-level performance within the best run, and exporting results to structured formats like CSV files. It's triggered by requests involving wandb URLs, experiment comparison, validation performance analysis, or finding optimal training checkpoints.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/wandb-experiment-analyzer",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.801
+    },
+    {
+      "skill_name": "academic-course-setup-automator",
+      "skill_description": "When the user needs to set up multiple academic courses in a learning management system (Canvas/LMS) from structured data sources. This skill automates the entire workflow extracting course schedules from emails/attachments, matching instructors from CSV files, creating courses, enrolling teachers, publishing announcements with class details, uploading syllabi, enabling resource sharing for instructors teaching multiple courses, and publishing all courses. Triggers include course schedule setup, Canvas/LMS administration, academic term preparation, instructor assignment, syllabus distribution, and multi-course management.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/academic-course-setup-automator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.804
+    },
+    {
+      "skill_name": "academic-data-integration",
+      "skill_description": "When the user needs to integrate multiple data sources (Canvas API, user memory, file systems) to create comprehensive academic reports. This skill combines course information, assignment details, submission status, and user context to generate actionable insights. Triggers include requests that involve cross-referencing multiple data sources or creating consolidated academic reports from disparate systems.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/academic-data-integration",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.807
+    },
+    {
+      "skill_name": "huggingface-dataset-converter",
+      "skill_description": "Downloads datasets from Hugging Face and converts them to specific formats (particularly for ML frameworks like Verl). Handles searching, analyzing structure, reading format specs, downloading, transforming schemas, and saving to target formats like Parquet.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/huggingface-dataset-converter",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.81
+    },
+    {
+      "skill_name": "interview-scheduler",
+      "skill_description": "When the user needs to schedule interviews or meetings with specific time constraints (e.g., within certain dates, during working hours, with minimum duration requirements). This skill calculates available time slots based on date ranges, working hour constraints, and duration needs, then creates calendar events with appropriate details. Triggers include phrases like 'schedule interviews', 'book time slots', 'within [date range]', 'during working hours', or 'reserve [duration] for meeting'.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/interview-scheduler",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.813
+    },
+    {
+      "skill_name": "place-locator",
+      "skill_description": "When the user needs to find specific places, landmarks, or points of interest based on descriptive names, this skill searches for place information including exact addresses, coordinates, and place details. It's particularly useful for tourist attractions, buildings, or specific venues mentioned in documents. Triggers include queries for 'find the location of', 'where is', or when processing lists of places from documents.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/place-locator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.816
+    },
+    {
+      "skill_name": "ab-test-analyzer-with-cloud-action",
+      "skill_description": "When the user requests analysis of A/B test results from BigQuery data to determine a winner and execute cloud-based actions based on the outcome. This skill handles 1) Querying and analyzing clickstream data from BigQuery datasets, 2) Calculating conversion rates across multiple scenarios, 3) Determining the winner based on arithmetic mean of per-scenario rates, 4) Filling CSV reports with results, 5) Executing conditional cloud operations - creating Cloud Storage buckets when version B wins or writing log entries when version A wins or ties. Triggers include A/B test analysis, conversion rate comparison, BigQuery clickstream data, conditional cloud operations, CSV report generation.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/ab-test-analyzer-with-cloud-action",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.819
+    },
+    {
+      "skill_name": "invoice-receipt-processor",
+      "skill_description": "When the user needs to process invoice receipts from PDF files in a workspace and update a purchase invoice database with payment tracking. This skill automatically scans workspace directories for PDF receipts, extracts invoice data (invoice ID, supplier, amount, purchaser email, date, payment status), inserts records into database tables, sets up payment tracking with outstanding flags, identifies unpaid or partially paid invoices, and sends email notifications to relevant purchasing managers with specific filenames requiring attention. Key triggers include processing receipts, updating invoice databases, tracking outstanding payments, sending payment reminder emails, and handling PDF invoice files with payment status indicators.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/invoice-receipt-processor",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.822
+    },
+    {
+      "skill_name": "kubernetes-pr-preview-deployer",
+      "skill_description": "Deploys a specific Git branch to Kubernetes for preview/testing. Handles cloning repositories, creating namespaces, applying Kubernetes manifests (like preview.yaml), creating ConfigMaps from application files, and exposing the application via NodePort for local access. After deployment, it can run tests and generate a test report.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/kubernetes-pr-preview-deployer",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.825
+    },
+    {
+      "skill_name": "nutritional-intake-analyzer",
+      "skill_description": "Analyzes dietary intake against fitness/nutritional guidelines for fitness planning, fat loss, or muscle gain goals. Reads body metrics, extracts meal ingredients, retrieves nutritional data, calculates expected intake based on guidelines, compares actual vs expected values, and generates formatted assessment reports.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/nutritional-intake-analyzer",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.828
+    },
+    {
+      "skill_name": "expense-claim-validator",
+      "skill_description": "When the user needs to validate employee expense claims against company policies and supporting documentation. This skill extracts and analyzes expense claim PDFs and corresponding invoices, verifies that all claimed items have matching receipts with correct amounts, and checks compliance with destination-specific expense caps based on employee levels. Triggers include expense claim processing, reimbursement validation, policy compliance checking, invoice verification, or when dealing with travel expense files in PDF/tar.gz formats.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/expense-claim-validator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.831
+    },
+    {
+      "skill_name": "bigquery-daily-settlement-processor",
+      "skill_description": "When the user needs to perform end-of-day data settlement processing for gaming or analytics platforms using Google BigQuery, this skill handles the complete workflow. It processes daily score data from streaming tables to 1) Generate ranked leaderboards by aggregating player scores and creating date-stamped tables with player rankings, and 2) Update historical player statistics by inserting daily aggregated metrics into master tracking tables. Key triggers include 'end-of-day settlement', 'daily leaderboard generation', 'player statistics update', 'BigQuery data processing', 'daily score aggregation', and 'historical stats maintenance'.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/bigquery-daily-settlement-processor",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.834
+    },
+    {
+      "skill_name": "spread-analysis-calculator",
+      "skill_description": "Calculates price spreads, MoM% changes, and rolling z-scores for pair trading analysis. Implements statistical normalization with configurable parameters.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/spread-analysis-calculator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.837
+    },
+    {
+      "skill_name": "employee-contact-manager",
+      "skill_description": "When the user needs to retrieve and manage employee contact information and organizational hierarchy for notification purposes. This skill queries employee databases to extract contact details, manager relationships, and department information, enabling automated notifications to employees and their managers. Triggers include employee lookup, manager identification, contact information retrieval, organizational hierarchy queries, or when preparing notifications for expense claim reviews.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/employee-contact-manager",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.84
+    },
+    {
+      "skill_name": "excel-data-enricher",
+      "skill_description": "When the user has an Excel file with incomplete data that needs to be populated by searching for and extracting specific information from external sources. This skill is triggered by requests to fill missing columns in spreadsheets, batch data enrichment tasks, or when working with structured data that requires additional research to complete. It handles Excel file discovery, reading existing data, writing new data to specific cells, and maintaining data integrity across multiple rows.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/excel-data-enricher",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.843
+    },
+    {
+      "skill_name": "invoice-processor-reimbursement-calculator",
+      "skill_description": "Scans a workspace for invoice PDFs, extracts vendor, date, amount, and currency, fetches historical exchange rates, converts all amounts to a target currency (default CNY), calculates totals including tax, and outputs a CSV summary and a JSON grand total.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/invoice-processor-reimbursement-calculator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.846
+    },
+    {
+      "skill_name": "agentic-reasoning-paper-specialist",
+      "skill_description": "When the user is specifically looking for research papers related to agentic reasoning, autonomous agents, or generalist AI agents. This skill has domain knowledge about key papers, authors, and trends in agentic reasoning research, can identify relevant papers from search results, and understands terminology like 'self-evolving agents', 'MCPs (Model Context Protocols)', and benchmark datasets like GAIA. Triggers include queries about 'agentic reasoning papers', 'AI agents research', 'generalist agents', or specific paper titles containing terms like 'Alita', 'AutoAgent', or 'GAIA benchmark'.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/agentic-reasoning-paper-specialist",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.849
+    },
+    {
+      "skill_name": "distance-matrix-calculator",
+      "skill_description": "Calculates distances and travel times between multiple locations for route planning or optimization. Computes a complete distance matrix, supports different travel modes, and returns both distance and time estimates.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/distance-matrix-calculator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.852
+    },
+    {
+      "skill_name": "point-of-interest-finder",
+      "skill_description": "When the user needs to locate specific businesses or services near a given location with proximity constraints. This skill handles 1) Searching for businesses by category (e.g., coffee shops, restaurants) within specified radii, 2) Ranking results by proximity to target location, 3) Retrieving detailed business information including names, addresses, ratings, and operating hours, 4) Filtering results based on specific criteria like 'closest to [location]'. Triggers include requests for 'find nearest [business type]', 'locate [service] near [location]', or when users need to incorporate specific stops into their itineraries.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/point-of-interest-finder",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.855
+    },
+    {
+      "skill_name": "kubernetes-cluster-cleanup-automator",
+      "skill_description": "Identifies and cleans up outdated Kubernetes deployments based on namespace patterns and application version age. Discovers deployments, analyzes release dates from annotations, performs cleanup actions, and notifies stakeholders.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/kubernetes-cluster-cleanup-automator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.858
+    },
+    {
+      "skill_name": "academic-profile-publication-updater",
+      "skill_description": "When the user needs to update their academic profile website with new publications, particularly when they mention specific research papers (like arXiv articles) that need to be added to their publications list. This skill handles the complete workflow analyzing the existing website structure, searching for paper details in arXiv/local storage, understanding the publication format used by the site (Jekyll-based academic pages), and properly formatting new entries to match the existing style with correct author formatting, venue information, links, and bullet-pointed contributions. It's triggered by requests involving 'update profile', 'add publications', 'upload articles', or when users mention specific paper titles they want to include in their academic portfolio.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/academic-profile-publication-updater",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.861
+    },
+    {
+      "skill_name": "job-application-criteria-filter",
+      "skill_description": "When the user needs to filter job opportunities based on multiple business criteria including salary thresholds, work type (remote/on-site), position titles, and location constraints. This skill parses salary ranges, validates minimum requirements, matches position titles against target roles, and applies logical AND/OR conditions across multiple criteria. Triggers include 'minimum salary', 'on-site/remote', 'position is', 'meets criteria', or when evaluating job opportunities against specific requirements.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/job-application-criteria-filter",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.864
+    },
+    {
+      "skill_name": "multi-modal-travel-planner",
+      "skill_description": "When the user requests a complete travel itinerary involving multiple modes of transportation with specific waypoints and preferences. This skill handles end-to-end journey planning including 1) Finding nearby points of interest (like coffee shops) relative to departure points, 2) Calculating optimal transit routes between locations with cost and duration information, 3) Determining walking routes from arrival points to final destinations, and 4) Formatting the complete plan into structured output. Triggers include requests for 'travel plans', 'route planning', 'journey from X to Y', or when users specify multiple destinations with preferences like 'direct route', 'shortest distance', or 'nearest [business type]'.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/multi-modal-travel-planner",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.867
+    },
+    {
+      "skill_name": "structured-data-formatter",
+      "skill_description": "When the user needs to format extracted data according to specific templates or reference formats, particularly when working with markdown files, YAML structures, or predefined output formats. This skill reads reference format files, extracts raw data from various sources, and transforms it into consistently structured output following specified formatting rules. It's triggered by keywords like 'format should reference', 'write to file with format', 'following template', or when users provide reference files for output formatting.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/structured-data-formatter",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.87
+    },
+    {
+      "skill_name": "notion-job-tracker-query",
+      "skill_description": "When the user needs to query and retrieve job application data from a Notion database with specific filtering criteria. This skill searches for Notion pages/databases by name, queries job tracker databases with status filters, and extracts structured job application information including company details, positions, salaries, locations, and contact information. Triggers include 'Notion database', 'job tracker', 'query jobs', 'filter by status', or when working with structured job application data.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/notion-job-tracker-query",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.873
+    },
+    {
+      "skill_name": "academic-candidate-filter",
+      "skill_description": "Filters candidates based on specific academic publication criteria (e.g., first-author, sole-author, or independent publications) from resumes or application materials. Searches through candidate data, extracts publication history, and applies filtering logic to identify qualified individuals.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/academic-candidate-filter",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.876
+    },
+    {
+      "skill_name": "woocommerce-product-image-optimizer",
+      "skill_description": "When the user wants to optimize WooCommerce product images based on sales performance data, particularly for variable products with multiple variations. This skill analyzes order history to identify the best-selling variation for each product and automatically updates the main product image to showcase the most popular option. It handles fetching products and orders data, analyzing sales patterns, identifying variation popularity, and updating product images through WooCommerce API. Use when users mention 'best-selling variation', 'update main product image based on sales', 'product image optimization', or need to align product visuals with customer preferences based on order data.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/woocommerce-product-image-optimizer",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.879
+    },
+    {
+      "skill_name": "multi-traveler-train-coordination",
+      "skill_description": "Coordinates train travel for multiple people with synchronization requirements (arriving/departing from different locations but meeting at a common destination with time constraints).",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/multi-traveler-train-coordination",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.882
+    },
+    {
+      "skill_name": "sports-schedule-analyzer",
+      "skill_description": "Analyzes sports league schedules to extract statistical insights about team schedules, including back-to-back games, home/away patterns, travel analysis, or schedule density. Processes schedule data from spreadsheets or structured sources, identifies consecutive game patterns, categorizes them by location configurations (HA, AH, HH, AA), and generates team-by-team breakdowns.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/sports-schedule-analyzer",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.885
+    },
+    {
+      "skill_name": "compliance-notification-dispatcher",
+      "skill_description": "When the user needs to send automated email notifications for expense claim issues to employees and their managers. This skill generates context-specific email templates for different violation types (missing documentation vs. policy overages), includes detailed issue descriptions, and sends notifications with proper CC to managers. Triggers include compliance notification sending, policy violation alerts, expense claim review requests, or when automated communication is needed for documentation or policy issues.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/compliance-notification-dispatcher",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.888
+    },
+    {
+      "skill_name": "geolocation-distance-filter",
+      "skill_description": "When the user needs to filter locations based on proximity to a reference point within a specified radius. This skill geocodes addresses to coordinates, calculates distances between locations, and filters results based on maximum distance thresholds. Triggers include 'within X km/miles of', 'distance from', 'near location', 'proximity filter', or when location-based filtering is required for job applications, real estate, or service area analysis.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/geolocation-distance-filter",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.891
+    },
+    {
+      "skill_name": "world-bank-region-mapper",
+      "skill_description": "When the user needs to classify countries according to World Bank geographical or income-based classifications for economic analysis. This skill provides accurate mappings between country names and World Bank region codes (EAS, ECS, LCN, MEA, NAC, SAS, SSF) and income groups (LIC, LMC, UMC, HIC), handling variations in country naming conventions. Triggers include 'World Bank classification', 'map countries to regions', 'regional grouping', 'country classification', 'geographical regions', and any analysis requiring standardized regional categorization according to World Bank definitions.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/world-bank-region-mapper",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.894
+    },
+    {
+      "skill_name": "snowflake-database-analyzer",
+      "skill_description": "When the user needs to explore, analyze, and manipulate Snowflake database structures and data. This skill provides 1) Listing databases, schemas, and tables within Snowflake environments, 2) Describing table structures including column names, data types, and constraints, 3) Executing read queries to extract employee data, task assignments, and status information, 4) Performing write operations to insert new records or update existing data, 5) Joining tables to establish relationships between employees, managers, and tasks, 6) Querying current dates and comparing with deadlines. Triggers include 'Snowflake database', 'query employee data', 'database schema exploration', 'data extraction from tables', 'database updates'.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/snowflake-database-analyzer",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.897
+    },
+    {
+      "skill_name": "trading-strategy-backtester",
+      "skill_description": "When the user wants to backtest a quantitative trading strategy based on specific signals, this skill implements strategy logic, executes simulated trades, calculates performance metrics, and generates comprehensive reports. It handles position sizing, transaction costs, holding periods, and computes key metrics like total return, annualized return, Sharpe ratio, win rate, and maximum drawdown. Triggers include backtesting requests, strategy evaluation, or trading performance analysis.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/trading-strategy-backtester",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.9
+    },
+    {
+      "skill_name": "amazon-product-search-recommender",
+      "skill_description": "When the user wants to search for specific products on Amazon within budget constraints and generate structured recommendations. This skill navigates to Amazon.com, performs targeted searches using specific criteria (price range, material, color), browses search results, extracts product details (title, price, store/brand, URL), and compiles recommendations into a structured JSON format. Triggers include requests for product recommendations, shopping assistance, budget-constrained searches, or when users need to find specific items on Amazon with detailed specifications.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/amazon-product-search-recommender",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.903
+    },
+    {
+      "skill_name": "application-materials-submission-handler",
+      "skill_description": "When the user needs to submit application materials (for academic programs, jobs, grants, etc.) based on email instructions with specific formatting requirements. This skill handles the complete workflow reading email instructions with submission guidelines, retrieving personal information from memory, organizing files into specified folder structures, processing PDFs (reading content, merging multiple files), creating directory hierarchies, compressing folders into ZIP files, and sending formatted emails with attachments to specified recipients.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/application-materials-submission-handler",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.906
+    },
+    {
+      "skill_name": "woocommerce-customer-email-campaign-manager",
+      "skill_description": "Executes targeted email campaigns for a WooCommerce store, specifically for sending notifications about upcoming product releases or discount promotions. This skill retrieves and filters customers, queries products, identifies scheduled releases, and determines appropriate recipients for different campaign types.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/woocommerce-customer-email-campaign-manager",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.909
+    },
+    {
+      "skill_name": "employee-onboarding-automator",
+      "skill_description": "When the user needs to automate new employee onboarding processes including training task assignment, email notifications, and database updates. This skill handles 1) Querying employee databases (Snowflake) to identify new hires and their group assignments, 2) Analyzing onboarding documents (PDFs) to extract training requirements and deadlines, 3) Generating personalized task lists based on employee groups (Backend/Frontend/Testing/Data), 4) Inserting task records into appropriate database tables with calculated deadlines, 5) Sending onboarding emails to new employees with their task lists, 6) Checking for overdue incomplete tasks and sending reminder emails, 7) Updating tracking flags in the database. Triggers include 'new employees joining', 'onboarding automation', 'training task assignment', 'employee onboarding emails', 'task deadline reminders'.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/employee-onboarding-automator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.912
+    },
+    {
+      "skill_name": "hr-recruitment-workflow-automator",
+      "skill_description": "Processes job applications by extracting candidate information from resumes (PDF files), updating HR databases (Notion), and managing candidate communications. Automates the end-to-end recruitment workflow including resume parsing, database updates, and automated rejection emails.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/hr-recruitment-workflow-automator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.915
+    },
+    {
+      "skill_name": "dataset-license-resolver",
+      "skill_description": "When the user needs to determine and document licenses for datasets or AI models, particularly when dealing with derivative works or synthesized content. This skill handles 1) Identifying direct data sources and models used in dataset creation, 2) Researching original licenses from upstream repositories (GitHub, Hugging Face), 3) Comparing license permissiveness for derivative/secondary use, 4) Applying the most appropriate license based on user requirements, 5) Updating documentation and repository metadata with license information. Triggers include license inquiries, dataset attribution requests, compliance documentation needs, repository metadata updates, and derivative work licensing questions.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/dataset-license-resolver",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.918
+    },
+    {
+      "skill_name": "post-purchase-feedback-manager",
+      "skill_description": "When the user needs to collect customer feedback after completed purchases, this skill manages the entire workflow retrieves completed orders from WooCommerce, creates customized Google Forms based on requirements specifications, extracts customer emails, sends personalized survey invitations, and stores form links. It triggers on requests involving customer feedback collection, post-purchase surveys, satisfaction measurement, or when working with WooCommerce order data and Google Forms integration.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/post-purchase-feedback-manager",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.921
+    },
+    {
+      "skill_name": "academic-bibtex-manager",
+      "skill_description": "When the user requests to add academic papers to a BibTeX bibliography file while maintaining format consistency and sourcing from appropriate repositories. This skill handles 1) Reading existing BibTeX files to understand formatting conventions, 2) Searching for academic papers across multiple sources (OpenReview for conference papers, arXiv for preprints), 3) Extracting proper BibTeX metadata from conference pages or arXiv entries, 4) Determining appropriate citation format (@article vs @inproceedings) based on publication venue, 5) Appending new entries while preserving existing file structure and formatting. Triggers include requests to 'add to ref.bib', 'update bibliography', 'cite papers', or when working with academic reference files.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/academic-bibtex-manager",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.924
+    },
+    {
+      "skill_name": "location-geocoder",
+      "skill_description": "When the user provides location names, addresses, or landmarks that need to be converted to precise geographic coordinates. This skill uses mapping APIs to geocode locations, returning latitude/longitude coordinates, formatted addresses, and place IDs for subsequent spatial analysis or route planning tasks.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/location-geocoder",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.927
+    },
+    {
+      "skill_name": "homework-autograder",
+      "skill_description": "When the user needs to grade programming assignments submitted via email attachments and upload scores to a learning management system (Canvas). This skill handles the complete workflow searching emails for submissions, downloading Python file attachments, executing code to test for errors, comparing outputs against assignment requirements, and submitting grades to Canvas with appropriate feedback. Triggers include keywords like 'grade homework', 'check submissions', 'Canvas grading', 'Python assignment', 'email attachments', and file types like .py files and assignment specifications.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/homework-autograder",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.93
+    },
+    {
+      "skill_name": "traveling-salesman-solver",
+      "skill_description": "When the user needs to find the optimal visiting order for multiple locations to minimize total travel distance or time, this skill analyzes distance matrices to solve the Traveling Salesman Problem (TSP). It evaluates permutations of locations to identify the shortest route that visits all points. Triggers include 'optimal route', 'shortest path visiting all', 'best visiting order', or when route optimization with multiple stops is required.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/traveling-salesman-solver",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.933
+    },
+    {
+      "skill_name": "google-sheets-market-data-organizer",
+      "skill_description": "Creates and populates Google Sheets with structured financial or market data. It creates spreadsheets with custom names and worksheets, formats data according to specified templates (like CSV examples), and writes organized datasets. It handles spreadsheet creation, sheet renaming, and bulk data insertion.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/google-sheets-market-data-organizer",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.936
+    },
+    {
+      "skill_name": "educational-material-analyzer",
+      "skill_description": "When a student requests help with studying course materials (presentations, PDFs, lecture notes) and needs comprehensive study notes created. This skill extracts key concepts from educational files (PPTX, PDF), summarizes definitions and differences, includes code examples with explanations, and answers assignment questions. It's triggered by requests involving 'study', 'lecture notes', 'course materials', 'presentation analysis', or 'homework explanation' with file types like .pptx, .pdf, .md.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/educational-material-analyzer",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.939
+    },
+    {
+      "skill_name": "transit-station-finder",
+      "skill_description": "When the user needs to identify nearby public transit stations relative to a specific location. This skill searches for transit stations (MRT, subway, bus, etc.) within a specified radius of given coordinates, returning station names, distances, and accessibility information to determine optimal boarding points.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/transit-station-finder",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.942
+    },
+    {
+      "skill_name": "canvas-assignment-submission-manager",
+      "skill_description": "Manages assignment submissions on Canvas LMS. Identifies missing submissions from grade records, prepares files with proper naming conventions, and submits assignments. Handles course identification, assignment listing, submission status checking, file preparation, and automated submission.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/canvas-assignment-submission-manager",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.945
+    },
+    {
+      "skill_name": "critical-alert-logging-system",
+      "skill_description": "When the user needs to create automated alerting systems with severity-based logging for critical events. This skill writes structured log entries to Google Cloud Logging buckets, formats critical warning messages with relevant identifiers (student IDs, names), uses appropriate severity levels (CRITICAL, WARNING), and integrates with notification systems. Triggers include requests for automated alerting, critical event logging, system notifications, or creating audit trails for important events.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/critical-alert-logging-system",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.948
+    },
+    {
+      "skill_name": "bigquery-historical-data-aggregator",
+      "skill_description": "Aggregates and analyzes historical data from multiple BigQuery tables with similar schemas. Queries multiple tables using UNION ALL, calculates aggregate metrics (averages, sums, counts), handles table discovery via INFORMATION_SCHEMA, and processes large datasets efficiently with batch queries.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/bigquery-historical-data-aggregator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.951
+    },
+    {
+      "skill_name": "academic-paper-researcher",
+      "skill_description": "When the user needs to research academic papers and extract specific author information including full names, institutional affiliations (with department-level details when available), and Google Scholar profiles. This skill is triggered by requests involving academic paper analysis, conference research, author profiling, or when working with Excel sheets containing paper titles that need author metadata enrichment. It handles searching for papers, extracting information from PDFs, finding author profiles, and updating spreadsheet data.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/academic-paper-researcher",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.954
+    },
+    {
+      "skill_name": "canvas-exam-schedule-compiler",
+      "skill_description": "When the user needs to compile a schedule of upcoming final exams from Canvas LMS, this skill retrieves enrolled courses, scans course announcements for exam information, filters based on date and exam requirements, and populates an Excel spreadsheet with the remaining exams. It handles 1) Fetching user's enrolled courses from Canvas, 2) Retrieving announcements for each course to find exam details, 3) Filtering out courses with no exams, already-ended courses, or exams that have already passed, 4) Processing exam information (dates, times, locations, proctors, exam types), 5) Formatting data into a structured Excel table with proper headers. Key triggers include requests for 'exam schedule', 'final exams', 'Canvas announcements', 'remaining exams', or tasks involving 'exam_schedule.xlsx' files.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/canvas-exam-schedule-compiler",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.957
+    },
+    {
+      "skill_name": "pdf-metadata-extractor",
+      "skill_description": "Extracts specific metadata from PDF documents, particularly academic papers, including author information, affiliations, and institutional details. This skill is triggered by requests involving PDF analysis, academic paper processing, or when precise information extraction from document headers/footers is required. It handles PDF parsing, text extraction from specific pages, and structured data retrieval from academic document formats.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/pdf-metadata-extractor",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.96
+    },
+    {
+      "skill_name": "canvas-quiz-completion-manager",
+      "skill_description": "When the user needs to manage and complete multiple quizzes on Canvas LMS, this skill provides automated quiz discovery, question retrieval, answer analysis, and batch submission capabilities. It handles the complete workflow from listing enrolled courses, identifying available quizzes, starting quiz attempts, retrieving questions, analyzing correct answers based on subject matter expertise, and submitting all responses. Key triggers include 'unfinished quizzes', 'complete all quizzes', 'Canvas assignments', 'course assessments', 'submit quizzes', and 'quiz deadlines'. The skill is particularly useful when users have multiple pending quizzes across different courses and need systematic completion with accurate answers.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/canvas-quiz-completion-manager",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.963
+    },
+    {
+      "skill_name": "academic-performance-analyzer",
+      "skill_description": "When the user needs to monitor student academic performance by comparing current test scores against historical averages to identify significant performance declines. This skill reads CSV files containing latest scores, queries historical data from BigQuery tables, calculates percentage drops, identifies at-risk students based on configurable thresholds (e.g., >25% drop), and generates comprehensive reports. Triggers include requests for academic warning systems, student performance analysis, score trend monitoring, or identifying students needing intervention.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/academic-performance-analyzer",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.966
+    },
+    {
+      "skill_name": "latex-table-generator",
+      "skill_description": "Creates formatted LaTeX tables from structured data. It parses data, applies sorting and formatting rules, generates table headers and structure following provided templates, and saves the output as .tex files.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/latex-table-generator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.969
+    },
+    {
+      "skill_name": "candidate-evaluation-report-generator",
+      "skill_description": "Analyzes candidate resumes and interviewer evaluations against specific job requirements, calculates match percentages, and generates standardized Word assessment reports for each candidate, identifying the best match.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/candidate-evaluation-report-generator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.972
+    },
+    {
+      "skill_name": "canvas-student-enrollment-manager",
+      "skill_description": "Manages student enrollments in Canvas LMS courses for late-joining students. Handles reading student lists from CSV files, searching for courses, identifying enrolled vs. unenrolled students, enrolling missing students, and sending personalized private messages about assignment policies.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/canvas-student-enrollment-manager",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.975
+    },
+    {
+      "skill_name": "training-metrics-csv-exporter",
+      "skill_description": "Extracts specific training metrics from experiment logs at regular intervals and saves them to a CSV file for analysis. Processes time-series training data (like entropy_loss, clip_ratio, response_length_mean) at specified step intervals, formats data into a structured table, and creates a CSV file.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/training-metrics-csv-exporter",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.978
+    },
+    {
+      "skill_name": "academic-homepage-generator",
+      "skill_description": "When the user requests to create or customize an academic personal website from a GitHub template repository. This skill handles the complete workflow of forking academic template repositories (like academicpages.github.io), extracting structured personal information from memory or provided data, and systematically updating configuration files (_config.yml), navigation menus (_data/navigation.yml), content pages (_pages/about.md), and publication listings (_publications/). It specifically handles academic profiles including personal details, education background, research experience, publications, skills, and contact information. Triggers include requests to 'fork and customize academic homepage', 'build personal academic website', 'create research portfolio', or 'set up GitHub pages with academic template'.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/academic-homepage-generator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.981
+    },
+    {
+      "skill_name": "multi-file-content-extractor",
+      "skill_description": "When the user references multiple files in their query or when the task requires reading content from several files in the workspace, this skill loads and extracts text content from specified file paths. It handles reading multiple files simultaneously, returning their contents for further processing. Triggers include phrases like 'located in the workspace', 'from the file', or when multiple file paths are mentioned.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/multi-file-content-extractor",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.984
+    },
+    {
+      "skill_name": "expense-database-writer",
+      "skill_description": "When the user needs to write validated expense claim data into structured databases with proper flagging for policy violations. This skill formats expense claim information into database-compatible schemas, inserts records into reimbursement tables, and sets appropriate flags (e.g., flag=1 for abnormal claims) based on validation results. Triggers include database insertion, reimbursement record creation, expense claim archiving, or when moving validated claims to permanent storage in databases like Snowflake.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/expense-database-writer",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.987
+    },
+    {
+      "skill_name": "repository-todo-tracker",
+      "skill_description": "Scans a GitHub repository for TODO/FIXME comments in source code files and updates documentation (like README) with a comprehensive, organized list. Handles authentication, recursive file search, comment extraction, comparison with existing documentation, and markdown updates while preserving formatting.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/repository-todo-tracker",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.99
+    },
+    {
+      "skill_name": "excel-weighted-growth-calculator",
+      "skill_description": "When the user requests to calculate year-over-year growth rates for business segments using a weighted methodology from Excel files, particularly when there's a mapping sheet defining segment-to-source weights and a raw data sheet with time-series values. This skill handles reading Excel workbooks with multiple sheets, parsing segment/source mappings, calculating YoY growth rates for sources, applying weighted sums to compute segment growth rates, handling missing data with N/A values, and outputting results to a new Excel file with proper formatting.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/excel-weighted-growth-calculator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.993
+    },
+    {
+      "skill_name": "public-transit-route-planner",
+      "skill_description": "When the user requests public transportation directions between two locations with specific constraints (e.g., shortest walking distance, preferred transport modes, or avoiding certain transfers). This skill geocodes addresses, finds nearest transit stations, calculates optimal routes using transit APIs, identifies transfer points, compiles sequential station lists, and provides detailed journey summaries including distances and travel times.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/public-transit-route-planner",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.996
+    },
+    {
+      "skill_name": "fraud-investigation-data-consolidator",
+      "skill_description": "Investigates a suspicious transaction by gathering all related data from a BigQuery analytics dataset, consolidating it into a structured JSON format, and triggering alert workflows.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/fraud-investigation-data-consolidator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 0.999
+    },
+    {
+      "skill_name": "helm-chart-upgrade-with-config-preservation",
+      "skill_description": "Upgrades a Helm chart to a specific version while preserving existing configurations from a values file and ensuring the application remains operational. Handles the complete upgrade workflow including state discovery, compatibility resolution, configuration updates, execution, monitoring, and verification.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/helm-chart-upgrade-with-config-preservation",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.002
+    },
+    {
+      "skill_name": "product-recall-manager",
+      "skill_description": "Manages a complete product recall workflow in WooCommerce. Identifies products by model/metadata, deactivates them (draft/private/hidden), creates a Google Forms recall form, finds affected customers from orders, and sends personalized notification emails with the form link.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/product-recall-manager",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.005
+    },
+    {
+      "skill_name": "policy-document-parser",
+      "skill_description": "Extracts and structures company policy information from PDF documents, particularly travel expense policies with destination-specific caps. Reads policy PDFs, extracts structured data about expense limits by location and employee level, and converts policy tables into machine-readable formats for automated validation.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/policy-document-parser",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.008
+    },
+    {
+      "skill_name": "academic-researcher-matcher",
+      "skill_description": "When the user needs to find academic researchers or professors matching specific criteria (research field, institution location, publication metrics, conference activity). This skill analyzes user requirements, searches conference publication data (like CVPR, NeurIPS, ICML), identifies top authors by paper count, filters by research domain and institutional affiliation, and returns ranked matches. Triggers include 'find researchers', 'match professors', 'postdoctoral position', 'academic mentor', 'CVPR/NeurIPS/ICML papers', 'research field matching', 'university preference', 'publication count'.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/academic-researcher-matcher",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.011
+    },
+    {
+      "skill_name": "model-checkpoint-evaluator",
+      "skill_description": "When the user needs to evaluate multiple model checkpoints across various benchmarks to identify the best performing model based on evaluation metrics like accuracy, F1-score, or custom scoring functions. This skill scans directories containing model checkpoints, runs benchmark evaluations using predefined scoring algorithms, calculates overall performance scores, and identifies the checkpoint with the highest evaluation metric. It handles complex evaluation workflows involving multiple benchmark categories and mathematical scoring formulas.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/model-checkpoint-evaluator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.014
+    },
+    {
+      "skill_name": "huggingface-model-publisher",
+      "skill_description": "When the user wants to publish a trained model to Hugging Face Hub with proper documentation and metadata. This skill handles authentication with Hugging Face using API tokens, creates or updates model repositories, uploads model files (config, weights, tokenizers), generates comprehensive README.md files with benchmark results, and ensures all necessary files are properly structured for the Hugging Face ecosystem. It's triggered when users mention 'push to Hugging Face', 'upload model to HF Hub', or need to share models with proper documentation.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/huggingface-model-publisher",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.017
+    },
+    {
+      "skill_name": "multi-market-portfolio-allocator",
+      "skill_description": "When the user needs to build an investment portfolio across multiple markets (US, Hong Kong, A-shares) with specific allocation ratios, total capital constraints, and market-specific trading rules. This skill reads stock lists from Excel files, fetches current/latest stock prices and exchange rates from financial APIs, categorizes stocks by market type, calculates position sizes based on allocation percentages, applies market-specific constraints (whole shares for US/HK stocks, 100-share lots for A-shares), performs currency conversions, and generates a complete position-building plan with detailed calculations. It also updates Excel files with calculated stock codes and position sizes. Triggers include requests for portfolio allocation, position building, stock purchase planning with capital allocation ratios, and Excel-based stock list processing.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/multi-market-portfolio-allocator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.02
+    },
+    {
+      "skill_name": "privacy-data-desensitizer",
+      "skill_description": "When the user needs to scan and desensitize sensitive information in documents across a workspace, particularly for privacy compliance or data protection purposes. This skill automatically identifies and replaces specific types of sensitive data (phone/fax numbers, social security numbers, email addresses, credit card numbers, IP addresses) with a uniform placeholder like '/hidden/' while preserving all other content. It handles multiple file formats (txt, csv, json, md, log) and creates desensitized copies with consistent naming conventions. Use this skill when users mention 'privacy desensitization', 'data anonymization', 'sensitive information removal', or when working with documents containing personal identifiable information (PII).",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/privacy-data-desensitizer",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.023
+    },
+    {
+      "skill_name": "financial-data-template-populator",
+      "skill_description": "Populates an Excel template with financial data (stock prices, market trends, ownership) for a specified company. Reads requirement files, fetches data from Yahoo Finance, analyzes template structure, formats data, writes to Excel, and renames the output file.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/financial-data-template-populator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.026
+    },
+    {
+      "skill_name": "multi-namespace-deployment-analyzer",
+      "skill_description": "When the user needs to analyze deployments across multiple Kubernetes namespaces with filtering criteria. This skill discovers namespaces matching patterns, retrieves deployment information from each namespace, extracts metadata and annotations, and performs comparative analysis across namespaces. It handles batch operations and consolidates results from multiple namespace queries. Triggers include 'namespaces starting with', 'across namespaces', 'multiple namespaces', 'deployment analysis', 'namespace pattern', 'batch deployment query', 'cross-namespace comparison'.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/multi-namespace-deployment-analyzer",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.029
+    },
+    {
+      "skill_name": "academic-benchmark-researcher",
+      "skill_description": "When the user requests information about academic benchmarks, datasets, or research papers, particularly in machine learning, deep learning, or logical reasoning domains. This skill enables systematic research of academic benchmarks by searching web sources, downloading and analyzing arXiv papers, extracting key metadata (number of tasks, training availability, difficulty levels), and compiling comparative summaries. It triggers on requests involving dataset comparisons, benchmark analysis, or academic paper research for table creation.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/academic-benchmark-researcher",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.032
+    },
+    {
+      "skill_name": "notion-page-content-updater",
+      "skill_description": "When the user needs to update or populate a Notion page with structured content extracted from documents or data sources. This skill handles the complete workflow of 1) Searching for and locating specific Notion pages by name, 2) Extracting content from source documents (Word/PDF/text files), 3) Analyzing document structure to identify relevant sections, 4) Mapping extracted content to Notion page sections, 5) Modifying page blocks (adding, deleting, updating paragraphs, lists, and headings), and 6) Organizing information in appropriate Notion formats (bullet lists, paragraphs, structured sections). Use this skill when users request to 'update a Notion page with information from a document' or need to synchronize content between documents and Notion workspaces.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/notion-page-content-updater",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.035
+    },
+    {
+      "skill_name": "temporal-transaction-recorder",
+      "skill_description": "When the user requests to add transaction records from specific time periods (like 'last week', 'week before last', 'this month', etc.) to an accounting system or spreadsheet. This skill retrieves transaction data from memory or knowledge graph, analyzes date ranges relative to a reference date, checks existing account book files (Excel/CSV), filters transactions based on temporal criteria, and appends the filtered records to the appropriate file while excluding transactions from specified time periods. It handles purchase/sales transactions, date calculations, and maintains data integrity in financial ledgers.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/temporal-transaction-recorder",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.038
+    },
+    {
+      "skill_name": "contact-discovery-from-documents",
+      "skill_description": "When the agent needs to find specific contact information or responsible personnel for a particular domain or system. This skill searches through available documents (PDFs, config files, emails) to locate relevant contact details, organizational charts, or responsibility assignments. It can parse structured documents for contact tables, search for role-based keywords, and extract email addresses and names associated with specific responsibilities. Triggers include 'find contact', 'responsible person', 'team member', 'who manages', 'email address', 'contact information', 'PDF analysis', 'document search', 'role-based lookup'.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/contact-discovery-from-documents",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.041
+    },
+    {
+      "skill_name": "historical-stock-data-collector",
+      "skill_description": "When the user requests historical stock price data for specific tickers over a date range, this skill retrieves daily trading data (open, high, low, close, volume) from financial APIs. It handles multiple tickers simultaneously, excludes non-trading days automatically, and can specify whether to use adjusted or unadjusted prices. Triggers include requests for 'stock data', 'historical prices', 'daily trading data', or specific ticker symbols like AAPL, TSLA, etc.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/historical-stock-data-collector",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.044
+    },
+    {
+      "skill_name": "email-search-analyzer",
+      "skill_description": "When the user needs to search and analyze emails for specific content patterns, particularly for tracking submissions, communications, or specific file types. This skill performs intelligent email searches with multiple keyword variations, extracts structured information from email subjects and metadata, and identifies patterns in submission data. Triggers include searching for assignment submissions, finding emails with specific patterns, extracting submission timestamps, analyzing email metadata, and identifying submission confirmation messages.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/email-search-analyzer",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.047
+    },
+    {
+      "skill_name": "multi-source-web-researcher",
+      "skill_description": "When the user needs to gather information from multiple sources including web searches, academic databases (arXiv), PDF documents, and professional profiles. This skill is triggered by research tasks requiring parallel information gathering, cross-referencing multiple sources, or when dealing with academic/professional data that exists across different platforms. It handles concurrent searches, source verification, and data consolidation from diverse information repositories.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/multi-source-web-researcher",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.05
+    },
+    {
+      "skill_name": "iot-sensor-anomaly-detector",
+      "skill_description": "When the user needs to identify abnormal sensor readings by comparing real-time IoT sensor data against predefined operating parameter ranges. This skill queries time-series sensor data from BigQuery, loads parameter ranges from Excel configuration files, performs range validation, and generates anomaly reports in CSV format with timestamp, machine_id, sensor_type, reading, and normal_range fields. Triggers include IoT sensor data analysis, anomaly detection, operating parameter validation, factory monitoring, BigQuery sensor queries, Excel configuration file processing, and CSV report generation.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/iot-sensor-anomaly-detector",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.053
+    },
+    {
+      "skill_name": "course-schedule-analyzer",
+      "skill_description": "When the user needs to find and select courses from a university schedule (typically in PDF format) based on multiple criteria including course names, course types, class times, exam formats, and campus locations. This skill extracts course information from PDF schedules, searches for specific courses by name or category, filters results based on constraints like day of week, exam type (open-book/closed-book), and time slots, checks for scheduling conflicts, and outputs organized course selection options in structured formats like Excel files.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/course-schedule-analyzer",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.056
+    },
+    {
+      "skill_name": "youtube-playlist-tracklist-extractor",
+      "skill_description": "Extracts song lists or track information from YouTube videos or playlists, particularly for music compilations, trending playlists, or music mixes. Handles searching, navigating, extracting tracklists from descriptions, and formatting the data.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/youtube-playlist-tracklist-extractor",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.059
+    },
+    {
+      "skill_name": "woocommerce-order-inventory-sync",
+      "skill_description": "When the user needs to process paid WooCommerce orders to calculate raw material consumption based on Bill of Materials (BOM), update inventory levels, and sync maximum producible quantities back to WooCommerce stock. This skill monitors new paid orders, retrieves SKU and quantity data, calculates material requirements from BOM data (typically stored in Google Sheets or similar), deducts consumed materials from inventory, recalculates maximum producible product quantities based on remaining materials, and updates WooCommerce product stock levels. Triggers include WooCommerce order processing, inventory management, BOM-based material calculations, stock synchronization, and production planning workflows.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/woocommerce-order-inventory-sync",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.062
+    },
+    {
+      "skill_name": "compiler-concepts-explainer",
+      "skill_description": "When the user needs explanations of compiler principles concepts, particularly symbol tables, semantic analysis, and related implementation details. This skill provides detailed explanations of functional vs. imperative symbol tables, insertion operations, scope management, and code implementations. It's triggered by technical questions about 'symbol tables', 'compiler principles', 'semantic analysis', 'functional vs. imperative', or 'scope management'.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/compiler-concepts-explainer",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.065
+    },
+    {
+      "skill_name": "latex-citation-reference-validator",
+      "skill_description": "Checks and fixes LaTeX paper drafts for citation and reference issues across multiple .tex files with a .bib bibliography file. Verifies that all \\cite{}, \\label{}, \\ref{}, and \\autoref{} commands work properly and cross-reference correctly across all files. Identifies broken, misnamed, or incorrect citations and references, then fixes them to use the correct names from the .bib file and LaTeX labels.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/latex-citation-reference-validator",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.068
+    },
+    {
+      "skill_name": "csv-data-exporter",
+      "skill_description": "When the user needs to export analytical results or filtered datasets to CSV files for reporting or further processing. This skill formats data with appropriate headers, structures columns logically, handles numerical precision, sorts data meaningfully, and writes to specified file paths. Triggers include requests to save analysis results, create export files, generate reports in CSV format, or prepare data for external systems.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/csv-data-exporter",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.071
+    },
+    {
+      "skill_name": "sla-compliance-monitor",
+      "skill_description": "When the user needs to monitor SLA compliance for support tickets or service requests, this skill identifies overdue items by querying databases, analyzing SLA documentation from PDFs, and generating automated notifications. It handles 1) Database exploration to find relevant tables (support tickets, users), 2) PDF analysis to extract SLA rules and email templates, 3) SQL queries to identify tickets exceeding response times based on user service levels, and 4) Automated email generation for manager reminders and customer apologies using extracted templates. Triggers include 'SLA compliance', 'overdue tickets', 'response time monitoring', 'send reminder emails', 'apology emails', 'ticket monitoring', and 'service level agreement'.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/sla-compliance-monitor",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.074
+    },
+    {
+      "skill_name": "google-sheets-cr5-analyzer",
+      "skill_description": "Calculates CR5 concentration indices for World Bank geographical regions from Google Sheets GDP data. Reads country and region data, maps countries to regions, identifies top 5 GDP countries per region, computes CR5 ratio, and creates a new spreadsheet with sorted results.",
+      "skill_url": "https://github.com/zjunlp/Skills/tree/main/skills/skill-collections/toolathlon/google-sheets-cr5-analyzer",
+      "category": "Benchmark",
+      "stars": 33,
+      "tags": [
+        "toolathlon"
+      ],
+      "tag_hits": 1,
+      "semantic_score": 1.077
+    }
+  ],
+  "average_score": 0.898,
+  "relationships": [
+    {
+      "source": "canvas-assignment-submission-manager",
+      "target": "canvas-quiz-completion-manager",
+      "type": "compose_with",
+      "reason": "Both skills manage submissions within the Canvas LMS - one for assignments and the other for quizzes."
+    },
+    {
+      "source": "academic-benchmark-researcher",
+      "target": "academic-paper-researcher",
+      "type": "compose_with",
+      "reason": "Both skills involve researching academic content; the former focuses on benchmarks while the latter focuses on academic papers."
+    },
+    {
+      "source": "academic-bibtex-manager",
+      "target": "academic-paper-researcher",
+      "type": "compose_with",
+      "reason": "Both skills are involved in handling academic papers, although one focuses on managing citations and the other on researching paper details."
+    },
+    {
+      "source": "candidate-evaluation-report-generator",
+      "target": "application-materials-submission-handler",
+      "type": "compose_with",
+      "reason": "Both skills are involved in the job application process, with one generating reports based on evaluations and the other handling the submission of materials."
+    },
+    {
+      "source": "github-repository-data-collector",
+      "target": "notion-page-content-updater",
+      "type": "compose_with",
+      "reason": "Both skills involve updating and managing structured content; one deals with data from GitHub while the other focuses on Notion pages."
+    },
+    {
+      "source": "trading-strategy-backtester",
+      "target": "spread-analysis-calculator",
+      "type": "compose_with",
+      "reason": "Both skills handle financial calculations; one backtests trading strategies while the other analyzes price spreads."
+    },
+    {
+      "source": "invoice-processor-reimbursement-calculator",
+      "target": "expense-database-writer",
+      "type": "compose_with",
+      "reason": "Both skills deal with financial data and ensure proper documentation; one processes invoices while the other writes validated expense claims to databases."
+    },
+    {
+      "source": "educational-material-analyzer",
+      "target": "homework-autograder",
+      "type": "compose_with",
+      "reason": "Both skills assist students with their educational content; one analyzes materials for study while the other grades assignments."
+    },
+    {
+      "source": "multi-dataset-unification-pipeline",
+      "target": "huggingface-dataset-converter",
+      "type": "depend_on",
+      "reason": "The unification of datasets often requires converting them into compatible formats, a task performed by the huggingface dataset converter."
+    },
+    {
+      "source": "workspace-file-discovery-manager",
+      "target": "multi-file-content-extractor",
+      "type": "compose_with",
+      "reason": "Both skills involve file handling, with one discovering files in a workspace and the other extracting content from multiple files."
+    },
+    {
+      "source": "compliance-notification-dispatcher",
+      "target": "employee-contact-manager",
+      "type": "depend_on",
+      "reason": "compliance-notification-dispatcher requires employee contact information to send automated email notifications to employees and their managers, which is provided by employee-contact-manager."
+    },
+    {
+      "source": "expense-claim-validator",
+      "target": "policy-document-parser",
+      "type": "depend_on",
+      "reason": "expense-claim-validator needs policy information to check compliance with destination-specific expense caps. policy-document-parser extracts policy data into machine-readable formats for automated validation."
+    },
+    {
+      "source": "multi-modal-travel-planner",
+      "target": "point-of-interest-finder",
+      "type": "compose_with",
+      "reason": "multi-modal-travel-planner explicitly includes 'Finding nearby points of interest (like coffee shops) relative to departure points' which is the core functionality of point-of-interest-finder."
+    },
+    {
+      "source": "public-transit-route-planner",
+      "target": "location-geocoder",
+      "type": "depend_on",
+      "reason": "public-transit-route-planner explicitly 'geocodes addresses' to convert location names to coordinates, which is the primary function of location-geocoder."
+    },
+    {
+      "source": "public-transit-route-planner",
+      "target": "transit-station-finder",
+      "type": "compose_with",
+      "reason": "public-transit-route-planner explicitly 'finds nearest transit stations' as part of its route planning process, which is the core functionality of transit-station-finder."
+    },
+    {
+      "source": "traveling-salesman-solver",
+      "target": "distance-matrix-calculator",
+      "type": "depend_on",
+      "reason": "traveling-salesman-solver explicitly 'analyzes distance matrices' to solve the TSP. The distance matrix is the primary output of distance-matrix-calculator."
+    },
+    {
+      "source": "academic-paper-researcher",
+      "target": "pdf-metadata-extractor",
+      "type": "depend_on",
+      "reason": "academic-paper-researcher explicitly handles 'extracting information from PDFs' to retrieve author information and affiliations, which is the specialized function of pdf-metadata-extractor."
+    },
+    {
+      "source": "employee-onboarding-automator",
+      "target": "snowflake-database-analyzer",
+      "type": "depend_on",
+      "reason": "employee-onboarding-automator explicitly performs 'Querying employee databases (Snowflake) to identify new hires' which requires the database access capabilities provided by snowflake-database-analyzer."
+    },
+    {
+      "source": "homework-autograder",
+      "target": "email-search-analyzer",
+      "type": "depend_on",
+      "reason": "homework-autograder explicitly includes 'searching emails for submissions' and 'downloading Python file attachments' from emails, which are the core functions of email-search-analyzer."
+    }
+  ]
+}
