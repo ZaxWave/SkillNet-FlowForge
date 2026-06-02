@@ -34,6 +34,7 @@ import streamlit as st
 import time
 import json
 from utils import render_navbar
+from icon_helper import icon
 
 # --- 1. Page Configuration ---
 st.set_page_config(
@@ -101,7 +102,7 @@ if 'code_plan' not in st.session_state:
 
 # --- 5. Main Interface ---
 
-st.title("👨🏻‍💻 SkillNet for Autonomous Coding Agent")
+st.title(f"{icon('code-2', 28, '#7c3aed')} SkillNet for Autonomous Coding Agent")
 st.markdown("""
 **Scenario**: The Agent acts as a developer. It uses **SkillNet** to find the right skills, installs them, writes the code, and executes the task.
 """)
@@ -124,7 +125,7 @@ if st.session_state.code_stage == 0:
         user_task = st.text_area("Dev Task Description", value=default_task, height=120)
     
     with col2:
-        st.info("💡 **Agent Logic**\nThe Agent analyzes the request to determine necessary capabilities (e.g., HTTP networking, HTML parsing, File I/O).")
+        st.info(f"{icon('info', 16, '#6b7280')} **Agent Logic**\nThe Agent analyzes the request to determine necessary capabilities (e.g., HTTP networking, HTML parsing, File I/O).")
         if st.button("Generate Dev Plan ➔", type="primary", use_container_width=True):
             with st.spinner("Analyzing requirements..."):
                 time.sleep(1.0)

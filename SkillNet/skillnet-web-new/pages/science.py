@@ -282,6 +282,7 @@ import streamlit as st
 import time
 import json
 from utils import render_navbar
+from icon_helper import icon
 
 # --- 1. Page Configuration ---
 st.set_page_config(
@@ -351,7 +352,7 @@ def type_writer_log(text, speed=0.01):
 
 # --- 4. Main Interface ---
 
-st.title("🔬 SkillNet for Autonomous Scientific Discovery")
+st.title(f"{icon('flask-conical', 28, '#e11d48')} SkillNet for Autonomous Scientific Discovery")
 st.markdown("""
 This demo demonstrates the **SkillNet** workflow where an AI Agent autonomously plans and executes a scientific mission. 
 You will act as the human overseer while the Agent uses the SkillNet SDK to orchestrate a scientific discovery.
@@ -375,7 +376,7 @@ if st.session_state.stage == 0:
         mission = st.text_area("User Mission", value=default_mission, height=150)
     
     with col2:
-        st.info("💡 **Agent Logic**\nThe Agent will first analyze this natural language request and decompose it into a structured plan requiring specific technical skills.")
+        st.info(f"{icon('info', 16, '#6b7280')} **Agent Logic**\nThe Agent will first analyze this natural language request and decompose it into a structured plan requiring specific technical skills.")
         if st.button("Generate Plan ➔", type="primary", use_container_width=True):
             with st.spinner("Decomposing task..."):
                 time.sleep(1.0)

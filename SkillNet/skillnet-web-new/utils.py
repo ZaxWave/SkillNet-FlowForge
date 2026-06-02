@@ -305,6 +305,7 @@ def handle_redirects():
 #     logo_items = "".join([f'<div class="logo-item"><img src="{l["url"]}" title="{l["name"]}"></div>' for l in logos])
 #     st.markdown(f'<div class="logo-container">{logo_items}</div>', unsafe_allow_html=True)
 
+@st.cache_data
 def get_base64_image(path):
     """将图片转为 base64 字符串"""
     path = Path(path)
@@ -586,9 +587,8 @@ def render_navbar():
             <a href="ontology" target="_self" class="nav-link">Ontology</a>
             <a href="resources" target="_self" class="nav-link">Resource</a>
             <a href="package" target="_self" class="nav-link">Collection</a>
-            <a href="skillx" target="_self" class="nav-link">SkillX</a >
-            <a href="skillgym" target="_self" class="nav-link">SkillGym</a >
-            <a href="skillfabric" target="_self" class="nav-link">SkillFabric</a >
+            <a href="skillfabric" target="_self" class="nav-link">Fabric</a >
+            <a href="skillgym" target="_self" class="nav-link">Gyms</a >
             <div class="dropdown">
                 <button class="dropbtn">Application&nbsp;<small>&#9662;</small></button>
                 <div class="dropdown-content">

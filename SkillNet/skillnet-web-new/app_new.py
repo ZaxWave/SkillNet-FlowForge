@@ -1,6 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
 from utils import render_navbar, increment_visit, get_visit_count, get_download_count, render_logos
+from icon_helper import icon
 import pandas as pd
 import html
 import math
@@ -216,7 +217,7 @@ def view_home():
         }}
     </style>
     <div class="floating-stats">
-        👁️ Visits: {total_visits:,} &nbsp;&nbsp; ⬇️ Downloads: {total_downloads:,}
+        {icon("eye", 16, "#6b7280")} Visits: {total_visits:,} &nbsp;&nbsp; {icon("download", 16, "#6b7280")} Downloads: {total_downloads:,}
     </div>
     """, unsafe_allow_html=True)
 
@@ -397,7 +398,7 @@ def view_home():
             
             <div style="text-align: center;">
                 <span class="counter-badge">
-                    <span style="margin-right: 6px;">✨</span> 
+                    <span style="margin-right: 6px;">{icon("sparkles", 20, "#f59e0b")}</span>
 
                     <span class="badge-secondary">
                         600,000+ Total
@@ -810,7 +811,7 @@ def view_home():
     with main_col2:
         # Code Demo 部分保持不变
         # 使用负 margin 向上提，与左侧 Canvas 标题 (Y=25px) 对齐
-        st.markdown("<h5 style='margin-top: 0px; margin-bottom: 0px; font-weight: 600; font-size: 1.25rem;'>📦 Using SkillNet</h5>", unsafe_allow_html=True)
+        st.markdown(f"<h5 style='margin-top: 0px; margin-bottom: 0px; font-weight: 600; font-size: 1.25rem;'>{icon('package', 22, '#7c3aed')} Using SkillNet</h5>", unsafe_allow_html=True)
         
         # 增加代码块内部的空行，使其在视觉上更高，与左侧图谱平衡
         # 增加代码块内部的空行，使其在视觉上更高，与左侧图谱平衡
@@ -885,12 +886,12 @@ client.analyze("./my_skills")
     
     # 定义导航数据
     sections = [
-        {"icon": "🏛️", "title": "Ontology", "url": "/ontology", "desc": "Defined Skill Ontology for SkillNet."},
-        {"icon": "🕸️", "title": "Resource", "url": "/resources", "desc": "Curated Skill Repository."},
-        {"icon": "📦", "title": "Collection", "url": "/package", "desc": "Bundled Skill Collections."},
-        {"icon": "🔬", "title": "Science", "url": "/science", "desc": "Autonomous Scientific Discovery."},
-        {"icon": "👨🏻‍💻", "title": "Coding", "url": "/coding", "desc": "Autonomous Coding Agent."},
-        {"icon": "📚", "title": "Docs", "url": "/docs", "desc": "Developer Guides."}
+        {"icon": icon("grid-3x3", 22, "#059669"), "title": "Ontology", "url": "/ontology", "desc": "Defined Skill Ontology for SkillNet."},
+        {"icon": icon("database", 22, "#2563eb"), "title": "Resource", "url": "/resources", "desc": "Curated Skill Repository."},
+        {"icon": icon("package", 22, "#7c3aed"), "title": "Collection", "url": "/package", "desc": "Bundled Skill Collections."},
+        {"icon": icon("flask-conical", 22, "#e11d48"), "title": "Science", "url": "/science", "desc": "Autonomous Scientific Discovery."},
+        {"icon": icon("terminal", 22, "#d97706"), "title": "Coding", "url": "/coding", "desc": "Autonomous Coding Agent."},
+        {"icon": icon("book-open", 22, "#0891b2"), "title": "Docs", "url": "/docs", "desc": "Developer Guides."}
     ]
 
     # 创建 6 列布局
@@ -920,41 +921,41 @@ client.analyze("./my_skills")
     st.write("") # 留白
 
     # 使用 HTML/CSS 自定义精美页脚
-    st.markdown("""
+    st.markdown(f"""
         <style>
-            .footer-container {
+            .footer-container {{
                 margin-top: 20px;
                 padding-top: 20px;
-                border-top: 1px solid #f3f4f6; /* 极轻的分割线 */
+                border-top: 1px solid #f3f4f6;
                 text-align: center;
-                color: #6b7280; /* Cool Gray 500 - 柔和的文字颜色 */
+                color: #6b7280;
                 font-family: "Source Sans Pro", sans-serif;
-            }
-            .footer-main {
+            }}
+            .footer-main {{
                 font-size: 0.95rem;
                 margin-bottom: 8px;
-            }
-            .footer-heart {
+            }}
+            .footer-heart {{
                 font-size: 0.9rem;
                 font-weight: 500;
-                color: #4b5563; /* 稍微深一点，强调感谢 */
+                color: #4b5563;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 6px; /* 图标和文字的间距 */
-            }
-            .heart-icon {
-                color: #ef4444; /* 红色爱心 */
-            }
+                gap: 6px;
+            }}
+            .heart-icon {{
+                color: #ef4444;
+            }}
         </style>
-        
+
         <div class="footer-container">
             <div class="footer-main">
-                🌻 SkillNet builds on open, in-house, and community skills. 
+                {icon("sparkles", 16, "#f59e0b")} SkillNet builds on open, in-house, and community skills.
             </div>
             <div class="footer-heart">
                 <span>Thanks to Anthropic, Alibaba Group, Tencent, and OpenJiuwen.</span>
-                <span class="heart-icon">❤️</span>
+                <span class="heart-icon">{icon("heart", 16, "#ef4444")}</span>
             </div>
         </div>
     """, unsafe_allow_html=True)

@@ -24,7 +24,7 @@
 # render_navbar()
 
 # # 3. Docs 页面内容
-# st.title("📚 SkillNet Docs")
+# st.title(f"{icon('book-open', 28, '#0891b2')} SkillNet Docs")
 
 # # 创建两列布局：左侧目录，右侧内容
 # col1, col2 = st.columns([1, 3])
@@ -97,7 +97,7 @@
 # # 2. 渲染导航栏
 # render_navbar()
 
-# st.title("📚 SkillNet Docs")
+# st.title(f"{icon('book-open', 28, '#0891b2')} SkillNet Docs")
 
 # # 3. Docs 页面布局
 # # 创建两列布局：左侧为固定的目录导航，右侧为文档内容
@@ -497,6 +497,7 @@
 # pages/docs.py
 import streamlit as st
 from utils import render_navbar
+from icon_helper import icon
 
 # 1. 页面配置
 st.set_page_config(
@@ -525,7 +526,7 @@ st.markdown(
 # 2. 渲染导航栏
 render_navbar()
 
-st.title("📚 SkillNet Docs")
+st.title(f"{icon('book-open', 28, '#0891b2')} SkillNet Docs")
 
 # 3. Docs 页面布局
 # 创建两列布局：左侧为固定的目录导航，右侧为文档内容

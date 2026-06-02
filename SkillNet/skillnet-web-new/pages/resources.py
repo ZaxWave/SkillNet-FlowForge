@@ -1,11 +1,13 @@
 import streamlit as st
 from utils import render_navbar, handle_redirects, render_logos, get_embedding
+from icon_helper import icon
 import pandas as pd
 import html
 import math
 import urllib.parse
 from supabase import create_client, Client
 import textwrap
+import json
 
 # 处理可能的跳转
 handle_redirects()
@@ -44,23 +46,23 @@ st.markdown("""
     
     /* 卡片样式：模仿 MCP Servers 的白色卡片风格 */
     .skill-card {
-        background-color: #ffffff;
-        border-radius: 12px;
+        background: linear-gradient(135deg, #e0f0ff 0%, #f0f7ff 15%, #f8fafc 40%, #ffffff 100%);
+        border-radius: 14px;
         padding: 20px;
         margin-bottom: 20px;
-        border: 1px solid #e5e7eb;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-        transition: all 0.2s ease-in-out;
-        height: 380px; /* 固定高度，确保网格整齐 */
+        border: 1px solid rgba(186,210,235,0.5);
+        box-shadow: 0 2px 8px rgba(59,130,246,0.06), 0 1px 2px rgba(0,0,0,0.04);
+        transition: all 0.25s ease-in-out;
+        height: 380px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    
+
     .skill-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        border-color: #d1d5db;
+        transform: translateY(-6px);
+        box-shadow: 0 12px 20px -4px rgba(59,130,246,0.15), 0 4px 8px -2px rgba(0,0,0,0.06);
+        border-color: rgba(147,197,253,0.8);
     }
 
     /* 标题区域 */
@@ -69,34 +71,95 @@ st.markdown("""
         border-bottom: 1px solid #e5e7eb;
     }
     
-    .skill-title { 
-        font-size: 1.1em; 
-        font-weight: 700; 
-        color: #111827; 
-        text-decoration: none; 
+    .skill-title {
+        font-size: 1.1em;
+        font-weight: 700;
+        color: #111827;
+        text-decoration: none;
         display: block;
         margin-bottom: 4px;
-        white-space: normal;      /* 允许换行 */
-        overflow-wrap: break-word; /* 超长单词也会换行 */
+        max-width: 100%;
+        min-width: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
-    
+
     .skill-title:hover {
         color: #2563eb;
     }
 
     /* 描述文本 */
-    .skill-desc { 
+    .skill-desc {
         margin-top: 10px;
-        font-size: 0.9em; 
-        color: #4b5563; 
-        line-height: 1.5; 
-        margin-bottom: 15px; 
-        flex-grow: 1; /* 让描述占据剩余空间 */
+        font-size: 0.9em;
+        color: #4b5563;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        flex-grow: 1;
         overflow: hidden;
         display: -webkit-box;
-        -webkit-line-clamp: 5; /* 限制显示行 */
+        -webkit-line-clamp: 5;
         -webkit-box-orient: vertical;
     }
+
+    /* ========== hover 详情浮层 ========== */
+    .card-body-hover {
+        position: relative;
+        overflow: visible;
+    }
+    .skill-detail-popup {
+        display: none;
+        position: absolute;
+        bottom: calc(100% + 8px);
+        left: 50%;
+        transform: translateX(-50%);
+        background: #ffffff;
+        border: 1px solid #d1d5db;
+        border-radius: 10px;
+        padding: 14px 16px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        z-index: 99999;
+        width: 500px;
+        max-height: 320px;
+        overflow-y: auto;
+        text-align: left;
+        pointer-events: none;
+    }
+    .skill-detail-popup::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 8px solid transparent;
+        border-top-color: #ffffff;
+        z-index: 100000;
+    }
+    .skill-detail-popup .popup-name {
+        font-size: 1em;
+        font-weight: 700;
+        color: #111827;
+        margin-bottom: 6px;
+        line-height: 1.3;
+    }
+    .skill-detail-popup .popup-desc {
+        font-size: 0.85em;
+        color: #4b5563;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    .skill-detail-popup .popup-meta {
+        font-size: 0.78em;
+        color: #9ca3af;
+    }
+    .skill-detail-popup .popup-meta span {
+        margin-right: 10px;
+    }
+    .card-body-hover:hover .skill-detail-popup {
+        display: block;
+    }
+    /* ======================================== */
 
     /* 底部元数据 */
     .skill-footer {
@@ -135,14 +198,16 @@ st.markdown("""
         font-weight: 500;
     }
     
-    .star-badge { 
+    .star-badge {
         background-color: #f1f5f9; /* Soft Slate Gray */
         color: #475569;            /* Darker Slate for text contrast */
-        padding: 2px 8px; 
-        border-radius: 9999px; 
-        font-weight: 600; 
+        padding: 2px 8px;
+        border-radius: 9999px;
+        font-weight: 600;
         font-size: 0.75em;
         border: 1px solid #e2e8f0; /* Optional: adds a subtle definition */
+        flex-shrink: 0;
+        white-space: nowrap;
     }
 
     /* 搜索框居中样式调整 */
@@ -156,6 +221,9 @@ st.markdown("""
         align-items: center;
         justify-content: center;
     }
+
+    div[data-testid="column"] { overflow: visible !important; }
+    div[data-testid="stVerticalBlock"] { overflow: visible !important; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -372,9 +440,72 @@ def fetch_skills(page=1, page_size=20, search_text=None, search_mode="vector", m
             return pd.DataFrame(response.data), response.count
 
     except Exception as e:
-        st.error(f"查询出错: {e}")
-        print(e)
-        return pd.DataFrame(), 0
+        st.info("数据库尚未配置，当前展示为演示数据。")
+        print(f"Supabase error (fallback to mock): {e}")
+        filtered = _filter_mock_skills(search_text, min_stars, category, sort_option)
+        start_p = (page - 1) * page_size
+        end_p = start_p + page_size
+        sliced = filtered[start_p:end_p]
+        return pd.DataFrame(sliced), len(filtered)
+
+# --- Mock 数据（Supabase 不可用时降级使用）---
+MOCK_SKILLS = [
+    {"skill_name": "AutoGPT-Planner", "stars": 1820, "category": "Development", "author": "SignificantGravitas", "tags": ["autonomous", "planning", "agent", "GPT"], "skill_description": "An autonomous AI agent that breaks down complex goals into manageable tasks, executes them sequentially, and learns from its mistakes using memory and reflection loops.", "skill_url": "https://github.com/SignificantGravitas/AutoGPT", "repo_url": "https://github.com/SignificantGravitas/AutoGPT", "skill_date": "2024-05-15", "evaluation": {"safety": {"level": "Poor", "reason": "Autonomous execution without sandbox"}, "completeness": {"level": "Good", "reason": "Covers all workflow stages"}, "executability": {"level": "Good", "reason": "Reliable task execution engine"}, "maintainability": {"level": "Average", "reason": "Plugin system needs refactoring"}, "cost_awareness": {"level": "Poor", "reason": "High token consumption per task"}}},
+    {"skill_name": "RAGFlow-Search", "stars": 950, "category": "AIGC", "author": "infiniflow", "tags": ["RAG", "search", "retrieval", "LLM"], "skill_description": "Deep document understanding and retrieval-augmented generation pipeline with layout parsing, chunking, and hybrid search for enterprise knowledge bases.", "skill_url": "https://github.com/infiniflow/ragflow", "repo_url": "https://github.com/infiniflow/ragflow", "skill_date": "2024-06-20", "evaluation": {}},
+    {"skill_name": "BioMed-Analyzer", "stars": 670, "category": "Science", "author": "biomed-ai", "tags": ["bioinformatics", "protein", "drug-discovery"], "skill_description": "A specialized skill suite for biomedical text mining, protein structure prediction, and drug-target interaction analysis powered by large language models.", "skill_url": "https://github.com/biomed-ai/biomed-analyzer", "repo_url": "https://github.com/biomed-ai/biomed-analyzer", "skill_date": "2024-04-10"},
+    {"skill_name": "CodeReview-AI", "stars": 1340, "category": "Development", "author": "codereview-hub", "tags": ["code-review", "PR", "static-analysis"], "skill_description": "Automated code review assistant that catches bugs, enforces style guides, suggests refactors, and generates PR summaries with contextual reasoning.", "skill_url": "https://github.com/codereview-hub/codereview-ai", "repo_url": "https://github.com/codereview-hub/codereview-ai", "skill_date": "2024-07-01"},
+    {"skill_name": "FinanceGPT-Reports", "stars": 480, "category": "Business", "author": "fin-ai-lab", "tags": ["finance", "reporting", "GPT", "analysis"], "skill_description": "Generate comprehensive financial reports, earnings summaries, and market analysis from raw data files and SEC filings using structured prompt chains.", "skill_url": "https://github.com/fin-ai-lab/financegpt", "repo_url": "https://github.com/fin-ai-lab/financegpt", "skill_date": "2024-03-25"},
+    {"skill_name": "Security-Pentest-Kit", "stars": 2100, "category": "Security", "author": "sec-ops", "tags": ["pentest", "vulnerability", "security", "automation"], "skill_description": "Automated penetration testing toolkit that performs reconnaissance, vulnerability scanning, and exploit suggestion using AI-guided attack paths.", "skill_url": "https://github.com/sec-ops/pentest-kit", "repo_url": "https://github.com/sec-ops/pentest-kit", "skill_date": "2024-08-12"},
+    {"skill_name": "MultiModal-Vision-Analyzer", "stars": 890, "category": "AIGC", "author": "vision-ai-collective", "tags": ["vision", "multimodal", "OCR", "image"], "skill_description": "Analyze images, diagrams, and screenshots with multimodal LLMs to extract structured information, generate captions, and answer visual queries.", "skill_url": "https://github.com/vision-ai/multimodal-analyzer", "repo_url": "https://github.com/vision-ai/multimodal-analyzer", "skill_date": "2024-05-28"},
+    {"skill_name": "DataPipeline-ETL-Builder", "stars": 560, "category": "Productivity", "author": "dataeng-co", "tags": ["ETL", "pipeline", "data-engineering", "SQL"], "skill_description": "Build, test, and deploy data pipelines using natural language descriptions. Generates SQL, Python transformations, and Airflow DAGs.", "skill_url": "https://github.com/dataeng-co/etl-builder", "repo_url": "https://github.com/dataeng-co/etl-builder", "skill_date": "2024-06-15"},
+    {"skill_name": "UI-Test-Generator", "stars": 720, "category": "Testing", "author": "qa-automate", "tags": ["testing", "UI", "Playwright", "Selenium"], "skill_description": "Generate end-to-end UI tests from natural language scenarios. Supports Playwright, Selenium, and Cypress with self-healing locators.", "skill_url": "https://github.com/qa-automate/ui-test-gen", "repo_url": "https://github.com/qa-automate/ui-test-gen", "skill_date": "2024-04-22", "evaluation": {"robustness": {"level": "A", "reason": "Handles complex dynamic UIs reliably"}, "usability": {"level": "B", "reason": "Setup requires some configuration"}}},
+    {"skill_name": "Scientific-Literature-Review-Extractor", "stars": 1100, "category": "Science", "author": "papermind-ai", "tags": ["literature-review", "paper", "research", "summarization"], "skill_description": "Automated literature review tool that searches across arXiv and PubMed, extracts key findings, identifies research gaps, and generates structured survey drafts with comprehensive citation management and cross-domain synthesis.", "skill_url": "https://github.com/papermind-ai/lit-review", "repo_url": "https://github.com/papermind-ai/lit-review", "skill_date": "2024-07-18", "evaluation": {"safety": {"level": "Good", "reason": "Read-only operations, no side effects"}, "completeness": {"level": "Good", "reason": "Covers major search engines and formats"}, "executability": {"level": "Average", "reason": "Occasional timeout on large corpuses"}, "maintainability": {"level": "Good", "reason": "Clean modular pipeline with clear interfaces"}, "cost_awareness": {"level": "Average", "reason": "LLM calls optimized but still significant"}}},
+    {"skill_name": "LegalDoc-Contracts-Parser", "stars": 380, "category": "Business", "author": "legal-ai-lab", "tags": ["legal", "contracts", "NLP", "compliance"], "skill_description": "Parse, analyze, and redline legal contracts automatically. Extract key clauses, identify risks, and generate negotiation summaries.", "skill_url": "https://github.com/legal-ai-lab/contract-parser", "repo_url": "https://github.com/legal-ai-lab/contract-parser", "skill_date": "2024-02-14"},
+    {"skill_name": "VoiceToAction-Assistant", "stars": 640, "category": "Productivity", "author": "voice-ai-team", "tags": ["voice", "speech-to-text", "commands", "productivity"], "skill_description": "Natural language voice command system that controls desktop applications, automates workflows, and integrates with calendar/email/task managers.", "skill_url": "https://github.com/voice-ai/voice-to-action", "repo_url": "https://github.com/voice-ai/voice-to-action", "skill_date": "2024-08-05"},
+    {"skill_name": "GameNPC-Dialogue-Engine", "stars": 920, "category": "AIGC", "author": "gamedev-ai-studio", "tags": ["game", "NPC", "dialogue", "interactive"], "skill_description": "Procedural NPC dialogue generation with personality modeling, memory of past interactions, and dynamic quest branching using LLM-powered conversations.", "skill_url": "https://github.com/gamedev-ai/npc-dialogue", "repo_url": "https://github.com/gamedev-ai/npc-dialogue", "skill_date": "2024-06-30"},
+    {"skill_name": "Math-Theorem-Prover", "stars": 1550, "category": "Science", "author": "formal-methods-lab", "tags": ["math", "theorem-proving", "Lean", "Coq"], "skill_description": "AI-assisted mathematical theorem proving that translates natural language proofs into formal Lean/Coq statements and verifies correctness.", "skill_url": "https://github.com/formal-methods/math-prover", "repo_url": "https://github.com/formal-methods/math-prover", "skill_date": "2024-05-10"},
+    {"skill_name": "DevOps-Incident-Responder", "stars": 830, "category": "Development", "author": "sre-toolkit", "tags": ["DevOps", "incident", "monitoring", "runbook"], "skill_description": "Automated incident response skill that reads alerts, diagnoses root causes from logs and metrics, and executes pre-approved runbooks for common failures.", "skill_url": "https://github.com/sre-toolkit/incident-responder", "repo_url": "https://github.com/sre-toolkit/incident-responder", "skill_date": "2024-07-25"},
+    {"skill_name": "SmartHome-Routine-Optimizer", "stars": 290, "category": "Lifestyle", "author": "iot-ai-lab", "tags": ["IoT", "home-automation", "routine", "energy"], "skill_description": "Optimize smart home routines based on occupancy patterns, energy pricing, and weather forecasts to balance comfort and efficiency.", "skill_url": "https://github.com/iot-ai-lab/smarthome-opt", "repo_url": "https://github.com/iot-ai-lab/smarthome-opt", "skill_date": "2024-03-05"},
+    {"skill_name": "PRD-to-Code-Generator", "stars": 1780, "category": "Development", "author": "devflow-ai", "tags": ["PRD", "code-generation", "full-stack", "prototype"], "skill_description": "Transform product requirement documents into working full-stack code scaffolds with API definitions, database schemas, and frontend components in minutes.", "skill_url": "https://github.com/devflow-ai/prd-to-code", "repo_url": "https://github.com/devflow-ai/prd-to-code", "skill_date": "2024-08-20"},
+    {"skill_name": "Climate-Data-Forecaster", "stars": 510, "category": "Science", "author": "climate-ml", "tags": ["climate", "forecast", "time-series", "geospatial"], "skill_description": "Analyze climate datasets, generate regional forecasts, detect anomalies, and produce visualization-ready reports for environmental research.", "skill_url": "https://github.com/climate-ml/forecaster", "repo_url": "https://github.com/climate-ml/forecaster", "skill_date": "2024-04-30"},
+    {"skill_name": "API-Documentation-Writer", "stars": 610, "category": "Documentation", "author": "docgen-ai", "tags": ["API", "docs", "OpenAPI", "markdown"], "skill_description": "Automatically generate and maintain API documentation from code annotations, OpenAPI specs, and actual request traces with usage examples.", "skill_url": "https://github.com/docgen-ai/api-writer", "repo_url": "https://github.com/docgen-ai/api-writer", "skill_date": "2024-05-22"},
+    {"skill_name": "SOC2-Compliance-Checker", "stars": 440, "category": "Security", "author": "compliance-bot", "tags": ["SOC2", "compliance", "audit", "checklist"], "skill_description": "Automated SOC2 compliance assessment tool that checks cloud infrastructure, access controls, and data handling against SOC2 criteria.", "skill_url": "https://github.com/compliance-bot/soc2-checker", "repo_url": "https://github.com/compliance-bot/soc2-checker", "skill_date": "2024-06-08"},
+    {"skill_name": "Education-Quiz-Generator", "stars": 750, "category": "Research", "author": "edtech-ai-group", "tags": ["education", "quiz", "assessment", "learning"], "skill_description": "Generate adaptive quizzes and assessments from any learning material with difficulty calibration, hint generation, and knowledge gap analysis.", "skill_url": "https://github.com/edtech-ai/quiz-gen", "repo_url": "https://github.com/edtech-ai/quiz-gen", "skill_date": "2024-07-12"},
+    {"skill_name": "Customer-Support-Triage", "stars": 530, "category": "Business", "author": "support-ai-co", "tags": ["support", "triage", "ticketing", "sentiment"], "skill_description": "Intelligent customer support ticket triage that categorizes, prioritizes, and drafts initial responses based on issue type, urgency, and customer history.", "skill_url": "https://github.com/support-ai/triage-bot", "repo_url": "https://github.com/support-ai/triage-bot", "skill_date": "2024-05-05"},
+    {"skill_name": "Database-Schema-Designer", "stars": 870, "category": "Development", "author": "dbtools-ai", "tags": ["database", "schema", "SQL", "ERD"], "skill_description": "Design normalized database schemas from natural language requirements with migration scripts, indexes, and relationship diagrams automatically generated.", "skill_url": "https://github.com/dbtools-ai/schema-designer", "repo_url": "https://github.com/dbtools-ai/schema-designer", "skill_date": "2024-08-15"},
+    {"skill_name": "Social-Media-Content-Planner", "stars": 350, "category": "Lifestyle", "author": "social-ai-studio", "tags": ["social-media", "content", "scheduling", "analytics"], "skill_description": "Plan, draft, and schedule social media content across platforms with AI-generated posts, hashtag optimization, and engagement prediction.", "skill_url": "https://github.com/social-ai/content-planner", "repo_url": "https://github.com/social-ai/content-planner", "skill_date": "2024-04-18"},
+    {"skill_name": "ML-Experiment-Tracker", "stars": 960, "category": "Research", "author": "mlops-team", "tags": ["ML", "experiment", "tracking", "hyperparameter"], "skill_description": "Track ML experiments with automatic logging of parameters, metrics, and artifacts. Compare runs, detect regressions, and generate experiment reports.", "skill_url": "https://github.com/mlops-team/exp-tracker", "repo_url": "https://github.com/mlops-team/exp-tracker", "skill_date": "2024-06-25"},
+    {"skill_name": "Competitive-Intel-Analyzer", "stars": 410, "category": "Business", "author": "strat-ai", "tags": ["competitive", "market", "analysis", "benchmarking"], "skill_description": "Gather and analyze competitor intelligence from public sources, generate SWOT analyses, feature comparison matrices, and market positioning reports.", "skill_url": "https://github.com/strat-ai/competitive-intel", "repo_url": "https://github.com/strat-ai/competitive-intel", "skill_date": "2024-03-20"},
+    {"skill_name": "Accessibility-Auditor", "stars": 580, "category": "Testing", "author": "a11y-tools", "tags": ["accessibility", "WCAG", "audit", "a11y"], "skill_description": "Automated accessibility audit for web applications checking WCAG 2.1 compliance, generating fix suggestions with code snippets for each violation found.", "skill_url": "https://github.com/a11y-tools/auditor", "repo_url": "https://github.com/a11y-tools/auditor", "skill_date": "2024-07-08"},
+    {"skill_name": "Anomaly-Detection-Pipeline", "stars": 780, "category": "Data & Research", "author": "anomaly-ml", "tags": ["anomaly", "detection", "time-series", "monitoring"], "skill_description": "Flexible anomaly detection pipeline for time-series data with multiple algorithms, auto-thresholding, alert routing, and root cause analysis dashboards.", "skill_url": "https://github.com/anomaly-ml/pipeline", "repo_url": "https://github.com/anomaly-ml/pipeline", "skill_date": "2024-06-12"},
+    {"skill_name": "Meeting-Summarizer-Pro", "stars": 1050, "category": "Productivity", "author": "meet-ai", "tags": ["meeting", "transcription", "summary", "action-items"], "skill_description": "Real-time meeting transcription and summarization that extracts action items, decisions, and key points with speaker attribution and follow-up scheduling.", "skill_url": "https://github.com/meet-ai/summarizer-pro", "repo_url": "https://github.com/meet-ai/summarizer-pro", "skill_date": "2024-08-01"},
+]
+
+def _filter_mock_skills(search_text=None, min_stars=0, category=None, sort_option="Stars"):
+    """在 mock 数据上执行筛选、排序、分页"""
+    import copy
+    data = copy.deepcopy(MOCK_SKILLS)
+
+    if search_text:
+        st_lower = search_text.lower()
+        data = [s for s in data if
+                st_lower in s["skill_name"].lower()
+                or st_lower in s["skill_description"].lower()
+                or any(st_lower in t.lower() for t in s.get("tags", []))]
+
+    if min_stars > 0:
+        data = [s for s in data if s["stars"] >= min_stars]
+
+    if category and category not in ["All", "Featured"]:
+        data = [s for s in data if s["category"] == category]
+
+    if sort_option == "Stars":
+        data.sort(key=lambda s: s["stars"], reverse=True)
+    else:
+        data.sort(key=lambda s: s["skill_date"], reverse=True)
+
+    return data
+
 
 # --- 分页回调 ---
 def change_page(new_page):
@@ -517,16 +648,16 @@ def main():
     )
 
 
-    with st.expander("💡 Evaluation Metrics Interpretation", expanded=True):
-        legend_html = """
+    with st.expander("Evaluation Metrics Interpretation", expanded=True):
+        legend_html = f"""
         <style>
-            .legend-grid {
+            .legend-grid {{
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
                 gap: 16px;
                 padding: 10px 0;
-            }
-            .legend-item {
+            }}
+            .legend-item {{
                 display: flex;
                 align-items: flex-start;
                 background-color: #f9fafb; /* Gray-50 */
@@ -534,14 +665,14 @@ def main():
                 border-radius: 8px;
                 padding: 12px;
                 transition: all 0.2s ease;
-            }
-            .legend-item:hover {
+            }}
+            .legend-item:hover {{
                 transform: translateY(-2px);
                 box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
                 border-color: #d1d5db;
                 background-color: #ffffff;
-            }
-            .legend-icon {
+            }}
+            .legend-icon {{
                 font-size: 24px;
                 margin-right: 12px;
                 background: #fff;
@@ -553,55 +684,58 @@ def main():
                 border-radius: 50%;
                 border: 1px solid #f3f4f6;
                 box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-            }
-            .legend-text h4 {
+            }}
+            .legend-icon svg {{
+                vertical-align: middle;
+            }}
+            .legend-text h4 {{
                 margin: 0 0 4px 0;
                 font-size: 14px;
                 color: #111827; /* Gray-900 */
                 font-weight: 600;
-            }
-            .legend-text p {
+            }}
+            .legend-text p {{
                 margin: 0;
                 font-size: 12px;
                 color: #6b7280; /* Gray-500 */
                 line-height: 1.4;
-            }
-            .status-dot {
+            }}
+            .status-dot {{
                 display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:4px;
-            }
+            }}
         </style>
-        
+
         <div class="legend-grid">
             <div class="legend-item">
-                <div class="legend-icon">🛡️</div>
+                <div class="legend-icon">{icon("shield-check", 24, "#2563eb")}</div>
                 <div class="legend-text">
                     <h4>Safety (Safe)</h4>
                     <p>Ensures skill is free from malicious behavior, jailbreak risks, and security vulnerabilities.</p>
                 </div>
-            </div>    
+            </div>
             <div class="legend-item">
-                <div class="legend-icon">🧩</div>
+                <div class="legend-icon">{icon("puzzle", 24, "#7c3aed")}</div>
                 <div class="legend-text">
                     <h4>Completeness (Compl.)</h4>
                     <p>Verifies if the skill covers all critical steps, explicitly defining prerequisites and execution conditions.</p>
                 </div>
             </div>
             <div class="legend-item">
-                <div class="legend-icon">🚀</div>
+                <div class="legend-icon">{icon("zap", 24, "#ea580c")}</div>
                 <div class="legend-text">
                     <h4>Executability (Exec.)</h4>
                     <p>Checks if the code runs successfully in a standard environment without throwing errors.</p>
                 </div>
             </div>
             <div class="legend-item">
-                <div class="legend-icon">🛠️</div>
+                <div class="legend-icon">{icon("wrench", 24, "#059669")}</div>
                 <div class="legend-text">
                     <h4>Maintainability (Maint.)</h4>
                     <p>Assesses code structure, readability, and ease of customization or extension.</p>
                 </div>
             </div>
             <div class="legend-item">
-                <div class="legend-icon">💰</div>
+                <div class="legend-icon">{icon("circle-dollar-sign", 24, "#d97706")}</div>
                 <div class="legend-text">
                     <h4>Cost-Awareness (Cost)</h4>
                     <p>Quantifies execution overhead (latency, compute, API costs) for efficiency optimization.</p>
@@ -640,12 +774,101 @@ def main():
         rows = [df.iloc[i:i+N_COLS] for i in range(0, len(df), N_COLS)]
 
         EVAL_CONFIG = {
-            "safety": {"icon": "🛡️", "label": "Safe", "full": "Safety"},
-            "completeness": {"icon": "🧩", "label": "Compl.", "full": "Completeness"},
-            "executability": {"icon": "🚀", "label": "Exec.", "full": "Executability"},
-            "maintainability": {"icon": "🛠️", "label": "Maint.", "full": "Maintainability"},
-            "cost_awareness": {"icon": "💰", "label": "Cost", "full": "Cost-Awareness"}
+            "safety": {"icon": icon("shield-check", 14, "currentColor"), "label": "Safe", "full": "Safety"},
+            "completeness": {"icon": icon("puzzle", 14, "currentColor"), "label": "Compl.", "full": "Completeness"},
+            "executability": {"icon": icon("zap", 14, "currentColor"), "label": "Exec.", "full": "Executability"},
+            "maintainability": {"icon": icon("wrench", 14, "currentColor"), "label": "Maint.", "full": "Maintainability"},
+            "cost_awareness": {"icon": icon("circle-dollar-sign", 14, "currentColor"), "label": "Cost", "full": "Cost-Awareness"}
         }
+
+        def _render_radar_svg(eval_dict):
+            """根据实际有数据的评价维度生成雷达图 SVG（动态适配缺失维度）"""
+            LEVEL_SCORE = {"Good": 3, "Average": 2, "Poor": 1}
+            KEY_LABEL = [
+                ("safety", "Safety"),
+                ("completeness", "Completeness"),
+                ("executability", "Executability"),
+                ("maintainability", "Maintainability"),
+                ("cost_awareness", "Cost"),
+            ]
+
+            # 只保留有评价数据的维度
+            active = []
+            for key, label in KEY_LABEL:
+                item = eval_dict.get(key) if isinstance(eval_dict, dict) else None
+                lvl = item.get("level", "") if isinstance(item, dict) else ""
+                score = LEVEL_SCORE.get(lvl, 0)
+                if score > 0:
+                    active.append((key, label, score))
+
+            N = len(active)
+            cx, cy = 110, 110
+            max_r = 75
+            grid_steps = 3
+
+            if N == 0:
+                # 没有任何评价数据，显示空环
+                return """<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:0 auto;">
+                    <circle cx="110" cy="110" r="75" fill="none" stroke="#f3f4f6" stroke-width="1"/>
+                    <circle cx="110" cy="110" r="50" fill="none" stroke="#f3f4f6" stroke-width="0.5"/>
+                    <circle cx="110" cy="110" r="25" fill="none" stroke="#f3f4f6" stroke-width="0.5"/>
+                    <text x="110" y="108" text-anchor="middle" font-size="10" fill="#d1d5db">No Eval</text>
+                    <text x="110" y="122" text-anchor="middle" font-size="10" fill="#d1d5db">Data</text>
+                </svg>"""
+
+            def _point(angle_deg, r):
+                rad = math.radians(angle_deg)
+                x = cx + r * math.cos(rad)
+                y = cy + r * math.sin(rad)
+                return f"{x:.1f},{y:.1f}"
+
+            angles = [-90 + i * (360 / N) for i in range(N)]
+
+            # Background grid
+            grid_polygons = ""
+            for step in range(1, grid_steps + 1):
+                r = max_r * step / grid_steps
+                pts = " ".join([_point(a, r) for a in angles])
+                grid_polygons += f'<polygon points="{pts}" fill="none" stroke="#e5e7eb" stroke-width="1"/>'
+
+            # Axis lines
+            axis_lines = ""
+            for a in angles:
+                x, y = _point(a, max_r).split(",")
+                axis_lines += f'<line x1="{cx}" y1="{cy}" x2="{x}" y2="{y}" stroke="#e5e7eb" stroke-width="0.5"/>'
+
+            # Data polygon
+            scores = [s for _, _, s in active]
+            data_pts = " ".join([_point(angles[i], max_r * scores[i] / grid_steps) for i in range(N)])
+            data_polygon = f'<polygon points="{data_pts}" fill="rgba(5,150,105,0.25)" stroke="#059669" stroke-width="1.5"/>'
+
+            # Data dots
+            dots = ""
+            for i in range(N):
+                pt = _point(angles[i], max_r * scores[i] / grid_steps)
+                dots += f'<circle cx="{pt.split(",")[0]}" cy="{pt.split(",")[1]}" r="3" fill="#059669"/>'
+
+            # Labels
+            labels_html = ""
+            for i, a in enumerate(angles):
+                lx, ly = _point(a, max_r + 18).split(",")
+                labels_html += f'<text x="{lx}" y="{ly}" text-anchor="middle" dominant-baseline="middle" font-size="9" fill="#6b7280">{active[i][1]}</text>'
+
+            # Level ring labels
+            ring_labels = ""
+            for step in [1, 2]:
+                r = max_r * step / grid_steps
+                lx, ly = _point(-90, r).split(",")
+                ring_labels += f'<text x="{lx}" y="{ly}" text-anchor="end" font-size="7" fill="#d1d5db" dx="-4">{["Poor","Average","Good"][step-1]}</text>'
+
+            return f"""<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:0 auto;">
+                {grid_polygons}
+                {axis_lines}
+                {data_polygon}
+                {dots}
+                {labels_html}
+                {ring_labels}
+            </svg>"""
 
         # 定义等级颜色 (背景色, 文字色)
         LEVEL_STYLES = {
@@ -721,7 +944,7 @@ def main():
         #                 <div>
         #                     <div class="card-header" style="display:flex; justify-content:space-between; align-items:start;">
         #                         <a href="{original_skill_url}" target="_blank" class="skill-title" title="{clean_name}">{clean_name}</a>
-        #                         <span class="star-badge">⭐ {row.get('stars', 0)}</span>
+        #                         <span class="star-badge">{icon("star", 14, "#d97706")} {row.get('stars', 0)}</span>
         #                     </div>
         #                     <div class="skill-desc">{clean_desc}</div>
         #                     <div style="margin-bottom:8px;">
@@ -731,7 +954,7 @@ def main():
         #                 <div class="skill-footer">
         #                     <div>👤 <a href="{author_url}" target="_blank" style="color:#666;">{clean_author}</a> </div>
         #                     <div>📅 {date_str} </div>
-        #                     <a href="{tracking_link}" target="_blank" style="text-decoration:none; color:#2563eb; font-weight:bold;">Download ⬇️</a>
+        #                     <a href="{tracking_link}" target="_blank" style="text-decoration:none; color:#2563eb; font-weight:bold;">Download {icon("download", 14, "#2563eb")}</a>
         #                 </div>
         #             </div>
         #             """
@@ -775,12 +998,18 @@ def main():
                     eval_section_html = f'<div style="margin-top:8px; margin-bottom:8px;">{eval_html_items}</div>' if eval_html_items else ""
 
                     # --- 3. Tags ---
+                    all_tags = row['tags'] if 'tags' in row and isinstance(row['tags'], list) else []
                     tags_html = ""
-                    if 'tags' in row and isinstance(row['tags'], list):
-                        for tag in row['tags'][:4]:
-                            tags_html += f'<span class="tag">{html.escape(str(tag).strip())}</span>'
-                    else:
+                    for tag in all_tags[:4]:
+                        tags_html += f'<span class="tag">{html.escape(str(tag).strip())}</span>'
+                    if not tags_html:
                         tags_html = '<span class="tag">No Tags</span>'
+
+                    full_tags_html = ""
+                    for tag in all_tags:
+                        full_tags_html += f'<span class="tag">{html.escape(str(tag).strip())}</span>'
+                    if not full_tags_html:
+                        full_tags_html = '<span class="tag">No Tags</span>'
 
                     # --- 4. Links ---
                     author_url = f"https://github.com/{clean_author}"
@@ -798,23 +1027,34 @@ def main():
                     if eval_section_html:
                         card_html = textwrap.dedent(f"""
                             <div class="skill-card">
-                                <div style="flex: 1;">
+                                <div style="flex: 1;" class="card-body-hover">
                                     <div class="card-header" style="display:flex; justify-content:space-between; align-items:start;">
                                         <a href="{original_skill_url}" target="_blank" class="skill-title" title="{clean_name}">{clean_name}</a>
-                                        <span class="star-badge">⭐ {row.get('stars', 0)}</span>
+                                        <span class="star-badge">{icon("star", 14, "#d97706")} {row.get('stars', 0)}</span>
                                     </div>
                                     <div class="skill-desc">{clean_desc}</div>
                                     <div style="margin-bottom:8px;">
                                         <span class="tag" style="background-color:#e0f2fe; color:#0369a1;">{clean_category}</span>{tags_html}
+                                    </div>
+                                    <div class="skill-detail-popup">
+                                        <div style="display:flex;gap:14px;align-items:flex-start;">
+                                            <div style="flex-shrink:0;">{_render_radar_svg(eval_data)}</div>
+                                            <div style="flex:1;min-width:0;">
+                                                <div class="popup-name" style="margin-top:4px;">{clean_name}</div>
+                                                <div class="popup-desc">{clean_desc}</div>
+                                            </div>
+                                        </div>
+                                        <div style="margin-bottom:8px;">{full_tags_html}</div>
+                                        <div class="popup-meta"><span>{icon("user", 12, "#6b7280")} {clean_author}</span><span>{icon("calendar", 12, "#6b7280")} {date_str}</span></div>
                                     </div>
                                 </div>
                                 <div class="skill-eval-bar">
                                     {eval_section_html}
                                 </div>
                                 <div class="skill-footer">
-                                    <div>👤 <a href="{author_url}" target="_blank" style="color:#666;">{clean_author}</a> </div>
-                                    <div>📅 {date_str} </div>
-                                    <a href="{tracking_link}" target="_blank" style="text-decoration:none; color:#2563eb; font-weight:bold;">Download ⬇️</a>
+                                    <div>{icon("user", 12, "#6b7280")} <a href="{author_url}" target="_blank" style="color:#666;">{clean_author}</a> </div>
+                                    <div>{icon("calendar", 12, "#6b7280")} {date_str} </div>
+                                    <a href="{tracking_link}" target="_blank" style="text-decoration:none; color:#2563eb; font-weight:bold;">Download {icon("download", 14, "#2563eb")}</a>
                                 </div>
                             </div>
                         """)
@@ -822,20 +1062,31 @@ def main():
                         # 如果没有评测数据，保持原有结构但不插入 eval_section_html
                         card_html = textwrap.dedent(f"""
                             <div class="skill-card">
-                                <div style="flex: 1;">
+                                <div style="flex: 1;" class="card-body-hover">
                                     <div class="card-header" style="display:flex; justify-content:space-between; align-items:start;">
                                         <a href="{original_skill_url}" target="_blank" class="skill-title" title="{clean_name}">{clean_name}</a>
-                                        <span class="star-badge">⭐ {row.get('stars', 0)}</span>
+                                        <span class="star-badge">{icon("star", 14, "#d97706")} {row.get('stars', 0)}</span>
                                     </div>
                                     <div class="skill-desc">{clean_desc}</div>
                                     <div style="margin-bottom:8px;">
                                         <span class="tag" style="background-color:#e0f2fe; color:#0369a1;">{clean_category}</span>{tags_html}
                                     </div>
+                                    <div class="skill-detail-popup">
+                                        <div style="display:flex;gap:14px;align-items:flex-start;">
+                                            <div style="flex-shrink:0;">{_render_radar_svg(eval_data)}</div>
+                                            <div style="flex:1;min-width:0;">
+                                                <div class="popup-name" style="margin-top:4px;">{clean_name}</div>
+                                                <div class="popup-desc">{clean_desc}</div>
+                                            </div>
+                                        </div>
+                                        <div style="margin-bottom:8px;">{full_tags_html}</div>
+                                        <div class="popup-meta"><span>{icon("user", 12, "#6b7280")} {clean_author}</span><span>{icon("calendar", 12, "#6b7280")} {date_str}</span></div>
+                                    </div>
                                 </div>
                                 <div class="skill-footer">
-                                    <div>👤 <a href="{author_url}" target="_blank" style="color:#666;">{clean_author}</a> </div>
-                                    <div>📅 {date_str} </div>
-                                    <a href="{tracking_link}" target="_blank" style="text-decoration:none; color:#2563eb; font-weight:bold;">Download ⬇️</a>
+                                    <div>{icon("user", 12, "#6b7280")} <a href="{author_url}" target="_blank" style="color:#666;">{clean_author}</a> </div>
+                                    <div>{icon("calendar", 12, "#6b7280")} {date_str} </div>
+                                    <a href="{tracking_link}" target="_blank" style="text-decoration:none; color:#2563eb; font-weight:bold;">Download {icon("download", 14, "#2563eb")}</a>
                                 </div>
                             </div>
                         """)
