@@ -1,0 +1,10 @@
+[client]
+# 这将隐藏“正在运行”的状态图标
+showErrorDetails = false
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"

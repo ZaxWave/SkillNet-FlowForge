@@ -2,22 +2,29 @@
 __pycache__/
 *.pyc
 *.pyo
+*.egg-info/
 
-# Streamlit
-.streamlit/
+# Virtual environment
+.venv/
+venv/
+
+# Streamlit secrets (contains API keys)
+.streamlit/secrets.toml
 
 # Downloaded skill packages (large data)
 SkillNet/skillnet-web-new/data/downloaded_package_skills/
 
-# User submitted data
+# Runtime data
+site_stats.json
 *.jsonl
 
-# Claude Code local config
+# Claude Code
 .claude/
+
+# IDE
+.vscode/
+.idea/
 
 # OS
 .DS_Store
 Thumbs.db
-
-# venv
-.venv/
