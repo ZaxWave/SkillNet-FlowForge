@@ -92,7 +92,7 @@ st.markdown(
 )
 
 # --- 3. Render Navbar ---
-render_navbar()
+render_navbar(active_page="coding")
 
 # --- 4. State Management ---
 if 'code_stage' not in st.session_state:

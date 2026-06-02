@@ -524,7 +524,7 @@ st.markdown(
 )
 
 # 2. 渲染导航栏
-render_navbar()
+render_navbar(active_page="docs")
 
 st.title(f"{icon('book-open', 28, '#0891b2')} SkillNet Docs")
 

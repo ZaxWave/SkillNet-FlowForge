@@ -156,6 +156,10 @@ st.markdown("""
     .skill-detail-popup .popup-meta span {
         margin-right: 10px;
     }
+    .card-body-hover:hover {
+        position: relative;
+        z-index: 99999;
+    }
     .card-body-hover:hover .skill-detail-popup {
         display: block;
     }
@@ -224,6 +228,24 @@ st.markdown("""
 
     div[data-testid="column"] { overflow: visible !important; }
     div[data-testid="stVerticalBlock"] { overflow: visible !important; }
+    div[data-testid="stHorizontalBlock"] { overflow: visible !important; }
+    section[data-testid="stMainBlock"] > div { overflow: visible !important; }
+
+    .skill-card:has(.card-body-hover:hover) {
+        position: relative;
+        z-index: 99999;
+    }
+
+    /* 分页按钮主题色 */
+    button[kind="primary"] {
+        background-color: #3b82f6 !important;
+        border-color: #3b82f6 !important;
+        color: white !important;
+    }
+    button[kind="primary"]:hover {
+        background-color: #2563eb !important;
+        border-color: #2563eb !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -440,71 +462,8 @@ def fetch_skills(page=1, page_size=20, search_text=None, search_mode="vector", m
             return pd.DataFrame(response.data), response.count
 
     except Exception as e:
-        st.info("数据库尚未配置，当前展示为演示数据。")
-        print(f"Supabase error (fallback to mock): {e}")
-        filtered = _filter_mock_skills(search_text, min_stars, category, sort_option)
-        start_p = (page - 1) * page_size
-        end_p = start_p + page_size
-        sliced = filtered[start_p:end_p]
-        return pd.DataFrame(sliced), len(filtered)
-
-# --- Mock 数据（Supabase 不可用时降级使用）---
-MOCK_SKILLS = [
-    {"skill_name": "AutoGPT-Planner", "stars": 1820, "category": "Development", "author": "SignificantGravitas", "tags": ["autonomous", "planning", "agent", "GPT"], "skill_description": "An autonomous AI agent that breaks down complex goals into manageable tasks, executes them sequentially, and learns from its mistakes using memory and reflection loops.", "skill_url": "https://github.com/SignificantGravitas/AutoGPT", "repo_url": "https://github.com/SignificantGravitas/AutoGPT", "skill_date": "2024-05-15", "evaluation": {"safety": {"level": "Poor", "reason": "Autonomous execution without sandbox"}, "completeness": {"level": "Good", "reason": "Covers all workflow stages"}, "executability": {"level": "Good", "reason": "Reliable task execution engine"}, "maintainability": {"level": "Average", "reason": "Plugin system needs refactoring"}, "cost_awareness": {"level": "Poor", "reason": "High token consumption per task"}}},
-    {"skill_name": "RAGFlow-Search", "stars": 950, "category": "AIGC", "author": "infiniflow", "tags": ["RAG", "search", "retrieval", "LLM"], "skill_description": "Deep document understanding and retrieval-augmented generation pipeline with layout parsing, chunking, and hybrid search for enterprise knowledge bases.", "skill_url": "https://github.com/infiniflow/ragflow", "repo_url": "https://github.com/infiniflow/ragflow", "skill_date": "2024-06-20", "evaluation": {}},
-    {"skill_name": "BioMed-Analyzer", "stars": 670, "category": "Science", "author": "biomed-ai", "tags": ["bioinformatics", "protein", "drug-discovery"], "skill_description": "A specialized skill suite for biomedical text mining, protein structure prediction, and drug-target interaction analysis powered by large language models.", "skill_url": "https://github.com/biomed-ai/biomed-analyzer", "repo_url": "https://github.com/biomed-ai/biomed-analyzer", "skill_date": "2024-04-10"},
-    {"skill_name": "CodeReview-AI", "stars": 1340, "category": "Development", "author": "codereview-hub", "tags": ["code-review", "PR", "static-analysis"], "skill_description": "Automated code review assistant that catches bugs, enforces style guides, suggests refactors, and generates PR summaries with contextual reasoning.", "skill_url": "https://github.com/codereview-hub/codereview-ai", "repo_url": "https://github.com/codereview-hub/codereview-ai", "skill_date": "2024-07-01"},
-    {"skill_name": "FinanceGPT-Reports", "stars": 480, "category": "Business", "author": "fin-ai-lab", "tags": ["finance", "reporting", "GPT", "analysis"], "skill_description": "Generate comprehensive financial reports, earnings summaries, and market analysis from raw data files and SEC filings using structured prompt chains.", "skill_url": "https://github.com/fin-ai-lab/financegpt", "repo_url": "https://github.com/fin-ai-lab/financegpt", "skill_date": "2024-03-25"},
-    {"skill_name": "Security-Pentest-Kit", "stars": 2100, "category": "Security", "author": "sec-ops", "tags": ["pentest", "vulnerability", "security", "automation"], "skill_description": "Automated penetration testing toolkit that performs reconnaissance, vulnerability scanning, and exploit suggestion using AI-guided attack paths.", "skill_url": "https://github.com/sec-ops/pentest-kit", "repo_url": "https://github.com/sec-ops/pentest-kit", "skill_date": "2024-08-12"},
-    {"skill_name": "MultiModal-Vision-Analyzer", "stars": 890, "category": "AIGC", "author": "vision-ai-collective", "tags": ["vision", "multimodal", "OCR", "image"], "skill_description": "Analyze images, diagrams, and screenshots with multimodal LLMs to extract structured information, generate captions, and answer visual queries.", "skill_url": "https://github.com/vision-ai/multimodal-analyzer", "repo_url": "https://github.com/vision-ai/multimodal-analyzer", "skill_date": "2024-05-28"},
-    {"skill_name": "DataPipeline-ETL-Builder", "stars": 560, "category": "Productivity", "author": "dataeng-co", "tags": ["ETL", "pipeline", "data-engineering", "SQL"], "skill_description": "Build, test, and deploy data pipelines using natural language descriptions. Generates SQL, Python transformations, and Airflow DAGs.", "skill_url": "https://github.com/dataeng-co/etl-builder", "repo_url": "https://github.com/dataeng-co/etl-builder", "skill_date": "2024-06-15"},
-    {"skill_name": "UI-Test-Generator", "stars": 720, "category": "Testing", "author": "qa-automate", "tags": ["testing", "UI", "Playwright", "Selenium"], "skill_description": "Generate end-to-end UI tests from natural language scenarios. Supports Playwright, Selenium, and Cypress with self-healing locators.", "skill_url": "https://github.com/qa-automate/ui-test-gen", "repo_url": "https://github.com/qa-automate/ui-test-gen", "skill_date": "2024-04-22", "evaluation": {"robustness": {"level": "A", "reason": "Handles complex dynamic UIs reliably"}, "usability": {"level": "B", "reason": "Setup requires some configuration"}}},
-    {"skill_name": "Scientific-Literature-Review-Extractor", "stars": 1100, "category": "Science", "author": "papermind-ai", "tags": ["literature-review", "paper", "research", "summarization"], "skill_description": "Automated literature review tool that searches across arXiv and PubMed, extracts key findings, identifies research gaps, and generates structured survey drafts with comprehensive citation management and cross-domain synthesis.", "skill_url": "https://github.com/papermind-ai/lit-review", "repo_url": "https://github.com/papermind-ai/lit-review", "skill_date": "2024-07-18", "evaluation": {"safety": {"level": "Good", "reason": "Read-only operations, no side effects"}, "completeness": {"level": "Good", "reason": "Covers major search engines and formats"}, "executability": {"level": "Average", "reason": "Occasional timeout on large corpuses"}, "maintainability": {"level": "Good", "reason": "Clean modular pipeline with clear interfaces"}, "cost_awareness": {"level": "Average", "reason": "LLM calls optimized but still significant"}}},
-    {"skill_name": "LegalDoc-Contracts-Parser", "stars": 380, "category": "Business", "author": "legal-ai-lab", "tags": ["legal", "contracts", "NLP", "compliance"], "skill_description": "Parse, analyze, and redline legal contracts automatically. Extract key clauses, identify risks, and generate negotiation summaries.", "skill_url": "https://github.com/legal-ai-lab/contract-parser", "repo_url": "https://github.com/legal-ai-lab/contract-parser", "skill_date": "2024-02-14"},
-    {"skill_name": "VoiceToAction-Assistant", "stars": 640, "category": "Productivity", "author": "voice-ai-team", "tags": ["voice", "speech-to-text", "commands", "productivity"], "skill_description": "Natural language voice command system that controls desktop applications, automates workflows, and integrates with calendar/email/task managers.", "skill_url": "https://github.com/voice-ai/voice-to-action", "repo_url": "https://github.com/voice-ai/voice-to-action", "skill_date": "2024-08-05"},
-    {"skill_name": "GameNPC-Dialogue-Engine", "stars": 920, "category": "AIGC", "author": "gamedev-ai-studio", "tags": ["game", "NPC", "dialogue", "interactive"], "skill_description": "Procedural NPC dialogue generation with personality modeling, memory of past interactions, and dynamic quest branching using LLM-powered conversations.", "skill_url": "https://github.com/gamedev-ai/npc-dialogue", "repo_url": "https://github.com/gamedev-ai/npc-dialogue", "skill_date": "2024-06-30"},
-    {"skill_name": "Math-Theorem-Prover", "stars": 1550, "category": "Science", "author": "formal-methods-lab", "tags": ["math", "theorem-proving", "Lean", "Coq"], "skill_description": "AI-assisted mathematical theorem proving that translates natural language proofs into formal Lean/Coq statements and verifies correctness.", "skill_url": "https://github.com/formal-methods/math-prover", "repo_url": "https://github.com/formal-methods/math-prover", "skill_date": "2024-05-10"},
-    {"skill_name": "DevOps-Incident-Responder", "stars": 830, "category": "Development", "author": "sre-toolkit", "tags": ["DevOps", "incident", "monitoring", "runbook"], "skill_description": "Automated incident response skill that reads alerts, diagnoses root causes from logs and metrics, and executes pre-approved runbooks for common failures.", "skill_url": "https://github.com/sre-toolkit/incident-responder", "repo_url": "https://github.com/sre-toolkit/incident-responder", "skill_date": "2024-07-25"},
-    {"skill_name": "SmartHome-Routine-Optimizer", "stars": 290, "category": "Lifestyle", "author": "iot-ai-lab", "tags": ["IoT", "home-automation", "routine", "energy"], "skill_description": "Optimize smart home routines based on occupancy patterns, energy pricing, and weather forecasts to balance comfort and efficiency.", "skill_url": "https://github.com/iot-ai-lab/smarthome-opt", "repo_url": "https://github.com/iot-ai-lab/smarthome-opt", "skill_date": "2024-03-05"},
-    {"skill_name": "PRD-to-Code-Generator", "stars": 1780, "category": "Development", "author": "devflow-ai", "tags": ["PRD", "code-generation", "full-stack", "prototype"], "skill_description": "Transform product requirement documents into working full-stack code scaffolds with API definitions, database schemas, and frontend components in minutes.", "skill_url": "https://github.com/devflow-ai/prd-to-code", "repo_url": "https://github.com/devflow-ai/prd-to-code", "skill_date": "2024-08-20"},
-    {"skill_name": "Climate-Data-Forecaster", "stars": 510, "category": "Science", "author": "climate-ml", "tags": ["climate", "forecast", "time-series", "geospatial"], "skill_description": "Analyze climate datasets, generate regional forecasts, detect anomalies, and produce visualization-ready reports for environmental research.", "skill_url": "https://github.com/climate-ml/forecaster", "repo_url": "https://github.com/climate-ml/forecaster", "skill_date": "2024-04-30"},
-    {"skill_name": "API-Documentation-Writer", "stars": 610, "category": "Documentation", "author": "docgen-ai", "tags": ["API", "docs", "OpenAPI", "markdown"], "skill_description": "Automatically generate and maintain API documentation from code annotations, OpenAPI specs, and actual request traces with usage examples.", "skill_url": "https://github.com/docgen-ai/api-writer", "repo_url": "https://github.com/docgen-ai/api-writer", "skill_date": "2024-05-22"},
-    {"skill_name": "SOC2-Compliance-Checker", "stars": 440, "category": "Security", "author": "compliance-bot", "tags": ["SOC2", "compliance", "audit", "checklist"], "skill_description": "Automated SOC2 compliance assessment tool that checks cloud infrastructure, access controls, and data handling against SOC2 criteria.", "skill_url": "https://github.com/compliance-bot/soc2-checker", "repo_url": "https://github.com/compliance-bot/soc2-checker", "skill_date": "2024-06-08"},
-    {"skill_name": "Education-Quiz-Generator", "stars": 750, "category": "Research", "author": "edtech-ai-group", "tags": ["education", "quiz", "assessment", "learning"], "skill_description": "Generate adaptive quizzes and assessments from any learning material with difficulty calibration, hint generation, and knowledge gap analysis.", "skill_url": "https://github.com/edtech-ai/quiz-gen", "repo_url": "https://github.com/edtech-ai/quiz-gen", "skill_date": "2024-07-12"},
-    {"skill_name": "Customer-Support-Triage", "stars": 530, "category": "Business", "author": "support-ai-co", "tags": ["support", "triage", "ticketing", "sentiment"], "skill_description": "Intelligent customer support ticket triage that categorizes, prioritizes, and drafts initial responses based on issue type, urgency, and customer history.", "skill_url": "https://github.com/support-ai/triage-bot", "repo_url": "https://github.com/support-ai/triage-bot", "skill_date": "2024-05-05"},
-    {"skill_name": "Database-Schema-Designer", "stars": 870, "category": "Development", "author": "dbtools-ai", "tags": ["database", "schema", "SQL", "ERD"], "skill_description": "Design normalized database schemas from natural language requirements with migration scripts, indexes, and relationship diagrams automatically generated.", "skill_url": "https://github.com/dbtools-ai/schema-designer", "repo_url": "https://github.com/dbtools-ai/schema-designer", "skill_date": "2024-08-15"},
-    {"skill_name": "Social-Media-Content-Planner", "stars": 350, "category": "Lifestyle", "author": "social-ai-studio", "tags": ["social-media", "content", "scheduling", "analytics"], "skill_description": "Plan, draft, and schedule social media content across platforms with AI-generated posts, hashtag optimization, and engagement prediction.", "skill_url": "https://github.com/social-ai/content-planner", "repo_url": "https://github.com/social-ai/content-planner", "skill_date": "2024-04-18"},
-    {"skill_name": "ML-Experiment-Tracker", "stars": 960, "category": "Research", "author": "mlops-team", "tags": ["ML", "experiment", "tracking", "hyperparameter"], "skill_description": "Track ML experiments with automatic logging of parameters, metrics, and artifacts. Compare runs, detect regressions, and generate experiment reports.", "skill_url": "https://github.com/mlops-team/exp-tracker", "repo_url": "https://github.com/mlops-team/exp-tracker", "skill_date": "2024-06-25"},
-    {"skill_name": "Competitive-Intel-Analyzer", "stars": 410, "category": "Business", "author": "strat-ai", "tags": ["competitive", "market", "analysis", "benchmarking"], "skill_description": "Gather and analyze competitor intelligence from public sources, generate SWOT analyses, feature comparison matrices, and market positioning reports.", "skill_url": "https://github.com/strat-ai/competitive-intel", "repo_url": "https://github.com/strat-ai/competitive-intel", "skill_date": "2024-03-20"},
-    {"skill_name": "Accessibility-Auditor", "stars": 580, "category": "Testing", "author": "a11y-tools", "tags": ["accessibility", "WCAG", "audit", "a11y"], "skill_description": "Automated accessibility audit for web applications checking WCAG 2.1 compliance, generating fix suggestions with code snippets for each violation found.", "skill_url": "https://github.com/a11y-tools/auditor", "repo_url": "https://github.com/a11y-tools/auditor", "skill_date": "2024-07-08"},
-    {"skill_name": "Anomaly-Detection-Pipeline", "stars": 780, "category": "Data & Research", "author": "anomaly-ml", "tags": ["anomaly", "detection", "time-series", "monitoring"], "skill_description": "Flexible anomaly detection pipeline for time-series data with multiple algorithms, auto-thresholding, alert routing, and root cause analysis dashboards.", "skill_url": "https://github.com/anomaly-ml/pipeline", "repo_url": "https://github.com/anomaly-ml/pipeline", "skill_date": "2024-06-12"},
-    {"skill_name": "Meeting-Summarizer-Pro", "stars": 1050, "category": "Productivity", "author": "meet-ai", "tags": ["meeting", "transcription", "summary", "action-items"], "skill_description": "Real-time meeting transcription and summarization that extracts action items, decisions, and key points with speaker attribution and follow-up scheduling.", "skill_url": "https://github.com/meet-ai/summarizer-pro", "repo_url": "https://github.com/meet-ai/summarizer-pro", "skill_date": "2024-08-01"},
-]
-
-def _filter_mock_skills(search_text=None, min_stars=0, category=None, sort_option="Stars"):
-    """在 mock 数据上执行筛选、排序、分页"""
-    import copy
-    data = copy.deepcopy(MOCK_SKILLS)
-
-    if search_text:
-        st_lower = search_text.lower()
-        data = [s for s in data if
-                st_lower in s["skill_name"].lower()
-                or st_lower in s["skill_description"].lower()
-                or any(st_lower in t.lower() for t in s.get("tags", []))]
-
-    if min_stars > 0:
-        data = [s for s in data if s["stars"] >= min_stars]
-
-    if category and category not in ["All", "Featured"]:
-        data = [s for s in data if s["category"] == category]
-
-    if sort_option == "Stars":
-        data.sort(key=lambda s: s["stars"], reverse=True)
-    else:
-        data.sort(key=lambda s: s["skill_date"], reverse=True)
-
-    return data
+        st.error(f"查询出错: {e}")
+        return pd.DataFrame(), 0
 
 
 # --- 分页回调 ---
@@ -513,7 +472,7 @@ def change_page(new_page):
 
 # --- 主逻辑 ---
 def main():
-    render_navbar()
+    render_navbar(active_page="resources")
 
     if 'page' not in st.session_state:
         st.session_state.page = 1

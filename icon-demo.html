@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillNet Icon Demo — Emoji vs Lucide SVG</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f8f9fa;
+  color: #111827;
+  padding: 40px;
+}
+h1 { font-size: 28px; margin-bottom: 4px; }
+h2 { font-size: 16px; font-weight: 600; margin: 32px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #e5e7eb; }
+.sub { color: #6b7280; font-size: 14px; margin-bottom: 32px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.15s;
+}
+.card:hover { border-color: #059669; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+
+.emoji-pair { display: flex; flex-direction: column; align-items: center; gap: 6px; min-width: 56px; }
+.emoji-old { font-size: 28px; opacity: 0.5; }
+.emoji-new { font-size: 24px; }
+.arrow { color: #9ca3af; font-size: 11px; }
+
+.icon-wrap { display: flex; align-items: center; justify-content: center; }
+.icon-wrap svg { display: block; }
+
+.label { font-size: 13px; font-weight: 500; color: #374151; }
+.context { font-size: 11px; color: #9ca3af; margin-top: 2px; }
+
+/* Lucide SVG inline — stroke inherited from currentColor */
+.lucide { stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+
+/* Feature card preview */
+.feature-row { display: flex; gap: 12px; flex-wrap: wrap; }
+.feature-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px 24px;
+  width: 180px;
+  text-align: center;
+  transition: all 0.15s;
+}
+.feature-card:hover { transform: translateY(-2px); border-color: #059669; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.feature-icon { margin-bottom: 10px; display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; border-radius: 10px; }
+.feature-icon.green { background: #ecfdf5; color: #059669; }
+.feature-icon.blue  { background: #eff6ff; color: #2563eb; }
+.feature-icon.purple { background: #f5f3ff; color: #7c3aed; }
+.feature-icon.amber { background: #fffbeb; color: #d97706; }
+.feature-icon.rose  { background: #fff1f2; color: #e11d48; }
+.feature-icon.teal  { background: #f0fdfa; color: #0d9488; }
+.feature-title { font-weight: 700; font-size: 14px; color: #111827; }
+.feature-desc { font-size: 12px; color: #6b7280; margin-top: 4px; line-height: 1.4; }
+
+/* Evaluation badges */
+.eval-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.eval-badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 4px 10px; border-radius: 6px;
+  font-size: 12px; font-weight: 500;
+}
+.eval-green  { background: #dcfce7; color: #166534; }
+.eval-yellow { background: #fef9c3; color: #854d0e; }
+.eval-red    { background: #fee2e2; color: #991b1b; }
+
+/* Comparison table */
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid #e5e7eb; }
+th { font-size: 11px; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.5px; }
+td { font-size: 14px; }
+td emoji { font-size: 22px; }
+td svg { vertical-align: middle; }
+</style>
+</head>
+<body>
+
+<h1>SkillNet Icon Comparison</h1>
+<p class="sub">Current emoji vs proposed Lucide SVG icons — render identical across all platforms</p>
+
+<!-- ==================== NAV / FEATURE CARDS ==================== -->
+<h2>1. Feature / Navigation Cards</h2>
+<div class="feature-row">
+  <div class="feature-card">
+    <div class="feature-icon green"><svg width="24" height="24" viewBox="0 0 24 24" class="lucide" stroke="currentColor"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></div>
+    <div class="feature-title">Collection</div>
+    <div class="feature-desc">Bundled Skill Sets</div>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon blue"><svg width="24" height="24" viewBox="0 0 24 24" class="lucide" stroke="currentColor"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+    <div class="feature-title">Resource</div>
+    <div class="feature-desc">Curated Repository</div>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon purple"><svg width="24" height="24" viewBox="0 0 24 24" class="lucide" stroke="currentColor"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5A1.5 1.5 0 0 1 5 20.5"/><path d="M9 2v20"/></svg></div>
+    <div class="feature-title">Docs</div>
+    <div class="feature-desc">Developer Guides</div>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon amber"><svg width="24" height="24" viewBox="0 0 24 24" class="lucide" stroke="currentColor"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg></div>
+    <div class="feature-title">Coding</div>
+    <div class="feature-desc">Auto Coding Agent</div>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon rose"><svg width="24" height="24" viewBox="0 0 24 24" class="lucide" stroke="currentColor"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/><path d="M5.52 16h12.96"/></svg></div>
+    <div class="feature-title">Science</div>
+    <div class="feature-desc">Autonomous Discovery</div>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon teal"><svg width="24" height="24" viewBox="0 0 24 24" class="lucide" stroke="currentColor"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/></svg></div>
+    <div class="feature-title">Ontology</div>
+    <div class="feature-desc">Skill Taxonomy</div>
+  </div>
+</div>
+
+<!-- ==================== EVALUATION METRICS ==================== -->
+<h2>2. Evaluation Metrics (Radar Chart)</h2>
+<div class="eval-row">
+  <span class="eval-badge eval-green"><svg width="16" height="16" viewBox="0 0 24 24" class="lucide" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Safe</span>
+  <span class="eval-badge eval-green"><svg width="16" height="16" viewBox="0 0 24 24" class="lucide" stroke="currentColor"><path d="M12 2a5 5 0 0 1 5 5v1a5 5 0 0 1-5 5 5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"/><path d="M3 12h2a7 7 0 0 0 14 0h2"/><path d="M8 22h8"/><path d="M12 17v5"/></svg> Compl.</span>
+  <span class="eval-badge eval-yellow"><svg width="16" height="16" viewBox="0 0 24 24" class="lucide" stroke="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Exec.</span>
+  <span class="eval-badge eval-green"><svg width="16" height="16" viewBox="0 0 24 24" class="lucide" stroke="currentColor"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg> Maint.</span>
+  <span class="eval-badge eval-red"><svg width="16" height="16" viewBox="0 0 24 24" class="lucide" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><line x1="12" y1="18" x2="12" y2="22"/></svg> Cost</span>
+</div>
+
+<!-- ==================== UI ELEMENTS ==================== -->
+<h2>3. UI Elements</h2>
+<div class="grid">
+  <div class="card">
+    <div class="emoji-pair"><span class="emoji-old">⭐</span><span class="arrow">→</span><span class="icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#d97706"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span></div>
+    <div><div class="label">Stars</div><div class="context">Skill ratings, popularity</div></div>
+  </div>
+  <div class="card">
+    <div class="emoji-pair"><span class="emoji-old">⬇️</span><span class="arrow">→</span><span class="icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#2563eb"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span></div>
+    <div><div class="label">Download</div><div class="context">Package download, install</div></div>
+  </div>
+  <div class="card">
+    <div class="emoji-pair"><span class="emoji-old">🔗</span><span class="arrow">→</span><span class="icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#059669"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span></div>
+    <div><div class="label">External Link</div><div class="context">GitHub, arXiv, references</div></div>
+  </div>
+  <div class="card">
+    <div class="emoji-pair"><span class="emoji-old">👤</span><span class="arrow">→</span><span class="icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#374151"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span></div>
+    <div><div class="label">Author</div><div class="context">Skill creator attribution</div></div>
+  </div>
+  <div class="card">
+    <div class="emoji-pair"><span class="emoji-old">📅</span><span class="arrow">→</span><span class="icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#374151"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span></div>
+    <div><div class="label">Date</div><div class="context">Publish / update date</div></div>
+  </div>
+  <div class="card">
+    <div class="emoji-pair"><span class="emoji-old">📊</span><span class="arrow">→</span><span class="icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#7c3aed"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></span></div>
+    <div><div class="label">Charts / Figures</div><div class="context">Results, statistics</div></div>
+  </div>
+  <div class="card">
+    <div class="emoji-pair"><span class="emoji-old">🔍</span><span class="arrow">→</span><span class="icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#374151"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span></div>
+    <div><div class="label">Search</div><div class="context">Filter, find skills</div></div>
+  </div>
+  <div class="card">
+    <div class="emoji-pair"><span class="emoji-old">⚙️</span><span class="arrow">→</span><span class="icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#374151"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></span></div>
+    <div><div class="label">Settings</div><div class="context">Config, preferences</div></div>
+  </div>
+</div>
+
+<!-- ==================== FULL TABLE ==================== -->
+<h2>4. Complete Mapping</h2>
+<table>
+<tr><th>Context</th><th>Current</th><th>Proposed</th><th></th><th>Lucide Name</th></tr>
+<tr><td>Collection</td><td><emoji>📦</emoji></td><td><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#059669"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></td><td>→</td><td>package</td></tr>
+<tr><td>Resource</td><td><emoji>🕸️</emoji></td><td><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#2563eb"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></td><td>→</td><td>database</td></tr>
+<tr><td>Docs</td><td><emoji>📚</emoji></td><td><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#7c3aed"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5A1.5 1.5 0 0 1 5 20.5"/><path d="M9 2v20"/></svg></td><td>→</td><td>book-open</td></tr>
+<tr><td>Coding</td><td><emoji>👨🏻‍💻</emoji></td><td><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#d97706"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg></td><td>→</td><td>terminal</td></tr>
+<tr><td>Science</td><td><emoji>🔬</emoji></td><td><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#e11d48"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/><path d="M5.52 16h12.96"/></svg></td><td>→</td><td>flask-conical</td></tr>
+<tr><td>Ontology</td><td><emoji>🏛️</emoji></td><td><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#0d9488"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/></svg></td><td>→</td><td>grid-3x3</td></tr>
+<tr><td>Safety</td><td><emoji>🛡️</emoji></td><td><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#166534"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></td><td>→</td><td>shield-check</td></tr>
+<tr><td>Completeness</td><td><emoji>🧩</emoji></td><td><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#166534"><path d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 1 0-3.214 3.214c.446.166.855.497.925.968a.979.979 0 0 1-.276.837l-1.61 1.611c-.47.47-1.087.706-1.704.706s-1.233-.235-1.704-.706l-1.568-1.568a1.026 1.026 0 0 0-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 1 1-3.237-3.237c.464-.18.894-.527.967-1.02a1.026 1.026 0 0 0-.289-.877l-1.568-1.568A2.412 2.412 0 0 1 4 12c0-.617.236-1.234.706-1.704L6.317 8.68a.98.98 0 0 1 .837-.276c.47.07.802.48.968.925a2.501 2.501 0 1 1 3.214-3.214c-.166-.446-.497-.855-.925-.968a.979.979 0 0 1 .276-.837l1.611-1.611A2.412 2.412 0 0 1 14.002 2c.617 0 1.234.236 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.968a2.5 2.5 0 1 1 3.237 3.237c-.464.18-.894.527-.968 1.02Z"/></svg></td><td>→</td><td>puzzle</td></tr>
+<tr><td>Execution</td><td><emoji>🚀</emoji></td><td><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#854d0e"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></td><td>→</td><td>zap</td></tr>
+<tr><td>Maintainability</td><td><emoji>🛠️</emoji></td><td><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#166534"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></td><td>→</td><td>wrench</td></tr>
+<tr><td>Cost</td><td><emoji>💰</emoji></td><td><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#991b1b"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><line x1="12" y1="18" x2="12" y2="22"/></svg></td><td>→</td><td>circle-dollar-sign</td></tr>
+<tr><td>Star</td><td><emoji>⭐</emoji></td><td><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#d97706"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></td><td>→</td><td>star</td></tr>
+<tr><td>Download</td><td><emoji>⬇️</emoji></td><td><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#2563eb"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></td><td>→</td><td>download</td></tr>
+<tr><td>Link</td><td><emoji>🔗</emoji></td><td><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#059669"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></td><td>→</td><td>external-link</td></tr>
+<tr><td>Author</td><td><emoji>👤</emoji></td><td><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#374151"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></td><td>→</td><td>user</td></tr>
+<tr><td>Charts</td><td><emoji>📊</emoji></td><td><svg width="22" height="22" viewBox="0 0 24 24" class="lucide" stroke="#7c3aed"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></td><td>→</td><td>bar-chart-3</td></tr>
+</table>
+
+<p style="margin-top: 32px; color: #9ca3af; font-size: 12px;">
+  All SVG icons from <a href="https://lucide.dev" style="color: #059669;">Lucide</a> — MIT licensed, stroke‑based, consistent 24px grid.
+  No dependencies, inline SVG. Renders identical on all platforms.
+</p>
+
+</body>
+</html>

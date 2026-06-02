@@ -327,7 +327,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-render_navbar()
+render_navbar(active_page="science")
 
 # --- 2. State Management ---
 if 'stage' not in st.session_state:

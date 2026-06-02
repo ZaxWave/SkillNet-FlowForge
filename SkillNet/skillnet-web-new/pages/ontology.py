@@ -277,8 +277,13 @@
 
 import streamlit as st
 from utils import render_navbar
+from icon_helper import icon
 from PIL import Image
 import os
+from pathlib import Path
+
+_HERE = Path(__file__).resolve().parent
+_PROJECT = _HERE.parent
 
 # 1. 页面配置
 st.set_page_config(
@@ -365,7 +370,7 @@ st.markdown(
 )
 
 # 2. 渲染导航栏
-render_navbar()
+render_navbar(active_page="ontology")
 
 # 3. 页面内容
 
@@ -375,7 +380,7 @@ render_navbar()
 top_col1, top_col2 = st.columns([4, 4], gap="large")
 
 with top_col1:
-    st.title("🏛️ Skill Ontology")
+    st.markdown(f"<h1 style='font-size:2.5rem;font-weight:700;'>{icon('grid-3x3', 28, '#1f77b4')} Skill Ontology</h1>", unsafe_allow_html=True)
     st.write("") 
     st.markdown(
         """
@@ -388,12 +393,14 @@ with top_col1:
     )
     st.write("")
     st.write("")
-    st.info("💡 **Ontology in Action**: When a user queries for a task, SkillNet traverses this graph to identify the necessary collections and skills to construct a capable agent.")
+    st.markdown(f"""<div style="background-color:#f0f9ff;border-left:4px solid #3b82f6;padding:12px 16px;border-radius:6px;font-size:0.95rem;color:#1e3a5f;">
+    {icon('zap', 16, '#f59e0b')} <b>Ontology in Action</b>: When a user queries for a task, SkillNet traverses this graph to identify the necessary collections and skills to construct a capable agent.
+    </div>""", unsafe_allow_html=True)
 
 with top_col2:
-    image_path = "images/ontology.png"
-    if os.path.exists(image_path):
-        st.image(image_path, caption="Figure: The Skill Ontology for SkillNet", width='stretch')
+    image_path = _PROJECT / "images" / "ontology.png"
+    if image_path.exists():
+        st.image(str(image_path), caption="Figure: The Skill Ontology for SkillNet", width='stretch')
     else:
         st.warning(f"Image placeholder (File not found: {image_path})")
 
@@ -407,16 +414,16 @@ col1, col2, col3 = st.columns(3, gap="medium")
 
 # --- Layer 1: Taxonomy ---
 with col1:
-    st.markdown("""
+    st.markdown(f"""
     <div class="skill-card">
-        <h3>1. Skill Taxonomy</h3>
+        <h3>{icon('code-2', 18, '#1f77b4')} 1. Skill Taxonomy</h3>
         <div class="caption">The Abstraction Layer</div>
         <p>The top layer defines the broad categorization and detailed tags of skills. It organizes capabilities into categories such as:</p>
         <ul>
-            <li>💻 Development, AIGC, Testing, Security</li>
-            <li>🔬 Research, Science</li>
-            <li>🏢 Business, Productivity</li>
-            <li>🏠 Lifestyle</li>
+            <li>{icon('code-2', 14, '#6b7280')} Development, AIGC, Testing, Security</li>
+            <li>{icon('flask-conical', 14, '#6b7280')} Research, Science</li>
+            <li>{icon('bar-chart-3', 14, '#6b7280')} Business, Productivity</li>
+            <li>{icon('heart', 14, '#6b7280')} Lifestyle</li>
         </ul>
         <br>
         <small style="color:#999">Purpose: Classification & Vocabulary</small>
@@ -425,9 +432,9 @@ with col1:
 
 # --- Layer 2: Relation Graph ---
 with col2:
-    st.markdown("""
+    st.markdown(f"""
     <div class="skill-card">
-        <h3>2. Skill Relation Graph</h3>
+        <h3>{icon('link', 18, '#1f77b4')} 2. Skill Relation Graph</h3>
         <div class="caption">The Semantic Layer</div>
         <p>The middle layer instantiates specific skills and defines how they interact. It maps relationships using edges like:</p>
         <ul>
@@ -443,16 +450,16 @@ with col2:
 
 # --- Layer 3: Package Library ---
 with col3:
-    st.markdown("""
+    st.markdown(f"""
     <div class="skill-card">
-        <h3>3. Skill Collection</h3>
+        <h3>{icon('package', 18, '#1f77b4')} 3. Skill Collection</h3>
         <div class="caption">The Execution Layer</div>
         <p>Groups related skills into deployable units. These are the actual functional toolkits agents load at runtime. Examples:</p>
         <ul>
-            <li>📦 react-nextjs-fullstack</li>
-            <li>📊 data-science-viz</li>
-            <li>🧪 e2e-browser-testing</li>
-            <li>🔒 security-audit-tools</li>
+            <li>{icon('package', 14, '#6b7280')} react-nextjs-fullstack</li>
+            <li>{icon('bar-chart-3', 14, '#6b7280')} data-science-viz</li>
+            <li>{icon('flask-conical', 14, '#6b7280')} e2e-browser-testing</li>
+            <li>{icon('shield-check', 14, '#6b7280')} security-audit-tools</li>
         </ul>
         <br>
         <small style="color:#999">Purpose: Deployment & Execution</small>

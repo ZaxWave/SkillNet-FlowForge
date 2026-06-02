@@ -430,15 +430,21 @@ def get_base64_image(path):
 #     <div style="height: 2px;"></div>
 #     """, unsafe_allow_html=True)
 
-def render_navbar():
-    # --- 图片处理逻辑保持不变 ---
-    logo_path = "./images/skillnet.png"
+_HERE = Path(__file__).resolve().parent
+_IMAGES = _HERE / "images"
+
+def render_navbar(active_page=None):
+    # --- 图片处理逻辑 ---
+    logo_path = _IMAGES / "skillnet.png"
     logo_base64 = get_base64_image(logo_path)
     logo_src = f"data:image/png;base64,{logo_base64}" if logo_base64 else ""
-    openkg_path = "./images/openkg.png"
+    openkg_path = _IMAGES / "openkg.png"
     openkg_base64 = get_base64_image(openkg_path)
     openkg_src = f"data:image/png;base64,{openkg_base64}" if openkg_base64 else ""
-    # -------------------------
+    # --------------------
+
+    def _active(p):
+        return "active" if active_page == p else ""
 
     st.markdown(f"""
     <style>
@@ -488,10 +494,19 @@ def render_navbar():
             color: #6b7280;
             text-decoration: none;
             transition: color 0.2s;
-            /* 增加一点上下内边距，增加鼠标交互面积 */
-            padding: 10px 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
         }}
         .nav-left a.nav-link:hover {{ color: #111827; }}
+
+        /* Active page indicator — full-height subtle bar */
+        .nav-left a.nav-link.active {{
+            color: #111827;
+            background: rgba(147,197,253,0.10);
+            box-shadow: inset 0 -2px 0 0 rgba(147,197,253,0.40);
+        }}
 
         /* ========== 修复核心：下拉菜单样式 ========== */
 
@@ -583,20 +598,20 @@ def render_navbar():
             <a href="/" target="_self" class="logo-link-wrapper">
                 <img src="{logo_src}" alt="SkillNet Logo" class="nav-logo-img">
             </a>
-            <a href="/" target="_self" class="nav-link">Home</a>
-            <a href="ontology" target="_self" class="nav-link">Ontology</a>
-            <a href="resources" target="_self" class="nav-link">Resource</a>
-            <a href="package" target="_self" class="nav-link">Collection</a>
-            <a href="skillfabric" target="_self" class="nav-link">Fabric</a >
-            <a href="skillgym" target="_self" class="nav-link">Gyms</a >
+            <a href="/" target="_self" class="nav-link {_active('/')}">Home</a>
+            <a href="ontology" target="_self" class="nav-link {_active('ontology')}">Ontology</a>
+            <a href="resources" target="_self" class="nav-link {_active('resources')}">Resource</a>
+            <a href="package" target="_self" class="nav-link {_active('package')}">Collection</a>
+            <a href="skillfabric" target="_self" class="nav-link {_active('skillfabric')}">Fabric</a>
+            <a href="skillgym" target="_self" class="nav-link {_active('skillgym')}">Gyms</a>
             <div class="dropdown">
                 <button class="dropbtn">Application&nbsp;<small>&#9662;</small></button>
                 <div class="dropdown-content">
-                    <a href="science" target="_self">Science</a>
-                    <a href="coding" target="_self">Coding</a>
+                    <a href="science" target="_self" class="{_active('science')}">Science</a>
+                    <a href="coding" target="_self" class="{_active('coding')}">Coding</a>
                 </div>
             </div>
-            <a href="docs" target="_self" class="nav-link">Docs</a>
+            <a href="docs" target="_self" class="nav-link {_active('docs')}">Docs</a>
         </div>
         <div class="nav-right">
             <a href="http://openkg.cn" target="_blank" class="logo-link-wrapper" title="Visit OpenKG.CN">       
@@ -628,25 +643,25 @@ def render_logos():
 
     # 本地图片列表
     logos = [
-        {"name": "Zhejiang University", "path": "./images/zju.png"},
-        {"name": "Tongji University", "path": "./images/tongji.png"},
-        {"name": "Southeast University", "path": "./images/seu.png"},
-        {"name": "The University of Edinburgh", "path": "./images/edinburgh.png"},
-        {"name": "NUS", "path": "./images/nus.png"},
-        {"name": "NTU", "path": "./images/ntu.png"},
-        {"name": "Monash University", "path": "./images/monash.png"},
-        {"name": "Fudan University", "path": "./images/fudan.png"},
-        {"name": "UCLA", "path": "./images/ucla.png"},
-        {"name": "UCSD", "path": "./images/ucsd.png"},
-        {"name": "ZJHU", "path": "./images/zjhu.png"},
-        {"name": "Alibaba", "path": "./images/alibaba.png"},
-        {"name": "Tencent", "path": "./images/tencent.png"},
-        {"name": "Ant", "path": "./images/ant.png"},
-        {"name": "oppo", "path": "./images/oppo.png"},
-        {"name": "readever", "path": "./images/readever.png"},
-        {"name": "memtensor", "path": "./images/memtensor.png"},
-        {"name": "Honor", "path": "./images/honor.png"},
-        {"name": "UCAS", "path": "./images/ucas.png"}
+        {"name": "Zhejiang University", "path": _IMAGES / "zju.png"},
+        {"name": "Tongji University", "path": _IMAGES / "tongji.png"},
+        {"name": "Southeast University", "path": _IMAGES / "seu.png"},
+        {"name": "The University of Edinburgh", "path": _IMAGES / "edinburgh.png"},
+        {"name": "NUS", "path": _IMAGES / "nus.png"},
+        {"name": "NTU", "path": _IMAGES / "ntu.png"},
+        {"name": "Monash University", "path": _IMAGES / "monash.png"},
+        {"name": "Fudan University", "path": _IMAGES / "fudan.png"},
+        {"name": "UCLA", "path": _IMAGES / "ucla.png"},
+        {"name": "UCSD", "path": _IMAGES / "ucsd.png"},
+        {"name": "ZJHU", "path": _IMAGES / "zjhu.png"},
+        {"name": "Alibaba", "path": _IMAGES / "alibaba.png"},
+        {"name": "Tencent", "path": _IMAGES / "tencent.png"},
+        {"name": "Ant", "path": _IMAGES / "ant.png"},
+        {"name": "oppo", "path": _IMAGES / "oppo.png"},
+        {"name": "readever", "path": _IMAGES / "readever.png"},
+        {"name": "memtensor", "path": _IMAGES / "memtensor.png"},
+        {"name": "Honor", "path": _IMAGES / "honor.png"},
+        {"name": "UCAS", "path": _IMAGES / "ucas.png"}
     ]
 
     # 生成 HTML

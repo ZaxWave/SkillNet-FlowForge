@@ -406,7 +406,7 @@
 # # Main
 # # ============================================================
 # def main():
-#     render_navbar()
+#     render_navbar(active_page="package")
 #     st.markdown(PAGE_CSS, unsafe_allow_html=True)
 
 #     all_packages = load_all_packages()
@@ -580,7 +580,7 @@
 #             st.info("No relationship data available for this package.")
 
 #         if relationships:
-#             with st.expander(f"📊 View all {len(relationships)} relationships"):
+#             with st.expander(f"View all {len(relationships)} relationships", icon=":material/visibility:"):
 #                 for rel in relationships:
 #                     rtype = rel.get("type", "unknown")
 #                     color = RELATION_COLORS.get(rtype, "#999")
@@ -1125,7 +1125,7 @@ PAGE_CSS = """
 # Main
 # ============================================================
 def main():
-    render_navbar()
+    render_navbar(active_page="package")
     st.markdown(PAGE_CSS, unsafe_allow_html=True)
 
     all_packages = load_all_packages()
@@ -1262,11 +1262,12 @@ def render_detail_page(all_packages, selected_pkg):
     zip_bytes = create_package_zip(selected_pkg)
     if zip_bytes:
         st.download_button(
-            label=f"⬇️  Download Collection ({len(skills)} skills)",
+            label=f"Download Collection ({len(skills)} skills)",
             data=zip_bytes,
             file_name=f"{selected_pkg}.zip",
             mime="application/zip",
             use_container_width=True,
+            icon=":material/download:",
             on_click=lambda: increment_download(len(skills))
         )
 
@@ -1336,7 +1337,7 @@ def render_detail_page(all_packages, selected_pkg):
             st.info("No relationship data available for this collection.")
 
         if relationships:
-            with st.expander(f"📊 View all {len(relationships)} relationships"):
+            with st.expander(f"View all {len(relationships)} relationships", icon=":material/visibility:"):
                 for rel in relationships:
                     rtype = rel.get("type", "unknown")
                     color = RELATION_COLORS.get(rtype, "#999")

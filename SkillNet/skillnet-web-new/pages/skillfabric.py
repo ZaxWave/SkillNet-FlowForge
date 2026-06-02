@@ -801,7 +801,7 @@ validate_workflow_plan(
 
 def main():
     render_css()
-    render_navbar()
+    render_navbar(active_page="skillfabric")
     data = load_demo_data(DATA_PATH.stat().st_mtime)
     if STAGE_KEY not in st.session_state:
         st.session_state[STAGE_KEY] = 0

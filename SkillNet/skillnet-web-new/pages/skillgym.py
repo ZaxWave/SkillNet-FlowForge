@@ -23,7 +23,7 @@ st.markdown(
 )
 
 # 2. Render Navbar
-render_navbar()
+render_navbar(active_page="skillgym")
 
 # 3. Hero Section
 st.markdown(

@@ -154,15 +154,8 @@ supabase = init_connection()
 
 # --- 数据加载函数 ---
 def fetch_skills(page=1, page_size=20, search_text=None, min_stars=0, category=None, sort_option="Stars"):
-    if not supabase: 
-        # Mock data for demonstration if no DB connection
-        mock_data = [
-            {"skill_name": "Example Skill 1", "stars": 120, "category": "AIGC", "author": "UserA", "skill_description": "This is a demo description meant to simulate the card layout.", "skill_url": "#", "repo_url": "#", "skill_date": "2023-01-01"},
-            {"skill_name": "Data Tool Pro", "stars": 85, "category": "Data & Research", "author": "UserB", "skill_description": "Another tool for data analysis.", "skill_url": "#", "repo_url": "#", "skill_date": "2023-02-15"},
-            {"skill_name": "Web Scraper", "stars": 200, "category": "Web & GUI", "author": "UserC", "skill_description": "Scrapes the web efficiently.", "skill_url": "#", "repo_url": "#", "skill_date": "2023-03-10"},
-            {"skill_name": "Auto Docs", "stars": 95, "category": "Documentation", "author": "UserD", "skill_description": "Generate documentation automatically.", "skill_url": "#", "repo_url": "#", "skill_date": "2023-04-05"},
-        ] * 5
-        return pd.DataFrame(mock_data), len(mock_data)
+    if not supabase:
+        return pd.DataFrame(), 0
         
     start = (page - 1) * page_size
     end = start + page_size - 1
@@ -1115,8 +1108,8 @@ client.analyze("./my_skills")
 
 # ==================== MAIN ====================
 def main():
-    render_navbar()
-    
+    render_navbar(active_page="/")
+
     if 'current_view' not in st.session_state:
         st.session_state.current_view = 'home'
         
